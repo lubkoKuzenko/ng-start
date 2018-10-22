@@ -1,1 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~normalize.css';
+
+//The available themes are: indigo-pink, deeppurple-amber, purple-green and pink-bluegrey.
+@import "~@angular/material/prebuilt-themes/purple-green.css";
