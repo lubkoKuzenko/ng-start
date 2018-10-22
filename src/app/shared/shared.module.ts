@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 /*
 All the “dumb” components and pipes should be implemented here. 
@@ -9,9 +10,9 @@ This all sums up to the fact that SharedModule doesn’t have any dependency to 
 */
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule],
   declarations: [],
   providers: [],
-  exports: []
+  exports: [CommonModule, FormsModule, ReactiveFormsModule]
 })
 export class SharedModule {}

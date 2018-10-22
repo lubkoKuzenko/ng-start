@@ -10,7 +10,6 @@ import { HttpClientModule } from '@angular/common/http';
 
     // ngrx
   ],
-  declarations: [],
   providers: [],
   exports: []
 })
