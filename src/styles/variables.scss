@@ -1,0 +1,49 @@
+// z-index
+$z-index-1: 10;
+$z-index-2: 20;
+$z-index-3: 30;
+$z-index-4: 40;
+$z-index-5: 50;
+
+// colors
+$black: #000000;
+$white: #FFFFFF;
+$red: #FF0000;
+$green: #008000;
+$blue: #0000FF;
+
+// screen breakpoints
+$xs: "(max-width: 599px)";
+$sm: "(min-width: 600px) and (max-width: 959px)";
+$md: "(min-width: 960px) and (max-width: 1279px)";
+$lg: "(min-width: 1280px) and (max-width: 1919px)";
+$xlg: "(min-width: 1920px)";
+
+// palette
+// usage: color: pallette(white, base);
+$palettes: (
+  white: (
+    base: $white,
+  ),
+  black: (
+    base: $black,
+  ),
+  red: (
+    base: $red,
+  ),
+  green: (
+    base: $green,
+  ),
+  blue: (
+    base: $blue,
+  )
+);
+ 
+// @see https://twitter.com/thecodezombie/status/595977653296996354/photo/1
+@function palette($palette, $tone: 'base') {
+  @return map-get(map-get($palettes, $palette), $tone);
+}
+
+// other
+$base-font-size: 16px;
+$transition-time: .3s;
