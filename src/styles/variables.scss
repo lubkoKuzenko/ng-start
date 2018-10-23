@@ -7,30 +7,30 @@ $z-index-5: 50;
 
 // colors
 $black: #000000;
-$white: #FFFFFF;
-$red: #FF0000;
+$white: #ffffff;
+$red: #ff0000;
 $green: #008000;
-$blue: #0000FF;
+$blue: #0000ff;
 
 // usage: color: pallette(white, base);
 $palettes: (
   white: (
-    base: $white,
+    base: $white
   ),
   black: (
-    base: $black,
+    base: $black
   ),
   red: (
-    base: $red,
+    base: $red
   ),
   green: (
-    base: $green,
+    base: $green
   ),
   blue: (
-    base: $blue,
+    base: $blue
   )
 );
- 
+
 // @see https://twitter.com/thecodezombie/status/595977653296996354/photo/1
 @function palette($palette, $tone: 'base') {
   @return map-get(map-get($palettes, $palette), $tone);
@@ -39,4 +39,4 @@ $palettes: (
 // other
 $base-font-size: 16px !default;
 
-$transition-time: .3s;
+$transition-time: 0.3s;
