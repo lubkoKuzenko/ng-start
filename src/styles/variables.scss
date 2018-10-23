@@ -12,14 +12,6 @@ $red: #FF0000;
 $green: #008000;
 $blue: #0000FF;
 
-// screen breakpoints
-$xs: "(max-width: 599px)";
-$sm: "(min-width: 600px) and (max-width: 959px)";
-$md: "(min-width: 960px) and (max-width: 1279px)";
-$lg: "(min-width: 1280px) and (max-width: 1919px)";
-$xlg: "(min-width: 1920px)";
-
-// palette
 // usage: color: pallette(white, base);
 $palettes: (
   white: (
@@ -45,5 +37,6 @@ $palettes: (
 }
 
 // other
-$base-font-size: 16px;
+$base-font-size: 16px !default;
+
 $transition-time: .3s;
