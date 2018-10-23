@@ -11,18 +11,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "pretty-quick --staged"
     }
-  },
-  "lint-staged": {
-    "*.{ts}": [
-      "pretty-quick --staged",
-      "git add"
-    ],
-    "src/**/*.scss": [
-      "sass-lint -v -q",
-      "git add"
-    ]
   },
   "private": true,
   "dependencies": {
