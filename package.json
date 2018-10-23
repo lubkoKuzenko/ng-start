@@ -15,7 +15,7 @@
     }
   },
   "lint-staged": {
-    "src/app/**/*.{ts}": [
+    "*.{ts}": [
       "prettier --write",
       "git add"
     ],
