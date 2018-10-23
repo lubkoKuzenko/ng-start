@@ -2,9 +2,9 @@
 $breakpoints: (
   'xs': 599px,
   'sm': 959px,
-  "md": 1279px,
+  'md': 1279px,
   'lg': 1919px,
-  'xlg': 1920px,
+  'xlg': 1920px
 );
 
 @mixin mq($breakpoint, $map: $breakpoints) {
