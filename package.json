@@ -16,7 +16,7 @@
   },
   "lint-staged": {
     "*.{ts}": [
-      "prettier --write",
+      "pretty-quick --staged",
       "git add"
     ],
     "src/**/*.scss": [
