@@ -25,8 +25,8 @@ export class UnderlineDirective {
   constructor(private el: ElementRef, private renderer: Renderer) {}
 
   // HostBinding - will bind property to host element, If a binding changes, HostBinding will update the host element.
-  @HostBinding('style.backgroundColor')
-  color = 'yellow';
+  // @HostBinding('style.backgroundColor')
+  // color = 'yellow';
 
   // HostListener - will listen to the event emitted by host element, declared with @HostListener.
   @HostListener('mouseenter')
