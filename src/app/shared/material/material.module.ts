@@ -73,7 +73,7 @@ import {
     // MatSidenavModule,
     // MatSlideToggleModule,
     // MatSliderModule,
-    // MatSnackBarModule,
+    MatSnackBarModule,
     // MatSortModule,
     // MatStepperModule,
     // MatTabsModule,
