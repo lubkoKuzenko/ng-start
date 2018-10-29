@@ -29,9 +29,9 @@ import { reducers, metaReducers } from './core.state';
     StoreModule.forRoot(reducers, { metaReducers }),
     StoreRouterConnectingModule.forRoot(),
     // EffectsModule.forRoot([]),
-    !environment.production
-      ? StoreDevtoolsModule.instrument({ name: 'Angular NgRx Store' })
-      : []
+    environment.production
+      ? []
+      : StoreDevtoolsModule.instrument({ name: 'Angular NgRx Store' })
   ],
   providers: [
     {
