@@ -306,6 +306,11 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
+"@ngrx/schematics@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@ngrx/schematics/-/schematics-6.1.0.tgz#4e784da5502829700895ca87d4cc5da93bf3ec84"
+  integrity sha512-GEDpJ1jKPxDEerkI2gepzir59ovgF/0S30TXnsVGHLlZ72JFEPwNqpraQzF/zF4qW4QRG2H7LkNkd2PGqMEBSg==
+
 "@ngtools/webpack@7.0.2":
   version "7.0.2"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-7.0.2.tgz#db7441757b8c412e1b08ad0b117646e911afd4bb"

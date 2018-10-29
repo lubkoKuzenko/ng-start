@@ -6,6 +6,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { Interceptor } from './http.interceptor.service';
 import { AppErrorHandler } from './error-handler.service';
+import { CustomSerializer } from './custom-router-state-serializer';
+
+import { StoreModule } from '@ngrx/store';
+import {
+  StoreRouterConnectingModule,
+  RouterStateSerializer
+} from '@ngrx/router-store';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from '@env/environment';
+import { reducers, metaReducers } from './core.state';
 
 @NgModule({
   imports: [
@@ -13,9 +23,15 @@ import { AppErrorHandler } from './error-handler.service';
     CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
 
     // ngrx
+    StoreModule.forRoot(reducers, { metaReducers }),
+    StoreRouterConnectingModule.forRoot(),
+    // EffectsModule.forRoot([]),
+    !environment.production
+      ? StoreDevtoolsModule.instrument({ name: 'Angular NgRx Store' })
+      : []
   ],
   providers: [
     {
@@ -26,6 +42,10 @@ import { AppErrorHandler } from './error-handler.service';
     {
       provide: ErrorHandler,
       useClass: AppErrorHandler
+    },
+    {
+      provide: RouterStateSerializer,
+      useClass: CustomSerializer
     }
   ],
   exports: []
