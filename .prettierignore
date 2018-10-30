@@ -1,0 +1,5 @@
+*.json
+dist/
+e2e/
+node_modules/
+*.md

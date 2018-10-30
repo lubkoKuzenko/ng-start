@@ -1,0 +1,42 @@
+// z-index
+$z-index-1: 10;
+$z-index-2: 20;
+$z-index-3: 30;
+$z-index-4: 40;
+$z-index-5: 50;
+
+// colors
+$black: #000000;
+$white: #ffffff;
+$red: #ff0000;
+$green: #008000;
+$blue: #0000ff;
+
+// usage: color: pallette(white, base);
+$palettes: (
+  white: (
+    base: $white
+  ),
+  black: (
+    base: $black
+  ),
+  red: (
+    base: $red
+  ),
+  green: (
+    base: $green
+  ),
+  blue: (
+    base: $blue
+  )
+);
+
+// @see https://twitter.com/thecodezombie/status/595977653296996354/photo/1
+@function palette($palette, $tone: 'base') {
+  @return map-get(map-get($palettes, $palette), $tone);
+}
+
+// other
+$base-font-size: 16px !default;
+
+$transition-time: 0.3s;

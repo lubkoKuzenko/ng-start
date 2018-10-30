@@ -1,0 +1,20 @@
+// mobile first screen breakpoints from angular material
+$breakpoints: (
+  'xs': 599px,
+  'sm': 959px,
+  'md': 1279px,
+  'lg': 1919px,
+  'xlg': 1920px
+);
+
+@mixin mq($breakpoint, $map: $breakpoints) {
+  @if map_has_key($map, $breakpoint) {
+    @media screen and (min-width: #{map-get($map, $breakpoint)}) {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. " + "Please make sure it is defined in breakpoints map.";
+  }
+}
+
+//todo

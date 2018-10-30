@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <mat-icon>home</mat-icon>
+  <span underline>Application</span>
+  <button mat-icon-button [mat-menu-trigger-for]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+</mat-toolbar>
+<mat-menu x-position="before" #menu="matMenu">
+  <button mat-menu-item>Option 1</button>
+  <button mat-menu-item>{{ 'Option 2' | reverseStr }}</button>
+</mat-menu>
+
+<bb-h1></bb-h1>
+<bb-h1 title="with Title"></bb-h1>
+
+<router-outlet></router-outlet>
