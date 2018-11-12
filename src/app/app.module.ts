@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { CoreModule } from './core';
 import { SharedModule } from './shared';
@@ -9,6 +10,8 @@ import { AppComponent } from './app.component';
 @NgModule({
   declarations: [AppComponent],
   imports: [
+    BrowserModule,
+
     // core & shared
     CoreModule,
     SharedModule,
