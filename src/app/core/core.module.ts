@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { LoaderComponent } from './components/loader';
+
 import { Interceptor } from './http.interceptor.service';
 import { AppErrorHandler } from './error-handler.service';
 import { CustomSerializer } from './custom-router-state-serializer';
@@ -46,7 +48,8 @@ import { reducers, metaReducers } from './core.state';
       useClass: CustomSerializer
     }
   ],
-  exports: []
+  declarations: [LoaderComponent],
+  exports: [LoaderComponent]
 })
 export class CoreModule {
   constructor(
