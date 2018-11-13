@@ -8,7 +8,7 @@ import {
 import { routerReducer, RouterReducerState } from '@ngrx/router-store';
 
 import { environment } from '@env/environment';
-import { RouterStateUrl } from '../core/custom-router-state-serializer';
+import { RouterStateUrl } from './router/router.interface';
 
 export interface AppState {
   router: RouterReducerState<RouterStateUrl>;
