@@ -3,8 +3,6 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { LoaderComponent } from './components/loader';
-
 import { httpInterceptorProviders } from './http-interceptors';
 import { routerSerializer } from './router';
 
@@ -29,9 +27,7 @@ import { reducers, metaReducers } from './core.state';
       ? []
       : StoreDevtoolsModule.instrument({ name: 'Angular NgRx Store' })
   ],
-  providers: [httpInterceptorProviders, routerSerializer],
-  declarations: [LoaderComponent],
-  exports: [LoaderComponent]
+  providers: [httpInterceptorProviders, routerSerializer]
 })
 export class CoreModule {
   constructor(

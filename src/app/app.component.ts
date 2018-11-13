@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoaderService } from './core/services/loader.service';
 
 @Component({
   selector: 'bb-root',
@@ -8,5 +9,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'binck';
 
-  constructor() {}
+  constructor(private loader: LoaderService) {}
+
+  onClick() {
+    this.loader.display(true);
+
+    setTimeout(() => {
+      this.loader.display(false);
+    }, 1000);
+  }
 }

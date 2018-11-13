@@ -1,3 +1,3 @@
-import { H1 } from './h1.component';
+import { LoaderComponent } from './loader/loader.component';
 
-export const components: any[] = [H1];
+export const components: any[] = [LoaderComponent];
