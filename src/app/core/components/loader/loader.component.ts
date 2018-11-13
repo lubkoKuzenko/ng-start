@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { LoaderService } from '../../services/loader.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { LoaderService } from '../../services/loader.service';
   styleUrls: ['./loader.component.scss']
 })
 export class LoaderComponent implements OnInit {
-  loading$: Observable<boolean>;
+  loading$: Observable<boolean> = of(false);
 
   constructor(private loaderService: LoaderService) {}
 
