@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { LoaderService } from './core/services/loader.service';
 
+import { fisrtName } from './formly/forms/first-name';
+
 @Component({
   selector: 'bb-root',
   templateUrl: './app.component.html',
@@ -8,6 +10,7 @@ import { LoaderService } from './core/services/loader.service';
 })
 export class AppComponent {
   title = 'binck';
+  form = fisrtName;
 
   constructor(private loader: LoaderService) {}
 
