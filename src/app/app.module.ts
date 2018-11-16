@@ -6,6 +6,7 @@ import { SharedModule } from './shared';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AuthorizationModule } from './authorization/authorization.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,6 +18,7 @@ import { AppComponent } from './app.component';
     SharedModule,
 
     // features
+    AuthorizationModule,
 
     // app
     AppRoutingModule

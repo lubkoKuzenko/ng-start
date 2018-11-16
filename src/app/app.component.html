@@ -4,15 +4,32 @@
   <mat-icon>home</mat-icon>
   <span underline>Application</span>
   <button mat-icon-button [mat-menu-trigger-for]="menu">
-      <mat-icon>more_vert</mat-icon>
-    </button>
+    <mat-icon>more_vert</mat-icon>
+  </button>
 </mat-toolbar>
 <mat-menu x-position="before" #menu="matMenu">
   <button mat-menu-item>Option 1</button>
   <button mat-menu-item>{{ 'Option 2' | reverseStr }}</button>
 </mat-menu>
 
-<bb-h1></bb-h1>
-<bb-h1 title="with Title"></bb-h1>
+<h1>{{ title }}</h1>
+
+<button (click)="onClick()">asd</button>
+
+<!-- NGX-PERMISSION EXAMPLE -->
+<div *ngxPermissionsOnly="['ADMIN', 'EDITOR']">
+  <div>ADMIN and EDITOR can see</div>
+</div>
+
+<!-- <ng-template ngxPermissionsOnly="['ADMIN']"> -->
+<!-- <ng-template ngxPermissionsExcept="['ADMIN']"> -->
+
+<ng-template ngxPermissionsOnly="ADMIN"> <div>ADMIN can see</div> </ng-template>
+<ng-template ngxPermissionsOnly="EDITOR">
+  <div>EDITOR can see</div>
+</ng-template>
+<ng-template ngxPermissionsOnly="VIEWER">
+  <div>VIEWER can see</div>
+</ng-template>
 
 <router-outlet></router-outlet>

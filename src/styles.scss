@@ -1,2 +1,12 @@
 //The available themes are: indigo-pink, deeppurple-amber, purple-green and pink-bluegrey.
-@import '~@angular/material/prebuilt-themes/purple-green.css';
+@import '~node_modules/bootstrap/dist/css/bootstrap.min';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+//helpers
+.form-wrapper {
+  padding: 30px;
+}
