@@ -12,8 +12,9 @@
   <button mat-menu-item>{{ 'Option 2' | reverseStr }}</button>
 </mat-menu>
 
-<h1>{{ title }}</h1>
+<bb-formly [json]="form"></bb-formly>
 
+<button (click)="onClick()">asd</button>
 <button (click)="onClick()">asd</button>
 
 <!-- NGX-PERMISSION EXAMPLE -->

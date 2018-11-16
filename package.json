@@ -35,6 +35,8 @@
     "@ngrx/store-devtools": "^6.1.0",
     "@ngx-formly/core": "^4.8.2",
     "@ngx-formly/material": "^4.8.2",
+    "@ngx-formly/core": "^4.8.2",
+    "@ngx-formly/material": "^4.8.2",
     "bootstrap": "^4.1.3",
     "core-js": "^2.5.4",
     "hammerjs": "^2.0.8",

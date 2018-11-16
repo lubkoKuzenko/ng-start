@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { LoaderService } from './core/services/loader.service';
 
+import { fisrtName } from './formly/forms/first-name';
+
 import { NgxPermissionsService } from 'ngx-permissions';
 import { HttpClient } from '@angular/common/http';
 import { Store } from '@ngrx/store';
@@ -12,6 +14,7 @@ import { Store } from '@ngrx/store';
 })
 export class AppComponent implements OnInit {
   title = 'binck';
+  form = fisrtName;
 
   constructor(
     private store: Store<any>,
