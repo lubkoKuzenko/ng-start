@@ -13,7 +13,6 @@ import { Store } from '@ngrx/store';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'binck';
   form = fisrtName;
 
   constructor(

@@ -10,13 +10,13 @@ mat-toolbar {
     @include font-smoothing;
 
     @include mq(xs) {
-      color: palette(blue, base);
+      color: palette(red, base);
     }
     @include mq(sm) {
-      color: palette(green, base);
+      color: palette(blue, base);
     }
     @include mq(md) {
-      color: palette(red, base);
+      color: palette(green, base);
     }
     @include mq(lg) {
       color: palette(white, base);
