@@ -9,7 +9,6 @@ import { fisrtName } from './formly/forms/first-name';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'binck';
   form = fisrtName;
 
   constructor(private loader: LoaderService) {}

@@ -12,10 +12,18 @@
   <button mat-menu-item>{{ 'Option 2' | reverseStr }}</button>
 </mat-menu>
 
-<h1>{{title}}</h1>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-12">
+      <div class="form-wrapper mat-elevation-z2">
+        <div class="row justify-content-center">
+          <bb-formly class="col-md-6" [json]="form"></bb-formly>
+        </div>
 
-<bb-formly [json]="form"></bb-formly>
-
-<button (click)='onClick()'>asd</button>
-
-<router-outlet></router-outlet>
+        <button (click)='onClick()'>loader</button>
+        
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
