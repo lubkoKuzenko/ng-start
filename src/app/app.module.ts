@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { CoreModule } from './core';
 import { SharedModule } from './shared';
+import { BBFormlyModule } from './formly/formly.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,7 @@ import { AppComponent } from './app.component';
     SharedModule,
 
     // features
+    BBFormlyModule,
 
     // app
     AppRoutingModule

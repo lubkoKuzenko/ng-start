@@ -3,9 +3,15 @@ import { BehaviorSubject } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class LoaderService {
-  public status: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+  private isVisible: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(
+    false
+  );
+
+  get status() {
+    return this.isVisible;
+  }
 
   display(value: boolean) {
-    this.status.next(value);
+    this.isVisible.next(value);
   }
 }
