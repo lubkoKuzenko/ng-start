@@ -3,7 +3,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Injectable()
-export class AppErrorHandler extends ErrorHandler {
+export class AppErrorInterceptor extends ErrorHandler {
   constructor(private readonly zone: NgZone, private snackBar: MatSnackBar) {
     super();
   }

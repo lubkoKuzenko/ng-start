@@ -3,7 +3,7 @@ import { FormGroup } from '@angular/forms';
 import { FormlyFieldConfig } from '@ngx-formly/core';
 import { HttpClient } from '@angular/common/http';
 import { Store } from '@ngrx/store';
-import { User } from '../../../interfaces/user-interface';
+import { User } from '../../../interfaces/user.interface';
 import * as AuthorizationActions from '../../authorization.actions';
 
 @Component({
@@ -37,13 +37,11 @@ export class LoginContainerComponent implements OnInit {
     }
   ];
 
-  isActive = false;
-
   constructor(private http: HttpClient, private store: Store<any>) {}
 
   ngOnInit() {}
 
   submit(model: User) {
-    this.store.dispatch(new AuthorizationActions.LoginUser(model));
+    this.store.dispatch(new AuthorizationActions.Login(model));
   }
 }

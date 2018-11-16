@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { LoaderService } from '../../services/loader.service';
+import { LoaderService } from '../../../core/services/loader.service';
 
 @Component({
   selector: 'bb-loader',

@@ -2,31 +2,36 @@ import {
   AuthorizationActions,
   AuthorizationActionTypes
 } from './authorization.actions';
+import { AppState } from '../core/core.state';
 
-export interface State {
+export interface AuthState {
   login: string;
   permission: string;
 }
 
-export const initialState: State = {
+export const initialState: AuthState = {
   login: localStorage.getItem('login') || '',
   permission: localStorage.getItem('permission') || 'VIEWER'
 };
+
+export interface State extends AppState {
+  authorization: AuthState;
+}
 
 const newState = (state, newData) => Object.assign({}, state, newData);
 
 export function AuthorizationReducer(
   state = initialState,
   action: AuthorizationActions
-): State {
+): AuthState {
   switch (action.type) {
-    case AuthorizationActionTypes.USER_LOGIN:
+    case AuthorizationActionTypes.LOGIN:
       return state;
 
-    case AuthorizationActionTypes.USER_LOGIN_SUCCESS:
+    case AuthorizationActionTypes.LOGIN_SUCCESS:
       return newState(state, action.payload);
 
-    case AuthorizationActionTypes.USER_LOGIN_ERROR:
+    case AuthorizationActionTypes.LOGIN_ERROR:
       return newState(state, action.payload);
 
     default:

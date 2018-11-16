@@ -11,7 +11,7 @@ import { Observable, of } from 'rxjs';
 import { tap } from 'rxjs/operators';
 
 @Injectable()
-export class Interceptor implements HttpInterceptor {
+export class TokenInterceptor implements HttpInterceptor {
   logStyle = 'color: red; font-size: 1rem;';
 
   constructor() {}

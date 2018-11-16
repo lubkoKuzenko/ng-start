@@ -18,13 +18,10 @@ export class AuthorizationEffects {
   ) {}
 
   @Effect()
-  loginUser = () => {
+  login = () => {
     return this.actions$.pipe(
-      ofType<AuthorizationActions.LoginUser>(
-        AuthorizationActionTypes.USER_LOGIN
-      ),
-      switchMap((action: AuthorizationActions.LoginUser) =>
-        // TODO change url hardcoded
+      ofType<AuthorizationActions.Login>(AuthorizationActionTypes.LOGIN),
+      switchMap((action: AuthorizationActions.Login) =>
         this.http.post('http://localhost:8000/api/users/', action.payload).pipe(
           map(stock => {
             this.permissionsService.flushPermissions();
@@ -32,10 +29,10 @@ export class AuthorizationEffects {
             localStorage.setItem('permission', stock['permission']);
             localStorage.setItem('login', stock['login']);
             this.router.navigate(['/']);
-            return new AuthorizationActions.LoginUserSuccess(stock);
+            return new AuthorizationActions.LoginSuccess(stock);
           }),
           catchError(error =>
-            of(new AuthorizationActions.LoginUserError({ error }))
+            of(new AuthorizationActions.LoginError({ error }))
           )
         )
       )

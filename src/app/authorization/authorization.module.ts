@@ -5,6 +5,10 @@ import { AuthorizationRoutingModule } from './authorization-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormlyModule } from '@ngx-formly/core';
 import { SharedModule } from '../shared';
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { AuthorizationEffects } from './authorization.effects';
+import { AuthorizationReducer } from './authorization.reducer';
 
 @NgModule({
   imports: [
@@ -16,7 +20,9 @@ import { SharedModule } from '../shared';
         { name: 'required', message: 'This field is required' }
       ]
     }),
-    SharedModule
+    SharedModule,
+    StoreModule.forFeature('authorization', AuthorizationReducer),
+    EffectsModule.forFeature([AuthorizationEffects])
   ],
   declarations: [LoginContainerComponent]
 })
