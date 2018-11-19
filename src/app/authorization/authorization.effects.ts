@@ -7,6 +7,7 @@ import { of } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { NgxPermissionsService } from 'ngx-permissions';
 import { Router } from '@angular/router';
+import { LocalStorageService } from '../core/services/local-storage.service';
 
 @Injectable()
 export class AuthorizationEffects {
@@ -14,6 +15,7 @@ export class AuthorizationEffects {
     private router: Router,
     private permissionsService: NgxPermissionsService,
     private actions$: Actions,
+    private localStorageService: LocalStorageService,
     private http: HttpClient
   ) {}
 
@@ -26,10 +28,15 @@ export class AuthorizationEffects {
           map(stock => {
             this.permissionsService.flushPermissions();
             this.permissionsService.addPermission(stock['permission']);
-            localStorage.setItem('permission', stock['permission']);
-            localStorage.setItem('login', stock['login']);
+            // TODO interface
+            //TODO - what should it be in authorization object? User information? Do we need authorization store then?
+            const data = {
+              login: stock['login'],
+              permission: stock['permission']
+            };
+            this.localStorageService.setItem('authorization', data);
             this.router.navigate(['/']);
-            return new AuthorizationActions.LoginSuccess(stock);
+            return new AuthorizationActions.LoginSuccess(data);
           }),
           catchError(error =>
             of(new AuthorizationActions.LoginError({ error }))

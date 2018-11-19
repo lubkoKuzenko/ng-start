@@ -10,8 +10,8 @@ export interface AuthState {
 }
 
 export const initialState: AuthState = {
-  login: localStorage.getItem('login') || '',
-  permission: localStorage.getItem('permission') || 'VIEWER'
+  login: '',
+  permission: 'VIEWER'
 };
 
 export interface State extends AppState {
