@@ -7,7 +7,7 @@ import {
 } from '@angular/core';
 
 // Annotation section
-@Directive({ selector: '[underline]' })
+@Directive({ selector: '[bbUnderline]' })
 
 /*
     *element-name: select by element name.

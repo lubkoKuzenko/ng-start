@@ -7,7 +7,7 @@ import { FormlyFieldConfig, FormlyFormOptions } from '@ngx-formly/core';
   templateUrl: './formly-container.component.html',
   styleUrls: ['./formly-container.component.scss']
 })
-export class FormlyContainer implements OnInit {
+export class FormlyContainerComponent implements OnInit {
   public form = new FormGroup({});
   public model = {};
   public fields: FormlyFieldConfig[] = [];
