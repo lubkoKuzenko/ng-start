@@ -5,29 +5,34 @@ $z-index-3: 30;
 $z-index-4: 40;
 $z-index-5: 50;
 
-// colors
-$black: #000000;
-$white: #ffffff;
-$red: #ff0000;
-$green: #008000;
-$blue: #0000ff;
-
 // usage: color: pallette(white, base);
 $palettes: (
   white: (
-    base: $white
+    base: #ffffff
   ),
   black: (
-    base: $black
+    base: #000000
+  ),
+  gray: (
+    base: #f2f2f2,
+    '100': #e0e0e0,
+    '200': #c0c0c0,
+    '300': #999999,
+    '700': #686868,
+    '800': #454545,
+    '900': #303030
   ),
   red: (
-    base: $red
+    base: #ff0000
+  ),
+  orange: (
+    base: #f7941d
   ),
   green: (
-    base: $green
+    base: #8cd600
   ),
   blue: (
-    base: $blue
+    base: #468ccb
   )
 );
 

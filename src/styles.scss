@@ -7,3 +7,242 @@
 @import '~bootstrap/scss/reboot';
 @import '~bootstrap/scss/grid';
 @import '~bootstrap/scss/utilities';
+
+@import '~bootstrap/scss/nav';
+@import '~bootstrap/scss/navbar';
+@import 'styles/variables';
+
+html {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: palette(blue, base);
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: palette(gray, '900');
+    text-decoration: none;
+  }
+}
+
+mat-icon {
+  display: inline-block;
+  margin-top: -2px;
+  vertical-align: middle;
+}
+
+.app-footer {
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 1rem;
+  color: palette(gray, '700');
+  background: palette(gray, base);
+  border-top: 1px solid palette(gray, '100');
+
+  flex: 0 0 50px;
+}
+
+.main .container-fluid {
+  padding: 0 30px;
+}
+
+header {
+  position: relative;
+  flex-direction: row;
+  height: 55px;
+  padding: 0;
+  margin: 0;
+  background-color: palette(white, base);
+  border-bottom: 1px solid palette(gray, '100');
+  flex: 0 0 55px;
+
+  .nav-item {
+    position: relative;
+    min-width: 50px;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.navbar-brand {
+  min-width: 150px;
+
+  a {
+    vertical-align: 0.1875rem;
+  }
+
+  img {
+    height: auto;
+  }
+}
+
+.navbar-nav {
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.8rem;
+
+  .nav-link {
+    color: palette(gray, '300');
+
+    &.active {
+      color: palette(gray, '900');
+
+      &:hover,
+      &:focus {
+        color: palette(blue, base);
+      }
+    }
+    &:focus,
+    &:hover {
+      color: palette(gray, '900');
+    }
+  }
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  color: palette(white, base);
+  background: palette(gray, '900');
+
+  .mat-icon {
+    line-height: 24px;
+    vertical-align: -1px;
+  }
+
+  .nav {
+    width: 200px;
+    flex-direction: column;
+    min-height: 100%;
+    padding: 0;
+  }
+
+  .nav-title {
+    padding: 0.92rem 1rem;
+    font-size: 80%;
+    font-weight: 700;
+    color: palette(gray, '200');
+    text-transform: uppercase;
+    background: palette(gray, '800');
+  }
+
+  .nav-item {
+    position: relative;
+    margin: 0;
+    transition: background 0.3s ease-in-out;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: palette(white, base);
+    text-decoration: none;
+    background: 0 0;
+    transition: all 0.2s ease;
+
+    .nav-icon {
+      display: inline-block;
+      width: 1.09375rem;
+      margin: 0 0.5rem 0 0;
+      font-size: 0.875rem;
+      color: palette(gray, '300');
+      text-align: center;
+    }
+
+    &.active {
+      color: palette(white, base);
+
+      .nav-icon {
+        color: palette(green, base);
+      }
+    }
+
+    &:hover {
+      color: palette(white, base);
+      background: rgba(palette(gray, '700'), 0.2);
+
+      .nav-icon {
+        color: palette(green, base);
+      }
+    }
+
+    .badge {
+      position: absolute;
+      right: 1rem;
+      top: -0.3rem;
+      background-color: palette(orange, base);
+      font-size: 0.65rem;
+    }
+  }
+}
+
+.sidebar-nav {
+  position: relative;
+  -ms-flex: 1;
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 200px;
+}
+
+.sidebar-lg-show.sidebar-fixed .app-footer {
+  margin-left: 200px;
+}
+
+.sidebar-lg-show.sidebar-fixed .app-footer,
+.sidebar-lg-show.sidebar-fixed .main {
+  margin-left: 200px;
+}
+
+.app,
+.dashboard {
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-body {
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  overflow-x: hidden;
+
+  .main {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .aside-menu {
+    flex: 0 0 250px;
+  }
+}
+
+.header-fixed {
+  header {
+    position: fixed;
+    z-index: 1020;
+    width: 100%;
+  }
+
+  .app-body {
+    margin-top: 55px;
+  }
+}
+
+.sidebar-fixed .sidebar {
+  position: fixed;
+  z-index: 1019;
+  width: 200px;
+  height: 100vh;
+}
+
+.sidebar-fixed header + .app-body .sidebar {
+  height: calc(100vh - 55px);
+}

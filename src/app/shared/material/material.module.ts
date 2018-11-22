@@ -46,7 +46,7 @@ import {
   imports: [
     // @angular/materials
     // MatAutocompleteModule,
-    // MatBadgeModule,
+    MatBadgeModule,
     // MatBottomSheetModule,
     MatButtonModule,
     // MatButtonToggleModule,
@@ -73,11 +73,11 @@ import {
     // MatSidenavModule,
     // MatSlideToggleModule,
     // MatSliderModule,
-    MatSnackBarModule,
+    MatSnackBarModule
     // MatSortModule,
     // MatStepperModule,
     // MatTabsModule,
-    MatToolbarModule
+    // MatToolbarModule
     // MatTooltipModule,
     // MatTreeModule,
 

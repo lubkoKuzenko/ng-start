@@ -1,29 +1,84 @@
 <bb-loader></bb-loader>
 
-<mat-toolbar color="primary">
-  <mat-icon>home</mat-icon>
-  <span bbUnderline>Application</span>
-  <button mat-icon-button [mat-menu-trigger-for]="menu">
-      <mat-icon>more_vert</mat-icon>
-    </button>
-</mat-toolbar>
-<mat-menu x-position="before" #menu="matMenu">
-  <button mat-menu-item>Option 1</button>
-  <button mat-menu-item>{{ 'Option 2' | reverseStr }}</button>
-</mat-menu>
+<div class="app header-fixed sidebar-lg-show sidebar-fixed aside-menu-fixed">
+  <div class="dashboard">
 
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-12">
-      <div class="form-wrapper mat-elevation-z2">
-        <div class="row justify-content-center">
-          <bb-formly class="col-md-6" [json]="form"></bb-formly>
+    <!-- HEADER -->
+    <header class="app-header navbar">
+      <span class="navbar-brand">
+        <a href="/">
+          <img class="navbar-brand-full" src="../assets/binck-logo_header.png" width="89" height="25" alt="BinckBank">
+        </a>
+      </span>
+      <ul class="nav navbar-nav d-md-down-none">
+        <li class="nav-item px-3">
+          <a class="nav-link" routerLinkActive="active" routerLink="/dashboard">Dashboard</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link" routerLinkActive="active" routerLink="/users">Users</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link" routerLinkActive="active" routerLink="/settings">Settings</a>
+        </li>
+      </ul>
+      <div class="nav navbar-nav ml-auto">
+        <button mat-icon-button [mat-menu-trigger-for]="menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+
+        <mat-menu x-position="before" #menu="matMenu">
+          <a class="nav-link" routerLinkActive="active" routerLink="/dashboard">Dashboard</a>
+          <a class="nav-link" routerLinkActive="active" routerLink="/users">Users</a>
+          <a class="nav-link" routerLinkActive="active" routerLink="/settings">Settings</a>
+        </mat-menu>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <section class="app-body">
+      <aside class="sidebar">
+        <div class="sidebar-nav ps ps--active-y" role="nav">
+          <ul class="nav">
+            <li class="nav-title">General</li>
+            <li class="nav-item">
+              <a routerLinkActive="active" class="nav-link" routerLink="/dashboard">
+                <mat-icon class="nav-icon">dashboard</mat-icon>
+                Dashboard
+              </a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/documentation" routerLinkActive="active" class="nav-link">
+                <mat-icon class="nav-icon">reorder</mat-icon>
+                Documentation
+              </a>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/settings" routerLinkActive="active" class="nav-link">
+                <mat-icon class="nav-icon">settings</mat-icon>
+                Settings
+              </a>
+            </li>
+            <li class="nav-title">functional</li>
+            <li class="nav-item">
+              <a routerLink="/questions" routerLinkActive="active" class="nav-link">
+                <mat-icon class="nav-icon">contact_support</mat-icon>
+                Questions
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </aside>
+
+
+      <main class="main">
+        <div class="fluid-container pt-3 pl-3">
+          <router-outlet></router-outlet>
+
+          <button (click)='onClick()'>loader</button>
         </div>
 
-        <button (click)='onClick()'>loader</button>
-        
-        <router-outlet></router-outlet>
-      </div>
-    </div>
+      </main>
+    </section>
   </div>
 </div>
