@@ -1,0 +1,175 @@
+@mixin font-smoothing($value: on) {
+  @if $value == on {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  } @else {
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+}
+
+@mixin ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@mixin ellipsis-multiline(
+  $font-size: 1rem,
+  $line-height: 1,
+  $lines-to-show: 2
+) {
+  display: block;
+  /* Fallback for non-webkit */
+  display: -webkit-box;
+  max-height: $font-size * $line-height * $lines-to-show;
+  /* Fallback for non-webkit */
+  font-size: $font-size;
+  line-height: $line-height;
+  -webkit-line-clamp: $lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// @include css-triangle(#000, up, 10px);
+@mixin css-triangle(
+  $color,
+  $direction,
+  $size: 6px,
+  $position: absolute,
+  $round: false
+) {
+  @include pseudo($pos: $position);
+  width: 0;
+  height: 0;
+  @if $round {
+    border-radius: 3px;
+  }
+  @if $direction == down {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-top: $size solid $color;
+    margin-top: 0 - round($size / 2.5);
+  } @else if $direction == up {
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-bottom: $size solid $color;
+    margin-bottom: 0 - round($size / 2.5);
+  } @else if $direction == right {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-left: $size solid $color;
+    margin-right: -$size;
+  } @else if $direction == left {
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-right: $size solid $color;
+    margin-left: -$size;
+  }
+}
+
+// @include background-gradient(red, black, 'vertical');
+@mixin background-gradient($start-color, $end-color, $orientation) {
+  background: $start-color;
+
+  @if $orientation == 'vertical' {
+    background: -webkit-linear-gradient(top, $start-color, $end-color);
+    background: linear-gradient(to bottom, $start-color, $end-color);
+  } @else if $orientation == 'horizontal' {
+    background: -webkit-linear-gradient(left, $start-color, $end-color);
+    background: linear-gradient(to right, $start-color, $end-color);
+  } @else {
+    background: -webkit-radial-gradient(
+      center,
+      ellipse cover,
+      $start-color,
+      $end-color
+    );
+    background: radial-gradient(ellipse at center, $start-color, $end-color);
+  }
+}
+
+// @include opacity();
+@mixin opacity($opacity: 0.5) {
+  $opacityPercentage: ($opacity * 100);
+  filter: alpha(opacity=$opacityPercentage);
+  opacity: $opacity;
+}
+
+// @include border-radius(25px);
+@mixin border-radius(
+  $top-left: 10px,
+  $top-right: null,
+  $bottom-right: null,
+  $bottom-left: null
+) {
+  -webkit-border-radius: $top-left $top-right $bottom-right $bottom-left;
+  -moz-border-radius: $top-left $top-right $bottom-right $bottom-left;
+  -ms-border-radius: $top-left $top-right $bottom-right $bottom-left;
+  border-radius: $top-left $top-right $bottom-right $bottom-left;
+}
+
+// @include transition(all,0.5s,ease-out);
+@mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
+  -webkit-transition: $what $time $how;
+  -moz-transition: $what $time $how;
+  -ms-transition: $what $time $how;
+  -o-transition: $what $time $how;
+  transition: $what $time $how;
+}
+
+// @include center(both);
+// @include center();
+@mixin center($center-all) {
+  position: absolute;
+  @if $center-all == both {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  } @else {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+// @include linear-gradient(#00FFFF,#0080FF,45deg);
+@mixin linear-gradient($color-one, $color-two, $degrees) {
+  background: -moz-linear-gradient(
+    $degrees,
+    $color-one 0%,
+    $color-two 100%
+  ); /* ff3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0%, $color-one),
+    color-stop(100%, $color-two)
+  ); /* safari4+,chrome */
+  background: -webkit-linear-gradient(
+    $degrees,
+    $color-one 0%,
+    $color-two 100%
+  ); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(
+    $degrees,
+    $color-one 0%,
+    $color-two 100%
+  ); /* opera 11.10+ */
+  background: -ms-linear-gradient(
+    $degrees,
+    $color-one 0%,
+    $color-two 100%
+  ); /* ie10+ */
+  background: linear-gradient(
+    $degrees,
+    $color-one 0%,
+    $color-two 100%
+  ); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-one', endColorstr='$color-two',GradientType=1 ); /* ie6-9 */
+}
