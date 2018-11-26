@@ -23,3 +23,64 @@ mat-toolbar {
     }
   }
 }
+
+.app-container {
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.sidenav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: palette(white, base);
+  background: palette(gray, '900');
+}
+
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: palette(white, base);
+  border-bottom: 1px solid palette(gray, '100');
+
+  .navbar-brand {
+    min-width: 150px;
+
+    a {
+      vertical-align: 0.1875rem;
+    }
+
+    img {
+      height: auto;
+    }
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.8rem;
+
+    .nav-link {
+      color: palette(gray, '300');
+
+      &.active {
+        color: palette(gray, '900');
+
+        &:hover,
+        &:focus {
+          color: palette(blue, base);
+        }
+      }
+      &:focus,
+      &:hover {
+        color: palette(gray, '900');
+      }
+    }
+  }
+}

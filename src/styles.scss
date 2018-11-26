@@ -9,7 +9,8 @@
 @import '~bootstrap/scss/utilities';
 
 @import '~bootstrap/scss/nav';
-@import '~bootstrap/scss/navbar';
+@import '~bootstrap/scss/card';
+@import '~bootstrap/scss/buttons';
 @import 'styles/variables';
 
 html {
@@ -33,83 +34,7 @@ mat-icon {
   vertical-align: middle;
 }
 
-.app-footer {
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 0 1rem;
-  color: palette(gray, '700');
-  background: palette(gray, base);
-  border-top: 1px solid palette(gray, '100');
-
-  flex: 0 0 50px;
-}
-
-.main .container-fluid {
-  padding: 0 30px;
-}
-
-header {
-  position: relative;
-  flex-direction: row;
-  height: 55px;
-  padding: 0;
-  margin: 0;
-  background-color: palette(white, base);
-  border-bottom: 1px solid palette(gray, '100');
-  flex: 0 0 55px;
-
-  .nav-item {
-    position: relative;
-    min-width: 50px;
-    margin: 0;
-    text-align: center;
-  }
-}
-
-.navbar-brand {
-  min-width: 150px;
-
-  a {
-    vertical-align: 0.1875rem;
-  }
-
-  img {
-    height: auto;
-  }
-}
-
-.navbar-nav {
-  flex-direction: row;
-  align-items: center;
-  font-size: 0.8rem;
-
-  .nav-link {
-    color: palette(gray, '300');
-
-    &.active {
-      color: palette(gray, '900');
-
-      &:hover,
-      &:focus {
-        color: palette(blue, base);
-      }
-    }
-    &:focus,
-    &:hover {
-      color: palette(gray, '900');
-    }
-  }
-}
-
 .sidebar {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  color: palette(white, base);
-  background: palette(gray, '900');
-
   .mat-icon {
     line-height: 24px;
     vertical-align: -1px;
@@ -194,30 +119,12 @@ header {
   margin-left: 200px;
 }
 
-.sidebar-lg-show.sidebar-fixed .app-footer,
-.sidebar-lg-show.sidebar-fixed .main {
-  margin-left: 200px;
-}
-
-.app,
-.dashboard {
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 .app-body {
   display: -ms-flexbox;
   display: flex;
   flex-direction: row;
   flex-grow: 1;
   overflow-x: hidden;
-
-  .main {
-    flex: 1;
-    min-width: 0;
-  }
 
   .aside-menu {
     flex: 0 0 250px;

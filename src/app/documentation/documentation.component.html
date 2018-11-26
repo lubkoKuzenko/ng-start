@@ -1,5 +1,11 @@
-<h1>
-  documentation works!
-</h1>
-
-<bb-formly class="col-md-6" [json]="form"></bb-formly>
+<div *ngFor="let page of pages; let index = index; let last = last">
+  <form [formGroup]="form.at(index)" (ngSubmit)="submit()" class="card" *ngIf="currentPage === index">
+    <h3 class="card-header">{{ page.label }}</h3>
+    <div class="card-body">
+      <formly-form [form]="form.at(index)" [fields]="page.fields" [model]="model" [options]="options[index]">
+        <button type="submit" class="btn btn-primary" (click)="back()" [disabled]="currentPage === 0">back</button>
+        <button type="submit" class="btn btn-primary" [disabled]="!form.at(index).valid">Submit</button>
+      </formly-form>
+    </div>
+  </form>
+</div>

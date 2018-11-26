@@ -1,3 +1,5 @@
+@import '../../../../styles/variables';
+
 #preloader {
   position: fixed;
   top: 0;
@@ -6,6 +8,7 @@
   height: 100%;
   background: #222;
   opacity: 0.5;
+  z-index: $z-index-2;
 }
 #loader {
   display: block;
