@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { LoaderService } from './core/services/loader.service';
 
 @Component({
@@ -6,12 +6,8 @@ import { LoaderService } from './core/services/loader.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
-
-  constructor( private loader: LoaderService ) {}
-
-  ngOnInit() {
-  }
+export class AppComponent {
+  constructor(private loader: LoaderService) {}
 
   onClick() {
     this.loader.display(true);

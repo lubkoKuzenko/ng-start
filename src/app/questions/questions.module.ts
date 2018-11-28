@@ -5,10 +5,7 @@ import { QuestionsRoutingModule } from './questions-routing.module';
 import { QuestionsComponent } from './questions.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    QuestionsRoutingModule
-  ],
+  imports: [CommonModule, QuestionsRoutingModule],
   declarations: [QuestionsComponent]
 })
-export class QuestionsModule { }
+export class QuestionsModule {}

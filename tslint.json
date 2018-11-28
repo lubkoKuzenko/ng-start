@@ -1,4 +1,13 @@
 {
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-prettier"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "src/*.d.ts"
+    ]
+  },
   "rulesDirectory": [
     "node_modules/codelyzer"
   ],
@@ -85,6 +94,9 @@
     "use-life-cycle-interface": true,
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
-    "directive-class-suffix": true
+    "directive-class-suffix": true,
+    "import-sources-order": "any",
+    "named-imports-order": "any",
+    "ordered-imports": false
   }
 }

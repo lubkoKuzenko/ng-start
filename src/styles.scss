@@ -1,6 +1,4 @@
-@charset "UTF-8";
-//The available tдhemes are: indigo-pink, deeppurple-amber, purple-green and pink-bluegrey.
-
+//The available themes are: indigo-pink, deeppurple-amber, purple-green and pink-bluegrey.
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
 @import '~bootstrap/scss/functions';
@@ -12,23 +10,19 @@
 
 @import '~bootstrap/scss/nav';
 @import '~bootstrap/scss/navbar';
-@import '~bootstrap/scss/breadcrumb';
-@import '~bootstrap/scss/badge';
-@import '~perfect-scrollbar/css/perfect-scrollbar';
 @import 'styles/variables';
-
 
 html {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
 a {
   color: palette(blue, base);
-  transition: color .2s ease;
+  transition: color 0.2s ease;
 
   &:hover {
-    color: palette(gray, "900");
+    color: palette(gray, '900');
     text-decoration: none;
   }
 }
@@ -39,36 +33,21 @@ mat-icon {
   vertical-align: middle;
 }
 
-.breadcrumb {
-  position: relative;
-  border-radius: 0;
-  background: palette(gray, base);
-  border-bottom: 1px solid palette(gray, "100");
-
-  a {
-    color: palette(gray, "700");
-
-    &:hover {
-      color: palette(blue, base);
-    }
-  }
-}
-
 .app-footer {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   padding: 0 1rem;
-  color: palette(gray, "700");
+  color: palette(gray, '700');
   background: palette(gray, base);
-  border-top: 1px solid palette(gray, "100");
+  border-top: 1px solid palette(gray, '100');
 
-  flex: 0 0 50px
+  flex: 0 0 50px;
 }
 
 .main .container-fluid {
-  padding: 0 30px
+  padding: 0 30px;
 }
 
 header {
@@ -78,14 +57,14 @@ header {
   padding: 0;
   margin: 0;
   background-color: palette(white, base);
-  border-bottom: 1px solid palette(gray, "100");
+  border-bottom: 1px solid palette(gray, '100');
   flex: 0 0 55px;
 
   .nav-item {
     position: relative;
     min-width: 50px;
     margin: 0;
-    text-align: center
+    text-align: center;
   }
 }
 
@@ -99,42 +78,37 @@ header {
   img {
     height: auto;
   }
-
-  .navbar-brand-minimized {
-    display: none
-  }
 }
 
 .navbar-nav {
   flex-direction: row;
   align-items: center;
-  font-size: .8rem;
+  font-size: 0.8rem;
 
   .nav-link {
-    color: palette(gray, "300");
+    color: palette(gray, '300');
 
     &.active {
-      color: palette(gray, "900");
+      color: palette(gray, '900');
 
       &:hover,
       &:focus {
-        color: palette(blue, base)
+        color: palette(blue, base);
       }
     }
     &:focus,
     &:hover {
-      color: palette(gray, "900")
+      color: palette(gray, '900');
     }
   }
 }
 
 .sidebar {
-  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   padding: 0;
   color: palette(white, base);
-  background: palette(gray, "900");
+  background: palette(gray, '900');
 
   .mat-icon {
     line-height: 24px;
@@ -142,67 +116,67 @@ header {
   }
 
   .nav {
-     width: 200px;
-     -ms-flex-direction: column;
-     flex-direction: column;
-     min-height: 100%;
-     padding: 0
+    width: 200px;
+    flex-direction: column;
+    min-height: 100%;
+    padding: 0;
   }
 
   .nav-title {
-    padding: .75rem 1rem;
+    padding: 0.92rem 1rem;
     font-size: 80%;
     font-weight: 700;
-    color: palette(gray, "100");
-    text-transform: uppercase
+    color: palette(gray, '200');
+    text-transform: uppercase;
+    background: palette(gray, '800');
   }
 
   .nav-item {
     position: relative;
     margin: 0;
-    transition: background .3s ease-in-out
+    transition: background 0.3s ease-in-out;
   }
 
   .nav-link {
     display: block;
-    padding: .75rem 1rem;
+    padding: 0.75rem 1rem;
     color: palette(white, base);
     text-decoration: none;
     background: 0 0;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
 
     .nav-icon {
       display: inline-block;
       width: 1.09375rem;
-      margin: 0 .5rem 0 0;
-      font-size: .875rem;
-      color: palette(gray, "300");
-      text-align: center
+      margin: 0 0.5rem 0 0;
+      font-size: 0.875rem;
+      color: palette(gray, '300');
+      text-align: center;
     }
 
     &.active {
       color: palette(white, base);
-      background: palette(gray, "700");
 
       .nav-icon {
-        color: palette(green, base)
+        color: palette(green, base);
       }
     }
 
     &:hover {
       color: palette(white, base);
-      background: palette(green, base);
+      background: rgba(palette(gray, '700'), 0.2);
 
       .nav-icon {
-        color: palette(white, base)
+        color: palette(green, base);
       }
     }
 
     .badge {
       position: absolute;
       right: 1rem;
-      top: -.3rem;
+      top: -0.3rem;
       background-color: palette(orange, base);
+      font-size: 0.65rem;
     }
   }
 }
@@ -213,11 +187,11 @@ header {
   flex: 1;
   overflow-x: hidden;
   overflow-y: auto;
-  width: 200px
+  width: 200px;
 }
 
 .sidebar-lg-show.sidebar-fixed .app-footer {
-  margin-left:200px
+  margin-left: 200px;
 }
 
 .sidebar-lg-show.sidebar-fixed .app-footer,
@@ -230,7 +204,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   flex-direction: column;
-  min-height: 100vh
+  min-height: 100vh;
 }
 
 .app-body {
@@ -242,16 +216,15 @@ header {
 
   .main {
     flex: 1;
-    min-width: 0
+    min-width: 0;
   }
 
   .aside-menu {
-    flex: 0 0 250px
+    flex: 0 0 250px;
   }
 }
 
 .header-fixed {
-
   header {
     position: fixed;
     z-index: 1020;
@@ -259,7 +232,7 @@ header {
   }
 
   .app-body {
-    margin-top: 55px
+    margin-top: 55px;
   }
 }
 
@@ -267,9 +240,9 @@ header {
   position: fixed;
   z-index: 1019;
   width: 200px;
-  height: 100vh
+  height: 100vh;
 }
 
-.sidebar-fixed header+.app-body .sidebar {
-  height: calc(100vh - 55px)
+.sidebar-fixed header + .app-body .sidebar {
+  height: calc(100vh - 55px);
 }

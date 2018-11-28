@@ -5,10 +5,7 @@ import { UsersRoutingModule } from './users-routing.module';
 import { UsersComponent } from './users.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    UsersRoutingModule
-  ],
+  imports: [CommonModule, UsersRoutingModule],
   declarations: [UsersComponent]
 })
-export class UsersModule { }
+export class UsersModule {}
