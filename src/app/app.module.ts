@@ -8,10 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { DashboardModule } from './dashboard/dashboard.module';
-import { QuestionsModule } from './questions/questions.module';
-import { DocumentationModule } from './documentation/documentation.module';
-import { SettingsModule } from './settings/settings.module';
 import { UsersModule } from './users/users.module';
+import { BuilderModule } from './builder/builder.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -24,10 +22,8 @@ import { UsersModule } from './users/users.module';
 
     // features
     DashboardModule,
-    QuestionsModule,
-    DocumentationModule,
-    SettingsModule,
     UsersModule,
+    BuilderModule,
 
     // app
     AppRoutingModule
