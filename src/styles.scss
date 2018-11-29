@@ -15,35 +15,112 @@
 html {
   display: flex;
   flex-direction: column;
+  font-family: $base-font-family;
+
+  font-size: $base-font-size; //?
 }
 
-a {
+body {
+  background: palette(gray, light);
+}
+
+a,
+.btn-link {
+  display: inline-block;
   color: palette(blue, base);
   transition: color 0.2s ease;
 
   &:hover {
-    color: palette(gray, '900');
+    color: palette(gray, dark);
     text-decoration: none;
   }
+}
+
+//TYPOGRAPHY
+h1 {
+  font-size: 3.5714285714285716rem;
+}
+h2 {
+  font-size: 2.857142857142857rem;
+}
+h3 {
+  font-size: 1.4285714285714286rem;
+}
+h4,
+h5 {
+  font-weight: 600;
+}
+h4 {
+  font-size: 1.2857142857142858rem;
+}
+
+h5 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h6 {
+  font-size: 0.8571428571428571rem;
+  font-weight: 300;
+}
+
+p {
+  line-height: 1.65;
+}
+
+.lead,
+p.lead {
+  line-height: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.4285714285714286rem;
+}
+
+mark,
+.mark {
+  text-transform: uppercase;
+  color: palette(white, base);
+  border-radius: 2px;
+  padding: 0 4px;
+  font-weight: 700;
+  background: palette(green, primary);
+}
+
+dl {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dt,
+dd {
+  line-height: 1.5;
+}
+
+dd {
+  margin-left: 0;
+}
+
+//HELPERS
+.bg-wrapper {
+  background: palette(white, base);
+  box-shadow: $box-shadow;
+}
+
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid palette(gray, light);
 }
 
 mat-icon {
   display: inline-block;
   margin-top: -2px;
   vertical-align: middle;
-}
-
-.app-footer {
-  display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 0 1rem;
-  color: palette(gray, '700');
-  background: palette(gray, base);
-  border-top: 1px solid palette(gray, '100');
-
-  flex: 0 0 50px;
 }
 
 .main .container-fluid {
@@ -56,8 +133,8 @@ header {
   height: 55px;
   padding: 0;
   margin: 0;
-  background-color: palette(white, base);
-  border-bottom: 1px solid palette(gray, '100');
+  background-color: palette(gray, dark);
+  color: palette(white, base);
   flex: 0 0 55px;
 
   .nav-item {
@@ -69,14 +146,14 @@ header {
 }
 
 .navbar-brand {
-  min-width: 150px;
+  width: 200px;
 
   a {
     vertical-align: 0.1875rem;
   }
 
   img {
-    height: auto;
+    max-width: 100%;
   }
 }
 
@@ -86,19 +163,20 @@ header {
   font-size: 0.8rem;
 
   .nav-link {
-    color: palette(gray, '300');
+    color: palette(white, base);
+
+    &:focus,
+    &:hover {
+      color: palette(green, light);
+    }
 
     &.active {
-      color: palette(gray, '900');
+      color: palette(green, light);
 
       &:hover,
       &:focus {
         color: palette(blue, base);
       }
-    }
-    &:focus,
-    &:hover {
-      color: palette(gray, '900');
     }
   }
 }
@@ -106,9 +184,17 @@ header {
 .sidebar {
   display: flex;
   flex-direction: column;
-  padding: 0;
-  color: palette(white, base);
-  background: palette(gray, '900');
+  z-index: 1019;
+  width: 200px;
+  margin: 1rem;
+  height: calc(100vh - 55px - 2rem);
+
+  .bg-wrapper {
+    position: relative;
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
 
   .mat-icon {
     line-height: 24px;
@@ -126,23 +212,23 @@ header {
     padding: 0.92rem 1rem;
     font-size: 80%;
     font-weight: 700;
-    color: palette(gray, '200');
     text-transform: uppercase;
-    background: palette(gray, '800');
+    color: palette(gray, dark);
+    border-bottom: 2px solid palette(green, primary);
+    border-top: 1px solid palette(gray, light);
   }
 
   .nav-item {
     position: relative;
     margin: 0;
-    transition: background 0.3s ease-in-out;
+    border-bottom: 1px solid palette(gray, light);
   }
 
   .nav-link {
     display: block;
     padding: 0.75rem 1rem;
-    color: palette(white, base);
+    color: palette(gray, base);
     text-decoration: none;
-    background: 0 0;
     transition: all 0.2s ease;
 
     .nav-icon {
@@ -150,21 +236,13 @@ header {
       width: 1.09375rem;
       margin: 0 0.5rem 0 0;
       font-size: 0.875rem;
-      color: palette(gray, '300');
+      color: palette(gray, dark);
       text-align: center;
     }
 
+    &:hover,
     &.active {
-      color: palette(white, base);
-
-      .nav-icon {
-        color: palette(green, base);
-      }
-    }
-
-    &:hover {
-      color: palette(white, base);
-      background: rgba(palette(gray, '700'), 0.2);
+      background: palette(gray, light);
 
       .nav-icon {
         color: palette(green, base);
@@ -181,34 +259,14 @@ header {
   }
 }
 
-.sidebar-nav {
-  position: relative;
-  -ms-flex: 1;
-  flex: 1;
-  overflow-x: hidden;
-  overflow-y: auto;
-  width: 200px;
-}
-
-.sidebar-lg-show.sidebar-fixed .app-footer {
-  margin-left: 200px;
-}
-
-.sidebar-lg-show.sidebar-fixed .app-footer,
-.sidebar-lg-show.sidebar-fixed .main {
-  margin-left: 200px;
-}
-
 .app,
 .dashboard {
-  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
 .app-body {
-  display: -ms-flexbox;
   display: flex;
   flex-direction: row;
   flex-grow: 1;
@@ -234,15 +292,4 @@ header {
   .app-body {
     margin-top: 55px;
   }
-}
-
-.sidebar-fixed .sidebar {
-  position: fixed;
-  z-index: 1019;
-  width: 200px;
-  height: 100vh;
-}
-
-.sidebar-fixed header + .app-body .sidebar {
-  height: calc(100vh - 55px);
 }
