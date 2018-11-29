@@ -2,23 +2,39 @@
 
 <div class="app header-fixed sidebar-lg-show sidebar-fixed aside-menu-fixed">
   <div class="dashboard">
-
     <!-- HEADER -->
-    <header class="app-header navbar">
+    <header class="app-header navbar py-0">
       <span class="navbar-brand">
         <a href="/">
-          <img class="navbar-brand-full" src="../assets/binck-logo_header.png" width="89" height="25" alt="BinckBank">
+          <img
+            class="navbar-brand-full"
+            src="../assets/binck-logo_header.svg"
+            height="25"
+            alt="BinckBank"
+          />
         </a>
       </span>
       <ul class="nav navbar-nav d-md-down-none">
-        <li class="nav-item px-3">
-          <a class="nav-link" routerLinkActive="active" routerLink="/dashboard">Dashboard</a>
+        <li class="nav-item">
+          <a
+            class="nav-link px-3"
+            routerLinkActive="active"
+            routerLink="/dashboard"
+            >Dashboard</a
+          >
         </li>
-        <li class="nav-item px-3">
-          <a class="nav-link" routerLinkActive="active" routerLink="/users">Users</a>
+        <li class="nav-item">
+          <a
+            class="nav-link px-3"
+            routerLinkActive="active"
+            routerLink="/builder"
+            >Builder</a
+          >
         </li>
-        <li class="nav-item px-3">
-          <a class="nav-link" routerLinkActive="active" routerLink="/settings">Settings</a>
+        <li class="nav-item">
+          <a class="nav-link px-3" routerLinkActive="active" routerLink="/users"
+            >Users</a
+          >
         </li>
       </ul>
       <div class="nav navbar-nav ml-auto">
@@ -27,57 +43,27 @@
         </button>
 
         <mat-menu x-position="before" #menu="matMenu">
-          <a class="nav-link" routerLinkActive="active" routerLink="/dashboard">Dashboard</a>
-          <a class="nav-link" routerLinkActive="active" routerLink="/users">Users</a>
-          <a class="nav-link" routerLinkActive="active" routerLink="/settings">Settings</a>
+          <a class="nav-link" routerLinkActive="active" routerLink="/dashboard"
+            >Dashboard</a
+          >
+          <a class="nav-link" routerLinkActive="active" routerLink="/users"
+            >Users</a
+          >
+          <a class="nav-link" routerLinkActive="active" routerLink="/settings"
+            >Settings</a
+          >
         </mat-menu>
       </div>
     </header>
 
     <!-- MAIN -->
     <section class="app-body">
-      <aside class="sidebar">
-        <div class="sidebar-nav ps ps--active-y" role="nav">
-          <ul class="nav">
-            <li class="nav-title">General</li>
-            <li class="nav-item">
-              <a routerLinkActive="active" class="nav-link" routerLink="/dashboard">
-                <mat-icon class="nav-icon">dashboard</mat-icon>
-                Dashboard
-              </a>
-            </li>
-            <li class="nav-item">
-              <a routerLink="/documentation" routerLinkActive="active" class="nav-link">
-                <mat-icon class="nav-icon">reorder</mat-icon>
-                Documentation
-              </a>
-            </li>
-            <li class="nav-item">
-              <a routerLink="/settings" routerLinkActive="active" class="nav-link">
-                <mat-icon class="nav-icon">settings</mat-icon>
-                Settings
-              </a>
-            </li>
-            <li class="nav-title">functional</li>
-            <li class="nav-item">
-              <a routerLink="/questions" routerLinkActive="active" class="nav-link">
-                <mat-icon class="nav-icon">contact_support</mat-icon>
-                Questions
-              </a>
-            </li>
-          </ul>
-
-        </div>
-      </aside>
-
-
       <main class="main">
-        <div class="fluid-container pt-3 pl-3">
+        <div class="fluid-container p-3">
           <router-outlet></router-outlet>
 
-          <button (click)='onClick()'>loader</button>
+          <button (click)="onClick()">loader</button>
         </div>
-
       </main>
     </section>
   </div>

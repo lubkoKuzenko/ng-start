@@ -10,13 +10,13 @@ import {
 @Directive({ selector: '[bbUnderline]' })
 
 /*
-    *element-name: select by element name.
-    *.class: select by class name.
-    *[attribute]: select by attribute name.
-    *[attribute=value]: select by attribute name and value.
-    *:not(sub_selector): select only if the element does not match the sub_selector.
-    *selector1, selector2: select if either selector1 or selector2 matches.
-*/
+ *element-name: select by element name.
+ *.class: select by class name.
+ *[attribute]: select by attribute name.
+ *[attribute=value]: select by attribute name and value.
+ *:not(sub_selector): select only if the element does not match the sub_selector.
+ *selector1, selector2: select if either selector1 or selector2 matches.
+ */
 
 // Directive class
 export class UnderlineDirective {

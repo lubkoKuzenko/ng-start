@@ -14,34 +14,40 @@ $palettes: (
     base: #000000
   ),
   gray: (
-    base: #f2f2f2,
-    '100': #e0e0e0,
-    '200': #c0c0c0,
-    '300': #999999,
-    '700': #686868,
-    '800': #454545,
-    '900': #303030
-  ),
-  red: (
-    base: #ff0000
+    light: #f2f2f2,
+    base: #686868,
+    dark: #303030
   ),
   orange: (
-    base: #f7941d
-  ),
-  green: (
-    base: #8cd600
+    light: #f8a036,
+    base: #f7941d,
+    dark: #f28809
   ),
   blue: (
-    base: #468ccb
+    light: #5a98d1,
+    base: #468ccb,
+    dark: #367fc1
+  ),
+  green: (
+    primary: #8cd600,
+    light: #77b300,
+    base: #669900,
+    dark: #77b300
+  ),
+  red: (
+    light: #ee002b,
+    base: #d40026,
+    dark: #bb0021
   )
 );
-
 // @see https://twitter.com/thecodezombie/status/595977653296996354/photo/1
 @function palette($palette, $tone: 'base') {
   @return map-get(map-get($palettes, $palette), $tone);
 }
-
 // other
-$base-font-size: 16px !default;
-
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-size: 14px !default;
+$larger-font-size: 2rem;
+$smaller-font-size: 0.6428571428571429rem;
 $transition-time: 0.3s;
+$box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
