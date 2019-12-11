@@ -4,56 +4,21 @@
   <div class="dashboard">
     <!-- HEADER -->
     <header class="app-header navbar py-0">
-      <span class="navbar-brand">
-        <a href="/">
-          <img
-            class="navbar-brand-full"
-            src="../assets/binck-logo_header.svg"
-            height="25"
-            alt="BinckBank"
-          />
-        </a>
-      </span>
-      <ul class="nav navbar-nav d-md-down-none">
+      <ul class="nav navbar-nav">
         <li class="nav-item">
-          <a
-            class="nav-link px-3"
-            routerLinkActive="active"
-            routerLink="/dashboard"
-            >Dashboard</a
-          >
+          <a class="nav-link px-3" routerLinkActive="active" routerLink="/" [routerLinkActiveOptions]="{exact:
+            true}">HOME</a>
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link px-3"
-            routerLinkActive="active"
-            routerLink="/builder"
-            >Builder</a
-          >
+          <a class="nav-link px-3" routerLinkActive="active" routerLink="/dashboard">Dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-3" routerLinkActive="active" routerLink="/users"
-            >Users</a
-          >
+          <a class="nav-link px-3" routerLinkActive="active" routerLink="/builder">Builder</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" routerLinkActive="active" routerLink="/users">Users</a>
         </li>
       </ul>
-      <div class="nav navbar-nav ml-auto">
-        <button mat-icon-button [mat-menu-trigger-for]="menu">
-          <mat-icon>more_vert</mat-icon>
-        </button>
-
-        <mat-menu x-position="before" #menu="matMenu">
-          <a class="nav-link" routerLinkActive="active" routerLink="/dashboard"
-            >Dashboard</a
-          >
-          <a class="nav-link" routerLinkActive="active" routerLink="/users"
-            >Users</a
-          >
-          <a class="nav-link" routerLinkActive="active" routerLink="/settings"
-            >Settings</a
-          >
-        </mat-menu>
-      </div>
     </header>
 
     <!-- MAIN -->
