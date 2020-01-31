@@ -18,6 +18,9 @@
         <li class="nav-item">
           <a class="nav-link px-3" routerLinkActive="active" routerLink="/users">Users</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" routerLinkActive="active" routerLink="/highcharts">Highcharts</a>
+        </li>
       </ul>
     </header>
 
@@ -25,9 +28,8 @@
     <section class="app-body">
       <main class="main">
         <div class="fluid-container p-3">
-          <router-outlet></router-outlet>
-
           <button (click)="onClick()">loader</button>
+          <router-outlet></router-outlet>
         </div>
       </main>
     </section>

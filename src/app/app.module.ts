@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
 import { CoreModule } from './core';
 import { SharedModule } from './shared';
@@ -10,13 +9,11 @@ import { AppComponent } from './app.component';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { UsersModule } from './users/users.module';
 import { BuilderModule } from './builder/builder.module';
+import { HighchartsModule } from './highcharts/highcharts.module';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
-    BrowserModule,
-
-    // core & shared
     CoreModule,
     SharedModule,
 
@@ -24,6 +21,7 @@ import { BuilderModule } from './builder/builder.module';
     DashboardModule,
     UsersModule,
     BuilderModule,
+    HighchartsModule,
 
     // app
     AppRoutingModule
