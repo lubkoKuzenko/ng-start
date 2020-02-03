@@ -1,3 +1,14 @@
 <section class="bg-wrapper p-3">
-  it works
+  <h1>Range Slider</h1>
+  <mat-slider
+    [max]="100"
+    [min]="0"
+    [step]="1"
+    thumbLabel
+    (input)="onInputChange($event)"
+  ></mat-slider>
+
+  Value: {{ value$ | async }}
+  <br />
+  Data: {{ data$ | async | json }} Products: {{ products$ | async | json }}
 </section>

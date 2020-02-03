@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./level-two.component.scss']
 })
 export class LevelTwoComponent implements OnInit {
+  secondLevel: any;
   constructor() {}
 
   ngOnInit() {}

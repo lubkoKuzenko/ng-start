@@ -4,11 +4,10 @@
   level-two works!
 </h2>
 
-2-{{propertyToProvide?propertyToProvide:'NONE'}} {{secondLevel}}
+2 - {{ secondLevel }}
 
 <ng-template contextDisposer="form" let-control="form">
   <input *ngIf="control" [formControl]="control.controls.lastName" />
 </ng-template>
-
 
 <bb-level-three></bb-level-three>

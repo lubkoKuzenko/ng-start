@@ -1,10 +1,10 @@
-<context-consumer consume="firstLevel propertyToProvide"></context-consumer>
+<context-consumer consume="firstLevel"></context-consumer>
 
 <h1>
   level-one works!
 </h1>
 
-1-{{propertyToProvide?propertyToProvide:'NONE'}} = {{firstLevel}}
+1 = {{ firstLevel }}
 
 <ng-template contextDisposer="form" let-control="form">
   <input *ngIf="control" [formControl]="control.controls.firstName" />
