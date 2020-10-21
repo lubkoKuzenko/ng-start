@@ -1,6 +1,6 @@
 import { BehaviorSubject, combineLatest } from 'rxjs';
 import { Component } from '@angular/core';
-import { MatSliderChange } from '@angular/material';
+import { MatSliderChange } from '@angular/material/slider';
 import { map } from 'rxjs/operators';
 
 @Component({
