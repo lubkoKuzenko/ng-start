@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
 import { Observable, throwError } from 'rxjs';
 import { tap, catchError } from 'rxjs/operators';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class HeroService {
   private heroesUrl = 'api/heroes';
 
-  constructor(private http: Http) {}
+  constructor(private http: HttpClient) {}
 
   getHeroes(): Observable<any> {
     return this.http.get(this.heroesUrl).pipe(catchError(this.handleError));
