@@ -1,9 +1,9 @@
 import {
   Directive,
   ElementRef,
-  Renderer,
   HostListener,
-  HostBinding
+  HostBinding,
+  Renderer2
 } from '@angular/core';
 
 // Annotation section
@@ -22,7 +22,7 @@ import {
 export class UnderlineDirective {
   // for input params
   // @Input() my: boolean;
-  constructor(private el: ElementRef, private renderer: Renderer) {}
+  constructor(private el: ElementRef, private renderer: Renderer2) {}
 
   // HostBinding - will bind property to host element, If a binding changes, HostBinding will update the host element.
   // @HostBinding('style.backgroundColor')
@@ -41,17 +41,13 @@ export class UnderlineDirective {
 
   hover(shouldUnderline: boolean) {
     if (shouldUnderline) {
-      this.renderer.setElementStyle(
+      this.renderer.setStyle(
         this.el.nativeElement,
         'text-decoration',
         'underline'
       );
     } else {
-      this.renderer.setElementStyle(
-        this.el.nativeElement,
-        'text-decoration',
-        'none'
-      );
+      this.renderer.setStyle(this.el.nativeElement, 'text-decoration', 'none');
     }
   }
 }
