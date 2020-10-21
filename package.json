@@ -43,7 +43,6 @@
     "@angular/compiler-cli": "^10.1.6",
     "@angular/language-service": "^10.1.6",
     "@compodoc/compodoc": "^1.1.11",
-    "@ngrx/schematics": "^6.1.2",
     "@types/jasmine": "^2.8.17",
     "@types/jasminewd2": "^2.0.8",
     "@types/node": "^12.11.1",
