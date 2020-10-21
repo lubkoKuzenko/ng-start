@@ -8,6 +8,7 @@ import * as fromPipes from './pipes';
 import * as fromComponents from './components';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ValidationModule } from './validation/validation.module';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     ReactiveFormsModule,
     MaterialModule,
+    ValidationModule,
     BrowserModule,
     BrowserAnimationsModule
   ],
@@ -29,6 +31,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     ReactiveFormsModule,
     MaterialModule,
+    ValidationModule,
     ...fromDirectives.directives,
     ...fromPipes.pipes,
     ...fromComponents.components
