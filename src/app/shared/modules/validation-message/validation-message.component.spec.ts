@@ -1,5 +1,5 @@
 /* tslint:disable:no-unused-variable */
-import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { ComponentFixture, TestBed, waitForAsync } from "@angular/core/testing";
 import { FormControl } from "@angular/forms";
 
 import { ValidationMessageComponent } from "./validation-message.component";
@@ -9,12 +9,14 @@ describe("[VALIDATION] ValidationMessageComponent", () => {
   let component: ValidationMessageComponent;
   let fixture: ComponentFixture<ValidationMessageComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      imports: [],
-      declarations: [ValidationMessageComponent, FormatErrorMessagePipe],
-    }).compileComponents();
-  }));
+  beforeEach(
+    waitForAsync(() => {
+      TestBed.configureTestingModule({
+        imports: [],
+        declarations: [ValidationMessageComponent, FormatErrorMessagePipe],
+      }).compileComponents();
+    }),
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(ValidationMessageComponent);
