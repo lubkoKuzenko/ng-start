@@ -7,4 +7,5 @@ import { of } from "rxjs";
 })
 export class FormsComponent {
   public basicForm$ = of({ firstName: "firstName", lastName: "lastName" });
+  public customFieldForm$ = of({ counter: 2 });
 }

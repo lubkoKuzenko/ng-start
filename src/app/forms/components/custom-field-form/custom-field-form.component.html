@@ -1,0 +1,21 @@
+<h2>Inside Form</h2>
+<form [formGroup]="form">
+  <p>Control value: {{ form.controls.counter.value }}</p>
+  <p>Min Value: {{ minValue }}</p>
+  <p>Max Value: {{ maxValue }}</p>
+  <p>Form Value:</p>
+  <pre>{{ form.value | json }}</pre>
+
+  <bb-counter-input
+    formControlName="counter"
+    [counterRangeMax]="maxValue"
+    [counterRangeMin]="minValue"
+    [counterValue]="50"
+  ></bb-counter-input>
+</form>
+<p *ngIf="!form.valid">Form is invalid!</p>
+
+<h2>Standalone</h2>
+<bb-counter-input counterMinValue="0" counterMaxValue="3" [counterValue]="data.counter"></bb-counter-input>
+
+<button (click)="onSubmit()">Submit form</button>
