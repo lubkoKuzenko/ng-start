@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, ChangeDetectionStrategy } from "@angular/core";
 import { FormGroup, FormControl, Validators } from "@angular/forms";
-import { FormsService } from "../../services/forms.service";
+import { FormsService } from "../../../services/forms.service";
 
 @Component({
   selector: "bb-form-general",

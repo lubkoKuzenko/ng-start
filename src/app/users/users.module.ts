@@ -1,11 +1,11 @@
-import { NgModule } from '@angular/core';
-import { SharedModule } from './../shared/shared.module';
+import { NgModule } from "@angular/core";
+import { SharedModule } from "./../shared/shared.module";
 
-import { UsersRoutingModule } from './users-routing.module';
-import { UsersContainerComponent } from './users-container/users-container.component';
+import { UsersRoutingModule } from "./users-routing.module";
+import { UsersContainersModule } from "./containers/containers.module";
 
 @NgModule({
-  imports: [SharedModule, UsersRoutingModule],
-  declarations: [UsersContainerComponent]
+  imports: [SharedModule, UsersContainersModule, UsersRoutingModule],
+  declarations: [],
 })
 export class UsersModule {}
