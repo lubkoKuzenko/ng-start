@@ -1,4 +1,4 @@
-import { Component, forwardRef, Input, Provider } from "@angular/core";
+import { Component, forwardRef, Input, Provider, ChangeDetectionStrategy } from "@angular/core";
 import { NG_VALUE_ACCESSOR, ControlValueAccessor, FormControl, NG_VALIDATORS } from "@angular/forms";
 
 export const COUNTER_VALUE_ACCESSOR: Provider = [
@@ -29,6 +29,7 @@ export function createCounterRangeValidator(maxValue, minValue) {
   templateUrl: "./counter-input.component.html",
   styleUrls: ["./counter-input.component.scss"],
   providers: [...COUNTER_VALUE_ACCESSOR],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CounterInputComponent implements ControlValueAccessor {
   @Input("counterValue") _counterValue = 0;

@@ -1,10 +1,11 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, OnInit, Input, ChangeDetectionStrategy } from "@angular/core";
 import { FormGroup, FormControl, Validators } from "@angular/forms";
 
 @Component({
   selector: "bb-basic-form",
   templateUrl: "./basic-form.component.html",
   styleUrls: ["./basic-form.component.scss"],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BasicFormComponent implements OnInit {
   @Input() public data;

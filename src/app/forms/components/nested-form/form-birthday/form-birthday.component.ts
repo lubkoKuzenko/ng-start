@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, OnInit, Input, ChangeDetectionStrategy } from "@angular/core";
 import { FormGroup, FormControl, Validators } from "@angular/forms";
 import { FormsService } from "../../services/forms.service";
 
@@ -6,6 +6,7 @@ import { FormsService } from "../../services/forms.service";
   selector: "bb-form-birthday",
   templateUrl: "./form-birthday.component.html",
   styleUrls: ["./form-birthday.component.scss"],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FormBirthdayComponent implements OnInit {
   @Input() public parentForm!: FormGroup;
