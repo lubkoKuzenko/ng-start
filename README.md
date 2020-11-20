@@ -1,4 +1,4 @@
-# Angular 7 Project
+# Angular 11 Project
 
 ## Development server
 
@@ -12,3 +12,7 @@ Use the `ng build --prod --aot --build-optimizer --vendor-chunk` for more optimi
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Documentation
+
+Visit - https://github.com/lubkoKuzenko/angular-clean-code
