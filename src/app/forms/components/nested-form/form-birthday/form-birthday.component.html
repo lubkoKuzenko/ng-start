@@ -1,0 +1,9 @@
+<ng-container [formGroup]="form">
+  <div class="row">
+    <div class="col-12">
+      <label>birthDate</label>
+      <input type="date" formControlName="birthDate" />
+      <l9-validation-message [control]="controls.birthDate"></l9-validation-message>
+    </div>
+  </div>
+</ng-container>

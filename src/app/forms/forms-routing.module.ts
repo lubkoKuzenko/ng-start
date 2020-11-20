@@ -1,11 +1,12 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
-import { DashboardComponent } from "./+dashboard/dashboard.component";
+
+import { FormsComponent } from "./containers/forms/forms.component";
 
 const routes: Routes = [
   {
-    path: "dashboard",
-    component: DashboardComponent,
+    path: "forms",
+    component: FormsComponent,
     data: {
       noReuse: true,
     },
@@ -16,4 +17,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class DashboardRoutingModule {}
+export class FormsRoutingModule {}

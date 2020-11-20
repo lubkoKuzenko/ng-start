@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-6">
+    <label>General:</label>
+    <bb-form-general [parentForm]="controls.general"></bb-form-general>
+  </div>
+  <div class="col-6">
+    <label>BirthDay:</label>
+    <bb-form-birthday [parentForm]="controls.birthDate"></bb-form-birthday>
+  </div>
+</div>
+
+<button (click)="onSubmit()">Submit form</button>

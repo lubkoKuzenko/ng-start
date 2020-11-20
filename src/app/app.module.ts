@@ -6,7 +6,7 @@ import { SharedModule } from "./shared/shared.module";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 
-import { DashboardModule } from "./dashboard/dashboard.module";
+import { FormsModule } from "./forms/forms.module";
 import { UsersModule } from "./users/users.module";
 import { BuilderModule } from "./builder/builder.module";
 import { HighchartsModule } from "./highcharts/highcharts.module";
@@ -20,7 +20,7 @@ import { CustomReuseStrategy } from "./core/services/router-reuse.strategy";
     SharedModule,
 
     // features
-    DashboardModule,
+    FormsModule,
     UsersModule,
     BuilderModule,
     HighchartsModule,
