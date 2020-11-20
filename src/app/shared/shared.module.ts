@@ -1,14 +1,14 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MaterialModule } from './material';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { MaterialModule } from "./modules/material.module";
 
-import * as fromDirectives from './directives';
-import * as fromPipes from './pipes';
-import * as fromComponents from './components';
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ValidationModule } from './validation/validation.module';
+import { SharedDirectivesModule } from "./directives/directives.module";
+import { SharedPipesModule } from "./pipes/pipes.module";
+import { SharedComponentsModule } from "./components/components.module";
+import { BrowserModule } from "@angular/platform-browser";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { ValidationMessageModule } from "./modules/validation-message/validation-message.module";
 
 @NgModule({
   imports: [
@@ -16,25 +16,28 @@ import { ValidationModule } from './validation/validation.module';
     FormsModule,
     ReactiveFormsModule,
     MaterialModule,
-    ValidationModule,
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
+    SharedComponentsModule,
+    SharedDirectivesModule,
+    SharedPipesModule,
+
+    ValidationMessageModule,
   ],
-  declarations: [
-    ...fromDirectives.directives,
-    ...fromPipes.pipes,
-    ...fromComponents.components
-  ],
+  declarations: [],
   providers: [],
   exports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     MaterialModule,
-    ValidationModule,
-    ...fromDirectives.directives,
-    ...fromPipes.pipes,
-    ...fromComponents.components
-  ]
+
+    SharedDirectivesModule,
+    SharedComponentsModule,
+    SharedPipesModule,
+
+    ValidationMessageModule,
+  ],
 })
 export class SharedModule {}

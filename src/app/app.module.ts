@@ -1,15 +1,15 @@
-import { NgModule } from '@angular/core';
+import { NgModule } from "@angular/core";
 
-import { CoreModule } from './core';
-import { SharedModule } from './shared';
+import { CoreModule } from "./core/core.module";
+import { SharedModule } from "./shared/shared.module";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
 
-import { DashboardModule } from './dashboard/dashboard.module';
-import { UsersModule } from './users/users.module';
-import { BuilderModule } from './builder/builder.module';
-import { HighchartsModule } from './highcharts/highcharts.module';
+import { DashboardModule } from "./dashboard/dashboard.module";
+import { UsersModule } from "./users/users.module";
+import { BuilderModule } from "./builder/builder.module";
+import { HighchartsModule } from "./highcharts/highcharts.module";
 
 @NgModule({
   declarations: [AppComponent],
@@ -24,9 +24,9 @@ import { HighchartsModule } from './highcharts/highcharts.module';
     HighchartsModule,
 
     // app
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,3 +1,11 @@
 <section class="bg-wrapper p-3">
   <div class="page-header"><h1>dash-container works!</h1></div>
+
+  <ng-container [formGroup]="form">
+    <input type="text" formControlName="firstName" />
+    <validation-message [control]="controls.firstName"></validation-message>
+
+    <input type="text" formControlName="lastName" />
+    <validation-message [control]="controls.lastName"></validation-message>
+  </ng-container>
 </section>
