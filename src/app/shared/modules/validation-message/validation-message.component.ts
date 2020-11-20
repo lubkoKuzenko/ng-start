@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, Input } from "@angular/core";
 import { FormControl } from "@angular/forms";
 
 @Component({
-  selector: "validation-message",
+  selector: "l9-validation-message",
   styleUrls: ["validation-message.component.scss"],
   templateUrl: "validation-message.component.html",
   changeDetection: ChangeDetectionStrategy.Default,

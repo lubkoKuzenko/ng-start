@@ -10,6 +10,8 @@ import { DashboardModule } from "./dashboard/dashboard.module";
 import { UsersModule } from "./users/users.module";
 import { BuilderModule } from "./builder/builder.module";
 import { HighchartsModule } from "./highcharts/highcharts.module";
+import { RouteReuseStrategy } from "@angular/router";
+import { CustomReuseStrategy } from "./core/services/router-reuse.strategy";
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,7 +28,7 @@ import { HighchartsModule } from "./highcharts/highcharts.module";
     // app
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [{ provide: RouteReuseStrategy, useClass: CustomReuseStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

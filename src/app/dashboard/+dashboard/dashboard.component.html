@@ -2,10 +2,16 @@
   <div class="page-header"><h1>dash-container works!</h1></div>
 
   <ng-container [formGroup]="form">
-    <input type="text" formControlName="firstName" />
-    <validation-message [control]="controls.firstName"></validation-message>
+    <div>
+      <label>first Name</label>
+      <input type="text" formControlName="firstName" />
+      <validation-message [control]="controls.firstName"></validation-message>
+    </div>
 
-    <input type="text" formControlName="lastName" />
-    <validation-message [control]="controls.lastName"></validation-message>
+    <div>
+      <label>last Name</label>
+      <input type="text" formControlName="lastName" />
+      <validation-message [control]="controls.lastName"></validation-message>
+    </div>
   </ng-container>
 </section>

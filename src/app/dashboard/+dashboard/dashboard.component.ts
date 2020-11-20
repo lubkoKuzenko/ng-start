@@ -7,12 +7,7 @@ import { FormGroup, FormControl, Validators } from "@angular/forms";
   styleUrls: ["./dashboard.component.scss"],
 })
 export class DashboardComponent implements OnInit {
-  propertyToProvide = ["one", "two", "three"];
-  firstLevel = "first";
-  secondLevel = "second";
-  thirdLevel = "third";
-
-  form = new FormGroup({
+  public form = new FormGroup({
     firstName: new FormControl("", [Validators.required, Validators.maxLength(3)]),
     lastName: new FormControl("", [Validators.required]),
   });
