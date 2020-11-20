@@ -1,4 +1,4 @@
-<h2>Inside Form</h2>
+<h3>Inside Form</h3>
 <form [formGroup]="form">
   <p>Control value: {{ form.controls.counter.value }}</p>
   <p>Min Value: {{ minValue }}</p>
@@ -10,12 +10,12 @@
     formControlName="counter"
     [counterRangeMax]="maxValue"
     [counterRangeMin]="minValue"
-    [counterValue]="50"
+    [counterValue]="7"
   ></bb-counter-input>
 </form>
 <p *ngIf="!form.valid">Form is invalid!</p>
 
-<h2>Standalone</h2>
+<h3>Standalone</h3>
 <bb-counter-input counterMinValue="0" counterMaxValue="3" [counterValue]="data.counter"></bb-counter-input>
 
 <button (click)="onSubmit()">Submit form</button>
