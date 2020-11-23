@@ -1,6 +1,6 @@
-import { Injectable, ErrorHandler, NgZone } from '@angular/core';
-import { HttpErrorResponse } from '@angular/common/http';
-import { MatSnackBar } from '@angular/material/snack-bar';
+import { Injectable, ErrorHandler, NgZone } from "@angular/core";
+import { HttpErrorResponse } from "@angular/common/http";
+import { MatSnackBar } from "@angular/material/snack-bar";
 
 @Injectable()
 export class AppErrorInterceptor extends ErrorHandler {
@@ -9,7 +9,7 @@ export class AppErrorInterceptor extends ErrorHandler {
   }
 
   handleError(error: Error | HttpErrorResponse) {
-    this.showNotification('An error occurred.', 'Close');
+    this.showNotification("An error occurred.", "Close");
     super.handleError(error);
   }
 
@@ -17,9 +17,9 @@ export class AppErrorInterceptor extends ErrorHandler {
     this.zone.run(() =>
       this.snackBar.open(message, action, {
         duration: 3000,
-        panelClass: 'error-notification-overlay',
-        verticalPosition: 'top'
-      })
+        panelClass: "error-notification-overlay",
+        verticalPosition: "top",
+      }),
     );
   }
 }

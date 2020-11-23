@@ -1,9 +1,10 @@
 import { NgModule, Optional, SkipSelf, ErrorHandler, APP_INITIALIZER } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
-import { TokenInterceptor } from "./http-interceptors/http-token.interceptor";
-import { AppErrorInterceptor } from "./http-interceptors/http-error.interseptor";
+import { TokenInterceptor } from "./interceptor/jwt-interceptor";
+import { AppErrorInterceptor } from "./interceptor/error-interceptor";
 import { AppInitService } from "./services/app-init.service";
+import { throwIfAlreadyLoaded } from "./guards/module-import-guard";
 
 export function initializerFactory(appConfig: AppInitService) {
   return (): Promise<any> => {
@@ -38,8 +39,6 @@ export class CoreModule {
     @SkipSelf()
     parentModule: CoreModule,
   ) {
-    if (parentModule) {
-      throw new Error("CoreModule is already loaded. Import only in AppModule");
-    }
+    throwIfAlreadyLoaded(parentModule, "CoreModule");
   }
 }
