@@ -27,7 +27,7 @@ export class DevicesComponent implements OnInit, OnDestroy {
     this.createComponent("green");
   }
 
-  private createComponent(type: string) {
+  public createComponent(type: string) {
     this.entry.clear();
     const factory = this.resolver.resolveComponentFactory(this.defineComponent(type));
     this.componentRef = this.entry.createComponent(factory);
