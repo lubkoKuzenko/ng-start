@@ -9,6 +9,7 @@ import { AppComponent } from "./app.component";
 import { FormsModule } from "./forms/forms.module";
 import { UsersModule } from "./users/users.module";
 import { DCModule } from "./dynamic-components/dc.module";
+import { RxjsModule } from "./rxjs/rxjs.module";
 
 import { RouteReuseStrategy } from "@angular/router";
 import { CustomReuseStrategy } from "./core/services/router-reuse.strategy";
@@ -23,6 +24,7 @@ import { CustomReuseStrategy } from "./core/services/router-reuse.strategy";
     FormsModule,
     UsersModule,
     DCModule,
+    RxjsModule,
 
     // app
     AppRoutingModule,
