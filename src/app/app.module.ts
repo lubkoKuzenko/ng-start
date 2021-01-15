@@ -14,10 +14,15 @@ import { RxjsModule } from "./rxjs/rxjs.module";
 import { RouteReuseStrategy } from "@angular/router";
 import { CustomReuseStrategy } from "./core/services/router-reuse.strategy";
 
+const APP_CORE_CONFIG = {
+  defaultLang: "en",
+  appName: "NGX-Levi9",
+};
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
-    CoreModule,
+    CoreModule.forRoot(APP_CORE_CONFIG),
     SharedModule,
 
     // features
