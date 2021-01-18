@@ -36,13 +36,13 @@ export class TokenInterceptor implements HttpInterceptor {
     );
   }
 
-  onSuccess(event) {
+  onSuccess(event: HttpEvent<any>) {
     if (event instanceof HttpResponse) {
       // Intercepting HTTP responses
     }
   }
 
-  onError(error) {
+  onError(error: any) {
     if (error instanceof HttpErrorResponse) {
       console.log("%cHttp error message: " + error.message, this.logStyle);
     }

@@ -1,3 +1,3 @@
-<div id="preloader" [hidden]="!(loading$ | async)">
+<div id="preloader" [hidden]="(loading$ | async) === false">
   <div id="loader"></div>
 </div>

@@ -28,14 +28,14 @@ export class DynamicFormComponent {
     this.timeRangeControls.removeAt(i);
   }
 
+  public onSubmit() {
+    console.log(this.form.getRawValue());
+  }
+
   private singleRange() {
     return new FormGroup({
       startDate: new FormControl("", [Validators.required]),
       endDate: new FormControl("", [Validators.required]),
     });
-  }
-
-  public onSubmit() {
-    console.log(this.form.getRawValue());
   }
 }

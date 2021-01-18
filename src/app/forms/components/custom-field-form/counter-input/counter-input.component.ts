@@ -1,4 +1,12 @@
-import { Component, forwardRef, Input, Provider, ChangeDetectionStrategy } from "@angular/core";
+import {
+  Component,
+  forwardRef,
+  Input,
+  Provider,
+  ChangeDetectionStrategy,
+  OnChanges,
+  SimpleChanges,
+} from "@angular/core";
 import { NG_VALUE_ACCESSOR, ControlValueAccessor, FormControl, NG_VALIDATORS } from "@angular/forms";
 
 export const COUNTER_VALUE_ACCESSOR: Provider = [
@@ -10,9 +18,9 @@ export const COUNTER_VALUE_ACCESSOR: Provider = [
   { provide: NG_VALIDATORS, useExisting: forwardRef(() => CounterInputComponent), multi: true },
 ];
 
-export function createCounterRangeValidator(maxValue, minValue) {
+export function createCounterRangeValidator(maxValue: number, minValue: number) {
   return (c: FormControl) => {
-    let err = {
+    const err = {
       rangeError: {
         given: c.value,
         max: maxValue || 10,
@@ -31,7 +39,8 @@ export function createCounterRangeValidator(maxValue, minValue) {
   providers: [...COUNTER_VALUE_ACCESSOR],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CounterInputComponent implements ControlValueAccessor {
+export class CounterInputComponent implements OnChanges, ControlValueAccessor {
+  // tslint:disable-next-line:no-input-rename
   @Input("counterValue") _counterValue = 0;
   @Input() counterRangeMax;
   @Input() counterRangeMin;
@@ -43,24 +52,24 @@ export class CounterInputComponent implements ControlValueAccessor {
     return this._counterValue;
   }
 
-  set counterValue(val) {
+  set counterValue(val: number) {
     this._counterValue = val;
     this.propagateChange(val);
   }
 
-  public ngOnChanges(inputs) {
+  public ngOnChanges(inputs: SimpleChanges) {
     if (inputs.counterRangeMax || inputs.counterRangeMin) {
       this.validateFn = createCounterRangeValidator(this.counterRangeMax, this.counterRangeMin);
     }
   }
 
-  writeValue(value) {
+  writeValue(value: number) {
     if (value) {
       this.counterValue = value;
     }
   }
 
-  registerOnChange(fn) {
+  registerOnChange(fn: () => {}) {
     this.propagateChange = fn;
   }
 

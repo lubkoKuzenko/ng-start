@@ -18,7 +18,7 @@ import { GreenDeviceComponent } from "../../components/green-device/green-device
   styleUrls: ["./devices.component.scss"],
 })
 export class DevicesComponent implements OnInit, OnDestroy {
-  @ViewChild("dynamicLoadDevicesComponent", { read: ViewContainerRef, static: true }) private entry: ViewContainerRef;
+  @ViewChild("dynamicLoadDevicesComponent", { read: ViewContainerRef, static: true }) public entry: ViewContainerRef;
   componentRef: ComponentRef<any>;
 
   constructor(private resolver: ComponentFactoryResolver) {}
@@ -33,7 +33,7 @@ export class DevicesComponent implements OnInit, OnDestroy {
     this.componentRef = this.entry.createComponent(factory);
   }
 
-  public defineComponent(type) {
+  public defineComponent(type: string) {
     return {
       red: RedDeviceComponent,
       green: GreenDeviceComponent,

@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { trigger, transition, style, animate } from "@angular/animations";
 
 @Component({
@@ -12,8 +12,4 @@ import { trigger, transition, style, animate } from "@angular/animations";
     ]),
   ],
 })
-export class RedDeviceComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit() {}
-}
+export class RedDeviceComponent {}

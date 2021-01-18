@@ -4,7 +4,7 @@ import { By } from "@angular/platform-browser";
 
 @Component({
   template: `
-    <input type="text" name="txtnumericTest" numeric />
+    <input type="text" name="txtnumericTest" bbNumeric />
   `,
 })
 class TestNumericComponent {}

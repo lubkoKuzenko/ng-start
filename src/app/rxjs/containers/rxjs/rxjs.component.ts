@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
+import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from "@angular/core";
 import { timer, Observable, BehaviorSubject, of, concat, fromEvent } from "rxjs";
 import { TodosService } from "../../services/todos.service";
 import { ITodo } from "../../interfaces";
@@ -9,7 +9,7 @@ import { map, shareReplay, tap, concatMap, concatAll, mergeMap, exhaustMap, swit
   templateUrl: "./rxjs.component.html",
   styleUrls: ["./rxjs.component.scss"],
 })
-export class RxjsComponent implements OnInit {
+export class RxjsComponent implements OnInit, AfterViewInit {
   public completed$: Observable<ITodo[]>;
   public inProgress$: Observable<ITodo[]>;
 
@@ -35,6 +35,16 @@ export class RxjsComponent implements OnInit {
       .subscribe();
   }
 
+  public contactTwoIntoOne() {
+    const stream1$ = of(1, 2, 3);
+    const stream2$ = timer(0, 1000);
+    const stream3$ = of(4, 5, 6);
+
+    const result$ = concat(stream1$, stream2$, stream3$);
+
+    result$.subscribe(console.log);
+  }
+
   private simpleRxDefinition() {
     // create Observable
     const timer$ = timer(0, 1000);
@@ -57,15 +67,5 @@ export class RxjsComponent implements OnInit {
     this.inProgress$ = this.todosService
       .getTodos()
       .pipe(map((todos: ITodo[]) => todos.filter((todo: ITodo) => !todo.completed)));
-  }
-
-  public contactTwoIntoOne() {
-    const stream1$ = of(1, 2, 3);
-    const stream2$ = timer(0, 1000);
-    const stream3$ = of(4, 5, 6);
-
-    const result$ = concat(stream1$, stream2$, stream3$);
-
-    result$.subscribe(console.log);
   }
 }

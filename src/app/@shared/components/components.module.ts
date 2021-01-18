@@ -4,7 +4,7 @@ import { ReactiveFormsModule } from "@angular/forms";
 
 import { LoaderComponent } from "./loader/loader.component";
 
-export const SHARED_COMPONENTS: Array<Type<any>> = [LoaderComponent];
+export const SHARED_COMPONENTS: Type<any>[] = [LoaderComponent];
 
 @NgModule({
   imports: [CommonModule, ReactiveFormsModule],

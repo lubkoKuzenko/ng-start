@@ -14,7 +14,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 const APP_CORE_CONFIG = {
-  defaultLang: "en",
+  defaultLanguage: "en-US",
   appName: "NGX-Levi9",
 };
 

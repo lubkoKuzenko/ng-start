@@ -1,14 +1,16 @@
-import { NgModule, Optional, SkipSelf, ErrorHandler, APP_INITIALIZER, ModuleWithProviders } from "@angular/core";
-import { CommonModule } from "@angular/common";
+import { NgModule, Optional, SkipSelf, APP_INITIALIZER, ModuleWithProviders } from "@angular/core";
 import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
+import { CommonModule } from "@angular/common";
+import { RouteReuseStrategy } from "@angular/router";
+
+import { ErrorHandlerInterceptor } from "./interceptor/error-handler.interceptor";
 import { TokenInterceptor } from "./interceptor/jwt-interceptor";
-import { AppErrorInterceptor } from "./interceptor/error-interceptor";
 import { AppInitService } from "./services/app-init.service";
 import { throwIfAlreadyLoaded } from "./guards/module-import-guard";
+import { RouteReusableStrategy } from "./route-reusable-strategy";
+import { ApiPrefixInterceptor } from "./interceptor/api-prefix.interceptor";
 import { environment } from "src/environments/environment";
 import { APP_LANG, APP_NAME } from "./tokens";
-import { RouteReuseStrategy } from "@angular/router";
-import { RouteReusableStrategy } from "./route-reusable-strategy";
 
 export function initializerFactory(appConfig: AppInitService) {
   return (): Promise<any> => {
@@ -22,17 +24,22 @@ export function initializerFactory(appConfig: AppInitService) {
   providers: [],
 })
 export class CoreModule {
-  static forRoot(options: { defaultLang?: string; appName?: string }): ModuleWithProviders<CoreModule> {
+  static forRoot(options: { defaultLanguage?: string; appName?: string }): ModuleWithProviders<CoreModule> {
     return {
       ngModule: CoreModule,
       providers: [
         {
           provide: APP_LANG,
-          useValue: options.defaultLang || (environment as any).defaultLang || "en",
+          useValue: options.defaultLanguage || environment.defaultLanguage || "en-US",
         },
         {
           provide: APP_NAME,
-          useValue: options.appName || (environment as any).appName || "NGX-Levi9",
+          useValue: options.appName || environment.appName || "NGX-Levi9",
+        },
+        {
+          provide: HTTP_INTERCEPTORS,
+          useClass: ApiPrefixInterceptor,
+          multi: true,
         },
         {
           provide: HTTP_INTERCEPTORS,
@@ -40,8 +47,9 @@ export class CoreModule {
           multi: true,
         },
         {
-          provide: ErrorHandler,
-          useClass: AppErrorInterceptor,
+          provide: HTTP_INTERCEPTORS,
+          useClass: ErrorHandlerInterceptor,
+          multi: true,
         },
         {
           provide: RouteReuseStrategy,

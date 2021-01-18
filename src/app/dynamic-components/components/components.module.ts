@@ -5,7 +5,7 @@ import { RedDeviceComponent } from "./red-device/red-device.component";
 import { BlueDeviceComponent } from "./blue-device/blue-device.component";
 import { GreenDeviceComponent } from "./green-device/green-device.component";
 
-const dcComponents: Array<Type<any>> = [RedDeviceComponent, GreenDeviceComponent, BlueDeviceComponent];
+const dcComponents: Type<any>[] = [RedDeviceComponent, GreenDeviceComponent, BlueDeviceComponent];
 
 @NgModule({
   imports: [SharedModule],

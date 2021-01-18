@@ -1,23 +1,22 @@
 //The available themes are: indigo-pink, deeppurple-amber, purple-green and pink-bluegrey.
-@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/variables';
-@import '~bootstrap/scss/mixins';
-@import '~bootstrap/scss/reboot';
-@import '~bootstrap/scss/grid';
-@import '~bootstrap/scss/utilities';
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/utilities";
 
-@import '~bootstrap/scss/nav';
-@import '~bootstrap/scss/navbar';
-@import 'styles/variables';
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "styles/variables";
 
 html {
   display: flex;
   flex-direction: column;
   font-family: $base-font-family;
-
-  font-size: $base-font-size; //?
+  font-size: $base-font-size;
 }
 
 body {
