@@ -1,3 +1,5 @@
+/* stylelint-disable */
+
 @mixin font-smoothing($value: on) {
   @if $value == on {
     -moz-osx-font-smoothing: grayscale;
@@ -16,9 +18,11 @@
 
 @mixin ellipsis-multiline($font-size: 1rem, $line-height: 1, $lines-to-show: 2) {
   display: block;
+
   /* Fallback for non-webkit */
   display: -webkit-box;
   max-height: $font-size * $line-height * $lines-to-show;
+
   /* Fallback for non-webkit */
   font-size: $font-size;
   line-height: $line-height;
@@ -131,5 +135,5 @@
   background: -o-linear-gradient($degrees, $color-one 0%, $color-two 100%); /* opera 11.10+ */
   background: -ms-linear-gradient($degrees, $color-one 0%, $color-two 100%); /* ie10+ */
   background: linear-gradient($degrees, $color-one 0%, $color-two 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-one', endColorstr='$color-two',GradientType=1 ); /* ie6-9 */
+  filter: progid:dximagetransform.microsoft.gradient( startcolorstr='$color-one', endcolorstr='$color-two',gradienttype=1 ); /* ie6-9 */
 }

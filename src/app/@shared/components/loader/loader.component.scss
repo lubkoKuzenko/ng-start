@@ -1,3 +1,4 @@
+/* stylelint-disable */
 #preloader {
   position: fixed;
   top: 0;
@@ -7,6 +8,7 @@
   background: #222;
   opacity: 0.5;
 }
+
 #loader {
   display: block;
   position: relative;
@@ -19,30 +21,32 @@
   border: 3px solid transparent;
   border-top-color: #9370db;
   animation: spin 2s linear infinite;
-}
-#loader:before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #ba55d3;
-  animation: spin 3s linear infinite;
-}
-#loader:after {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: #ff00ff;
-  animation: spin 1.5s linear infinite;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #ba55d3;
+    animation: spin 3s linear infinite;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #f0f;
+    animation: spin 1.5s linear infinite;
+  }
 }
 @-webkit-keyframes spin {
   0% {
