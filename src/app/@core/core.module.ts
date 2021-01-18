@@ -7,6 +7,8 @@ import { AppInitService } from "./services/app-init.service";
 import { throwIfAlreadyLoaded } from "./guards/module-import-guard";
 import { environment } from "src/environments/environment";
 import { APP_LANG, APP_NAME } from "./tokens";
+import { RouteReuseStrategy } from "@angular/router";
+import { RouteReusableStrategy } from "./route-reusable-strategy";
 
 export function initializerFactory(appConfig: AppInitService) {
   return (): Promise<any> => {
@@ -40,6 +42,10 @@ export class CoreModule {
         {
           provide: ErrorHandler,
           useClass: AppErrorInterceptor,
+        },
+        {
+          provide: RouteReuseStrategy,
+          useClass: RouteReusableStrategy,
         },
         {
           provide: APP_INITIALIZER,

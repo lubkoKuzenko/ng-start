@@ -1,5 +1,5 @@
 import { NgModule, Type } from "@angular/core";
-import { SharedModule } from "../../shared/shared.module";
+import { SharedModule } from "@shared/shared.module";
 
 import { RedDeviceComponent } from "./red-device/red-device.component";
 import { BlueDeviceComponent } from "./blue-device/blue-device.component";

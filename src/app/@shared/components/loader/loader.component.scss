@@ -22,7 +22,7 @@
   animation: spin 2s linear infinite;
 }
 #loader:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 5px;
   left: 5px;
@@ -35,7 +35,7 @@
   animation: spin 3s linear infinite;
 }
 #loader:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 15px;
   left: 15px;

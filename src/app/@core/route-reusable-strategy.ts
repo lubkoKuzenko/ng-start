@@ -1,10 +1,12 @@
+import { ActivatedRouteSnapshot, DetachedRouteHandle, RouteReuseStrategy } from "@angular/router";
 import { Injectable } from "@angular/core";
-import { RouteReuseStrategy, ActivatedRouteSnapshot, DetachedRouteHandle } from "@angular/router";
+
 /**
- * Based on Angular `DefaultRouteReuseStrategy`.
- * Reuses routes as long as their route config is the same OR until future route data has pattribute `noReuse: true`
+ * A route strategy allowing for explicit route reuse.
+ * Used as a workaround for https://github.com/angular/angular/issues/18374
+ * To reuse a given route, add `data: { reuse: true }` to the route definition.
  *
- * @example ```json
+ * * @example ```json
  *   {
  *       path: "overview",
  *       component: OverviewComponent,
@@ -15,12 +17,12 @@ import { RouteReuseStrategy, ActivatedRouteSnapshot, DetachedRouteHandle } from 
  * ```
  */
 @Injectable()
-export class CustomReuseStrategy implements RouteReuseStrategy {
+export class RouteReusableStrategy extends RouteReuseStrategy {
   public shouldDetach(route: ActivatedRouteSnapshot): boolean {
     return false;
   }
 
-  public store(route: ActivatedRouteSnapshot, detachedTree: DetachedRouteHandle): void {}
+  public store(route: ActivatedRouteSnapshot, detachedTree: DetachedRouteHandle | null): void {}
 
   public shouldAttach(route: ActivatedRouteSnapshot): boolean {
     return false;
@@ -31,6 +33,8 @@ export class CustomReuseStrategy implements RouteReuseStrategy {
   }
 
   public shouldReuseRoute(future: ActivatedRouteSnapshot, curr: ActivatedRouteSnapshot): boolean {
+    // Reuse the route if the RouteConfig is the same, or if both routes use the
+    // same component, because the latter can have different RouteConfigs.
     if (future.data && Boolean(future.data.noReuse)) {
       return !future.data.noReuse;
     }

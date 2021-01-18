@@ -1,5 +1,5 @@
 import { NgModule, Type } from "@angular/core";
-import { SharedModule } from "../../shared/shared.module";
+import { SharedModule } from "@shared/shared.module";
 import { RxjsComponentsModule } from "../components/components.module";
 import { RxjsComponent } from "./rxjs/rxjs.component";
 

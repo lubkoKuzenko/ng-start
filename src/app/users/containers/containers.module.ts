@@ -1,5 +1,5 @@
 import { NgModule, Type } from "@angular/core";
-import { SharedModule } from "../../shared/shared.module";
+import { SharedModule } from "@shared/shared.module";
 import { UsersComponentsModule } from "../components/components.module";
 import { UsersComponent } from "./users/users.component";
 
