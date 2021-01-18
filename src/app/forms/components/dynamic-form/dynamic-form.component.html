@@ -1,0 +1,42 @@
+<form [formGroup]="form" novalidate>
+  <div class="row">
+    <div class="col-12">
+      <label>User Name</label>
+      <input type="text" formControlName="userName" />
+      <l9-validation-message [control]="controls.userName"></l9-validation-message>
+    </div>
+
+    <div class="col-12">
+      <h4>Time Ranges</h4>
+      <ng-container formArrayName="timeRanges">
+        <div *ngFor="let _ of timeRangeControls.controls; let i = index" class="row">
+          <ng-container [formGroupName]="i">
+            <!-- Start Date -->
+            <div class="col-5">
+              <label>Start Date</label>
+              <input type="date" formControlName="startDate" />
+              <l9-validation-message [control]="timeRangeControls.at(i).get('startDate')"></l9-validation-message>
+            </div>
+
+            <!-- End Date -->
+            <div class="col-5">
+              <label>End Date</label>
+              <input type="date" formControlName="endDate" />
+              <l9-validation-message [control]="timeRangeControls.at(i).get('endDate')"></l9-validation-message>
+            </div>
+
+            <div class="col-2">
+              <button (click)="deleteTimeRange(i)">-</button>
+            </div>
+          </ng-container>
+        </div>
+
+        <div class="col-12">
+          <button (click)="addNewTimeRange()">+</button>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</form>
+
+<button (click)="onSubmit()">Submit form</button>

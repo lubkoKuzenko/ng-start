@@ -7,10 +7,12 @@ import { FormGeneralComponent } from "./nested-form/form-general/form-general.co
 import { FormBirthdayComponent } from "./nested-form/form-birthday/form-birthday.component";
 import { CustomFieldFormComponent } from "./custom-field-form/custom-field-form.component";
 import { CounterInputComponent } from "./custom-field-form/counter-input/counter-input.component";
+import { DynamicFormComponent } from "./dynamic-form/dynamic-form.component";
 
 const formsComponents: Array<Type<any>> = [
   BasicFormComponent,
   NestedFormComponent,
+  DynamicFormComponent,
   FormGeneralComponent,
   FormBirthdayComponent,
   CustomFieldFormComponent,
