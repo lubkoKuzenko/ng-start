@@ -3,8 +3,9 @@ import { NgModule, Type } from "@angular/core";
 import { ReactiveFormsModule } from "@angular/forms";
 
 import { NumberDirective } from "./numeric.directive";
+import { DebounceClickDirective } from "./debounce-click.directive";
 
-export const SHARED_DIRECTIVES: Array<Type<any>> = [NumberDirective];
+export const SHARED_DIRECTIVES: Array<Type<any>> = [NumberDirective, DebounceClickDirective];
 
 @NgModule({
   imports: [CommonModule, ReactiveFormsModule],
