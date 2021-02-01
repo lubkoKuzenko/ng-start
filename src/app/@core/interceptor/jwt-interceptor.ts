@@ -24,27 +24,6 @@ export class TokenInterceptor implements HttpInterceptor {
       },
     });
 
-    return next.handle(request).pipe(
-      tap(
-        (event: HttpEvent<any>) => {
-          this.onSuccess(event);
-        },
-        (error: any) => {
-          this.onError(error);
-        },
-      ),
-    );
-  }
-
-  onSuccess(event: HttpEvent<any>) {
-    if (event instanceof HttpResponse) {
-      // Intercepting HTTP responses
-    }
-  }
-
-  onError(error: any) {
-    if (error instanceof HttpErrorResponse) {
-      console.log("%cHttp error message: " + error.message, this.logStyle);
-    }
+    return next.handle(request);
   }
 }

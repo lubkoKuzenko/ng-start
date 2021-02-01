@@ -1,9 +1,9 @@
-import { NgModule, Optional, SkipSelf, APP_INITIALIZER, ModuleWithProviders } from "@angular/core";
+import { NgModule, Optional, SkipSelf, APP_INITIALIZER, ModuleWithProviders, ErrorHandler } from "@angular/core";
 import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 import { CommonModule } from "@angular/common";
 import { RouteReuseStrategy } from "@angular/router";
 
-import { ErrorHandlerInterceptor } from "./interceptor/error-handler.interceptor";
+import { HttpErrorInterceptor } from "./interceptor/http-error.interceptor";
 import { TokenInterceptor } from "./interceptor/jwt-interceptor";
 import { AppInitService } from "./services/app-init.service";
 import { throwIfAlreadyLoaded } from "./guards/module-import-guard";
@@ -11,6 +11,7 @@ import { RouteReusableStrategy } from "./route-reusable-strategy";
 import { ApiPrefixInterceptor } from "./interceptor/api-prefix.interceptor";
 import { environment } from "src/environments/environment";
 import { APP_LANG, APP_NAME } from "./tokens";
+import { GlobalErrorHandler } from "@core/services/global-error-handler";
 
 export function initializerFactory(appConfig: AppInitService) {
   return (): Promise<any> => {
@@ -37,6 +38,10 @@ export class CoreModule {
           useValue: options.appName || environment.appName || "NGX-Levi9",
         },
         {
+          provide: ErrorHandler,
+          useClass: GlobalErrorHandler,
+        },
+        {
           provide: HTTP_INTERCEPTORS,
           useClass: ApiPrefixInterceptor,
           multi: true,
@@ -48,7 +53,7 @@ export class CoreModule {
         },
         {
           provide: HTTP_INTERCEPTORS,
-          useClass: ErrorHandlerInterceptor,
+          useClass: HttpErrorInterceptor,
           multi: true,
         },
         {

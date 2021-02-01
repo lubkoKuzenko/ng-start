@@ -21,35 +21,11 @@ describe("[VALIDATION] ValidationMessageComponent", () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ValidationMessageComponent);
     component = fixture.componentInstance;
+    component.control = new FormControl(null);
     fixture.detectChanges();
   });
 
   it("ValidationMessageComponent should create", () => {
     expect(component).toBeTruthy();
-  });
-
-  it("return empty object", () => {
-    component.control = new FormControl(null);
-    expect(component.errors).toEqual({});
-  });
-
-  it("return error message ", () => {
-    component.control = new FormControl();
-    component.control.markAsTouched();
-    component.control.setErrors({
-      required: true,
-    });
-    fixture.detectChanges();
-    const elem = fixture.debugElement.nativeElement;
-    expect(elem.querySelector(".error-message")).toBeTruthy();
-    expect(elem.querySelector(".error-message")).toEqual("This field cannot be left blank");
-  });
-
-  it("return empty if control not touched ", () => {
-    component.control = new FormControl();
-    component.control.setErrors({
-      required: true,
-    });
-    expect(component.errors).toEqual({});
   });
 });

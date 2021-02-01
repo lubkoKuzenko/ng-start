@@ -3,6 +3,7 @@ import { timer, Observable, BehaviorSubject, of, concat, fromEvent } from "rxjs"
 import { TodosService } from "../../services/todos.service";
 import { ITodo } from "../../interfaces";
 import { map, shareReplay, tap, concatMap, concatAll, mergeMap, exhaustMap, switchMap } from "rxjs/operators";
+import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: "bb-rxjs",
@@ -15,7 +16,7 @@ export class RxjsComponent implements OnInit, AfterViewInit {
 
   @ViewChild("button", { static: true }) button: ElementRef;
 
-  constructor(public todosService: TodosService) {}
+  constructor(public todosService: TodosService, private httpClient: HttpClient) {}
 
   ngOnInit() {
     // this.simpleRxDefinition();
@@ -67,5 +68,15 @@ export class RxjsComponent implements OnInit, AfterViewInit {
     this.inProgress$ = this.todosService
       .getTodos()
       .pipe(map((todos: ITodo[]) => todos.filter((todo: ITodo) => !todo.completed)));
+  }
+
+  public fireClientError(it: any) {
+    // throw new Error('Client Error. Shit happens :)');
+    // it is not defined, ups
+    return it.happens;
+  }
+
+  public fireServerError() {
+    this.httpClient.get("https://jsonplaceholder.typicode.com/1").subscribe();
   }
 }
