@@ -1,10 +1,13 @@
 import { NgModule, Type } from "@angular/core";
+import { CommonModule } from "@angular/common";
 import { SharedModule } from "@shared/shared.module";
 
-const rxjsComponents: Array<Type<any>> = [];
+import { RandomImageComponent } from "./random-image/random-image.component";
+
+const rxjsComponents: Array<Type<any>> = [RandomImageComponent];
 
 @NgModule({
-  imports: [SharedModule],
+  imports: [CommonModule, SharedModule],
   declarations: [...rxjsComponents],
   exports: [...rxjsComponents],
 })

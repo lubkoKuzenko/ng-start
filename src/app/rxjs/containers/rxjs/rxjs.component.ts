@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from "@angular/core";
-import { timer, Observable, BehaviorSubject, of, concat, fromEvent } from "rxjs";
+import { timer, Observable, BehaviorSubject, of, concat, fromEvent, range, interval } from "rxjs";
 import { TodosService } from "../../services/todos.service";
 import { ITodo } from "../../interfaces";
-import { map, shareReplay, tap, concatMap, concatAll, mergeMap, exhaustMap, switchMap } from "rxjs/operators";
+import { map, shareReplay, tap, concatMap, concatAll, mergeMap, exhaustMap, switchMap, delay } from "rxjs/operators";
 import { HttpClient } from "@angular/common/http";
 
 @Component({
@@ -13,8 +13,10 @@ import { HttpClient } from "@angular/common/http";
 export class RxjsComponent implements OnInit, AfterViewInit {
   public completed$: Observable<ITodo[]>;
   public inProgress$: Observable<ITodo[]>;
+  public randomImage$: Observable<any>;
 
   @ViewChild("button", { static: true }) button: ElementRef;
+  @ViewChild("imageButton", { static: true }) imageButton: ElementRef;
 
   constructor(public todosService: TodosService, private httpClient: HttpClient) {}
 
@@ -34,6 +36,21 @@ export class RxjsComponent implements OnInit, AfterViewInit {
         switchMap(() => this.todosService.getTodos()),
       )
       .subscribe();
+
+    this.onImageChange();
+  }
+
+  public onImageChange() {
+    this.randomImage$ = fromEvent(this.imageButton.nativeElement, "click").pipe(
+      map((d) => this.randomNumber(1, 100)),
+      switchMap((id) => {
+        if (id) {
+          return this.todosService.getPhotoById(id);
+        } else {
+          return of({});
+        }
+      }),
+    );
   }
 
   public contactTwoIntoOne() {
@@ -78,5 +95,10 @@ export class RxjsComponent implements OnInit, AfterViewInit {
 
   public fireServerError() {
     this.httpClient.get("https://jsonplaceholder.typicode.com/1").subscribe();
+  }
+
+  // Function to generate random number
+  private randomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
   }
 }

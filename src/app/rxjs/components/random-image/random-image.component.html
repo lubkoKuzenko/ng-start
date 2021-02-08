@@ -1,0 +1,6 @@
+<ng-container *ngIf="image; else elseTemplate">
+  <img [attr.src]="image.url" />
+</ng-container>
+<ng-template #elseTemplate>
+  No data
+</ng-template>

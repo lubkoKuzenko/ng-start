@@ -9,4 +9,8 @@ export class TodosService {
   getTodos() {
     return this.http.get("https://jsonplaceholder.typicode.com/todos");
   }
+
+  getPhotoById(id: number) {
+    return this.http.get(`https://jsonplaceholder.typicode.com/photos/${id}`);
+  }
 }
