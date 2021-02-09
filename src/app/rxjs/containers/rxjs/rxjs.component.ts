@@ -1,9 +1,10 @@
 import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from "@angular/core";
-import { timer, Observable, BehaviorSubject, of, concat, fromEvent, range, interval } from "rxjs";
+import { timer, Observable, of, concat, fromEvent } from "rxjs";
 import { TodosService } from "../../services/todos.service";
 import { ITodo } from "../../interfaces";
-import { map, shareReplay, tap, concatMap, concatAll, mergeMap, exhaustMap, switchMap, delay } from "rxjs/operators";
+import { map, tap, switchMap } from "rxjs/operators";
 import { HttpClient } from "@angular/common/http";
+import { AppInitService } from "@core/services/app-init.service";
 
 @Component({
   selector: "bb-rxjs",
@@ -18,9 +19,11 @@ export class RxjsComponent implements OnInit, AfterViewInit {
   @ViewChild("button", { static: true }) button: ElementRef;
   @ViewChild("imageButton", { static: true }) imageButton: ElementRef;
 
-  constructor(public todosService: TodosService, private httpClient: HttpClient) {}
+  constructor(public todosService: TodosService, private httpClient: HttpClient, public initConfig: AppInitService) {}
 
   ngOnInit() {
+    console.log(this.initConfig.settings);
+
     // this.simpleRxDefinition();
     // this.createTwoStreamsFromOne();
     // this.contactTwoIntoOne();
@@ -38,6 +41,10 @@ export class RxjsComponent implements OnInit, AfterViewInit {
       .subscribe();
 
     this.onImageChange();
+  }
+
+  public testHttp() {
+    this.httpClient.get("test").subscribe();
   }
 
   public onImageChange() {

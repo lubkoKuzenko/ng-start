@@ -5,7 +5,6 @@
 export const environment = {
   appName: "NGX-Levi9",
   production: false,
-  serverUrl: "",
   defaultLanguage: "en-US",
   supportedLanguages: ["en-US", "fr-FR"],
 };
