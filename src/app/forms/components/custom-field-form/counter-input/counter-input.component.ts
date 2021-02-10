@@ -40,7 +40,7 @@ export function createCounterRangeValidator(maxValue: number, minValue: number) 
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CounterInputComponent implements OnChanges, ControlValueAccessor {
-  // tslint:disable-next-line:no-input-rename
+  // eslint-disable-next-line @angular-eslint/no-input-rename
   @Input("counterValue") _counterValue = 0;
   @Input() counterRangeMax;
   @Input() counterRangeMin;
