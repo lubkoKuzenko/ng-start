@@ -14,9 +14,7 @@ import { APP_LANG, APP_NAME } from "./tokens";
 import { GlobalErrorHandler } from "@core/services/global-error-handler";
 
 export function initializerFactory(appConfig: AppInitService) {
-  return (): Promise<any> => {
-    return appConfig.load();
-  };
+  return (): Promise<any> => appConfig.load();
 }
 
 @NgModule({
@@ -25,6 +23,13 @@ export function initializerFactory(appConfig: AppInitService) {
   providers: [],
 })
 export class CoreModule {
+  constructor(
+    @Optional()
+    @SkipSelf()
+    parentModule: CoreModule,
+  ) {
+    throwIfAlreadyLoaded(parentModule, "CoreModule");
+  }
   static forRoot(options: { defaultLanguage?: string; appName?: string }): ModuleWithProviders<CoreModule> {
     return {
       ngModule: CoreModule,
@@ -69,12 +74,5 @@ export class CoreModule {
         AppInitService,
       ],
     };
-  }
-  constructor(
-    @Optional()
-    @SkipSelf()
-    parentModule: CoreModule,
-  ) {
-    throwIfAlreadyLoaded(parentModule, "CoreModule");
   }
 }

@@ -6,14 +6,16 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "ng lint && stylelint \"src/**/*.scss\" --syntax scss && htmlhint \"src\" --config .htmlhintrc",
+    "lint": "npm run lint:ts && npm run lint:scss && npm run lint:html",
+    "lint:ts": "eslint --color -c .eslintrc --ext .ts .",
+    "lint:scss": "npx stylelint \"src/**/*.scss\" --syntax scss",
+    "lint:html": "npx htmlhint \"src\" --config .htmlhintrc",
     "e2e": "ng e2e",
     "bundle:report": "ng build --prod --stats-json && webpack-bundle-analyzer dist/ngx-levi9/stats.json",
     "build:prod": "ng build --prod",
     "compodoc": "./node_modules/.bin/compodoc --theme laravel -p src/tsconfig.app.json",
-    "prettier": "prettier --write \"./{src,e2e}/**/*.{ts,js,html,scss}\"",
-    "prettier:check": "prettier --list-different \"./{src,e2e}/**/*.{ts,js,html,scss}\"",
-    "postinstall": "npm run prettier -s"
+    "format:write": "prettier \"./{src,e2e}/**/*.{ts,js,html,scss}\" --write",
+    "format:test": "prettier \"./{src,e2e}/**/*.{ts,js,html,scss}\" --list-different"
   },
   "husky": {
     "hooks": {
@@ -44,11 +46,15 @@
     "@angular/cli": "^11.0.2",
     "@angular/compiler-cli": "^11.0.2",
     "@angular/language-service": "^11.0.2",
+    "@angular-eslint/eslint-plugin": "^0.6.0-beta.0",
     "@compodoc/compodoc": "^1.1.11",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "^2.0.8",
     "@types/node": "^12.11.1",
-    "codelyzer": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0",
+    "codelyzer": "^6.0.1",
     "htmlhint": "^0.14.2",
     "husky": "^1.3.1",
     "jasmine-core": "~3.6.0",
@@ -58,8 +64,8 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
-    "prettier": "^1.19.1",
-    "pretty-quick": "^1.11.1",
+    "prettier": "^2.1.2",
+    "pretty-quick": "^3.1.0",
     "protractor": "~7.0.0",
     "stylelint": "~13.8.0",
     "stylelint-config-prettier": "^8.0.2",
@@ -67,9 +73,11 @@
     "stylelint-config-standard": "~20.0.0",
     "stylelint-scss": "~3.18.0",
     "ts-node": "~7.0.0",
-    "tslint": "~6.1.0",
-    "tslint-config-prettier": "^1.18.0",
     "typescript": "4.0.5",
-    "webpack-bundle-analyzer": "^3.9.0"
+    "webpack-bundle-analyzer": "^3.9.0",
+    "tslint": "~6.1.3",
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1"
   }
 }

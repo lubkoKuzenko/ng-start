@@ -1,7 +1,7 @@
 import { Component, Input } from "@angular/core";
 
 @Component({
-  selector: "l9-random-image",
+  selector: "bb-random-image",
   templateUrl: "./random-image.component.html",
   styleUrls: ["./random-image.component.scss"],
 })

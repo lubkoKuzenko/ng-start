@@ -1,14 +1,6 @@
-import { Injectable, Injector, ErrorHandler } from "@angular/core";
-import {
-  HttpEvent,
-  HttpInterceptor,
-  HttpHandler,
-  HttpResponse,
-  HttpRequest,
-  HttpErrorResponse,
-} from "@angular/common/http";
+import { Injectable } from "@angular/core";
+import { HttpEvent, HttpInterceptor, HttpHandler, HttpRequest } from "@angular/common/http";
 import { Observable, of } from "rxjs";
-import { tap } from "rxjs/operators";
 
 @Injectable()
 export class TokenInterceptor implements HttpInterceptor {
@@ -20,7 +12,7 @@ export class TokenInterceptor implements HttpInterceptor {
     // add a custom header
     request = request.clone({
       setHeaders: {
-        Authorization: `Bearer token`,
+        authorization: "Bearer token",
       },
     });
 

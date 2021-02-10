@@ -1,3 +1,4 @@
+/* eslint no-console: 0 */
 import { Logger, LogLevel, LogOutput } from "./logger.service";
 
 const logMethods = ["log", "info", "warn", "error"];
@@ -18,7 +19,7 @@ describe("Logger", () => {
   });
 
   beforeEach(() => {
-    Logger.level = LogLevel.Debug;
+    Logger.level = LogLevel.debug;
   });
 
   afterAll(() => {
@@ -49,10 +50,10 @@ describe("Logger", () => {
     // Assert
     expect(outputSpy).toHaveBeenCalled();
     expect(outputSpy.calls.count()).toBe(4);
-    expect(outputSpy).toHaveBeenCalledWith("test", LogLevel.Debug, "d");
-    expect(outputSpy).toHaveBeenCalledWith("test", LogLevel.Info, "i");
-    expect(outputSpy).toHaveBeenCalledWith("test", LogLevel.Warning, "w");
-    expect(outputSpy).toHaveBeenCalledWith("test", LogLevel.Error, "e", { error: true });
+    expect(outputSpy).toHaveBeenCalledWith("test", LogLevel.debug, "d");
+    expect(outputSpy).toHaveBeenCalledWith("test", LogLevel.info, "i");
+    expect(outputSpy).toHaveBeenCalledWith("test", LogLevel.warning, "w");
+    expect(outputSpy).toHaveBeenCalledWith("test", LogLevel.error, "e", { error: true });
   });
 
   it("should add a new LogOutput and receives only production log entries", () => {
@@ -72,7 +73,7 @@ describe("Logger", () => {
     // Assert
     expect(outputSpy).toHaveBeenCalled();
     expect(outputSpy.calls.count()).toBe(2);
-    expect(outputSpy).toHaveBeenCalledWith("test", LogLevel.Warning, "w");
-    expect(outputSpy).toHaveBeenCalledWith("test", LogLevel.Error, "e", { error: true });
+    expect(outputSpy).toHaveBeenCalledWith("test", LogLevel.warning, "w");
+    expect(outputSpy).toHaveBeenCalledWith("test", LogLevel.error, "e", { error: true });
   });
 });

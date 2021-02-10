@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from "@angular/core";
-import { timer, Observable, BehaviorSubject, of, concat, fromEvent, range, interval } from "rxjs";
+import { timer, Observable, of, concat, fromEvent } from "rxjs";
 import { TodosService } from "../../services/todos.service";
 import { ITodo } from "../../interfaces";
-import { map, shareReplay, tap, concatMap, concatAll, mergeMap, exhaustMap, switchMap, delay } from "rxjs/operators";
+import { map, tap, switchMap } from "rxjs/operators";
 import { HttpClient } from "@angular/common/http";
 
 @Component({
@@ -11,12 +11,12 @@ import { HttpClient } from "@angular/common/http";
   styleUrls: ["./rxjs.component.scss"],
 })
 export class RxjsComponent implements OnInit, AfterViewInit {
+  @ViewChild("button", { static: true }) button: ElementRef;
+  @ViewChild("imageButton", { static: true }) imageButton: ElementRef;
+
   public completed$: Observable<ITodo[]>;
   public inProgress$: Observable<ITodo[]>;
   public randomImage$: Observable<any>;
-
-  @ViewChild("button", { static: true }) button: ElementRef;
-  @ViewChild("imageButton", { static: true }) imageButton: ElementRef;
 
   constructor(public todosService: TodosService, private httpClient: HttpClient) {}
 
@@ -63,6 +63,16 @@ export class RxjsComponent implements OnInit, AfterViewInit {
     result$.subscribe(console.log);
   }
 
+  public fireClientError(it: any) {
+    // throw new Error('Client Error. Shit happens :)');
+    // it is not defined, ups
+    return it.happens;
+  }
+
+  public fireServerError() {
+    this.httpClient.get("https://jsonplaceholder.typicode.com/1").subscribe();
+  }
+
   private simpleRxDefinition() {
     // create Observable
     const timer$ = timer(0, 1000);
@@ -85,16 +95,6 @@ export class RxjsComponent implements OnInit, AfterViewInit {
     this.inProgress$ = this.todosService
       .getTodos()
       .pipe(map((todos: ITodo[]) => todos.filter((todo: ITodo) => !todo.completed)));
-  }
-
-  public fireClientError(it: any) {
-    // throw new Error('Client Error. Shit happens :)');
-    // it is not defined, ups
-    return it.happens;
-  }
-
-  public fireServerError() {
-    this.httpClient.get("https://jsonplaceholder.typicode.com/1").subscribe();
   }
 
   // Function to generate random number
