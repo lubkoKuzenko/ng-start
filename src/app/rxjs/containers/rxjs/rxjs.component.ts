@@ -1,9 +1,15 @@
 import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from "@angular/core";
-import { timer, Observable, of, concat, fromEvent } from "rxjs";
+import { timer, Observable, of, concat, fromEvent, BehaviorSubject } from "rxjs";
 import { TodosService } from "../../services/todos.service";
 import { ITodo } from "../../interfaces";
-import { map, tap, switchMap } from "rxjs/operators";
+import { map, tap, switchMap, startWith, reduce, scan } from "rxjs/operators";
 import { HttpClient } from "@angular/common/http";
+
+export const enum TlcDeviceEnum {
+  OCIT = "ocit",
+  OCIT_C = "ocit-c",
+  STCIP = "stcip",
+}
 
 @Component({
   selector: "bb-rxjs",
@@ -13,6 +19,13 @@ import { HttpClient } from "@angular/common/http";
 export class RxjsComponent implements OnInit, AfterViewInit {
   @ViewChild("button", { static: true }) button: ElementRef;
   @ViewChild("imageButton", { static: true }) imageButton: ElementRef;
+
+  private _total$ = new BehaviorSubject<any>({
+    [TlcDeviceEnum.OCIT]: 0,
+    [TlcDeviceEnum.OCIT_C]: 1,
+    [TlcDeviceEnum.STCIP]: 2,
+  });
+  public total$ = this._total$.asObservable();
 
   public completed$: Observable<ITodo[]>;
   public inProgress$: Observable<ITodo[]>;
@@ -24,6 +37,7 @@ export class RxjsComponent implements OnInit, AfterViewInit {
     // this.simpleRxDefinition();
     // this.createTwoStreamsFromOne();
     // this.contactTwoIntoOne();
+    this.calculateFromStream();
   }
 
   ngAfterViewInit(): void {
@@ -38,6 +52,21 @@ export class RxjsComponent implements OnInit, AfterViewInit {
       .subscribe();
 
     this.onImageChange();
+  }
+
+  private calculateFromStream() {
+    const t$ = this.total$.pipe(
+      scan((acc, curr) => {
+        for (var key of Object.keys(curr)) {
+          if (curr[key] > 0) {
+            acc += 1;
+          }
+        }
+        return acc;
+      }, 0),
+    );
+
+    t$.subscribe((t) => console.log(t));
   }
 
   public onImageChange() {

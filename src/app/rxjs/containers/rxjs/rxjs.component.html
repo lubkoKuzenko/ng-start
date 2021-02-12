@@ -2,7 +2,7 @@
 
 <button #imageButton>change image</button>
 <div class="row">
-  <l9-random-image [image]="randomImage$ | async"></l9-random-image>
+  <bb-random-image [image]="randomImage$ | async"></bb-random-image>
 </div>
 
 <hr />
@@ -22,10 +22,6 @@
 <hr />
 <h1>Errors</h1>
 <div class="container">
-  <button mat-raised-button (click)="fireClientError(null)">
-    Client Error
-  </button>
-  <button mat-raised-button (click)="fireServerError()">
-    Server Error
-  </button>
+  <button mat-raised-button (click)="fireClientError(null)">Client Error</button>
+  <button mat-raised-button (click)="fireServerError()">Server Error</button>
 </div>
