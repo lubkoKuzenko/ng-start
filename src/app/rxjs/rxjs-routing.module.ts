@@ -2,7 +2,7 @@ import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { RxjsComponent } from "./containers/rxjs/rxjs.component";
 
-const routes: Routes = [{ path: "rx", component: RxjsComponent }];
+const routes: Routes = [{ path: "", component: RxjsComponent }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

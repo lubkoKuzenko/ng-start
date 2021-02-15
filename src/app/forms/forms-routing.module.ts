@@ -5,7 +5,7 @@ import { FormsComponent } from "./containers/forms/forms.component";
 
 const routes: Routes = [
   {
-    path: "forms",
+    path: "",
     component: FormsComponent,
     data: {
       noReuse: true,
