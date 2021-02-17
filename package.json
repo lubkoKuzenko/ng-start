@@ -15,7 +15,10 @@
     "build:prod": "ng build --prod",
     "compodoc": "./node_modules/.bin/compodoc --theme laravel -p src/tsconfig.app.json",
     "format:write": "prettier \"./{src,e2e}/**/*.{ts,js,html,scss}\" --write",
-    "format:test": "prettier \"./{src,e2e}/**/*.{ts,js,html,scss}\" --list-different"
+    "format:test": "prettier \"./{src,e2e}/**/*.{ts,js,html,scss}\" --list-different",
+    "clean:dist": "npx rimraf dist",
+    "clean:modules": "npx rimraf ./node_modules package-lock.json",
+    "clean:all": "npm run clean && npm run clean:modules"
   },
   "husky": {
     "hooks": {

@@ -1,5 +1,11 @@
-*.json
+.git/
+.github/
+.idea/
+.vscode/
 dist/
-e2e/
+coverage/
+reports/
 node_modules/
-*.md
+CHANGELOG.md
+package.json
+package-lock.json
