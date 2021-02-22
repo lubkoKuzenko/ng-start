@@ -1,3 +1,67 @@
-<p>
-  users works!
-</p>
+<div class="row">
+  <mat-toolbar color="primary" class="col-12">
+    <span>Users</span>
+    <span class="example-spacer"></span>
+    <button
+      mat-icon-button
+      [disabled]="mode === EViewType.GRID ? true : null"
+      class="example-icon favorite-icon"
+      (click)="onViewChage(EViewType.GRID)"
+    >
+      <mat-icon>view_comfy</mat-icon>
+    </button>
+    <button
+      mat-icon-button
+      [disabled]="mode === EViewType.LIST ? true : null"
+      class="example-icon"
+      (click)="onViewChage(EViewType.LIST)"
+    >
+      <mat-icon>list</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <ng-template let-users #cardTemplate>
+    <div class="col-4 mt-3" *ngFor="let user of users">
+      <mat-card>
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{ user.name.title }} {{ user.name.first }} {{ user.name.last }}</mat-card-title>
+          <mat-card-subtitle>{{ user.email }}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="user.picture.large" />
+        <mat-card-content>
+          <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small,
+            agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </ng-template>
+
+  <ng-template let-users #listTemplate>
+    <mat-list class="col-12">
+      <mat-list-item *ngFor="let user of users">
+        <img matListAvatar [src]="user.picture.large" />
+        <h3 matLine>{{ user.name.title }} {{ user.name.first }} {{ user.name.last }}</h3>
+        <p matLine>
+          <span>{{ user.email }}</span>
+        </p>
+      </mat-list-item>
+    </mat-list>
+  </ng-template>
+
+  <ng-container *ngIf="users$ | async as users; else loading">
+    <div class="col-12">
+      <l9-users-view class="row" [users]="users.results" [userTemplate]="template"></l9-users-view>
+    </div>
+  </ng-container>
+
+  <ng-template #loading>
+    <bb-loader></bb-loader>
+  </ng-template>
+</div>
