@@ -1,7 +1,7 @@
 import { Component, Input, TemplateRef, ChangeDetectionStrategy } from "@angular/core";
 
 @Component({
-  selector: "l9-users-view",
+  selector: "bb-users-view",
   templateUrl: "./users-view.component.html",
   styleUrls: ["./users-view.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush,

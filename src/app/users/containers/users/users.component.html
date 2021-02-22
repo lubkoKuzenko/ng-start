@@ -57,7 +57,7 @@
 
   <ng-container *ngIf="users$ | async as users; else loading">
     <div class="col-12">
-      <l9-users-view class="row" [users]="users.results" [userTemplate]="template"></l9-users-view>
+      <bb-users-view class="row" [users]="users.results" [userTemplate]="template"></bb-users-view>
     </div>
   </ng-container>
 
