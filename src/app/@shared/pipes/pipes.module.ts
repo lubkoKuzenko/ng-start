@@ -3,8 +3,9 @@ import { NgModule, Type } from "@angular/core";
 import { ReactiveFormsModule } from "@angular/forms";
 
 import { ReverseStrPipe } from "./reverse.pipe";
+import { RemoveWhiteSpacePipe } from "@shared/pipes/remove-white-space.pipe";
 
-export const SHARED_PIPES: Array<Type<any>> = [ReverseStrPipe];
+export const SHARED_PIPES: Array<Type<any>> = [ReverseStrPipe, RemoveWhiteSpacePipe];
 
 @NgModule({
   imports: [CommonModule, ReactiveFormsModule],
