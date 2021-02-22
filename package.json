@@ -6,6 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
+    "test:headless": "ng test --watch=false --browsers=ChromeHeadlessNoSandbox --source-map=true --code-coverage=true",
+    "test:chrome-debugging": "ng test --browsers=ChromeDebugging --source-map=true --code-coverage=true",
     "lint": "npm run lint:ts && npm run lint:scss && npm run lint:html",
     "lint:ts": "eslint --color -c .eslintrc --ext .ts .",
     "lint:scss": "npx stylelint \"src/**/*.scss\" --syntax scss",
