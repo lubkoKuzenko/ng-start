@@ -1,21 +1,38 @@
-<h3>Inside Form</h3>
-<form [formGroup]="form">
-  <p>Control value: {{ form.controls.counter.value }}</p>
-  <p>Min Value: {{ minValue }}</p>
-  <p>Max Value: {{ maxValue }}</p>
-  <p>Form Value:</p>
-  <pre>{{ form.value | json }}</pre>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Standalone</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <bb-counter-input counterMinValue="0" counterMaxValue="3" [counterValue]="data.counter"></bb-counter-input>
+  </mat-card-content>
+</mat-card>
 
-  <bb-counter-input
-    formControlName="counter"
-    [counterRangeMax]="maxValue"
-    [counterRangeMin]="minValue"
-    [counterValue]="7"
-  ></bb-counter-input>
-</form>
-<p *ngIf="!form.valid">Form is invalid!</p>
+<hr />
 
-<h3>Standalone</h3>
-<bb-counter-input counterMinValue="0" counterMaxValue="3" [counterValue]="data.counter"></bb-counter-input>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Inside Form</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form [formGroup]="form">
+      <bb-counter-input
+        formControlName="counter"
+        [counterRangeMax]="maxValue"
+        [counterRangeMin]="minValue"
+        [counterValue]="data.counter"
+      ></bb-counter-input>
+    </form>
+    <p *ngIf="!form.valid">Form is invalid!</p>
+  </mat-card-content>
 
-<button (click)="onSubmit()">Submit form</button>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="onSubmit()">Submit</button>
+  </mat-card-actions>
+
+  <hr />
+  <mat-card>
+    <mat-card-content>
+      <ngx-json-viewer [json]="form.value"></ngx-json-viewer>
+    </mat-card-content>
+  </mat-card>
+</mat-card>

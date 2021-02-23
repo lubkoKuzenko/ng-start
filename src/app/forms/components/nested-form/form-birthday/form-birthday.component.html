@@ -1,9 +1,11 @@
 <form [formGroup]="form">
   <div class="row">
     <div class="col-12">
-      <label>birthDate</label>
-      <input type="date" formControlName="birthDate" />
-      <bb-validation-message [control]="controls.birthDate"></bb-validation-message>
+      <mat-form-field>
+        <mat-label>BirthDate</mat-label>
+        <input matInput type="date" formControlName="birthDate" />
+        <bb-validation-message [control]="controls.birthDate"></bb-validation-message>
+      </mat-form-field>
     </div>
   </div>
 </form>

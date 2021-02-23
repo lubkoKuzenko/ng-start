@@ -1,15 +1,19 @@
 <ng-container [formGroup]="form">
   <div class="row">
     <div class="col-12">
-      <label>name</label>
-      <input type="text" formControlName="name" />
-      <bb-validation-message [control]="controls.name"></bb-validation-message>
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput type="text" formControlName="name" />
+        <bb-validation-message [control]="controls.name"></bb-validation-message>
+      </mat-form-field>
     </div>
 
     <div class="col-12">
-      <label>Description</label>
-      <textarea type="text" formControlName="description"></textarea>
-      <bb-validation-message [control]="controls.description"></bb-validation-message>
+      <mat-form-field>
+        <mat-label>Description</mat-label>
+        <input matInput type="text" formControlName="description" />
+        <bb-validation-message [control]="controls.description"></bb-validation-message>
+      </mat-form-field>
     </div>
   </div>
 </ng-container>

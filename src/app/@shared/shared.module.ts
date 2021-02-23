@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MaterialModule } from "./modules/material.module";
+import { NgxJsonViewerModule } from "ngx-json-viewer";
 
 import { SharedDirectivesModule } from "./directives/directives.module";
 import { SharedPipesModule } from "./pipes/pipes.module";
@@ -14,6 +15,7 @@ import { ValidationMessageModule } from "./modules/validation-message/validation
     FormsModule,
     ReactiveFormsModule,
     MaterialModule,
+    NgxJsonViewerModule,
 
     SharedComponentsModule,
     SharedDirectivesModule,
@@ -28,6 +30,7 @@ import { ValidationMessageModule } from "./modules/validation-message/validation
     FormsModule,
     ReactiveFormsModule,
     MaterialModule,
+    NgxJsonViewerModule,
 
     SharedDirectivesModule,
     SharedComponentsModule,

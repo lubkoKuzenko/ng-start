@@ -41,6 +41,7 @@
     "@angular/router": "^11.2.0",
     "bootstrap": "^4.6.0",
     "core-js": "^2.6.12",
+    "ngx-json-viewer": "^3.0.2",
     "normalize.css": "^8.0.1",
     "rxjs": "~6.6.3",
     "tslib": "^2.1.0",

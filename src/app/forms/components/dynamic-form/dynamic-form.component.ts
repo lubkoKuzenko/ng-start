@@ -8,7 +8,7 @@ import { FormGroup, FormArray, FormControl, Validators } from "@angular/forms";
 })
 export class DynamicFormComponent {
   public form: FormGroup = new FormGroup({
-    userName: new FormControl("", [Validators.required]),
+    userName: new FormControl("Lyubomyr", [Validators.required]),
     timeRanges: new FormArray([]),
   });
 
@@ -34,8 +34,8 @@ export class DynamicFormComponent {
 
   private singleRange() {
     return new FormGroup({
-      startDate: new FormControl("", [Validators.required]),
-      endDate: new FormControl("", [Validators.required]),
+      startDate: new FormControl("", []),
+      endDate: new FormControl("", []),
     });
   }
 }

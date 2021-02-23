@@ -1,20 +1,39 @@
-<ng-container [formGroup]="form">
-  <div class="row">
-    <div class="col-12">
-      <label>first Name</label>
-      <input type="text" formControlName="firstName" />
-      <bb-validation-message [control]="controls.firstName"></bb-validation-message>
-    </div>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Basic form</mat-card-title>
+  </mat-card-header>
 
-    <div class="col-12">
-      <label>last Name</label>
-      <input type="text" formControlName="lastName" />
-      <bb-validation-message [control]="controls.lastName"></bb-validation-message>
-    </div>
+  <mat-card-content>
+    <form [formGroup]="form">
+      <div class="row">
+        <div class="col-12">
+          <mat-form-field>
+            <mat-label>First Name</mat-label>
+            <input matInput type="text" formControlName="firstName" />
+            <bb-validation-message [control]="controls.firstName"></bb-validation-message>
+          </mat-form-field>
+        </div>
 
-    <div class="col-12">
-      <button (click)="reset()">Reset</button>
-      <button (click)="onSubmit()">Submit</button>
-    </div>
-  </div>
-</ng-container>
+        <div class="col-12">
+          <mat-form-field>
+            <mat-label>Last Name</mat-label>
+            <input matInput type="text" formControlName="lastName" />
+            <bb-validation-message [control]="controls.lastName"></bb-validation-message>
+          </mat-form-field>
+        </div>
+      </div>
+    </form>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-stroked-button (click)="reset()">Reset</button>
+    <button mat-raised-button color="primary" (click)="onSubmit()">Submit</button>
+  </mat-card-actions>
+</mat-card>
+
+<hr />
+<mat-card>
+  <mat-card-content>
+    <ngx-json-viewer [json]="form.value"></ngx-json-viewer>
+  </mat-card-content>
+</mat-card>

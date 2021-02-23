@@ -8,7 +8,7 @@ import { FormGroup, FormControl } from "@angular/forms";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CustomFieldFormComponent {
-  @Input() public data: { counter: number } = { counter: 0 };
+  @Input() public data: { counter: number } = { counter: 7 };
 
   public minValue = 0;
   public maxValue = 12;

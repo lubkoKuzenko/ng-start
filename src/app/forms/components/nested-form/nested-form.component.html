@@ -1,12 +1,33 @@
-<div class="row">
-  <div class="col-6">
-    <label>General:</label>
-    <bb-form-general [parentForm]="controls.general"></bb-form-general>
-  </div>
-  <div class="col-6">
-    <label>BirthDay:</label>
-    <bb-form-birthday [parentForm]="controls.birthDate"></bb-form-birthday>
-  </div>
-</div>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Nested form</mat-card-title>
+  </mat-card-header>
 
-<button (click)="onSubmit()">Submit form</button>
+  <mat-card-content>
+    <div class="row">
+      <div class="col-6">
+        <mat-toolbar>
+          <span>General:</span>
+        </mat-toolbar>
+        <bb-form-general [parentForm]="controls.general"></bb-form-general>
+      </div>
+      <div class="col-6">
+        <mat-toolbar>
+          <span>BirthDay:</span>
+        </mat-toolbar>
+        <bb-form-birthday [parentForm]="controls.birthDate"></bb-form-birthday>
+      </div>
+    </div>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="onSubmit()">Submit</button>
+  </mat-card-actions>
+</mat-card>
+
+<hr />
+<mat-card>
+  <mat-card-content>
+    <ngx-json-viewer [json]="form.value"></ngx-json-viewer>
+  </mat-card-content>
+</mat-card>

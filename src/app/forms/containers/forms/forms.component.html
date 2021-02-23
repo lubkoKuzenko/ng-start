@@ -1,15 +1,14 @@
-<h2>Basic form</h2>
-<bb-basic-form [data]="basicForm$ | async"></bb-basic-form>
-<hr />
-
-<h2>Nested form</h2>
-<bb-nested-form></bb-nested-form>
-<hr />
-
-<h2>Dynamic form</h2>
-<bb-dynamic-form></bb-dynamic-form>
-<hr />
-
-<h2>custom control ControlValueAccessor</h2>
-<bb-custom-field-form [data]="customFieldForm$ | async"></bb-custom-field-form>
-<hr />
+<mat-tab-group>
+  <mat-tab label="Basic form">
+    <bb-basic-form [data]="basicForm$ | async"></bb-basic-form>
+  </mat-tab>
+  <mat-tab label="Nested form">
+    <bb-nested-form></bb-nested-form>
+  </mat-tab>
+  <mat-tab label="Dynamic form">
+    <bb-dynamic-form></bb-dynamic-form>
+  </mat-tab>
+  <mat-tab label="ControlValueAccessor">
+    <bb-custom-field-form [data]="customFieldForm$ | async"></bb-custom-field-form>
+  </mat-tab>
+</mat-tab-group>
