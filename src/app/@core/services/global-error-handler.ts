@@ -3,7 +3,7 @@ import { HttpErrorResponse } from "@angular/common/http";
 import { Logger } from "../services/logger.service";
 import { environment } from "@env/environment";
 
-const log = new Logger("HttpErrorInterceptor");
+const log = new Logger("GlobalErrorHandler");
 
 @Injectable()
 export class GlobalErrorHandler implements ErrorHandler {
