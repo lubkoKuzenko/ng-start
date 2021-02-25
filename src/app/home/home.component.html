@@ -1,0 +1,23 @@
+<form [formGroup]="form">
+  <div class="field">
+    <label class="label">Name</label>
+    <div class="control">
+      <input class="input" bbCheckFormFieldValidity type="text" placeholder="Text input" formControlName="name" />
+      <bb-validation-message [control]="controls.name"></bb-validation-message>
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label">Description</label>
+    <div class="control">
+      <input
+        class="input"
+        bbCheckFormFieldValidity
+        type="text"
+        placeholder="Text input"
+        formControlName="description"
+      />
+      <bb-validation-message [control]="controls.description"></bb-validation-message>
+    </div>
+  </div>
+</form>

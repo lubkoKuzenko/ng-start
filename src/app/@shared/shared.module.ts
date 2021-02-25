@@ -7,7 +7,8 @@ import { NgxJsonViewerModule } from "ngx-json-viewer";
 import { SharedDirectivesModule } from "./directives/directives.module";
 import { SharedPipesModule } from "./pipes/pipes.module";
 import { SharedComponentsModule } from "./components/components.module";
-import { ValidationMessageModule } from "./modules/validation-message/validation-message.module";
+
+import { NcBulmaModule } from "./modules/nc-bulma/nc-bulma.module";
 
 @NgModule({
   imports: [
@@ -21,7 +22,7 @@ import { ValidationMessageModule } from "./modules/validation-message/validation
     SharedDirectivesModule,
     SharedPipesModule,
 
-    ValidationMessageModule,
+    NcBulmaModule,
   ],
   declarations: [],
   providers: [],
@@ -36,7 +37,7 @@ import { ValidationMessageModule } from "./modules/validation-message/validation
     SharedComponentsModule,
     SharedPipesModule,
 
-    ValidationMessageModule,
+    NcBulmaModule,
   ],
 })
 export class SharedModule {}

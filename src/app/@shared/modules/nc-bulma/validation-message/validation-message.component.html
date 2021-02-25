@@ -1,0 +1,3 @@
+<ng-container *ngFor="let error of errors | keyvalue; let i = index">
+  <span *ngIf="control.dirty || control.touched" class="help is-danger" [innerHTML]="error | formatErrorMessage"></span>
+</ng-container>
