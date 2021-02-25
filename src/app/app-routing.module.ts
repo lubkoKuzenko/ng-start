@@ -7,17 +7,10 @@ const routes: Routes = [
     redirectTo: "forms",
     pathMatch: "full",
   },
-  {
-    path: "forms",
-    loadChildren: () => import("./forms/forms.module").then((m) => m.FormsModule),
-  },
+
   {
     path: "dc",
     loadChildren: () => import("./dynamic-components/dc.module").then((m) => m.DCModule),
-  },
-  {
-    path: "rx",
-    loadChildren: () => import("./rxjs/rxjs.module").then((m) => m.RxjsModule),
   },
   {
     path: "users",

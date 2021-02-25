@@ -1,35 +1,27 @@
-<div class="app header-fixed sidebar-lg-show sidebar-fixed aside-menu-fixed">
+<div class="app">
   <div class="dashboard">
     <!-- HEADER -->
-    <header class="app-header navbar py-0">
-      <ul class="nav navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link px-3" routerLinkActive="active" routerLink="/" [routerLinkActiveOptions]="{ exact: true }">
-            HOME
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-3" routerLinkActive="active" routerLink="/forms">Forms</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-3" routerLinkActive="active" routerLink="/dc">Dynamic Components</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-3" routerLinkActive="active" routerLink="/users">Users</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-3" routerLinkActive="active" routerLink="/rx">RxJS</a>
-        </li>
-      </ul>
+    <header>
+      <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
+        <div id="navbarBasicExample" class="container navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" routerLinkActive="active" routerLink="/" [routerLinkActiveOptions]="{ exact: true }">
+              Home
+            </a>
+
+            <a class="navbar-item" routerLinkActive="active" routerLink="/dc">Dynamic Components</a>
+
+            <a class="navbar-item" routerLinkActive="active" routerLink="/users">Users</a>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- MAIN -->
-    <section class="app-body">
-      <main class="main">
-        <div class="fluid-container px-3">
-          <!-- <button (click)="onClick()">loader</button> -->
-          <router-outlet></router-outlet>
-        </div>
+    <section class="section">
+      <main class="container">
+        <!-- <button (click)="onClick()">loader</button> -->
+        <router-outlet></router-outlet>
       </main>
     </section>
   </div>

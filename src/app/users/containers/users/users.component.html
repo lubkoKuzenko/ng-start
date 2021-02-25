@@ -22,24 +22,33 @@
 
   <ng-template let-users #cardTemplate>
     <div class="col-4 mt-3" *ngFor="let user of users">
-      <mat-card>
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>{{ user.name.title }} {{ user.name.first }} {{ user.name.last }}</mat-card-title>
-          <mat-card-subtitle>{{ user.email }}</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image [src]="user.picture.large" />
-        <mat-card-content>
+      <div class="card">
+        <header class="card-header">
+          <div class="card-image">
+            <img [src]="user.picture.large" alt="Placeholder image" />
+          </div>
+
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content">
+                <p class="title is-4">{{ user.name.title }} {{ user.name.first }} {{ user.name.last }}</p>
+                <p class="subtitle is-6">{{ user.email }}</p>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="card-content">
           <p>
             The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small,
             agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
           </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
-        </mat-card-actions>
-      </mat-card>
+        </div>
+
+        <footer class="card-footer p-2">
+          <button class="button is-primary mx-1">LIKE</button>
+          <button class="button is-link mx-1">SHARE</button>
+        </footer>
+      </div>
     </div>
   </ng-template>
 
