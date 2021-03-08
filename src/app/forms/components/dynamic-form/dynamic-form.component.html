@@ -15,30 +15,28 @@
             <span>Time Ranges</span>
           </mat-toolbar>
           <ng-container formArrayName="timeRanges">
-            <div *ngFor="let _ of timeRangeControls.controls; let i = index" class="row">
-              <ng-container [formGroupName]="i">
-                <!-- Start Date -->
-                <div class="col-5">
-                  <mat-form-field>
-                    <mat-label>Start Date</mat-label>
-                    <input matInput type="date" formControlName="startDate" />
-                    <bb-validation-message [control]="timeRangeControls.at(i).get('startDate')"></bb-validation-message>
-                  </mat-form-field>
-                </div>
+            <div *ngFor="let _ of timeRangeControls.controls; let i = index" class="row" [formGroupName]="i">
+              <!-- Start Date -->
+              <div class="col-5">
+                <mat-form-field>
+                  <mat-label>Start Date</mat-label>
+                  <input matInput type="date" formControlName="startDate" />
+                  <bb-validation-message [control]="timeRangeControls.at(i).get('startDate')"></bb-validation-message>
+                </mat-form-field>
+              </div>
 
-                <!-- End Date -->
-                <div class="col-5">
-                  <mat-form-field>
-                    <mat-label>End Date</mat-label>
-                    <input matInput type="date" formControlName="endDate" />
-                    <bb-validation-message [control]="timeRangeControls.at(i).get('endDate')"></bb-validation-message>
-                  </mat-form-field>
-                </div>
+              <!-- End Date -->
+              <div class="col-5">
+                <mat-form-field>
+                  <mat-label>End Date</mat-label>
+                  <input matInput type="date" formControlName="endDate" />
+                  <bb-validation-message [control]="timeRangeControls.at(i).get('endDate')"></bb-validation-message>
+                </mat-form-field>
+              </div>
 
-                <div class="col-2">
-                  <mat-icon aria-hidden="false" (click)="deleteTimeRange(i)">delete</mat-icon>
-                </div>
-              </ng-container>
+              <div class="col-2">
+                <mat-icon aria-hidden="false" (click)="deleteTimeRange(i)">delete</mat-icon>
+              </div>
             </div>
 
             <div class="col-12">
