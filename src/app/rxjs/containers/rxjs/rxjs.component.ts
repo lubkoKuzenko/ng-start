@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from "@angula
 import { timer, Observable, of, concat, fromEvent, BehaviorSubject } from "rxjs";
 import { TodosService } from "../../services/todos.service";
 import { ITodo } from "../../interfaces";
-import { map, tap, switchMap, startWith, reduce, scan } from "rxjs/operators";
+import { map, tap, switchMap, scan } from "rxjs/operators";
 import { HttpClient } from "@angular/common/http";
 
 export const enum TlcDeviceEnum {
