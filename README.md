@@ -16,3 +16,11 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Documentation
 
 Visit - https://github.com/lubkoKuzenko/angular-clean-code
+
+## Build
+
+<img src="./src/assets/build.png" />
+
+## webpack-bundle-analyzer
+
+<img src="./src/assets/stats.png" />
