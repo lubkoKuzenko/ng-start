@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, ChangeDetectionStrategy } from "@angular/core";
 import { FormGroup, FormControl, Validators } from "@angular/forms";
+import { getDirtyValues } from "../../../../utils/getDirtyValuesFromForm";
 
 @Component({
   selector: "bb-basic-form",
@@ -38,5 +39,6 @@ export class BasicFormComponent implements OnInit {
   // GET form values
   public onSubmit() {
     console.log(this.form.getRawValue());
+    console.log(getDirtyValues(this.form));
   }
 }

@@ -13,7 +13,7 @@ export class FormGeneralComponent implements OnInit {
 
   public form = new FormGroup({
     name: new FormControl("", [Validators.required]),
-    description: new FormControl(undefined, [Validators.required]),
+    description: new FormControl("", [Validators.required]),
   });
 
   get controls() {
