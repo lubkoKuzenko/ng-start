@@ -23,6 +23,10 @@ const routes: Routes = [
     path: "users",
     loadChildren: () => import("./users/users.module").then((m) => m.UsersModule),
   },
+  {
+    path: "patterns",
+    loadChildren: () => import("./patterns/patterns.module").then((m) => m.PatternsModule),
+  },
   { path: "**", redirectTo: "", pathMatch: "full" },
 ];
 

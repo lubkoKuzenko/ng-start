@@ -1,0 +1,10 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title><ng-content select="[slot=header]"></ng-content></mat-card-title>
+    <button mat-stroked-button (click)="onRefresh()">Refresh</button>
+  </mat-card-header>
+  <mat-divider></mat-divider>
+  <mat-card-content>
+    <ng-content select="[slot=content]"></ng-content>
+  </mat-card-content>
+</mat-card>

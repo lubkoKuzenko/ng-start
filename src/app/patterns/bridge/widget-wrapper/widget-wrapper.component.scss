@@ -1,0 +1,12 @@
+mat-card {
+  margin: 1rem 0;
+
+  mat-card-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  mat-card-content {
+    min-height: 200px;
+  }
+}
