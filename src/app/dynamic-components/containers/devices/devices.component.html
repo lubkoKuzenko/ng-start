@@ -1,5 +1,12 @@
-<template #dynamicLoadDevicesComponent></template>
+<div class="row">
+  <div class="col-12">
+    <div class="p-2">
+      <button (click)="createComponent('red')">Create red</button>
+      <button (click)="createComponent('green')">Create green</button>
+      <button (click)="createComponent('blue')">Create blue</button>
+      <button (click)="createComponent('tree')">Tree view</button>
+    </div>
 
-<button (click)="createComponent('red')">Create red</button>
-<button (click)="createComponent('green')">Create green</button>
-<button (click)="createComponent('blue')">Create blue</button>
+    <template #dynamicLoadDevicesComponent></template>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<h1>Angular 2 Recursive List</h1>
+<ul>
+  <ng-template #recursiveList let-list>
+    <li *ngFor="let item of list">
+      {{ item.title }}
+      <ul *ngIf="item.children.length > 0">
+        <ng-container *ngTemplateOutlet="recursiveList; context: { $implicit: item.children }"></ng-container>
+      </ul>
+    </li>
+  </ng-template>
+  <ng-container *ngTemplateOutlet="recursiveList; context: { $implicit: list }"></ng-container>
+</ul>

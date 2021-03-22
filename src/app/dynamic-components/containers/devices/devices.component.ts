@@ -11,6 +11,7 @@ import {
 import { BlueDeviceComponent } from "../../components/blue-device/blue-device.component";
 import { RedDeviceComponent } from "../../components/red-device/red-device.component";
 import { GreenDeviceComponent } from "../../components/green-device/green-device.component";
+import { TreeViewComponent } from "../../components/tree-view/tree-view.component";
 
 @Component({
   selector: "bb-devices",
@@ -38,6 +39,7 @@ export class DevicesComponent implements OnInit, OnDestroy {
       red: RedDeviceComponent,
       green: GreenDeviceComponent,
       blue: BlueDeviceComponent,
+      tree: TreeViewComponent,
     }[type];
   }
 
