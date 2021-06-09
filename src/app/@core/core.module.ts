@@ -1,17 +1,16 @@
-import { NgModule, Optional, SkipSelf, APP_INITIALIZER, ModuleWithProviders, ErrorHandler } from "@angular/core";
-import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 import { CommonModule } from "@angular/common";
+import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
+import { APP_INITIALIZER, ErrorHandler, ModuleWithProviders, NgModule, Optional, SkipSelf } from "@angular/core";
 import { RouteReuseStrategy } from "@angular/router";
-
+import { GlobalErrorHandler } from "@core/services/global-error-handler";
+import { environment } from "src/environments/environment";
+import { throwIfAlreadyLoaded } from "./guards/module-import-guard";
+import { ApiPrefixInterceptor } from "./interceptor/api-prefix.interceptor";
 import { HttpErrorInterceptor } from "./interceptor/http-error.interceptor";
 import { TokenInterceptor } from "./interceptor/jwt-interceptor";
-import { AppInitService } from "./services/app-init.service";
-import { throwIfAlreadyLoaded } from "./guards/module-import-guard";
 import { RouteReusableStrategy } from "./route-reusable-strategy";
-import { ApiPrefixInterceptor } from "./interceptor/api-prefix.interceptor";
-import { environment } from "src/environments/environment";
+import { AppInitService } from "./services/app-init.service";
 import { APP_LANG, APP_NAME } from "./tokens";
-import { GlobalErrorHandler } from "@core/services/global-error-handler";
 
 export function initializerFactory(appConfig: AppInitService) {
   return (): Promise<any> => appConfig.load();
