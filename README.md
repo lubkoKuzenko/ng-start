@@ -19,7 +19,7 @@ Visit - https://github.com/lubkoKuzenko/angular-clean-code
 
 ## Build
 
-<img src="./src/assets/build.png" />
+<img src="./src/assets/build-12.png" />
 
 ## webpack-bundle-analyzer
 
