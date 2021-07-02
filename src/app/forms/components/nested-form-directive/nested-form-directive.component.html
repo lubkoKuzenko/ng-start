@@ -1,0 +1,30 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Nested form</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <form [formGroup]="form">
+      <bb-form-fullname></bb-form-fullname>
+
+      <div class="row">
+        <mat-form-field class="example-full-width col-12" appearance="fill">
+          <mat-label>BirthDate</mat-label>
+          <input matInput type="text" formControlName="birthDate" />
+          <bb-validation-message [control]="controls.birthDate"></bb-validation-message>
+        </mat-form-field>
+      </div>
+    </form>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="onSubmit()">Submit</button>
+  </mat-card-actions>
+</mat-card>
+
+<hr />
+<mat-card>
+  <mat-card-content>
+    <ngx-json-viewer [json]="form.value"></ngx-json-viewer>
+  </mat-card-content>
+</mat-card>

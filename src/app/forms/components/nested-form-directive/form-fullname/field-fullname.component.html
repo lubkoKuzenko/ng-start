@@ -1,0 +1,9 @@
+<ng-container [formGroup]="form">
+  <div class="row">
+    <mat-form-field class="col-12">
+      <mat-label>Full name</mat-label>
+      <input matInput type="text" formControlName="fullname" />
+      <bb-validation-message [control]="controls.fullname"></bb-validation-message>
+    </mat-form-field>
+  </div>
+</ng-container>
