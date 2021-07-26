@@ -11,7 +11,7 @@ export class UsersComponent {
   @ViewChild("cardTemplate", { static: false }) cardTemplate: TemplateRef<HTMLElement>;
   @ViewChild("listTemplate", { static: false }) listTemplate: TemplateRef<HTMLElement>;
 
-  public EViewType = EViewType;
+  public eViewType = EViewType;
   public mode: EViewType = EViewType.GRID;
   public users$ = this.usersService.getUsers();
 
@@ -22,6 +22,6 @@ export class UsersComponent {
   }
 
   public get template() {
-    return this.mode == EViewType.GRID ? this.cardTemplate : this.listTemplate;
+    return this.mode === EViewType.GRID ? this.cardTemplate : this.listTemplate;
   }
 }

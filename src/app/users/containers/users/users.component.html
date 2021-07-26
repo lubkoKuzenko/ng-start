@@ -4,17 +4,17 @@
     <span class="example-spacer"></span>
     <button
       mat-icon-button
-      [disabled]="mode === EViewType.GRID ? true : null"
+      [disabled]="mode === eViewType.GRID ? true : null"
       class="example-icon favorite-icon"
-      (click)="onViewChage(EViewType.GRID)"
+      (click)="onViewChage(eViewType.GRID)"
     >
       <mat-icon>view_comfy</mat-icon>
     </button>
     <button
       mat-icon-button
-      [disabled]="mode === EViewType.LIST ? true : null"
+      [disabled]="mode === eViewType.LIST ? true : null"
       class="example-icon"
-      (click)="onViewChage(EViewType.LIST)"
+      (click)="onViewChage(eViewType.LIST)"
     >
       <mat-icon>list</mat-icon>
     </button>
