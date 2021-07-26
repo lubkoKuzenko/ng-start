@@ -11,7 +11,7 @@ export default () => {
     routes() {
       this.namespace = "/api";
 
-      this.get("/users", (schema) => schema.db.users[0]);
+      this.get("/users", ({ db }) => db.users[0]);
 
       //   this.post("/users", (schema, request) => {
       //     const post = JSON.parse(request.requestBody);
