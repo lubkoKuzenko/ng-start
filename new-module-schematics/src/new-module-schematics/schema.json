@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "newModuleSchematicsSchema",
+  "title": "Creates a new project",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "Name of the project.",
+      "type": "string",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "Name of the project"
+    }
+  },
+  "required": ["name"]
+}
