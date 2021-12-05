@@ -1,17 +1,11 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule, Type } from '@angular/core';
+import { SharedModule } from "@shared/shared.module";
 
-// Atoms imports
-
-// Molecules imports
-
-// Organisms imports
-
-// Pages imports
+const <%= camelize(name) %>Components: Array<Type<any>> = [];
 
 @NgModule({
-    declarations: [],
-    imports: [CommonModule],
-    exports: []
+    imports: [SharedModule],
+    declarations: [...<%= camelize(name) %>Components],
+    exports: [...<%= camelize(name) %>Components],
 })
-export class ComponentsModule { }
+export class <%= classify(name) %>ComponentsModule { }

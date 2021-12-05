@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { ComponentsModule } from './components/components.module';
+import { SharedModule } from '@rbs/shared';
+import { <%= classify(name) %>ContainersModule } from './containers/containers.module';
+import { <%= classify(name) %>Component } from './<%= dasherize(name) %>.component';
 
 @NgModule({
-    declarations: [],
-    imports: [CommonModule, ComponentsModule]
+    declarations: [<%= classify(name) %>Component],
+    imports: [CommonModule, SharedModule, <%= classify(name) %>ContainersModule]
 })
 export class <%= classify(name) %>Module { }
