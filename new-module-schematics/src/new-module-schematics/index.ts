@@ -43,7 +43,7 @@ function createContainersModuleFileDefinition(options: ModuleOptions): Rule {
   return mergeWith(templateSource);
 }
 
-function createDataRelatedFolders(options: ModuleOptions): Rule {
+function createOtherFolders(options: ModuleOptions): Rule {
   return (tree: Tree, _: SchematicContext) => {
     tree.create(normalize(`${options.prefix}-${options.name}/services/index.ts`), "");
     tree.create(normalize(`${options.prefix}-${options.name}/interfaces/index.ts`), "");
@@ -69,13 +69,11 @@ function createMainModuleFileDefinition(options: ModuleOptions): Rule {
   return mergeWith(templateSource);
 }
 
-// You don't have to export the function as default. You can also have more than one rule factory
-// per file.
 export function newModuleSchematics(options: ModuleOptions): Rule {
   return chain([
     createComponentsModuleFileDefinition(options),
     createContainersModuleFileDefinition(options),
-    createDataRelatedFolders(options),
+    createOtherFolders(options),
     createMainModuleFileDefinition(options),
   ]);
 }
