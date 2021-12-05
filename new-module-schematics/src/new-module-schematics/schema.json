@@ -4,13 +4,6 @@
   "title": "Creates a new project",
   "type": "object",
   "properties": {
-    "prefix": {
-      "type": "string",
-      "description": "the prefix to apply to generated selectors",
-      "format": "html-selector",
-      "default": "www",
-      "alias": "p"
-    },
     "name": {
       "description": "Name of the project.",
       "type": "string",

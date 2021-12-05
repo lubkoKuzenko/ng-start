@@ -20,7 +20,7 @@ function createComponentsModuleFileDefinition(options: ModuleOptions): Rule {
     filter((path) => path.endsWith("/components.module.ts.template")),
     applyTemplates({ ...strings, ...options }),
     renameTemplateFiles(),
-    move(normalize(`${options.prefix}-${options.name}/components`)),
+    move(normalize(`${options.name}/components`)),
   ]);
 
   return mergeWith(templateSource);
@@ -31,7 +31,7 @@ function createContainersModuleFileDefinition(options: ModuleOptions): Rule {
     filter((path) => path.endsWith("/containers.module.ts.template")),
     applyTemplates({ ...strings, ...options }),
     renameTemplateFiles(),
-    move(normalize(`${options.prefix}-${options.name}/containers`)),
+    move(normalize(`${options.name}/containers`)),
   ]);
 
   return mergeWith(templateSource);
@@ -39,10 +39,10 @@ function createContainersModuleFileDefinition(options: ModuleOptions): Rule {
 
 function createOtherFolders(options: ModuleOptions): Rule {
   return (tree: Tree, _: SchematicContext) => {
-    tree.create(normalize(`${options.prefix}-${options.name}/services/index.ts`), "");
-    tree.create(normalize(`${options.prefix}-${options.name}/interfaces/index.ts`), "");
-    tree.create(normalize(`${options.prefix}-${options.name}/enums/index.ts`), "");
-    tree.create(normalize(`${options.prefix}-${options.name}/mocks/index.ts`), "");
+    tree.create(normalize(`${options.name}/services/index.ts`), "");
+    tree.create(normalize(`${options.name}/interfaces/index.ts`), "");
+    tree.create(normalize(`${options.name}/enums/index.ts`), "");
+    tree.create(normalize(`${options.name}/mocks/index.ts`), "");
 
     return tree;
   };
@@ -54,7 +54,7 @@ function createMainModuleFileDefinition(options: ModuleOptions): Rule {
     // strings.camelize
     applyTemplates({ ...strings, ...options }),
     renameTemplateFiles(),
-    move(normalize(`${options.prefix}-${options.name}/`)),
+    move(normalize(`${options.name}/`)),
   ]);
 
   return mergeWith(templateSource);
