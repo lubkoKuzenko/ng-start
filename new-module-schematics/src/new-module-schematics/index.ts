@@ -18,10 +18,7 @@ import { ModuleOptions } from "./schema";
 function createComponentsModuleFileDefinition(options: ModuleOptions): Rule {
   const templateSource = apply(url("./files"), [
     filter((path) => path.endsWith("/components.module.ts.template")),
-    applyTemplates({
-      ...strings,
-      ...options,
-    }),
+    applyTemplates({ ...strings, ...options }),
     renameTemplateFiles(),
     move(normalize(`${options.prefix}-${options.name}/components`)),
   ]);
@@ -32,10 +29,7 @@ function createComponentsModuleFileDefinition(options: ModuleOptions): Rule {
 function createContainersModuleFileDefinition(options: ModuleOptions): Rule {
   const templateSource = apply(url("./files"), [
     filter((path) => path.endsWith("/containers.module.ts.template")),
-    applyTemplates({
-      ...strings,
-      ...options,
-    }),
+    applyTemplates({ ...strings, ...options }),
     renameTemplateFiles(),
     move(normalize(`${options.prefix}-${options.name}/containers`)),
   ]);
@@ -58,10 +52,7 @@ function createMainModuleFileDefinition(options: ModuleOptions): Rule {
   const templateSource = apply(url("./files"), [
     filter((path) => path.endsWith("__name@dasherize__.module.ts.template")),
     // strings.camelize
-    applyTemplates({
-      ...strings,
-      ...options,
-    }),
+    applyTemplates({ ...strings, ...options }),
     renameTemplateFiles(),
     move(normalize(`${options.prefix}-${options.name}/`)),
   ]);
