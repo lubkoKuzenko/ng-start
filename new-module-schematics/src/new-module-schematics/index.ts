@@ -63,7 +63,6 @@ function createMainModuleFileDefinition(options: ModuleOptions): Rule {
 function createMainModuleRoutingDefinition(options: ModuleOptions): Rule {
   const templateSource = apply(url("./files"), [
     filter((path) => path.endsWith("__name@dasherize__-routing.module.ts.template")),
-    // strings.camelize
     applyTemplates({ ...strings, ...options }),
     renameTemplateFiles(),
     move(normalize(`${options.name}/`)),
