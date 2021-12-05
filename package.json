@@ -20,7 +20,8 @@
     "format:test": "prettier \"./{src,e2e}/**/*.{ts,js,html,scss}\" --list-different",
     "clean:dist": "npx rimraf dist",
     "clean:modules": "npx rimraf ./node_modules package-lock.json",
-    "clean:all": "npm run clean && npm run clean:modules"
+    "clean:all": "npm run clean && npm run clean:modules",
+    "generate-new-module": "cd new-module-schematics && npm run build && schematics .:new-module-schematics --dry-run=false"
   },
   "husky": {
     "hooks": {
