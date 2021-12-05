@@ -1,0 +1,10 @@
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
+
+const <%= camelize(name) %>Routes: Routes = [];
+
+@NgModule({
+  imports: [RouterModule.forChild(<%= camelize(name) %>Routes)],
+  exports: [RouterModule],
+})
+export class <%= classify(name) %>RoutingModule {}

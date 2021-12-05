@@ -60,11 +60,24 @@ function createMainModuleFileDefinition(options: ModuleOptions): Rule {
   return mergeWith(templateSource);
 }
 
+function createMainModuleRoutingDefinition(options: ModuleOptions): Rule {
+  const templateSource = apply(url("./files"), [
+    filter((path) => path.endsWith("__name@dasherize__-routing.module.ts.template")),
+    // strings.camelize
+    applyTemplates({ ...strings, ...options }),
+    renameTemplateFiles(),
+    move(normalize(`${options.name}/`)),
+  ]);
+
+  return mergeWith(templateSource);
+}
+
 export function newModuleSchematics(options: ModuleOptions): Rule {
   return chain([
     createComponentsModuleFileDefinition(options),
     createContainersModuleFileDefinition(options),
     createOtherFolders(options),
+    createMainModuleRoutingDefinition(options),
     createMainModuleFileDefinition(options),
   ]);
 }
