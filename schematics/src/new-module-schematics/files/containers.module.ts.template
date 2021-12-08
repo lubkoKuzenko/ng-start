@@ -1,0 +1,12 @@
+import { NgModule, Type } from '@angular/core';
+import { SharedModule } from '@rbs/shared';
+import { <%= classify(name) %>ComponentsModule } from './components/components.module';
+
+const <%= camelize(name) %>Containers: Array<Type<any>> = [];
+
+@NgModule({
+  declarations: [...<%= camelize(name) %>Containers],
+  imports: [SharedModule, <%= classify(name) %>ComponentsModule],
+  exports: [...<%= camelize(name) %>Containers],
+})
+export class <%= classify(name) %>ContainersModule {}

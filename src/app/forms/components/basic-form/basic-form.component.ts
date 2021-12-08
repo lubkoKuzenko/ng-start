@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, ChangeDetectionStrategy } from "@angular/core";
 import { FormGroup, FormControl, Validators } from "@angular/forms";
 import { getDirtyValues } from "../../../../utils/getDirtyValuesFromForm";
+import { BasicFormValidators } from "../validators";
 
 @Component({
   selector: "bb-basic-form",
@@ -11,10 +12,13 @@ import { getDirtyValues } from "../../../../utils/getDirtyValuesFromForm";
 export class BasicFormComponent implements OnInit {
   @Input() public data;
 
-  public form = new FormGroup({
-    firstName: new FormControl("", [Validators.required, Validators.maxLength(3)]),
-    lastName: new FormControl("", [Validators.required]),
-  });
+  public form = new FormGroup(
+    {
+      firstName: new FormControl("", [Validators.required, Validators.maxLength(3)]),
+      lastName: new FormControl("", [Validators.required]),
+    },
+    { validators: BasicFormValidators.fullNameValidator() },
+  );
 
   get controls() {
     return this.form.controls;
