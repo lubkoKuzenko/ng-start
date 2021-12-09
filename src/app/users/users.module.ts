@@ -6,10 +6,11 @@ import { UsersRoutingModule } from "./users-routing.module";
 import { UsersContainersModule } from "./containers/containers.module";
 
 import { UsersService } from "./services/users.service";
+import { UsersFacadeService } from "./services/users-facade.service";
 
 @NgModule({
   imports: [CommonModule, SharedModule, UsersContainersModule, UsersRoutingModule],
   declarations: [],
-  providers: [UsersService],
+  providers: [UsersFacadeService, UsersService],
 })
 export class UsersModule {}

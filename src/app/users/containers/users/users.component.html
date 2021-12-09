@@ -25,10 +25,10 @@
       <mat-card>
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>{{ user.name.title }} {{ user.name.first }} {{ user.name.last }}</mat-card-title>
-          <mat-card-subtitle>{{ user.email }}</mat-card-subtitle>
+          <mat-card-title>{{ user.name }}</mat-card-title>
+          <mat-card-subtitle>{{ user.createdAt | date: "short" }}</mat-card-subtitle>
         </mat-card-header>
-        <img mat-card-image [src]="user.picture.large" />
+        <img mat-card-image src="https://randomuser.me/api/portraits/med/men/66.jpg" />
         <mat-card-content>
           <p>
             The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small,
@@ -46,10 +46,11 @@
   <ng-template let-users #listTemplate>
     <mat-list class="col-12">
       <mat-list-item *ngFor="let user of users">
-        <img matListAvatar [src]="user.picture.large" />
-        <h3 matLine>{{ user.name.title }} {{ user.name.first }} {{ user.name.last }}</h3>
+        <img matListAvatar src="https://randomuser.me/api/portraits/med/men/66.jpg" />
+        <h3 matLine>{{ user.id }}</h3>
+        <h3 matLine>{{ user.name }}</h3>
         <p matLine>
-          <span>{{ user.email }}</span>
+          <span>{{ user.createdAt | date: "short" }}</span>
         </p>
       </mat-list-item>
     </mat-list>
@@ -57,7 +58,7 @@
 
   <ng-container *ngIf="users$ | async as users; else loading">
     <div class="col-12">
-      <bb-users-view class="row" [users]="users.results" [userTemplate]="template"></bb-users-view>
+      <bb-users-view class="row" [users]="users" [userTemplate]="template"></bb-users-view>
     </div>
   </ng-container>
 

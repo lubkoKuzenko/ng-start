@@ -6,9 +6,9 @@ import { SharedModule } from "@shared/shared.module";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 
-import mockServer from "./_be-mocks";
+// import mockServer from "./_be-mocks";
 
-mockServer();
+// mockServer();
 
 const APP_CORE_CONFIG = {
   defaultLanguage: "en-US",
