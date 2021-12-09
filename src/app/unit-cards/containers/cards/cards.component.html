@@ -1,0 +1,16 @@
+<div class="row">
+  <mat-toolbar color="primary" class="col-12">
+    <span>Cards</span>
+    <span class="example-spacer"></span>
+  </mat-toolbar>
+
+  <ng-container *ngIf="cards$ | async as cards; else loading">
+    <div class="col-12">
+      <l9-card-view class="row" [cards]="cards"></l9-card-view>
+    </div>
+  </ng-container>
+
+  <ng-template #loading>
+    <bb-loader></bb-loader>
+  </ng-template>
+</div>
