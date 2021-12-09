@@ -1,12 +1,18 @@
 import { Component } from "@angular/core";
-import { CardsFacadeService } from "../../services/cards-facade.service";
+import { map } from "rxjs/operators";
+import { CardsStore } from "../../store/cards.store";
 
 @Component({
   selector: "bb-cards",
   templateUrl: "./cards.component.html",
+  providers: [CardsStore],
 })
 export class CardsComponent {
-  public cards$ = this.cardsFacadeService.getCards();
+  readonly cards$ = this.store.state$.pipe(map((state) => state.cards));
 
-  constructor(public cardsFacadeService: CardsFacadeService) {}
+  constructor(private readonly store: CardsStore) {}
+
+  ngOnInit() {
+    this.store.loadCards();
+  }
 }

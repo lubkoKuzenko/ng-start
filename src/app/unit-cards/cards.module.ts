@@ -6,11 +6,10 @@ import { CardsRoutingModule } from "./cards-routing.module";
 import { CardsContainersModule } from "./containers/containers.module";
 
 import { CardsService } from "./services/cards.service";
-import { CardsFacadeService } from "./services/cards-facade.service";
 
 @NgModule({
   imports: [CommonModule, SharedModule, CardsContainersModule, CardsRoutingModule],
   declarations: [],
-  providers: [CardsFacadeService, CardsService],
+  providers: [CardsService],
 })
 export class CardsModule {}
