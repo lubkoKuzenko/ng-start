@@ -6,7 +6,7 @@
 
   <ng-container *ngIf="cards$ | async as cards; else loading">
     <div class="col-12">
-      <l9-card-view class="row" [cards]="cards"></l9-card-view>
+      <l9-card-view class="row" [cards]="cards" (delete)="onCardDelete($event)"></l9-card-view>
     </div>
   </ng-container>
 

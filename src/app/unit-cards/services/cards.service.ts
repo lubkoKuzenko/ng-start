@@ -9,4 +9,8 @@ export class CardsService {
   getCards() {
     return this.http.get<Card[]>("https://61b194e53c954f001722aa1c.mockapi.io/api/cards");
   }
+
+  deleteCard(cardId: string) {
+    return this.http.delete(`https://61b194e53c954f001722aa1c.mockapi.io/api/cards/${cardId}`);
+  }
 }
