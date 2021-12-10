@@ -6,7 +6,11 @@
 
   <ng-container *ngIf="cards$ | async as cards; else loading">
     <div class="col-12">
-      <l9-card-view class="row" [cards]="cards" (delete)="onCardDelete($event)"></l9-card-view>
+      <l9-card-view class="row" [cards]="cards" (delete)="onCardDelete($event)" (edit)="onEditCard($event)">
+        <summary class="col-4 border border-info d-flex justify-content-center align-items-center" (click)="onAdd()">
+          +
+        </summary>
+      </l9-card-view>
     </div>
   </ng-container>
 

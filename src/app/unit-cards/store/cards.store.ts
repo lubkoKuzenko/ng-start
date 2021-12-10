@@ -42,9 +42,55 @@ export class CardsStore extends ComponentStore<CardsState> {
     ),
   );
 
+  public readonly addCard = this.effect((trigger$: Observable<Card>) =>
+    trigger$.pipe(
+      switchMap((card: Card) => {
+        this.patchState({ loading: true });
+
+        return this.cardsService.addCard(card).pipe(
+          tapResponse(
+            (newCard: Card) =>
+              this.patchState((state) => ({
+                ...state,
+                cards: [...state.cards, newCard],
+                loading: false,
+              })),
+            (_) => this.patchState((state) => ({ cards: state.cards })),
+          ),
+        );
+      }),
+    ),
+  );
+
+  public readonly updateCard = this.effect((trigger$: Observable<Card>) =>
+    trigger$.pipe(
+      switchMap((card: Card) => {
+        this.patchState({ loading: true });
+
+        return this.cardsService.updateCard(card).pipe(
+          tapResponse(
+            () =>
+              this.patchState((state) => {
+                const updatedCategories = state.cards.map((c: Card) => (c.id === card.id ? { ...c, ...card } : c));
+
+                return {
+                  ...state,
+                  cards: [...updatedCategories],
+                  loading: false,
+                };
+              }),
+            (_) => this.patchState((state) => ({ cards: state.cards })),
+          ),
+        );
+      }),
+    ),
+  );
+
   public readonly removeCard = this.effect((trigger$: Observable<string>) =>
     trigger$.pipe(
       switchMap((cardId: string) => {
+        this.patchState({ loading: true });
+
         return this.cardsService.deleteCard(cardId).pipe(
           tapResponse(
             () =>
