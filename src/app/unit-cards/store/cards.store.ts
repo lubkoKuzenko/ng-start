@@ -71,11 +71,11 @@ export class CardsStore extends ComponentStore<CardsState> {
           tapResponse(
             () =>
               this.patchState((state) => {
-                const updatedCategories = state.cards.map((c: Card) => (c.id === card.id ? { ...c, ...card } : c));
+                const updatedCards = state.cards.map((c: Card) => (c.id === card.id ? { ...c, ...card } : c));
 
                 return {
                   ...state,
-                  cards: [...updatedCategories],
+                  cards: [...updatedCards],
                   loading: false,
                 };
               }),
@@ -94,11 +94,15 @@ export class CardsStore extends ComponentStore<CardsState> {
         return this.cardsService.deleteCard(cardId).pipe(
           tapResponse(
             () =>
-              this.patchState((state) => ({
-                ...state,
-                cards: state.cards.filter((card) => card.id !== cardId),
-                loading: false,
-              })),
+              this.patchState((state) => {
+                const updatedCards = state.cards.filter((card) => card.id !== cardId);
+
+                return {
+                  ...state,
+                  cards: [...updatedCards],
+                  loading: false,
+                };
+              }),
             (_) => this.patchState((state) => ({ cards: state.cards })),
           ),
         );
