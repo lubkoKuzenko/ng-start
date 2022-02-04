@@ -18,6 +18,7 @@ export class FormatErrorMessagePipe implements PipeTransform {
       max: `Maximum value should be less then ${validatorValue.max}`,
       pattern: "Control has leading whitespace",
       rangeDate: "Date range is not valid",
+      wrongPasswordFormat: "Password is not valid",
     };
 
     return config[validatorName];

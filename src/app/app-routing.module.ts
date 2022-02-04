@@ -31,6 +31,10 @@ const routes: Routes = [
     path: "patterns",
     loadChildren: () => import("./patterns/patterns.module").then((m) => m.PatternsModule),
   },
+  {
+    path: "unit-tests",
+    loadChildren: () => import("./unit-tests/unit-tests.module").then((m) => m.UnitTestModule),
+  },
   { path: "**", redirectTo: "", pathMatch: "full" },
 ];
 
