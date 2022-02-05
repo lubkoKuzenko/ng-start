@@ -1,6 +1,7 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { FormControl, FormGroup, Validators } from "@angular/forms";
 import { PasswordValidators } from "./form-validators";
+import { PostsService } from "./services/post.service";
 
 @Component({
   template: `
@@ -45,12 +46,19 @@ import { PasswordValidators } from "./form-validators";
       </div>
     </form>
   `,
+  providers: [PostsService],
 })
-export class UnitTestsComponent {
+export class UnitTestsComponent implements OnInit {
   public form = new FormGroup({
     name: new FormControl("test", [Validators.required]),
     password: new FormControl("123", PasswordValidators.isValueSatisfyFormatValidator()),
   });
+
+  constructor(public postService: PostsService) {}
+  ngOnInit(): void {
+    this.postService.getAllPosts().subscribe((p) => console.log(p));
+    this.postService.getPostById("2").subscribe((p) => console.log(p));
+  }
 
   public onClick() {
     console.log("test");
