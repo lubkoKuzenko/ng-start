@@ -1,0 +1,287 @@
+99865b03bcfa684d73670ba3bfe7fa44
+"use strict";
+
+/* istanbul ignore next */
+function cov_1ycy0zfn44() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/components/loader/loader.component.ts";
+  var hash = "ab51a09227217b9a8818366877e6287de2066a67";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/components/loader/loader.component.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 33
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 15
+        },
+        end: {
+          line: 6,
+          column: 30
+        }
+      },
+      "5": {
+        start: {
+          line: 7,
+          column: 25
+        },
+        end: {
+          line: 7,
+          column: 65
+        }
+      },
+      "6": {
+        start: {
+          line: 8,
+          column: 22
+        },
+        end: {
+          line: 16,
+          column: 1
+        }
+      },
+      "7": {
+        start: {
+          line: 10,
+          column: 8
+        },
+        end: {
+          line: 10,
+          column: 43
+        }
+      },
+      "8": {
+        start: {
+          line: 11,
+          column: 8
+        },
+        end: {
+          line: 11,
+          column: 41
+        }
+      },
+      "9": {
+        start: {
+          line: 14,
+          column: 8
+        },
+        end: {
+          line: 14,
+          column: 50
+        }
+      },
+      "10": {
+        start: {
+          line: 17,
+          column: 0
+        },
+        end: {
+          line: 24,
+          column: 20
+        }
+      },
+      "11": {
+        start: {
+          line: 25,
+          column: 0
+        },
+        end: {
+          line: 25,
+          column: 42
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 9,
+            column: 4
+          },
+          end: {
+            line: 9,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 9,
+            column: 31
+          },
+          end: {
+            line: 12,
+            column: 5
+          }
+        },
+        line: 9
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 13,
+            column: 4
+          },
+          end: {
+            line: 13,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 13,
+            column: 15
+          },
+          end: {
+            line: 15,
+            column: 5
+          }
+        },
+        line: 13
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/components/loader/loader.component.ts",
+      mappings: ";;;;AAAA,wCAAkD;AAClD,+BAAsC;AACtC,kEAA8D;AAO9D,IAAa,eAAe,GAA5B,MAAa,eAAe;IAG1B,YAAoB,aAA4B;QAA5B,kBAAa,GAAb,aAAa,CAAe;QAFhD,aAAQ,GAAwB,SAAE,CAAC,KAAK,CAAC,CAAC;IAES,CAAC;IAEpD,QAAQ;QACN,IAAI,CAAC,QAAQ,GAAG,IAAI,CAAC,aAAa,CAAC,MAAM,CAAC;IAC5C,CAAC;CACF,CAAA;AARY,eAAe;IAL3B,gBAAS,CAAC;QACT,QAAQ,EAAE,WAAW;QACrB,kBAAa,yBAAyB,CAAA;QACtC,SAAS,IAA6B;KACvC,CAAC;6CAImC,8BAAa;GAHrC,eAAe,CAQ3B;AARY,0CAAe",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/components/loader/loader.component.ts"],
+      sourcesContent: ["import { Component, OnInit } from \"@angular/core\";\nimport { Observable, of } from \"rxjs\";\nimport { LoaderService } from \"@core/services/loader.service\";\n\n@Component({\n  selector: \"bb-loader\",\n  templateUrl: \"./loader.component.html\",\n  styleUrls: [\"./loader.component.scss\"],\n})\nexport class LoaderComponent implements OnInit {\n  loading$: Observable<boolean> = of(false);\n\n  constructor(private loaderService: LoaderService) {}\n\n  ngOnInit() {\n    this.loading$ = this.loaderService.status;\n  }\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "ab51a09227217b9a8818366877e6287de2066a67"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1ycy0zfn44 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_1ycy0zfn44();
+cov_1ycy0zfn44().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_1ycy0zfn44().s[1]++;
+exports.LoaderComponent = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_1ycy0zfn44().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_1ycy0zfn44().s[3]++, require("@angular/core"));
+const rxjs_1 =
+/* istanbul ignore next */
+(cov_1ycy0zfn44().s[4]++, require("rxjs"));
+const loader_service_1 =
+/* istanbul ignore next */
+(cov_1ycy0zfn44().s[5]++, require("@core/services/loader.service"));
+
+/* istanbul ignore next */
+cov_1ycy0zfn44().s[6]++;
+let LoaderComponent = class LoaderComponent {
+  constructor(loaderService) {
+    /* istanbul ignore next */
+    cov_1ycy0zfn44().f[0]++;
+    cov_1ycy0zfn44().s[7]++;
+    this.loaderService = loaderService;
+
+    /* istanbul ignore next */
+    cov_1ycy0zfn44().s[8]++;
+    this.loading$ = rxjs_1.of(false);
+  }
+
+  ngOnInit() {
+    /* istanbul ignore next */
+    cov_1ycy0zfn44().f[1]++;
+    cov_1ycy0zfn44().s[9]++;
+    this.loading$ = this.loaderService.status;
+  }
+
+};
+
+/* istanbul ignore next */
+cov_1ycy0zfn44().s[10]++;
+LoaderComponent = tslib_1.__decorate([core_1.Component({
+  selector: "bb-loader",
+  template: require("./loader.component.html"),
+  styleUrls: []
+}), tslib_1.__metadata("design:paramtypes", [loader_service_1.LoaderService])], LoaderComponent);
+
+/* istanbul ignore next */
+cov_1ycy0zfn44().s[11]++;
+exports.LoaderComponent = LoaderComponent;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC9Ac2hhcmVkL2NvbXBvbmVudHMvbG9hZGVyL2xvYWRlci5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFpQkM7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBakJELE1BQUEsTUFBQTtBQUFBO0FBQUEsMEJBQUEsT0FBQSxDQUFBLGVBQUEsQ0FBQSxDQUFBO0FBQ0EsTUFBQSxNQUFBO0FBQUE7QUFBQSwwQkFBQSxPQUFBLENBQUEsTUFBQSxDQUFBLENBQUE7QUFDQSxNQUFBLGdCQUFBO0FBQUE7QUFBQSwwQkFBQSxPQUFBLENBQUEsK0JBQUEsQ0FBQSxDQUFBOzs7O0FBT0EsSUFBYSxlQUFlLEdBQTVCLE1BQWEsZUFBYixDQUE0QjtBQUcxQixFQUFBLFdBQUEsQ0FBb0IsYUFBcEIsRUFBZ0Q7QUFBQTtBQUFBO0FBQUE7QUFBNUIsU0FBQSxhQUFBLEdBQUEsYUFBQTs7QUFBNEI7QUFBQTtBQUZoRCxTQUFBLFFBQUEsR0FBZ0MsTUFBQSxDQUFBLEVBQUEsQ0FBRyxLQUFILENBQWhDO0FBRW9EOztBQUVwRCxFQUFBLFFBQVEsR0FBQTtBQUFBO0FBQUE7QUFBQTtBQUNOLFNBQUssUUFBTCxHQUFnQixLQUFLLGFBQUwsQ0FBbUIsTUFBbkM7QUFDRDs7QUFQeUIsQ0FBNUI7Ozs7QUFBYSxlQUFlLEdBQUEsT0FBQSxDQUFBLFVBQUEsQ0FBQSxDQUwzQixNQUFBLENBQUEsU0FBQSxDQUFVO0FBQ1QsRUFBQSxRQUFRLEVBQUUsV0FERDtBQUVULEVBQUEsUUFBQSxFQUFBLE9BQUEsQ0FBYSx5QkFBYixDQUZTO0FBR1QsRUFBQSxTQUFTLEVBQUE7QUFIQSxDQUFWLENBSzJCLEUseUNBR1MsZ0JBQUEsQ0FBQSxhLEVBSFQsQ0FBQSxFQUFmLGVBQWUsQ0FBZjs7OztBQUFBLE9BQUEsQ0FBQSxlQUFBLEdBQUEsZUFBQSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENvbXBvbmVudCwgT25Jbml0IH0gZnJvbSBcIkBhbmd1bGFyL2NvcmVcIjtcbmltcG9ydCB7IE9ic2VydmFibGUsIG9mIH0gZnJvbSBcInJ4anNcIjtcbmltcG9ydCB7IExvYWRlclNlcnZpY2UgfSBmcm9tIFwiQGNvcmUvc2VydmljZXMvbG9hZGVyLnNlcnZpY2VcIjtcblxuQENvbXBvbmVudCh7XG4gIHNlbGVjdG9yOiBcImJiLWxvYWRlclwiLFxuICB0ZW1wbGF0ZVVybDogXCIuL2xvYWRlci5jb21wb25lbnQuaHRtbFwiLFxuICBzdHlsZVVybHM6IFtcIi4vbG9hZGVyLmNvbXBvbmVudC5zY3NzXCJdLFxufSlcbmV4cG9ydCBjbGFzcyBMb2FkZXJDb21wb25lbnQgaW1wbGVtZW50cyBPbkluaXQge1xuICBsb2FkaW5nJDogT2JzZXJ2YWJsZTxib29sZWFuPiA9IG9mKGZhbHNlKTtcblxuICBjb25zdHJ1Y3Rvcihwcml2YXRlIGxvYWRlclNlcnZpY2U6IExvYWRlclNlcnZpY2UpIHt9XG5cbiAgbmdPbkluaXQoKSB7XG4gICAgdGhpcy5sb2FkaW5nJCA9IHRoaXMubG9hZGVyU2VydmljZS5zdGF0dXM7XG4gIH1cbn1cbiJdfQ==

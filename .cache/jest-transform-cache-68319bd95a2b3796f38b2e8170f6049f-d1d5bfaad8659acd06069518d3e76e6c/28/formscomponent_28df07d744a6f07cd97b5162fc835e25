@@ -1,0 +1,234 @@
+af9b7d648308a6cb6b541bb35c1b3287
+"use strict";
+
+/* istanbul ignore next */
+function cov_2r7dd1slgs() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/containers/forms/forms.component.ts";
+  var hash = "f3181e5845bf99edf620a47d02bf577847e4c22c";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/containers/forms/forms.component.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 32
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 15
+        },
+        end: {
+          line: 6,
+          column: 30
+        }
+      },
+      "5": {
+        start: {
+          line: 7,
+          column: 21
+        },
+        end: {
+          line: 12,
+          column: 1
+        }
+      },
+      "6": {
+        start: {
+          line: 9,
+          column: 8
+        },
+        end: {
+          line: 9,
+          column: 86
+        }
+      },
+      "7": {
+        start: {
+          line: 10,
+          column: 8
+        },
+        end: {
+          line: 10,
+          column: 58
+        }
+      },
+      "8": {
+        start: {
+          line: 13,
+          column: 0
+        },
+        end: {
+          line: 18,
+          column: 19
+        }
+      },
+      "9": {
+        start: {
+          line: 19,
+          column: 0
+        },
+        end: {
+          line: 19,
+          column: 40
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 8,
+            column: 4
+          },
+          end: {
+            line: 8,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 8,
+            column: 18
+          },
+          end: {
+            line: 11,
+            column: 5
+          }
+        },
+        line: 8
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/containers/forms/forms.component.ts",
+      mappings: ";;;;AAAA,wCAA0C;AAC1C,+BAA0B;AAM1B,IAAa,cAAc,GAA3B,MAAa,cAAc;IAA3B;QACS,eAAU,GAAG,SAAE,CAAC,EAAE,SAAS,EAAE,WAAW,EAAE,QAAQ,EAAE,UAAU,EAAE,CAAC,CAAC;QAClE,qBAAgB,GAAG,SAAE,CAAC,EAAE,OAAO,EAAE,CAAC,EAAE,CAAC,CAAC;IAC/C,CAAC;CAAA,CAAA;AAHY,cAAc;IAJ1B,gBAAS,CAAC;QACT,kBAAa,wBAAwB,CAAA;QACrC,SAAS,IAA4B;KACtC,CAAC;GACW,cAAc,CAG1B;AAHY,wCAAc",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/containers/forms/forms.component.ts"],
+      sourcesContent: ["import { Component } from \"@angular/core\";\nimport { of } from \"rxjs\";\n\n@Component({\n  templateUrl: \"./forms.component.html\",\n  styleUrls: [\"./forms.component.scss\"],\n})\nexport class FormsComponent {\n  public basicForm$ = of({ firstName: \"firstName\", lastName: \"lastName\" });\n  public customFieldForm$ = of({ counter: 2 });\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "f3181e5845bf99edf620a47d02bf577847e4c22c"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2r7dd1slgs = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_2r7dd1slgs();
+cov_2r7dd1slgs().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_2r7dd1slgs().s[1]++;
+exports.FormsComponent = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_2r7dd1slgs().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_2r7dd1slgs().s[3]++, require("@angular/core"));
+const rxjs_1 =
+/* istanbul ignore next */
+(cov_2r7dd1slgs().s[4]++, require("rxjs"));
+
+/* istanbul ignore next */
+cov_2r7dd1slgs().s[5]++;
+let FormsComponent = class FormsComponent {
+  constructor() {
+    /* istanbul ignore next */
+    cov_2r7dd1slgs().f[0]++;
+    cov_2r7dd1slgs().s[6]++;
+    this.basicForm$ = rxjs_1.of({
+      firstName: "firstName",
+      lastName: "lastName"
+    });
+
+    /* istanbul ignore next */
+    cov_2r7dd1slgs().s[7]++;
+    this.customFieldForm$ = rxjs_1.of({
+      counter: 2
+    });
+  }
+
+};
+
+/* istanbul ignore next */
+cov_2r7dd1slgs().s[8]++;
+FormsComponent = tslib_1.__decorate([core_1.Component({
+  template: require("./forms.component.html"),
+  styleUrls: []
+})], FormsComponent);
+
+/* istanbul ignore next */
+cov_2r7dd1slgs().s[9]++;
+exports.FormsComponent = FormsComponent;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC9mb3Jtcy9jb250YWluZXJzL2Zvcm1zL2Zvcm1zLmNvbXBvbmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFLRTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFMRixNQUFBLE1BQUE7QUFBQTtBQUFBLDBCQUFBLE9BQUEsQ0FBQSxlQUFBLENBQUEsQ0FBQTtBQUNBLE1BQUEsTUFBQTtBQUFBO0FBQUEsMEJBQUEsT0FBQSxDQUFBLE1BQUEsQ0FBQSxDQUFBOzs7O0FBTUEsSUFBYSxjQUFjLEdBQTNCLE1BQWEsY0FBYixDQUEyQjtBQUEzQixFQUFBLFdBQUEsR0FBQTtBQUFBO0FBQUE7QUFBQTtBQUNTLFNBQUEsVUFBQSxHQUFhLE1BQUEsQ0FBQSxFQUFBLENBQUc7QUFBRSxNQUFBLFNBQVMsRUFBRSxXQUFiO0FBQTBCLE1BQUEsUUFBUSxFQUFFO0FBQXBDLEtBQUgsQ0FBYjs7QUFEVDtBQUFBO0FBRVMsU0FBQSxnQkFBQSxHQUFtQixNQUFBLENBQUEsRUFBQSxDQUFHO0FBQUUsTUFBQSxPQUFPLEVBQUU7QUFBWCxLQUFILENBQW5CO0FBQ1I7O0FBSDBCLENBQTNCOzs7O0FBQWEsY0FBYyxHQUFBLE9BQUEsQ0FBQSxVQUFBLENBQUEsQ0FKMUIsTUFBQSxDQUFBLFNBQUEsQ0FBVTtBQUNULEVBQUEsUUFBQSxFQUFBLE9BQUEsQ0FBYSx3QkFBYixDQURTO0FBRVQsRUFBQSxTQUFTLEVBQUE7QUFGQSxDQUFWLENBSTBCLENBQUEsRUFBZCxjQUFjLENBQWQ7Ozs7QUFBQSxPQUFBLENBQUEsY0FBQSxHQUFBLGNBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb21wb25lbnQgfSBmcm9tIFwiQGFuZ3VsYXIvY29yZVwiO1xuaW1wb3J0IHsgb2YgfSBmcm9tIFwicnhqc1wiO1xuXG5AQ29tcG9uZW50KHtcbiAgdGVtcGxhdGVVcmw6IFwiLi9mb3Jtcy5jb21wb25lbnQuaHRtbFwiLFxuICBzdHlsZVVybHM6IFtcIi4vZm9ybXMuY29tcG9uZW50LnNjc3NcIl0sXG59KVxuZXhwb3J0IGNsYXNzIEZvcm1zQ29tcG9uZW50IHtcbiAgcHVibGljIGJhc2ljRm9ybSQgPSBvZih7IGZpcnN0TmFtZTogXCJmaXJzdE5hbWVcIiwgbGFzdE5hbWU6IFwibGFzdE5hbWVcIiB9KTtcbiAgcHVibGljIGN1c3RvbUZpZWxkRm9ybSQgPSBvZih7IGNvdW50ZXI6IDIgfSk7XG59XG4iXX0=

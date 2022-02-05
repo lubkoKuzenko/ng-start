@@ -1,0 +1,254 @@
+161d3eb020f4a5f33fb42b476b21d274
+"use strict";
+
+/* istanbul ignore next */
+function cov_ox87441xx() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/users/services/users.service.ts";
+  var hash = "453abce13473d1b8b78afa64c856d2e362f13b70";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/users/services/users.service.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 30
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 15
+        },
+        end: {
+          line: 6,
+          column: 46
+        }
+      },
+      "5": {
+        start: {
+          line: 7,
+          column: 19
+        },
+        end: {
+          line: 14,
+          column: 1
+        }
+      },
+      "6": {
+        start: {
+          line: 9,
+          column: 8
+        },
+        end: {
+          line: 9,
+          column: 25
+        }
+      },
+      "7": {
+        start: {
+          line: 12,
+          column: 8
+        },
+        end: {
+          line: 12,
+          column: 86
+        }
+      },
+      "8": {
+        start: {
+          line: 15,
+          column: 0
+        },
+        end: {
+          line: 18,
+          column: 17
+        }
+      },
+      "9": {
+        start: {
+          line: 19,
+          column: 0
+        },
+        end: {
+          line: 19,
+          column: 36
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 8,
+            column: 4
+          },
+          end: {
+            line: 8,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 8,
+            column: 22
+          },
+          end: {
+            line: 10,
+            column: 5
+          }
+        },
+        line: 8
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 11,
+            column: 4
+          },
+          end: {
+            line: 11,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 11,
+            column: 15
+          },
+          end: {
+            line: 13,
+            column: 5
+          }
+        },
+        line: 11
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/users/services/users.service.ts",
+      mappings: ";;;;AAAA,wCAA2C;AAC3C,+CAAkD;AAIlD,IAAa,YAAY,GAAzB,MAAa,YAAY;IACvB,YAAoB,IAAgB;QAAhB,SAAI,GAAJ,IAAI,CAAY;IAAG,CAAC;IAExC,QAAQ;QACN,OAAO,IAAI,CAAC,IAAI,CAAC,GAAG,CAAS,uDAAuD,CAAC,CAAC;IACxF,CAAC;CACF,CAAA;AANY,YAAY;IADxB,iBAAU,EAAE;6CAEe,iBAAU;GADzB,YAAY,CAMxB;AANY,oCAAY",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/users/services/users.service.ts"],
+      sourcesContent: ["import { Injectable } from \"@angular/core\";\nimport { HttpClient } from \"@angular/common/http\";\nimport { User } from \"../interfaces\";\n\n@Injectable()\nexport class UsersService {\n  constructor(private http: HttpClient) {}\n\n  getUsers() {\n    return this.http.get<User[]>(\"https://61b194e53c954f001722aa1c.mockapi.io/api/users\");\n  }\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "453abce13473d1b8b78afa64c856d2e362f13b70"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_ox87441xx = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_ox87441xx();
+cov_ox87441xx().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_ox87441xx().s[1]++;
+exports.UsersService = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_ox87441xx().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_ox87441xx().s[3]++, require("@angular/core"));
+const http_1 =
+/* istanbul ignore next */
+(cov_ox87441xx().s[4]++, require("@angular/common/http"));
+
+/* istanbul ignore next */
+cov_ox87441xx().s[5]++;
+let UsersService = class UsersService {
+  constructor(http) {
+    /* istanbul ignore next */
+    cov_ox87441xx().f[0]++;
+    cov_ox87441xx().s[6]++;
+    this.http = http;
+  }
+
+  getUsers() {
+    /* istanbul ignore next */
+    cov_ox87441xx().f[1]++;
+    cov_ox87441xx().s[7]++;
+    return this.http.get("https://61b194e53c954f001722aa1c.mockapi.io/api/users");
+  }
+
+};
+
+/* istanbul ignore next */
+cov_ox87441xx().s[8]++;
+UsersService = tslib_1.__decorate([core_1.Injectable(), tslib_1.__metadata("design:paramtypes", [http_1.HttpClient])], UsersService);
+
+/* istanbul ignore next */
+cov_ox87441xx().s[9]++;
+exports.UsersService = UsersService;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC91c2Vycy9zZXJ2aWNlcy91c2Vycy5zZXJ2aWNlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFJQzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFKRCxNQUFBLE1BQUE7QUFBQTtBQUFBLHlCQUFBLE9BQUEsQ0FBQSxlQUFBLENBQUEsQ0FBQTtBQUNBLE1BQUEsTUFBQTtBQUFBO0FBQUEseUJBQUEsT0FBQSxDQUFBLHNCQUFBLENBQUEsQ0FBQTs7OztBQUlBLElBQWEsWUFBWSxHQUF6QixNQUFhLFlBQWIsQ0FBeUI7QUFDdkIsRUFBQSxXQUFBLENBQW9CLElBQXBCLEVBQW9DO0FBQUE7QUFBQTtBQUFBO0FBQWhCLFNBQUEsSUFBQSxHQUFBLElBQUE7QUFBb0I7O0FBRXhDLEVBQUEsUUFBUSxHQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ04sV0FBTyxLQUFLLElBQUwsQ0FBVSxHQUFWLENBQXNCLHVEQUF0QixDQUFQO0FBQ0Q7O0FBTHNCLENBQXpCOzs7O0FBQWEsWUFBWSxHQUFBLE9BQUEsQ0FBQSxVQUFBLENBQUEsQ0FEeEIsTUFBQSxDQUFBLFVBQUEsRUFDd0IsRSx5Q0FDRyxNQUFBLENBQUEsVSxFQURILENBQUEsRUFBWixZQUFZLENBQVo7Ozs7QUFBQSxPQUFBLENBQUEsWUFBQSxHQUFBLFlBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBJbmplY3RhYmxlIH0gZnJvbSBcIkBhbmd1bGFyL2NvcmVcIjtcbmltcG9ydCB7IEh0dHBDbGllbnQgfSBmcm9tIFwiQGFuZ3VsYXIvY29tbW9uL2h0dHBcIjtcbmltcG9ydCB7IFVzZXIgfSBmcm9tIFwiLi4vaW50ZXJmYWNlc1wiO1xuXG5ASW5qZWN0YWJsZSgpXG5leHBvcnQgY2xhc3MgVXNlcnNTZXJ2aWNlIHtcbiAgY29uc3RydWN0b3IocHJpdmF0ZSBodHRwOiBIdHRwQ2xpZW50KSB7fVxuXG4gIGdldFVzZXJzKCkge1xuICAgIHJldHVybiB0aGlzLmh0dHAuZ2V0PFVzZXJbXT4oXCJodHRwczovLzYxYjE5NGU1M2M5NTRmMDAxNzIyYWExYy5tb2NrYXBpLmlvL2FwaS91c2Vyc1wiKTtcbiAgfVxufVxuIl19

@@ -1,0 +1,343 @@
+9059e77cd35ce06c42e1fb54e0e879c7
+"use strict";
+
+/* istanbul ignore next */
+function cov_12dm4n1tf3() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/directives/alphabet-only.directive.ts";
+  var hash = "19c0927443a4af5610c097cba7de88776d5ffa7a";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/directives/alphabet-only.directive.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 39
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 28
+        },
+        end: {
+          line: 14,
+          column: 1
+        }
+      },
+      "5": {
+        start: {
+          line: 8,
+          column: 8
+        },
+        end: {
+          line: 12,
+          column: 9
+        }
+      },
+      "6": {
+        start: {
+          line: 11,
+          column: 12
+        },
+        end: {
+          line: 11,
+          column: 35
+        }
+      },
+      "7": {
+        start: {
+          line: 15,
+          column: 0
+        },
+        end: {
+          line: 20,
+          column: 55
+        }
+      },
+      "8": {
+        start: {
+          line: 21,
+          column: 0
+        },
+        end: {
+          line: 25,
+          column: 26
+        }
+      },
+      "9": {
+        start: {
+          line: 26,
+          column: 0
+        },
+        end: {
+          line: 26,
+          column: 54
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 7,
+            column: 4
+          },
+          end: {
+            line: 7,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 7,
+            column: 21
+          },
+          end: {
+            line: 13,
+            column: 5
+          }
+        },
+        line: 7
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 8,
+            column: 8
+          },
+          end: {
+            line: 12,
+            column: 9
+          }
+        },
+        type: "if",
+        locations: [{
+          start: {
+            line: 8,
+            column: 8
+          },
+          end: {
+            line: 12,
+            column: 9
+          }
+        }, {
+          start: {
+            line: undefined,
+            column: undefined
+          },
+          end: {
+            line: undefined,
+            column: undefined
+          }
+        }],
+        line: 8
+      },
+      "1": {
+        loc: {
+          start: {
+            line: 8,
+            column: 12
+          },
+          end: {
+            line: 10,
+            column: 57
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 8,
+            column: 13
+          },
+          end: {
+            line: 8,
+            column: 32
+          }
+        }, {
+          start: {
+            line: 8,
+            column: 36
+          },
+          end: {
+            line: 8,
+            column: 55
+          }
+        }, {
+          start: {
+            line: 9,
+            column: 12
+          },
+          end: {
+            line: 9,
+            column: 32
+          }
+        }, {
+          start: {
+            line: 10,
+            column: 13
+          },
+          end: {
+            line: 10,
+            column: 32
+          }
+        }, {
+          start: {
+            line: 10,
+            column: 36
+          },
+          end: {
+            line: 10,
+            column: 56
+          }
+        }],
+        line: 8
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {
+      "0": [0, 0],
+      "1": [0, 0, 0, 0, 0]
+    },
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/directives/alphabet-only.directive.ts",
+      mappings: ";;;;AAAA,wCAAwD;AAKxD,IAAa,qBAAqB,GAAlC,MAAa,qBAAqB;IACY,SAAS,CAAC,KAAoB;QACxE,IACE,CAAC,KAAK,CAAC,OAAO,IAAI,EAAE,IAAI,KAAK,CAAC,OAAO,IAAI,EAAE,CAAC;YAC5C,KAAK,CAAC,OAAO,IAAI,GAAG;YACpB,CAAC,KAAK,CAAC,OAAO,IAAI,EAAE,IAAI,KAAK,CAAC,OAAO,IAAI,GAAG,CAAC,EAC7C;YACA,KAAK,CAAC,cAAc,EAAE,CAAC;SACxB;IACH,CAAC;CACF,CAAA;AATsC;IAApC,mBAAY,CAAC,SAAS,EAAE,CAAC,QAAQ,CAAC,CAAC;;6CAAyB,aAAa;;sDAQzE;AATU,qBAAqB;IAHjC,gBAAS,CAAC;QACT,QAAQ,EAAE,kBAAkB;KAC7B,CAAC;GACW,qBAAqB,CAUjC;AAVY,sDAAqB",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/directives/alphabet-only.directive.ts"],
+      sourcesContent: ["import { Directive, HostListener } from \"@angular/core\";\n\n@Directive({\n  selector: \"[bbAlphabetOnly]\",\n})\nexport class AlphabetOnlyDirective {\n  @HostListener(\"keydown\", [\"$event\"]) public onKeydown(event: KeyboardEvent) {\n    if (\n      (event.keyCode >= 15 && event.keyCode <= 64) ||\n      event.keyCode >= 123 ||\n      (event.keyCode >= 96 && event.keyCode <= 105)\n    ) {\n      event.preventDefault();\n    }\n  }\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "19c0927443a4af5610c097cba7de88776d5ffa7a"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_12dm4n1tf3 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_12dm4n1tf3();
+cov_12dm4n1tf3().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_12dm4n1tf3().s[1]++;
+exports.AlphabetOnlyDirective = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_12dm4n1tf3().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_12dm4n1tf3().s[3]++, require("@angular/core"));
+
+/* istanbul ignore next */
+cov_12dm4n1tf3().s[4]++;
+let AlphabetOnlyDirective = class AlphabetOnlyDirective {
+  onKeydown(event) {
+    /* istanbul ignore next */
+    cov_12dm4n1tf3().f[0]++;
+    cov_12dm4n1tf3().s[5]++;
+
+    if (
+    /* istanbul ignore next */
+    (cov_12dm4n1tf3().b[1][0]++, event.keyCode >= 15) &&
+    /* istanbul ignore next */
+    (cov_12dm4n1tf3().b[1][1]++, event.keyCode <= 64) ||
+    /* istanbul ignore next */
+    (cov_12dm4n1tf3().b[1][2]++, event.keyCode >= 123) ||
+    /* istanbul ignore next */
+    (cov_12dm4n1tf3().b[1][3]++, event.keyCode >= 96) &&
+    /* istanbul ignore next */
+    (cov_12dm4n1tf3().b[1][4]++, event.keyCode <= 105)) {
+      /* istanbul ignore next */
+      cov_12dm4n1tf3().b[0][0]++;
+      cov_12dm4n1tf3().s[6]++;
+      event.preventDefault();
+    } else
+    /* istanbul ignore next */
+    {
+      cov_12dm4n1tf3().b[0][1]++;
+    }
+  }
+
+};
+
+/* istanbul ignore next */
+cov_12dm4n1tf3().s[7]++;
+
+tslib_1.__decorate([core_1.HostListener("keydown", ["$event"]), tslib_1.__metadata("design:type", Function), tslib_1.__metadata("design:paramtypes", [KeyboardEvent]), tslib_1.__metadata("design:returntype", void 0)], AlphabetOnlyDirective.prototype, "onKeydown", null);
+
+/* istanbul ignore next */
+cov_12dm4n1tf3().s[8]++;
+AlphabetOnlyDirective = tslib_1.__decorate([core_1.Directive({
+  selector: "[bbAlphabetOnly]"
+})], AlphabetOnlyDirective);
+
+/* istanbul ignore next */
+cov_12dm4n1tf3().s[9]++;
+exports.AlphabetOnlyDirective = AlphabetOnlyDirective;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC9Ac2hhcmVkL2RpcmVjdGl2ZXMvYWxwaGFiZXQtb25seS5kaXJlY3RpdmUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQU1HOzs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQU5ILE1BQUEsTUFBQTtBQUFBO0FBQUEsMEJBQUEsT0FBQSxDQUFBLGVBQUEsQ0FBQSxDQUFBOzs7O0FBS0EsSUFBYSxxQkFBcUIsR0FBbEMsTUFBYSxxQkFBYixDQUFrQztBQUNZLEVBQUEsU0FBUyxDQUFDLEtBQUQsRUFBcUI7QUFBQTtBQUFBO0FBQUE7O0FBQ3hFO0FBQ0c7QUFBQSxpQ0FBQSxLQUFLLENBQUMsT0FBTixJQUFpQixFQUFqQjtBQUFBO0FBQUEsaUNBQXVCLEtBQUssQ0FBQyxPQUFOLElBQWlCLEVBQXhDLENBQUQ7QUFBQTtBQUFBLGlDQUNBLEtBQUssQ0FBQyxPQUFOLElBQWlCLEdBRGpCO0FBRUM7QUFBQSxpQ0FBQSxLQUFLLENBQUMsT0FBTixJQUFpQixFQUFqQjtBQUFBO0FBQUEsaUNBQXVCLEtBQUssQ0FBQyxPQUFOLElBQWlCLEdBQXhDLENBSEgsRUFJRTtBQUFBO0FBQUE7QUFBQTtBQUNBLE1BQUEsS0FBSyxDQUFDLGNBQU47QUFDRCxLQU5EO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFPRDs7QUFUK0IsQ0FBbEM7Ozs7O0FBQ3VDLE9BQUEsQ0FBQSxVQUFBLENBQUEsQ0FBcEMsTUFBQSxDQUFBLFlBQUEsQ0FBYSxTQUFiLEVBQXdCLENBQUMsUUFBRCxDQUF4QixDQUFvQyxFLDJDQUFBLEUseUNBQXdCLGEsRUFBeEIsRSwrQ0FBQSxDQUFBLEUsK0JBQUEsRSxXQUFBLEVBUXBDLElBUm9DOzs7O0FBRDFCLHFCQUFxQixHQUFBLE9BQUEsQ0FBQSxVQUFBLENBQUEsQ0FIakMsTUFBQSxDQUFBLFNBQUEsQ0FBVTtBQUNULEVBQUEsUUFBUSxFQUFFO0FBREQsQ0FBVixDQUdpQyxDQUFBLEVBQXJCLHFCQUFxQixDQUFyQjs7OztBQUFBLE9BQUEsQ0FBQSxxQkFBQSxHQUFBLHFCQUFBIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgRGlyZWN0aXZlLCBIb3N0TGlzdGVuZXIgfSBmcm9tIFwiQGFuZ3VsYXIvY29yZVwiO1xuXG5ARGlyZWN0aXZlKHtcbiAgc2VsZWN0b3I6IFwiW2JiQWxwaGFiZXRPbmx5XVwiLFxufSlcbmV4cG9ydCBjbGFzcyBBbHBoYWJldE9ubHlEaXJlY3RpdmUge1xuICBASG9zdExpc3RlbmVyKFwia2V5ZG93blwiLCBbXCIkZXZlbnRcIl0pIHB1YmxpYyBvbktleWRvd24oZXZlbnQ6IEtleWJvYXJkRXZlbnQpIHtcbiAgICBpZiAoXG4gICAgICAoZXZlbnQua2V5Q29kZSA+PSAxNSAmJiBldmVudC5rZXlDb2RlIDw9IDY0KSB8fFxuICAgICAgZXZlbnQua2V5Q29kZSA+PSAxMjMgfHxcbiAgICAgIChldmVudC5rZXlDb2RlID49IDk2ICYmIGV2ZW50LmtleUNvZGUgPD0gMTA1KVxuICAgICkge1xuICAgICAgZXZlbnQucHJldmVudERlZmF1bHQoKTtcbiAgICB9XG4gIH1cbn1cbiJdfQ==

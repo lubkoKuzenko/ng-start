@@ -1,0 +1,171 @@
+383f0e5497a006fe6239c552fdb96b8d
+"use strict";
+
+/* istanbul ignore next */
+function cov_utyzwcu86() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/rxjs/components/random-image/random-image.component.ts";
+  var hash = "01b639b7e2976cd4d846bddc9159cd82b4b4621e";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/rxjs/components/random-image/random-image.component.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 38
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 27
+        },
+        end: {
+          line: 7,
+          column: 1
+        }
+      },
+      "5": {
+        start: {
+          line: 8,
+          column: 0
+        },
+        end: {
+          line: 11,
+          column: 52
+        }
+      },
+      "6": {
+        start: {
+          line: 12,
+          column: 0
+        },
+        end: {
+          line: 18,
+          column: 25
+        }
+      },
+      "7": {
+        start: {
+          line: 19,
+          column: 0
+        },
+        end: {
+          line: 19,
+          column: 52
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/rxjs/components/random-image/random-image.component.ts",
+      mappings: ";;;;AAAA,wCAAiD;AAOjD,IAAa,oBAAoB,GAAjC,MAAa,oBAAoB;CAEhC,CAAA;AADU;IAAR,YAAK,EAAE;;mDAAoB;AADjB,oBAAoB;IALhC,gBAAS,CAAC;QACT,QAAQ,EAAE,iBAAiB;QAC3B,kBAAa,+BAA+B,CAAA;QAC5C,SAAS,IAAmC;KAC7C,CAAC;GACW,oBAAoB,CAEhC;AAFY,oDAAoB",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/rxjs/components/random-image/random-image.component.ts"],
+      sourcesContent: ["import { Component, Input } from \"@angular/core\";\n\n@Component({\n  selector: \"bb-random-image\",\n  templateUrl: \"./random-image.component.html\",\n  styleUrls: [\"./random-image.component.scss\"],\n})\nexport class RandomImageComponent {\n  @Input() public image!: any;\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "01b639b7e2976cd4d846bddc9159cd82b4b4621e"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_utyzwcu86 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_utyzwcu86();
+cov_utyzwcu86().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_utyzwcu86().s[1]++;
+exports.RandomImageComponent = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_utyzwcu86().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_utyzwcu86().s[3]++, require("@angular/core"));
+
+/* istanbul ignore next */
+cov_utyzwcu86().s[4]++;
+let RandomImageComponent = class RandomImageComponent {};
+
+/* istanbul ignore next */
+cov_utyzwcu86().s[5]++;
+
+tslib_1.__decorate([core_1.Input(), tslib_1.__metadata("design:type", Object)], RandomImageComponent.prototype, "image", void 0);
+
+/* istanbul ignore next */
+cov_utyzwcu86().s[6]++;
+RandomImageComponent = tslib_1.__decorate([core_1.Component({
+  selector: "bb-random-image",
+  template: require("./random-image.component.html"),
+  styleUrls: []
+})], RandomImageComponent);
+
+/* istanbul ignore next */
+cov_utyzwcu86().s[7]++;
+exports.RandomImageComponent = RandomImageComponent;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC9yeGpzL2NvbXBvbmVudHMvcmFuZG9tLWltYWdlL3JhbmRvbS1pbWFnZS5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFLRTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFMRixNQUFBLE1BQUE7QUFBQTtBQUFBLHlCQUFBLE9BQUEsQ0FBQSxlQUFBLENBQUEsQ0FBQTs7OztBQU9BLElBQWEsb0JBQW9CLEdBQWpDLE1BQWEsb0JBQWIsQ0FBaUMsRUFBakM7Ozs7O0FBQ1csT0FBQSxDQUFBLFVBQUEsQ0FBQSxDQUFSLE1BQUEsQ0FBQSxLQUFBLEVBQVEsRSx5Q0FBQSxDQUFBLEUsOEJBQUEsRSxPQUFBLEUsS0FBbUIsQ0FBbkI7Ozs7QUFERSxvQkFBb0IsR0FBQSxPQUFBLENBQUEsVUFBQSxDQUFBLENBTGhDLE1BQUEsQ0FBQSxTQUFBLENBQVU7QUFDVCxFQUFBLFFBQVEsRUFBRSxpQkFERDtBQUVULEVBQUEsUUFBQSxFQUFBLE9BQUEsQ0FBYSwrQkFBYixDQUZTO0FBR1QsRUFBQSxTQUFTLEVBQUE7QUFIQSxDQUFWLENBS2dDLENBQUEsRUFBcEIsb0JBQW9CLENBQXBCOzs7O0FBQUEsT0FBQSxDQUFBLG9CQUFBLEdBQUEsb0JBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb21wb25lbnQsIElucHV0IH0gZnJvbSBcIkBhbmd1bGFyL2NvcmVcIjtcblxuQENvbXBvbmVudCh7XG4gIHNlbGVjdG9yOiBcImJiLXJhbmRvbS1pbWFnZVwiLFxuICB0ZW1wbGF0ZVVybDogXCIuL3JhbmRvbS1pbWFnZS5jb21wb25lbnQuaHRtbFwiLFxuICBzdHlsZVVybHM6IFtcIi4vcmFuZG9tLWltYWdlLmNvbXBvbmVudC5zY3NzXCJdLFxufSlcbmV4cG9ydCBjbGFzcyBSYW5kb21JbWFnZUNvbXBvbmVudCB7XG4gIEBJbnB1dCgpIHB1YmxpYyBpbWFnZSE6IGFueTtcbn1cbiJdfQ==

@@ -1,0 +1,188 @@
+1d06e7acd4815fa49a845b248ce7895b
+"use strict";
+
+/* istanbul ignore next */
+function cov_1o06461iz7() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/app.component.ts";
+  var hash = "ff4a4d45a2771788f8f75ddfcc5a6e625fbed150";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/app.component.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 30
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 19
+        },
+        end: {
+          line: 8,
+          column: 1
+        }
+      },
+      "5": {
+        start: {
+          line: 9,
+          column: 0
+        },
+        end: {
+          line: 16,
+          column: 17
+        }
+      },
+      "6": {
+        start: {
+          line: 17,
+          column: 0
+        },
+        end: {
+          line: 17,
+          column: 36
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 7,
+            column: 4
+          },
+          end: {
+            line: 7,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 7,
+            column: 18
+          },
+          end: {
+            line: 7,
+            column: 21
+          }
+        },
+        line: 7
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/app.component.ts",
+      mappings: ";;;;AAAA,wCAA0C;AAO1C,IAAa,YAAY,GAAzB,MAAa,YAAY;IACvB,gBAAe,CAAC;CACjB,CAAA;AAFY,YAAY;IALxB,gBAAS,CAAC;QACT,QAAQ,EAAE,SAAS;QACnB,kBAAa,sBAAsB,CAAA;QACnC,SAAS,IAA0B;KACpC,CAAC;;GACW,YAAY,CAExB;AAFY,oCAAY",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/app.component.ts"],
+      sourcesContent: ["import { Component } from \"@angular/core\";\n\n@Component({\n  selector: \"bb-root\",\n  templateUrl: \"./app.component.html\",\n  styleUrls: [\"./app.component.scss\"],\n})\nexport class AppComponent {\n  constructor() {}\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "ff4a4d45a2771788f8f75ddfcc5a6e625fbed150"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1o06461iz7 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_1o06461iz7();
+cov_1o06461iz7().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_1o06461iz7().s[1]++;
+exports.AppComponent = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_1o06461iz7().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_1o06461iz7().s[3]++, require("@angular/core"));
+
+/* istanbul ignore next */
+cov_1o06461iz7().s[4]++;
+let AppComponent = class AppComponent {
+  constructor() {
+    /* istanbul ignore next */
+    cov_1o06461iz7().f[0]++;
+  }
+
+};
+
+/* istanbul ignore next */
+cov_1o06461iz7().s[5]++;
+AppComponent = tslib_1.__decorate([core_1.Component({
+  selector: "bb-root",
+  template: require("./app.component.html"),
+  styleUrls: []
+}), tslib_1.__metadata("design:paramtypes", [])], AppComponent);
+
+/* istanbul ignore next */
+cov_1o06461iz7().s[6]++;
+exports.AppComponent = AppComponent;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC9hcHAuY29tcG9uZW50LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQU9hOzs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQVBiLE1BQUEsTUFBQTtBQUFBO0FBQUEsMEJBQUEsT0FBQSxDQUFBLGVBQUEsQ0FBQSxDQUFBOzs7O0FBT0EsSUFBYSxZQUFZLEdBQXpCLE1BQWEsWUFBYixDQUF5QjtBQUN2QixFQUFBLFdBQUEsR0FBQTtBQUFBO0FBQUE7QUFBZ0I7O0FBRE8sQ0FBekI7Ozs7QUFBYSxZQUFZLEdBQUEsT0FBQSxDQUFBLFVBQUEsQ0FBQSxDQUx4QixNQUFBLENBQUEsU0FBQSxDQUFVO0FBQ1QsRUFBQSxRQUFRLEVBQUUsU0FERDtBQUVULEVBQUEsUUFBQSxFQUFBLE9BQUEsQ0FBYSxzQkFBYixDQUZTO0FBR1QsRUFBQSxTQUFTLEVBQUE7QUFIQSxDQUFWLENBS3dCLEUsMkNBQUEsQ0FBQSxFQUFaLFlBQVksQ0FBWjs7OztBQUFBLE9BQUEsQ0FBQSxZQUFBLEdBQUEsWUFBQSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENvbXBvbmVudCB9IGZyb20gXCJAYW5ndWxhci9jb3JlXCI7XG5cbkBDb21wb25lbnQoe1xuICBzZWxlY3RvcjogXCJiYi1yb290XCIsXG4gIHRlbXBsYXRlVXJsOiBcIi4vYXBwLmNvbXBvbmVudC5odG1sXCIsXG4gIHN0eWxlVXJsczogW1wiLi9hcHAuY29tcG9uZW50LnNjc3NcIl0sXG59KVxuZXhwb3J0IGNsYXNzIEFwcENvbXBvbmVudCB7XG4gIGNvbnN0cnVjdG9yKCkge31cbn1cbiJdfQ==

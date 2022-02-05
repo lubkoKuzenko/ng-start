@@ -1,0 +1,357 @@
+b82d107fd148a1d3ce97b81bc6a998ec
+"use strict";
+
+/* istanbul ignore next */
+function cov_quoadyfv2() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/unit-tests/unit-tests.component.ts";
+  var hash = "d741fc15e50dccf4ad1155e077a71247f97c72d0";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/unit-tests/unit-tests.component.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 36
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 16
+        },
+        end: {
+          line: 6,
+          column: 41
+        }
+      },
+      "5": {
+        start: {
+          line: 7,
+          column: 26
+        },
+        end: {
+          line: 7,
+          column: 54
+        }
+      },
+      "6": {
+        start: {
+          line: 8,
+          column: 25
+        },
+        end: {
+          line: 21,
+          column: 1
+        }
+      },
+      "7": {
+        start: {
+          line: 10,
+          column: 8
+        },
+        end: {
+          line: 13,
+          column: 11
+        }
+      },
+      "8": {
+        start: {
+          line: 16,
+          column: 8
+        },
+        end: {
+          line: 16,
+          column: 28
+        }
+      },
+      "9": {
+        start: {
+          line: 19,
+          column: 8
+        },
+        end: {
+          line: 19,
+          column: 27
+        }
+      },
+      "10": {
+        start: {
+          line: 22,
+          column: 0
+        },
+        end: {
+          line: 67,
+          column: 23
+        }
+      },
+      "11": {
+        start: {
+          line: 68,
+          column: 0
+        },
+        end: {
+          line: 68,
+          column: 48
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 9,
+            column: 4
+          },
+          end: {
+            line: 9,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 9,
+            column: 18
+          },
+          end: {
+            line: 14,
+            column: 5
+          }
+        },
+        line: 9
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 15,
+            column: 4
+          },
+          end: {
+            line: 15,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 15,
+            column: 14
+          },
+          end: {
+            line: 17,
+            column: 5
+          }
+        },
+        line: 15
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 18,
+            column: 4
+          },
+          end: {
+            line: 18,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 18,
+            column: 15
+          },
+          end: {
+            line: 20,
+            column: 5
+          }
+        },
+        line: 18
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/unit-tests/unit-tests.component.ts",
+      mappings: ";;;;AAAA,wCAA0C;AAC1C,0CAAoE;AACpE,uDAAuD;AA8CvD,IAAa,kBAAkB,GAA/B,MAAa,kBAAkB;IAA/B;QACS,SAAI,GAAG,IAAI,iBAAS,CAAC;YAC1B,IAAI,EAAE,IAAI,mBAAW,CAAC,MAAM,EAAE,CAAC,kBAAU,CAAC,QAAQ,CAAC,CAAC;YACpD,QAAQ,EAAE,IAAI,mBAAW,CAAC,KAAK,EAAE,oCAAkB,CAAC,6BAA6B,EAAE,CAAC;SACrF,CAAC,CAAC;IASL,CAAC;IAPQ,OAAO;QACZ,OAAO,CAAC,GAAG,CAAC,MAAM,CAAC,CAAC;IACtB,CAAC;IAEM,GAAG,CAAC,KAAU;QACnB,OAAO,CAAC,GAAG,CAAC,KAAK,CAAC,CAAC;IACrB,CAAC;CACF,CAAA;AAbY,kBAAkB;IA5C9B,gBAAS,CAAC;QACT,QAAQ,EAAE;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;GAyCT;KACF,CAAC;GACW,kBAAkB,CAa9B;AAbY,gDAAkB",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/unit-tests/unit-tests.component.ts"],
+      sourcesContent: ["import { Component } from \"@angular/core\";\nimport { FormControl, FormGroup, Validators } from \"@angular/forms\";\nimport { PasswordValidators } from \"./form-validators\";\n\n@Component({\n  template: `\n    <h1>Pipes</h1>\n\n    <div>\n      <b>toNumber</b>\n      => {{ \"123\" | toNumber }}\n    </div>\n    <div>\n      <b>orderBy</b>\n      => {{ [{ name: \"Haresh\" }, { name: \"Paresh\" }, { name: \"Amit\" }] | orderBy: \"name\" | json }}\n    </div>\n\n    <h1>Directives</h1>\n    <div>\n      <button [debounceTime]=\"500\" bbDebounceClick (debounceClick)=\"onClick()\">Debounce Click</button>\n    </div>\n\n    <h1>Presentational Component</h1>\n    <test-example [isSubTitleVisible]=\"true\" (click)=\"log($event)\"></test-example>\n    <test-example [isSubTitleVisible]=\"false\" (clickWithParam)=\"log($event)\"></test-example>\n\n    <h1>Form Control Validator</h1>\n    <form [formGroup]=\"form\">\n      <div class=\"row\">\n        <div class=\"col-12\">\n          <mat-form-field>\n            <mat-label>Name</mat-label>\n            <input matInput type=\"text\" formControlName=\"name\" />\n            <bb-validation-message [control]=\"form.controls.name\"></bb-validation-message>\n          </mat-form-field>\n        </div>\n\n        <div class=\"col-12\">\n          <mat-form-field>\n            <mat-label>Password</mat-label>\n            <input matInput type=\"text\" formControlName=\"password\" />\n            <bb-validation-message [control]=\"form.controls.password\"></bb-validation-message>\n          </mat-form-field>\n        </div>\n      </div>\n    </form>\n  `,\n})\nexport class UnitTestsComponent {\n  public form = new FormGroup({\n    name: new FormControl(\"test\", [Validators.required]),\n    password: new FormControl(\"123\", PasswordValidators.isValueSatisfyFormatValidator()),\n  });\n\n  public onClick() {\n    console.log(\"test\");\n  }\n\n  public log(event: any) {\n    console.log(event);\n  }\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "d741fc15e50dccf4ad1155e077a71247f97c72d0"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_quoadyfv2 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_quoadyfv2();
+cov_quoadyfv2().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_quoadyfv2().s[1]++;
+exports.UnitTestsComponent = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_quoadyfv2().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_quoadyfv2().s[3]++, require("@angular/core"));
+const forms_1 =
+/* istanbul ignore next */
+(cov_quoadyfv2().s[4]++, require("@angular/forms"));
+const form_validators_1 =
+/* istanbul ignore next */
+(cov_quoadyfv2().s[5]++, require("./form-validators"));
+
+/* istanbul ignore next */
+cov_quoadyfv2().s[6]++;
+let UnitTestsComponent = class UnitTestsComponent {
+  constructor() {
+    /* istanbul ignore next */
+    cov_quoadyfv2().f[0]++;
+    cov_quoadyfv2().s[7]++;
+    this.form = new forms_1.FormGroup({
+      name: new forms_1.FormControl("test", [forms_1.Validators.required]),
+      password: new forms_1.FormControl("123", form_validators_1.PasswordValidators.isValueSatisfyFormatValidator())
+    });
+  }
+
+  onClick() {
+    /* istanbul ignore next */
+    cov_quoadyfv2().f[1]++;
+    cov_quoadyfv2().s[8]++;
+    console.log("test");
+  }
+
+  log(event) {
+    /* istanbul ignore next */
+    cov_quoadyfv2().f[2]++;
+    cov_quoadyfv2().s[9]++;
+    console.log(event);
+  }
+
+};
+
+/* istanbul ignore next */
+cov_quoadyfv2().s[10]++;
+UnitTestsComponent = tslib_1.__decorate([core_1.Component({
+  template: `
+    <h1>Pipes</h1>
+
+    <div>
+      <b>toNumber</b>
+      => {{ "123" | toNumber }}
+    </div>
+    <div>
+      <b>orderBy</b>
+      => {{ [{ name: "Haresh" }, { name: "Paresh" }, { name: "Amit" }] | orderBy: "name" | json }}
+    </div>
+
+    <h1>Directives</h1>
+    <div>
+      <button [debounceTime]="500" bbDebounceClick (debounceClick)="onClick()">Debounce Click</button>
+    </div>
+
+    <h1>Presentational Component</h1>
+    <test-example [isSubTitleVisible]="true" (click)="log($event)"></test-example>
+    <test-example [isSubTitleVisible]="false" (clickWithParam)="log($event)"></test-example>
+
+    <h1>Form Control Validator</h1>
+    <form [formGroup]="form">
+      <div class="row">
+        <div class="col-12">
+          <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input matInput type="text" formControlName="name" />
+            <bb-validation-message [control]="form.controls.name"></bb-validation-message>
+          </mat-form-field>
+        </div>
+
+        <div class="col-12">
+          <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput type="text" formControlName="password" />
+            <bb-validation-message [control]="form.controls.password"></bb-validation-message>
+          </mat-form-field>
+        </div>
+      </div>
+    </form>
+  `
+})], UnitTestsComponent);
+
+/* istanbul ignore next */
+cov_quoadyfv2().s[11]++;
+exports.UnitTestsComponent = UnitTestsComponent;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC91bml0LXRlc3RzL3VuaXQtdGVzdHMuY29tcG9uZW50LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQXVESTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUF2REosTUFBQSxNQUFBO0FBQUE7QUFBQSx5QkFBQSxPQUFBLENBQUEsZUFBQSxDQUFBLENBQUE7QUFDQSxNQUFBLE9BQUE7QUFBQTtBQUFBLHlCQUFBLE9BQUEsQ0FBQSxnQkFBQSxDQUFBLENBQUE7QUFDQSxNQUFBLGlCQUFBO0FBQUE7QUFBQSx5QkFBQSxPQUFBLENBQUEsbUJBQUEsQ0FBQSxDQUFBOzs7O0FBOENBLElBQWEsa0JBQWtCLEdBQS9CLE1BQWEsa0JBQWIsQ0FBK0I7QUFBL0IsRUFBQSxXQUFBLEdBQUE7QUFBQTtBQUFBO0FBQUE7QUFDUyxTQUFBLElBQUEsR0FBTyxJQUFJLE9BQUEsQ0FBQSxTQUFKLENBQWM7QUFDMUIsTUFBQSxJQUFJLEVBQUUsSUFBSSxPQUFBLENBQUEsV0FBSixDQUFnQixNQUFoQixFQUF3QixDQUFDLE9BQUEsQ0FBQSxVQUFBLENBQVcsUUFBWixDQUF4QixDQURvQjtBQUUxQixNQUFBLFFBQVEsRUFBRSxJQUFJLE9BQUEsQ0FBQSxXQUFKLENBQWdCLEtBQWhCLEVBQXVCLGlCQUFBLENBQUEsa0JBQUEsQ0FBbUIsNkJBQW5CLEVBQXZCO0FBRmdCLEtBQWQsQ0FBUDtBQVlSOztBQVBRLEVBQUEsT0FBTyxHQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ1osSUFBQSxPQUFPLENBQUMsR0FBUixDQUFZLE1BQVo7QUFDRDs7QUFFTSxFQUFBLEdBQUcsQ0FBQyxLQUFELEVBQVc7QUFBQTtBQUFBO0FBQUE7QUFDbkIsSUFBQSxPQUFPLENBQUMsR0FBUixDQUFZLEtBQVo7QUFDRDs7QUFaNEIsQ0FBL0I7Ozs7QUFBYSxrQkFBa0IsR0FBQSxPQUFBLENBQUEsVUFBQSxDQUFBLENBNUM5QixNQUFBLENBQUEsU0FBQSxDQUFVO0FBQ1QsRUFBQSxRQUFRLEVBQUU7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBeUNUO0FBMUNRLENBQVYsQ0E0QzhCLENBQUEsRUFBbEIsa0JBQWtCLENBQWxCOzs7O0FBQUEsT0FBQSxDQUFBLGtCQUFBLEdBQUEsa0JBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb21wb25lbnQgfSBmcm9tIFwiQGFuZ3VsYXIvY29yZVwiO1xuaW1wb3J0IHsgRm9ybUNvbnRyb2wsIEZvcm1Hcm91cCwgVmFsaWRhdG9ycyB9IGZyb20gXCJAYW5ndWxhci9mb3Jtc1wiO1xuaW1wb3J0IHsgUGFzc3dvcmRWYWxpZGF0b3JzIH0gZnJvbSBcIi4vZm9ybS12YWxpZGF0b3JzXCI7XG5cbkBDb21wb25lbnQoe1xuICB0ZW1wbGF0ZTogYFxuICAgIDxoMT5QaXBlczwvaDE+XG5cbiAgICA8ZGl2PlxuICAgICAgPGI+dG9OdW1iZXI8L2I+XG4gICAgICA9PiB7eyBcIjEyM1wiIHwgdG9OdW1iZXIgfX1cbiAgICA8L2Rpdj5cbiAgICA8ZGl2PlxuICAgICAgPGI+b3JkZXJCeTwvYj5cbiAgICAgID0+IHt7IFt7IG5hbWU6IFwiSGFyZXNoXCIgfSwgeyBuYW1lOiBcIlBhcmVzaFwiIH0sIHsgbmFtZTogXCJBbWl0XCIgfV0gfCBvcmRlckJ5OiBcIm5hbWVcIiB8IGpzb24gfX1cbiAgICA8L2Rpdj5cblxuICAgIDxoMT5EaXJlY3RpdmVzPC9oMT5cbiAgICA8ZGl2PlxuICAgICAgPGJ1dHRvbiBbZGVib3VuY2VUaW1lXT1cIjUwMFwiIGJiRGVib3VuY2VDbGljayAoZGVib3VuY2VDbGljayk9XCJvbkNsaWNrKClcIj5EZWJvdW5jZSBDbGljazwvYnV0dG9uPlxuICAgIDwvZGl2PlxuXG4gICAgPGgxPlByZXNlbnRhdGlvbmFsIENvbXBvbmVudDwvaDE+XG4gICAgPHRlc3QtZXhhbXBsZSBbaXNTdWJUaXRsZVZpc2libGVdPVwidHJ1ZVwiIChjbGljayk9XCJsb2coJGV2ZW50KVwiPjwvdGVzdC1leGFtcGxlPlxuICAgIDx0ZXN0LWV4YW1wbGUgW2lzU3ViVGl0bGVWaXNpYmxlXT1cImZhbHNlXCIgKGNsaWNrV2l0aFBhcmFtKT1cImxvZygkZXZlbnQpXCI+PC90ZXN0LWV4YW1wbGU+XG5cbiAgICA8aDE+Rm9ybSBDb250cm9sIFZhbGlkYXRvcjwvaDE+XG4gICAgPGZvcm0gW2Zvcm1Hcm91cF09XCJmb3JtXCI+XG4gICAgICA8ZGl2IGNsYXNzPVwicm93XCI+XG4gICAgICAgIDxkaXYgY2xhc3M9XCJjb2wtMTJcIj5cbiAgICAgICAgICA8bWF0LWZvcm0tZmllbGQ+XG4gICAgICAgICAgICA8bWF0LWxhYmVsPk5hbWU8L21hdC1sYWJlbD5cbiAgICAgICAgICAgIDxpbnB1dCBtYXRJbnB1dCB0eXBlPVwidGV4dFwiIGZvcm1Db250cm9sTmFtZT1cIm5hbWVcIiAvPlxuICAgICAgICAgICAgPGJiLXZhbGlkYXRpb24tbWVzc2FnZSBbY29udHJvbF09XCJmb3JtLmNvbnRyb2xzLm5hbWVcIj48L2JiLXZhbGlkYXRpb24tbWVzc2FnZT5cbiAgICAgICAgICA8L21hdC1mb3JtLWZpZWxkPlxuICAgICAgICA8L2Rpdj5cblxuICAgICAgICA8ZGl2IGNsYXNzPVwiY29sLTEyXCI+XG4gICAgICAgICAgPG1hdC1mb3JtLWZpZWxkPlxuICAgICAgICAgICAgPG1hdC1sYWJlbD5QYXNzd29yZDwvbWF0LWxhYmVsPlxuICAgICAgICAgICAgPGlucHV0IG1hdElucHV0IHR5cGU9XCJ0ZXh0XCIgZm9ybUNvbnRyb2xOYW1lPVwicGFzc3dvcmRcIiAvPlxuICAgICAgICAgICAgPGJiLXZhbGlkYXRpb24tbWVzc2FnZSBbY29udHJvbF09XCJmb3JtLmNvbnRyb2xzLnBhc3N3b3JkXCI+PC9iYi12YWxpZGF0aW9uLW1lc3NhZ2U+XG4gICAgICAgICAgPC9tYXQtZm9ybS1maWVsZD5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L2Zvcm0+XG4gIGAsXG59KVxuZXhwb3J0IGNsYXNzIFVuaXRUZXN0c0NvbXBvbmVudCB7XG4gIHB1YmxpYyBmb3JtID0gbmV3IEZvcm1Hcm91cCh7XG4gICAgbmFtZTogbmV3IEZvcm1Db250cm9sKFwidGVzdFwiLCBbVmFsaWRhdG9ycy5yZXF1aXJlZF0pLFxuICAgIHBhc3N3b3JkOiBuZXcgRm9ybUNvbnRyb2woXCIxMjNcIiwgUGFzc3dvcmRWYWxpZGF0b3JzLmlzVmFsdWVTYXRpc2Z5Rm9ybWF0VmFsaWRhdG9yKCkpLFxuICB9KTtcblxuICBwdWJsaWMgb25DbGljaygpIHtcbiAgICBjb25zb2xlLmxvZyhcInRlc3RcIik7XG4gIH1cblxuICBwdWJsaWMgbG9nKGV2ZW50OiBhbnkpIHtcbiAgICBjb25zb2xlLmxvZyhldmVudCk7XG4gIH1cbn1cbiJdfQ==

@@ -1,0 +1,228 @@
+0767578c935fd556ee3b1fb04c165533
+"use strict";
+
+/* istanbul ignore next */
+function cov_i5ku4g72o() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/services/forms.service.ts";
+  var hash = "b25b771d080249b8837fbb7fa9da8f90b8cac4aa";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/services/forms.service.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 30
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 19
+        },
+        end: {
+          line: 13,
+          column: 1
+        }
+      },
+      "5": {
+        start: {
+          line: 8,
+          column: 8
+        },
+        end: {
+          line: 10,
+          column: 9
+        }
+      },
+      "6": {
+        start: {
+          line: 9,
+          column: 12
+        },
+        end: {
+          line: 9,
+          column: 48
+        }
+      },
+      "7": {
+        start: {
+          line: 11,
+          column: 8
+        },
+        end: {
+          line: 11,
+          column: 36
+        }
+      },
+      "8": {
+        start: {
+          line: 14,
+          column: 0
+        },
+        end: {
+          line: 16,
+          column: 17
+        }
+      },
+      "9": {
+        start: {
+          line: 17,
+          column: 0
+        },
+        end: {
+          line: 17,
+          column: 36
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 7,
+            column: 4
+          },
+          end: {
+            line: 7,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 7,
+            column: 44
+          },
+          end: {
+            line: 12,
+            column: 5
+          }
+        },
+        line: 7
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/services/forms.service.ts",
+      mappings: ";;;;AAAA,wCAA2C;AAI3C,IAAa,YAAY,GAAzB,MAAa,YAAY;IAChB,oBAAoB,CAAC,UAAqB,EAAE,KAAgB;QACjE,KAAK,MAAM,CAAC,GAAG,EAAE,OAAO,CAAC,IAAI,MAAM,CAAC,OAAO,CAAC,KAAK,CAAC,QAAQ,CAAC,EAAE;YAC3D,UAAU,CAAC,UAAU,CAAC,GAAG,EAAE,OAAO,CAAC,CAAC;SACrC;QACD,KAAK,CAAC,SAAS,CAAC,UAAU,CAAC,CAAC;IAC9B,CAAC;CACF,CAAA;AAPY,YAAY;IADxB,iBAAU,EAAE;GACA,YAAY,CAOxB;AAPY,oCAAY",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/services/forms.service.ts"],
+      sourcesContent: ["import { Injectable } from \"@angular/core\";\nimport { FormGroup } from \"@angular/forms\";\n\n@Injectable()\nexport class FormsService {\n  public addGroupToParentForm(parentForm: FormGroup, group: FormGroup) {\n    for (const [key, control] of Object.entries(group.controls)) {\n      parentForm.addControl(key, control);\n    }\n    group.setParent(parentForm);\n  }\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "b25b771d080249b8837fbb7fa9da8f90b8cac4aa"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_i5ku4g72o = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_i5ku4g72o();
+cov_i5ku4g72o().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_i5ku4g72o().s[1]++;
+exports.FormsService = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_i5ku4g72o().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_i5ku4g72o().s[3]++, require("@angular/core"));
+
+/* istanbul ignore next */
+cov_i5ku4g72o().s[4]++;
+let FormsService = class FormsService {
+  addGroupToParentForm(parentForm, group) {
+    /* istanbul ignore next */
+    cov_i5ku4g72o().f[0]++;
+    cov_i5ku4g72o().s[5]++;
+
+    for (const [key, control] of Object.entries(group.controls)) {
+      /* istanbul ignore next */
+      cov_i5ku4g72o().s[6]++;
+      parentForm.addControl(key, control);
+    }
+
+    /* istanbul ignore next */
+    cov_i5ku4g72o().s[7]++;
+    group.setParent(parentForm);
+  }
+
+};
+
+/* istanbul ignore next */
+cov_i5ku4g72o().s[8]++;
+FormsService = tslib_1.__decorate([core_1.Injectable()], FormsService);
+
+/* istanbul ignore next */
+cov_i5ku4g72o().s[9]++;
+exports.FormsService = FormsService;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC9mb3Jtcy9zZXJ2aWNlcy9mb3Jtcy5zZXJ2aWNlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUlhOzs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUpiLE1BQUEsTUFBQTtBQUFBO0FBQUEseUJBQUEsT0FBQSxDQUFBLGVBQUEsQ0FBQSxDQUFBOzs7O0FBSUEsSUFBYSxZQUFZLEdBQXpCLE1BQWEsWUFBYixDQUF5QjtBQUNoQixFQUFBLG9CQUFvQixDQUFDLFVBQUQsRUFBd0IsS0FBeEIsRUFBd0M7QUFBQTtBQUFBO0FBQUE7O0FBQ2pFLFNBQUssTUFBTSxDQUFDLEdBQUQsRUFBTSxPQUFOLENBQVgsSUFBNkIsTUFBTSxDQUFDLE9BQVAsQ0FBZSxLQUFLLENBQUMsUUFBckIsQ0FBN0IsRUFBNkQ7QUFBQTtBQUFBO0FBQzNELE1BQUEsVUFBVSxDQUFDLFVBQVgsQ0FBc0IsR0FBdEIsRUFBMkIsT0FBM0I7QUFDRDs7QUFIZ0U7QUFBQTtBQUlqRSxJQUFBLEtBQUssQ0FBQyxTQUFOLENBQWdCLFVBQWhCO0FBQ0Q7O0FBTnNCLENBQXpCOzs7O0FBQWEsWUFBWSxHQUFBLE9BQUEsQ0FBQSxVQUFBLENBQUEsQ0FEeEIsTUFBQSxDQUFBLFVBQUEsRUFDd0IsQ0FBQSxFQUFaLFlBQVksQ0FBWjs7OztBQUFBLE9BQUEsQ0FBQSxZQUFBLEdBQUEsWUFBQSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEluamVjdGFibGUgfSBmcm9tIFwiQGFuZ3VsYXIvY29yZVwiO1xuaW1wb3J0IHsgRm9ybUdyb3VwIH0gZnJvbSBcIkBhbmd1bGFyL2Zvcm1zXCI7XG5cbkBJbmplY3RhYmxlKClcbmV4cG9ydCBjbGFzcyBGb3Jtc1NlcnZpY2Uge1xuICBwdWJsaWMgYWRkR3JvdXBUb1BhcmVudEZvcm0ocGFyZW50Rm9ybTogRm9ybUdyb3VwLCBncm91cDogRm9ybUdyb3VwKSB7XG4gICAgZm9yIChjb25zdCBba2V5LCBjb250cm9sXSBvZiBPYmplY3QuZW50cmllcyhncm91cC5jb250cm9scykpIHtcbiAgICAgIHBhcmVudEZvcm0uYWRkQ29udHJvbChrZXksIGNvbnRyb2wpO1xuICAgIH1cbiAgICBncm91cC5zZXRQYXJlbnQocGFyZW50Rm9ybSk7XG4gIH1cbn1cbiJdfQ==

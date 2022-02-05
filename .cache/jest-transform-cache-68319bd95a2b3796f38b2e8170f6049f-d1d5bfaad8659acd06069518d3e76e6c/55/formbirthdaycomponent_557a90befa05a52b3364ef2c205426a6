@@ -1,0 +1,349 @@
+f0c0daa5ddaae27e3ac65f070b80ec3c
+"use strict";
+
+/* istanbul ignore next */
+function cov_i8uer4bmu() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/components/nested-form-service/form-birthday/form-birthday.component.ts";
+  var hash = "62d714f0404f2b2674e5e3dad66f7cc042cc514e";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/components/nested-form-service/form-birthday/form-birthday.component.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 39
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 16
+        },
+        end: {
+          line: 6,
+          column: 41
+        }
+      },
+      "5": {
+        start: {
+          line: 7,
+          column: 24
+        },
+        end: {
+          line: 7,
+          column: 66
+        }
+      },
+      "6": {
+        start: {
+          line: 8,
+          column: 28
+        },
+        end: {
+          line: 21,
+          column: 1
+        }
+      },
+      "7": {
+        start: {
+          line: 10,
+          column: 8
+        },
+        end: {
+          line: 10,
+          column: 41
+        }
+      },
+      "8": {
+        start: {
+          line: 11,
+          column: 8
+        },
+        end: {
+          line: 13,
+          column: 11
+        }
+      },
+      "9": {
+        start: {
+          line: 16,
+          column: 8
+        },
+        end: {
+          line: 16,
+          column: 34
+        }
+      },
+      "10": {
+        start: {
+          line: 19,
+          column: 8
+        },
+        end: {
+          line: 19,
+          column: 75
+        }
+      },
+      "11": {
+        start: {
+          line: 22,
+          column: 0
+        },
+        end: {
+          line: 25,
+          column: 58
+        }
+      },
+      "12": {
+        start: {
+          line: 26,
+          column: 0
+        },
+        end: {
+          line: 34,
+          column: 26
+        }
+      },
+      "13": {
+        start: {
+          line: 35,
+          column: 0
+        },
+        end: {
+          line: 35,
+          column: 54
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 9,
+            column: 4
+          },
+          end: {
+            line: 9,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 9,
+            column: 30
+          },
+          end: {
+            line: 14,
+            column: 5
+          }
+        },
+        line: 9
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 15,
+            column: 4
+          },
+          end: {
+            line: 15,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 15,
+            column: 19
+          },
+          end: {
+            line: 17,
+            column: 5
+          }
+        },
+        line: 15
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 18,
+            column: 4
+          },
+          end: {
+            line: 18,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 18,
+            column: 15
+          },
+          end: {
+            line: 20,
+            column: 5
+          }
+        },
+        line: 18
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/components/nested-form-service/form-birthday/form-birthday.component.ts",
+      mappings: ";;;;AAAA,wCAAkF;AAElF,0CAAoE;AACpE,mEAA+D;AAQ/D,IAAa,qBAAqB,GAAlC,MAAa,qBAAqB;IAWhC,YAAmB,YAA0B;QAA1B,iBAAY,GAAZ,YAAY,CAAc;QARtC,SAAI,GAAG,IAAI,iBAAS,CAAC;YAC1B,SAAS,EAAE,IAAI,mBAAW,CAAC,IAAI,IAAI,EAAE,EAAE,CAAC,kBAAU,CAAC,QAAQ,CAAC,CAAC;SAC9D,CAAC,CAAC;IAM6C,CAAC;IAJjD,IAAI,QAAQ;QACV,OAAO,IAAI,CAAC,IAAI,CAAC,QAAQ,CAAC;IAC5B,CAAC;IAIM,QAAQ;QACb,IAAI,CAAC,YAAY,CAAC,oBAAoB,CAAC,IAAI,CAAC,UAAU,EAAE,IAAI,CAAC,IAAI,CAAC,CAAC;IACrE,CAAC;CACF,CAAA;AAfU;IAAR,YAAK,EAAE;sCAAqB,iBAAS;yDAAC;AAD5B,qBAAqB;IANjC,gBAAS,CAAC;QACT,QAAQ,EAAE,kBAAkB;QAC5B,kBAAa,gCAAgC,CAAA;QAC7C,SAAS,IAAoC;QAC7C,eAAe,EAAE,8BAAuB,CAAC,MAAM;KAChD,CAAC;6CAYiC,4BAAY;GAXlC,qBAAqB,CAgBjC;AAhBY,sDAAqB",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/components/nested-form-service/form-birthday/form-birthday.component.ts"],
+      sourcesContent: ["import { Component, OnInit, Input, ChangeDetectionStrategy } from \"@angular/core\";\n\nimport { FormGroup, FormControl, Validators } from \"@angular/forms\";\nimport { FormsService } from \"../../../services/forms.service\";\n\n@Component({\n  selector: \"bb-form-birthday\",\n  templateUrl: \"./form-birthday.component.html\",\n  styleUrls: [\"./form-birthday.component.scss\"],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class FormBirthdayComponent implements OnInit {\n  @Input() public parentForm!: FormGroup;\n\n  public form = new FormGroup({\n    birthDate: new FormControl(new Date(), [Validators.required]),\n  });\n\n  get controls() {\n    return this.form.controls;\n  }\n\n  constructor(public formsService: FormsService) {}\n\n  public ngOnInit() {\n    this.formsService.addGroupToParentForm(this.parentForm, this.form);\n  }\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "62d714f0404f2b2674e5e3dad66f7cc042cc514e"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_i8uer4bmu = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_i8uer4bmu();
+cov_i8uer4bmu().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_i8uer4bmu().s[1]++;
+exports.FormBirthdayComponent = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_i8uer4bmu().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_i8uer4bmu().s[3]++, require("@angular/core"));
+const forms_1 =
+/* istanbul ignore next */
+(cov_i8uer4bmu().s[4]++, require("@angular/forms"));
+const forms_service_1 =
+/* istanbul ignore next */
+(cov_i8uer4bmu().s[5]++, require("../../../services/forms.service"));
+
+/* istanbul ignore next */
+cov_i8uer4bmu().s[6]++;
+let FormBirthdayComponent = class FormBirthdayComponent {
+  constructor(formsService) {
+    /* istanbul ignore next */
+    cov_i8uer4bmu().f[0]++;
+    cov_i8uer4bmu().s[7]++;
+    this.formsService = formsService;
+
+    /* istanbul ignore next */
+    cov_i8uer4bmu().s[8]++;
+    this.form = new forms_1.FormGroup({
+      birthDate: new forms_1.FormControl(new Date(), [forms_1.Validators.required])
+    });
+  }
+
+  get controls() {
+    /* istanbul ignore next */
+    cov_i8uer4bmu().f[1]++;
+    cov_i8uer4bmu().s[9]++;
+    return this.form.controls;
+  }
+
+  ngOnInit() {
+    /* istanbul ignore next */
+    cov_i8uer4bmu().f[2]++;
+    cov_i8uer4bmu().s[10]++;
+    this.formsService.addGroupToParentForm(this.parentForm, this.form);
+  }
+
+};
+
+/* istanbul ignore next */
+cov_i8uer4bmu().s[11]++;
+
+tslib_1.__decorate([core_1.Input(), tslib_1.__metadata("design:type", forms_1.FormGroup)], FormBirthdayComponent.prototype, "parentForm", void 0);
+
+/* istanbul ignore next */
+cov_i8uer4bmu().s[12]++;
+FormBirthdayComponent = tslib_1.__decorate([core_1.Component({
+  selector: "bb-form-birthday",
+  template: require("./form-birthday.component.html"),
+  styleUrls: [],
+  changeDetection: core_1.ChangeDetectionStrategy.OnPush
+}), tslib_1.__metadata("design:paramtypes", [forms_service_1.FormsService])], FormBirthdayComponent);
+
+/* istanbul ignore next */
+cov_i8uer4bmu().s[13]++;
+exports.FormBirthdayComponent = FormBirthdayComponent;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC9mb3Jtcy9jb21wb25lbnRzL25lc3RlZC1mb3JtLXNlcnZpY2UvZm9ybS1iaXJ0aGRheS9mb3JtLWJpcnRoZGF5LmNvbXBvbmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBbUJJOzs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQW5CSixNQUFBLE1BQUE7QUFBQTtBQUFBLHlCQUFBLE9BQUEsQ0FBQSxlQUFBLENBQUEsQ0FBQTtBQUVBLE1BQUEsT0FBQTtBQUFBO0FBQUEseUJBQUEsT0FBQSxDQUFBLGdCQUFBLENBQUEsQ0FBQTtBQUNBLE1BQUEsZUFBQTtBQUFBO0FBQUEseUJBQUEsT0FBQSxDQUFBLGlDQUFBLENBQUEsQ0FBQTs7OztBQVFBLElBQWEscUJBQXFCLEdBQWxDLE1BQWEscUJBQWIsQ0FBa0M7QUFXaEMsRUFBQSxXQUFBLENBQW1CLFlBQW5CLEVBQTZDO0FBQUE7QUFBQTtBQUFBO0FBQTFCLFNBQUEsWUFBQSxHQUFBLFlBQUE7O0FBQTBCO0FBQUE7QUFSdEMsU0FBQSxJQUFBLEdBQU8sSUFBSSxPQUFBLENBQUEsU0FBSixDQUFjO0FBQzFCLE1BQUEsU0FBUyxFQUFFLElBQUksT0FBQSxDQUFBLFdBQUosQ0FBZ0IsSUFBSSxJQUFKLEVBQWhCLEVBQTRCLENBQUMsT0FBQSxDQUFBLFVBQUEsQ0FBVyxRQUFaLENBQTVCO0FBRGUsS0FBZCxDQUFQO0FBUTBDOztBQUpqRCxNQUFJLFFBQUosR0FBWTtBQUFBO0FBQUE7QUFBQTtBQUNWLFdBQU8sS0FBSyxJQUFMLENBQVUsUUFBakI7QUFDRDs7QUFJTSxFQUFBLFFBQVEsR0FBQTtBQUFBO0FBQUE7QUFBQTtBQUNiLFNBQUssWUFBTCxDQUFrQixvQkFBbEIsQ0FBdUMsS0FBSyxVQUE1QyxFQUF3RCxLQUFLLElBQTdEO0FBQ0Q7O0FBZitCLENBQWxDOzs7OztBQUNXLE9BQUEsQ0FBQSxVQUFBLENBQUEsQ0FBUixNQUFBLENBQUEsS0FBQSxFQUFRLEUsa0NBQW9CLE9BQUEsQ0FBQSxTLENBQXBCLENBQUEsRSwrQkFBQSxFLFlBQUEsRSxLQUE4QixDQUE5Qjs7OztBQURFLHFCQUFxQixHQUFBLE9BQUEsQ0FBQSxVQUFBLENBQUEsQ0FOakMsTUFBQSxDQUFBLFNBQUEsQ0FBVTtBQUNULEVBQUEsUUFBUSxFQUFFLGtCQUREO0FBRVQsRUFBQSxRQUFBLEVBQUEsT0FBQSxDQUFhLGdDQUFiLENBRlM7QUFHVCxFQUFBLFNBQVMsRUFBQSxFQUhBO0FBSVQsRUFBQSxlQUFlLEVBQUUsTUFBQSxDQUFBLHVCQUFBLENBQXdCO0FBSmhDLENBQVYsQ0FNaUMsRSx5Q0FXQyxlQUFBLENBQUEsWSxFQVhELENBQUEsRUFBckIscUJBQXFCLENBQXJCOzs7O0FBQUEsT0FBQSxDQUFBLHFCQUFBLEdBQUEscUJBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb21wb25lbnQsIE9uSW5pdCwgSW5wdXQsIENoYW5nZURldGVjdGlvblN0cmF0ZWd5IH0gZnJvbSBcIkBhbmd1bGFyL2NvcmVcIjtcblxuaW1wb3J0IHsgRm9ybUdyb3VwLCBGb3JtQ29udHJvbCwgVmFsaWRhdG9ycyB9IGZyb20gXCJAYW5ndWxhci9mb3Jtc1wiO1xuaW1wb3J0IHsgRm9ybXNTZXJ2aWNlIH0gZnJvbSBcIi4uLy4uLy4uL3NlcnZpY2VzL2Zvcm1zLnNlcnZpY2VcIjtcblxuQENvbXBvbmVudCh7XG4gIHNlbGVjdG9yOiBcImJiLWZvcm0tYmlydGhkYXlcIixcbiAgdGVtcGxhdGVVcmw6IFwiLi9mb3JtLWJpcnRoZGF5LmNvbXBvbmVudC5odG1sXCIsXG4gIHN0eWxlVXJsczogW1wiLi9mb3JtLWJpcnRoZGF5LmNvbXBvbmVudC5zY3NzXCJdLFxuICBjaGFuZ2VEZXRlY3Rpb246IENoYW5nZURldGVjdGlvblN0cmF0ZWd5Lk9uUHVzaCxcbn0pXG5leHBvcnQgY2xhc3MgRm9ybUJpcnRoZGF5Q29tcG9uZW50IGltcGxlbWVudHMgT25Jbml0IHtcbiAgQElucHV0KCkgcHVibGljIHBhcmVudEZvcm0hOiBGb3JtR3JvdXA7XG5cbiAgcHVibGljIGZvcm0gPSBuZXcgRm9ybUdyb3VwKHtcbiAgICBiaXJ0aERhdGU6IG5ldyBGb3JtQ29udHJvbChuZXcgRGF0ZSgpLCBbVmFsaWRhdG9ycy5yZXF1aXJlZF0pLFxuICB9KTtcblxuICBnZXQgY29udHJvbHMoKSB7XG4gICAgcmV0dXJuIHRoaXMuZm9ybS5jb250cm9scztcbiAgfVxuXG4gIGNvbnN0cnVjdG9yKHB1YmxpYyBmb3Jtc1NlcnZpY2U6IEZvcm1zU2VydmljZSkge31cblxuICBwdWJsaWMgbmdPbkluaXQoKSB7XG4gICAgdGhpcy5mb3Jtc1NlcnZpY2UuYWRkR3JvdXBUb1BhcmVudEZvcm0odGhpcy5wYXJlbnRGb3JtLCB0aGlzLmZvcm0pO1xuICB9XG59XG4iXX0=

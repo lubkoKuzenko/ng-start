@@ -1,0 +1,107 @@
+5127bc0023f60304d22659a77fe0619e
+"use strict";
+
+/* istanbul ignore next */
+function cov_2kevx6k9ej() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@core/tokens/app-lang.ts";
+  var hash = "f4c51f3e2b72df1b7a2bbb15162d2a7898685417";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@core/tokens/app-lang.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 26
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 15
+        },
+        end: {
+          line: 4,
+          column: 39
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 65
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@core/tokens/app-lang.ts",
+      mappings: ";;;AAAA,wCAA+C;AAElC,QAAA,QAAQ,GAAG,IAAI,qBAAc,CAAS,kBAAkB,CAAC,CAAC",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/@core/tokens/app-lang.ts"],
+      sourcesContent: ["import { InjectionToken } from \"@angular/core\";\n\nexport const APP_LANG = new InjectionToken<string>(\"Default App Lang\");\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "f4c51f3e2b72df1b7a2bbb15162d2a7898685417"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2kevx6k9ej = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_2kevx6k9ej();
+cov_2kevx6k9ej().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_2kevx6k9ej().s[1]++;
+exports.APP_LANG = void 0;
+const core_1 =
+/* istanbul ignore next */
+(cov_2kevx6k9ej().s[2]++, require("@angular/core"));
+
+/* istanbul ignore next */
+cov_2kevx6k9ej().s[3]++;
+exports.APP_LANG = new core_1.InjectionToken("Default App Lang");
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC9AY29yZS90b2tlbnMvYXBwLWxhbmcudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxNQUFBLE1BQUE7QUFBQTtBQUFBLDBCQUFBLE9BQUEsQ0FBQSxlQUFBLENBQUEsQ0FBQTs7OztBQUVhLE9BQUEsQ0FBQSxRQUFBLEdBQVcsSUFBSSxNQUFBLENBQUEsY0FBSixDQUEyQixrQkFBM0IsQ0FBWCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEluamVjdGlvblRva2VuIH0gZnJvbSBcIkBhbmd1bGFyL2NvcmVcIjtcblxuZXhwb3J0IGNvbnN0IEFQUF9MQU5HID0gbmV3IEluamVjdGlvblRva2VuPHN0cmluZz4oXCJEZWZhdWx0IEFwcCBMYW5nXCIpO1xuIl19

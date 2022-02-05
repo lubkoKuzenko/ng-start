@@ -1,0 +1,293 @@
+d9c002cdf373c00a9fe3da1e82316fb6
+"use strict";
+
+/* istanbul ignore next */
+function cov_2bny3nn9bu() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/components/validators/basic-form.validator.ts";
+  var hash = "9e2f5310ff1318008c8bba7dcfdf5fe5e9f422ff";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/components/validators/basic-form.validator.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 37
+        }
+      },
+      "2": {
+        start: {
+          line: 6,
+          column: 8
+        },
+        end: {
+          line: 10,
+          column: 10
+        }
+      },
+      "3": {
+        start: {
+          line: 7,
+          column: 23
+        },
+        end: {
+          line: 7,
+          column: 51
+        }
+      },
+      "4": {
+        start: {
+          line: 8,
+          column: 23
+        },
+        end: {
+          line: 8,
+          column: 50
+        }
+      },
+      "5": {
+        start: {
+          line: 9,
+          column: 12
+        },
+        end: {
+          line: 9,
+          column: 63
+        }
+      },
+      "6": {
+        start: {
+          line: 13,
+          column: 0
+        },
+        end: {
+          line: 13,
+          column: 50
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 5,
+            column: 4
+          },
+          end: {
+            line: 5,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 5,
+            column: 31
+          },
+          end: {
+            line: 11,
+            column: 5
+          }
+        },
+        line: 5
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 6,
+            column: 15
+          },
+          end: {
+            line: 6,
+            column: 16
+          }
+        },
+        loc: {
+          start: {
+            line: 6,
+            column: 26
+          },
+          end: {
+            line: 10,
+            column: 9
+          }
+        },
+        line: 6
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 9,
+            column: 19
+          },
+          end: {
+            line: 9,
+            column: 62
+          }
+        },
+        type: "cond-expr",
+        locations: [{
+          start: {
+            line: 9,
+            column: 30
+          },
+          end: {
+            line: 9,
+            column: 34
+          }
+        }, {
+          start: {
+            line: 9,
+            column: 37
+          },
+          end: {
+            line: 9,
+            column: 62
+          }
+        }],
+        line: 9
+      },
+      "1": {
+        loc: {
+          start: {
+            line: 9,
+            column: 19
+          },
+          end: {
+            line: 9,
+            column: 27
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 9,
+            column: 19
+          },
+          end: {
+            line: 9,
+            column: 21
+          }
+        }, {
+          start: {
+            line: 9,
+            column: 25
+          },
+          end: {
+            line: 9,
+            column: 27
+          }
+        }],
+        line: 9
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0
+    },
+    b: {
+      "0": [0, 0],
+      "1": [0, 0]
+    },
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/components/validators/basic-form.validator.ts",
+      mappings: ";;;AAEA,MAAa,mBAAmB;IAC9B,MAAM,CAAC,iBAAiB;QACtB,OAAO,CAAC,KAAsB,EAA2B,EAAE;YACzD,MAAM,EAAE,GAAG,KAAK,CAAC,GAAG,CAAC,WAAW,CAAC,CAAC,KAAK,CAAC;YACxC,MAAM,EAAE,GAAG,KAAK,CAAC,GAAG,CAAC,UAAU,CAAC,CAAC,KAAK,CAAC;YAEvC,OAAO,EAAE,IAAI,EAAE,CAAC,CAAC,CAAC,IAAI,CAAC,CAAC,CAAC,EAAE,eAAe,EAAE,IAAI,EAAE,CAAC;QACrD,CAAC,CAAC;IACJ,CAAC;CACF;AATD,kDASC",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/components/validators/basic-form.validator.ts"],
+      sourcesContent: ["import { AbstractControl, ValidationErrors, ValidatorFn } from \"@angular/forms\";\n\nexport class BasicFormValidators {\n  static fullNameValidator(): ValidatorFn {\n    return (group: AbstractControl): ValidationErrors | null => {\n      const fn = group.get(\"firstName\").value;\n      const ln = group.get(\"lastName\").value;\n\n      return fn && ln ? null : { invalidFullName: true };\n    };\n  }\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "9e2f5310ff1318008c8bba7dcfdf5fe5e9f422ff"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2bny3nn9bu = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_2bny3nn9bu();
+cov_2bny3nn9bu().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_2bny3nn9bu().s[1]++;
+exports.BasicFormValidators = void 0;
+
+class BasicFormValidators {
+  static fullNameValidator() {
+    /* istanbul ignore next */
+    cov_2bny3nn9bu().f[0]++;
+    cov_2bny3nn9bu().s[2]++;
+    return group => {
+      /* istanbul ignore next */
+      cov_2bny3nn9bu().f[1]++;
+      const fn =
+      /* istanbul ignore next */
+      (cov_2bny3nn9bu().s[3]++, group.get("firstName").value);
+      const ln =
+      /* istanbul ignore next */
+      (cov_2bny3nn9bu().s[4]++, group.get("lastName").value);
+
+      /* istanbul ignore next */
+      cov_2bny3nn9bu().s[5]++;
+      return (
+        /* istanbul ignore next */
+        (cov_2bny3nn9bu().b[1][0]++, fn) &&
+        /* istanbul ignore next */
+        (cov_2bny3nn9bu().b[1][1]++, ln) ?
+        /* istanbul ignore next */
+        (cov_2bny3nn9bu().b[0][0]++, null) :
+        /* istanbul ignore next */
+        (cov_2bny3nn9bu().b[0][1]++, {
+          invalidFullName: true
+        })
+      );
+    };
+  }
+
+}
+
+/* istanbul ignore next */
+cov_2bny3nn9bu().s[6]++;
+exports.BasicFormValidators = BasicFormValidators;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC9mb3Jtcy9jb21wb25lbnRzL3ZhbGlkYXRvcnMvYmFzaWMtZm9ybS52YWxpZGF0b3IudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFFQSxNQUFhLG1CQUFiLENBQWdDO0FBQzlCLFNBQU8saUJBQVAsR0FBd0I7QUFBQTtBQUFBO0FBQUE7QUFDdEIsV0FBUSxLQUFELElBQW9EO0FBQUE7QUFBQTtBQUN6RCxZQUFNLEVBQUU7QUFBQTtBQUFBLGdDQUFHLEtBQUssQ0FBQyxHQUFOLENBQVUsV0FBVixFQUF1QixLQUExQixDQUFSO0FBQ0EsWUFBTSxFQUFFO0FBQUE7QUFBQSxnQ0FBRyxLQUFLLENBQUMsR0FBTixDQUFVLFVBQVYsRUFBc0IsS0FBekIsQ0FBUjs7QUFGeUQ7QUFBQTtBQUl6RCxhQUFPO0FBQUE7QUFBQSxxQ0FBQSxFQUFFO0FBQUE7QUFBQSxxQ0FBSSxFQUFKLENBQUY7QUFBQTtBQUFBLHFDQUFXLElBQVg7QUFBQTtBQUFBLHFDQUFrQjtBQUFFLFVBQUEsZUFBZSxFQUFFO0FBQW5CLFNBQWxCO0FBQVA7QUFDRCxLQUxEO0FBTUQ7O0FBUjZCOzs7O0FBQWhDLE9BQUEsQ0FBQSxtQkFBQSxHQUFBLG1CQUFBIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQWJzdHJhY3RDb250cm9sLCBWYWxpZGF0aW9uRXJyb3JzLCBWYWxpZGF0b3JGbiB9IGZyb20gXCJAYW5ndWxhci9mb3Jtc1wiO1xuXG5leHBvcnQgY2xhc3MgQmFzaWNGb3JtVmFsaWRhdG9ycyB7XG4gIHN0YXRpYyBmdWxsTmFtZVZhbGlkYXRvcigpOiBWYWxpZGF0b3JGbiB7XG4gICAgcmV0dXJuIChncm91cDogQWJzdHJhY3RDb250cm9sKTogVmFsaWRhdGlvbkVycm9ycyB8IG51bGwgPT4ge1xuICAgICAgY29uc3QgZm4gPSBncm91cC5nZXQoXCJmaXJzdE5hbWVcIikudmFsdWU7XG4gICAgICBjb25zdCBsbiA9IGdyb3VwLmdldChcImxhc3ROYW1lXCIpLnZhbHVlO1xuXG4gICAgICByZXR1cm4gZm4gJiYgbG4gPyBudWxsIDogeyBpbnZhbGlkRnVsbE5hbWU6IHRydWUgfTtcbiAgICB9O1xuICB9XG59XG4iXX0=

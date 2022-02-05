@@ -1,0 +1,258 @@
+503d7d217a6a7124336d01526d83d68c
+"use strict";
+
+/* istanbul ignore next */
+function cov_19q7h17nwi() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/directives/uppercase.directive.ts";
+  var hash = "fe40925080d498bc0e9c8a7eccc7e48dae91ad1e";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/directives/uppercase.directive.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 36
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 25
+        },
+        end: {
+          line: 13,
+          column: 1
+        }
+      },
+      "5": {
+        start: {
+          line: 8,
+          column: 8
+        },
+        end: {
+          line: 8,
+          column: 23
+        }
+      },
+      "6": {
+        start: {
+          line: 11,
+          column: 8
+        },
+        end: {
+          line: 11,
+          column: 72
+        }
+      },
+      "7": {
+        start: {
+          line: 14,
+          column: 0
+        },
+        end: {
+          line: 19,
+          column: 50
+        }
+      },
+      "8": {
+        start: {
+          line: 20,
+          column: 0
+        },
+        end: {
+          line: 25,
+          column: 23
+        }
+      },
+      "9": {
+        start: {
+          line: 26,
+          column: 0
+        },
+        end: {
+          line: 26,
+          column: 48
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 7,
+            column: 4
+          },
+          end: {
+            line: 7,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 7,
+            column: 21
+          },
+          end: {
+            line: 9,
+            column: 5
+          }
+        },
+        line: 7
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 10,
+            column: 4
+          },
+          end: {
+            line: 10,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 10,
+            column: 19
+          },
+          end: {
+            line: 12,
+            column: 5
+          }
+        },
+        line: 10
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/directives/uppercase.directive.ts",
+      mappings: ";;;;AAAA,wCAAoE;AAKpE,IAAa,kBAAkB,GAA/B,MAAa,kBAAkB;IAC7B,YAAmB,GAAe;QAAf,QAAG,GAAH,GAAG,CAAY;IAAG,CAAC;IAEI,OAAO,CAAC,KAAmC;QACnF,IAAI,CAAC,GAAG,CAAC,aAAa,CAAC,KAAK,GAAG,KAAK,CAAC,MAAM,CAAC,KAAK,CAAC,WAAW,EAAE,CAAC;IAClE,CAAC;CACF,CAAA;AAHoC;IAAlC,mBAAY,CAAC,OAAO,EAAE,CAAC,QAAQ,CAAC,CAAC;;;;iDAEjC;AALU,kBAAkB;IAH9B,gBAAS,CAAC;QACT,QAAQ,EAAE,eAAe;KAC1B,CAAC;6CAEwB,iBAAU;GADvB,kBAAkB,CAM9B;AANY,gDAAkB",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/directives/uppercase.directive.ts"],
+      sourcesContent: ["import { Directive, ElementRef, HostListener } from \"@angular/core\";\n\n@Directive({\n  selector: \"[bbUppercase]\",\n})\nexport class UppercaseDirective {\n  constructor(public ref: ElementRef) {}\n\n  @HostListener(\"input\", [\"$event\"]) public onInput(event: { target: HTMLInputElement }) {\n    this.ref.nativeElement.value = event.target.value.toUpperCase();\n  }\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "fe40925080d498bc0e9c8a7eccc7e48dae91ad1e"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_19q7h17nwi = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_19q7h17nwi();
+cov_19q7h17nwi().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_19q7h17nwi().s[1]++;
+exports.UppercaseDirective = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_19q7h17nwi().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_19q7h17nwi().s[3]++, require("@angular/core"));
+
+/* istanbul ignore next */
+cov_19q7h17nwi().s[4]++;
+let UppercaseDirective = class UppercaseDirective {
+  constructor(ref) {
+    /* istanbul ignore next */
+    cov_19q7h17nwi().f[0]++;
+    cov_19q7h17nwi().s[5]++;
+    this.ref = ref;
+  }
+
+  onInput(event) {
+    /* istanbul ignore next */
+    cov_19q7h17nwi().f[1]++;
+    cov_19q7h17nwi().s[6]++;
+    this.ref.nativeElement.value = event.target.value.toUpperCase();
+  }
+
+};
+
+/* istanbul ignore next */
+cov_19q7h17nwi().s[7]++;
+
+tslib_1.__decorate([core_1.HostListener("input", ["$event"]), tslib_1.__metadata("design:type", Function), tslib_1.__metadata("design:paramtypes", [Object]), tslib_1.__metadata("design:returntype", void 0)], UppercaseDirective.prototype, "onInput", null);
+
+/* istanbul ignore next */
+cov_19q7h17nwi().s[8]++;
+UppercaseDirective = tslib_1.__decorate([core_1.Directive({
+  selector: "[bbUppercase]"
+}), tslib_1.__metadata("design:paramtypes", [core_1.ElementRef])], UppercaseDirective);
+
+/* istanbul ignore next */
+cov_19q7h17nwi().s[9]++;
+exports.UppercaseDirective = UppercaseDirective;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC9Ac2hhcmVkL2RpcmVjdGl2ZXMvdXBwZXJjYXNlLmRpcmVjdGl2ZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxNQUFBLE1BQUE7QUFBQTtBQUFBLDBCQUFBLE9BQUEsQ0FBQSxlQUFBLENBQUEsQ0FBQTs7OztBQUtBLElBQWEsa0JBQWtCLEdBQS9CLE1BQWEsa0JBQWIsQ0FBK0I7QUFDN0IsRUFBQSxXQUFBLENBQW1CLEdBQW5CLEVBQWtDO0FBQUE7QUFBQTtBQUFBO0FBQWYsU0FBQSxHQUFBLEdBQUEsR0FBQTtBQUFtQjs7QUFFSSxFQUFBLE9BQU8sQ0FBQyxLQUFELEVBQW9DO0FBQUE7QUFBQTtBQUFBO0FBQ25GLFNBQUssR0FBTCxDQUFTLGFBQVQsQ0FBdUIsS0FBdkIsR0FBK0IsS0FBSyxDQUFDLE1BQU4sQ0FBYSxLQUFiLENBQW1CLFdBQW5CLEVBQS9CO0FBQ0Q7O0FBTDRCLENBQS9COzs7OztBQUdxQyxPQUFBLENBQUEsVUFBQSxDQUFBLENBQWxDLE1BQUEsQ0FBQSxZQUFBLENBQWEsT0FBYixFQUFzQixDQUFDLFFBQUQsQ0FBdEIsQ0FBa0MsRSwyQ0FBQSxFLGlEQUFBLEUsK0NBQUEsQ0FBQSxFLDRCQUFBLEUsU0FBQSxFQUVsQyxJQUZrQzs7OztBQUh4QixrQkFBa0IsR0FBQSxPQUFBLENBQUEsVUFBQSxDQUFBLENBSDlCLE1BQUEsQ0FBQSxTQUFBLENBQVU7QUFDVCxFQUFBLFFBQVEsRUFBRTtBQURELENBQVYsQ0FHOEIsRSx5Q0FDTCxNQUFBLENBQUEsVSxFQURLLENBQUEsRUFBbEIsa0JBQWtCLENBQWxCOzs7O0FBQUEsT0FBQSxDQUFBLGtCQUFBLEdBQUEsa0JBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBEaXJlY3RpdmUsIEVsZW1lbnRSZWYsIEhvc3RMaXN0ZW5lciB9IGZyb20gXCJAYW5ndWxhci9jb3JlXCI7XG5cbkBEaXJlY3RpdmUoe1xuICBzZWxlY3RvcjogXCJbYmJVcHBlcmNhc2VdXCIsXG59KVxuZXhwb3J0IGNsYXNzIFVwcGVyY2FzZURpcmVjdGl2ZSB7XG4gIGNvbnN0cnVjdG9yKHB1YmxpYyByZWY6IEVsZW1lbnRSZWYpIHt9XG5cbiAgQEhvc3RMaXN0ZW5lcihcImlucHV0XCIsIFtcIiRldmVudFwiXSkgcHVibGljIG9uSW5wdXQoZXZlbnQ6IHsgdGFyZ2V0OiBIVE1MSW5wdXRFbGVtZW50IH0pIHtcbiAgICB0aGlzLnJlZi5uYXRpdmVFbGVtZW50LnZhbHVlID0gZXZlbnQudGFyZ2V0LnZhbHVlLnRvVXBwZXJDYXNlKCk7XG4gIH1cbn1cbiJdfQ==

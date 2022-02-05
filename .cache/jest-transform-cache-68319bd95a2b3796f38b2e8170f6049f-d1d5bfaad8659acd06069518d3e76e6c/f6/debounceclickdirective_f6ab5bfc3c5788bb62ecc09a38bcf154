@@ -1,0 +1,505 @@
+f8c8f59cb4f9ec984471994925aa40a1
+"use strict";
+
+/* istanbul ignore next */
+function cov_1q0xrmekry() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/unit-tests/directives/debounce-click.directive.ts";
+  var hash = "83f8fdc65f6b64cf788bb9f88489aca660b00882";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/unit-tests/directives/debounce-click.directive.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 40
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 15
+        },
+        end: {
+          line: 6,
+          column: 30
+        }
+      },
+      "5": {
+        start: {
+          line: 7,
+          column: 20
+        },
+        end: {
+          line: 7,
+          column: 45
+        }
+      },
+      "6": {
+        start: {
+          line: 8,
+          column: 29
+        },
+        end: {
+          line: 25,
+          column: 1
+        }
+      },
+      "7": {
+        start: {
+          line: 10,
+          column: 8
+        },
+        end: {
+          line: 10,
+          column: 32
+        }
+      },
+      "8": {
+        start: {
+          line: 11,
+          column: 8
+        },
+        end: {
+          line: 11,
+          column: 55
+        }
+      },
+      "9": {
+        start: {
+          line: 12,
+          column: 8
+        },
+        end: {
+          line: 12,
+          column: 54
+        }
+      },
+      "10": {
+        start: {
+          line: 15,
+          column: 8
+        },
+        end: {
+          line: 15,
+          column: 31
+        }
+      },
+      "11": {
+        start: {
+          line: 16,
+          column: 8
+        },
+        end: {
+          line: 16,
+          column: 32
+        }
+      },
+      "12": {
+        start: {
+          line: 17,
+          column: 8
+        },
+        end: {
+          line: 17,
+          column: 35
+        }
+      },
+      "13": {
+        start: {
+          line: 20,
+          column: 8
+        },
+        end: {
+          line: 20,
+          column: 119
+        }
+      },
+      "14": {
+        start: {
+          line: 20,
+          column: 91
+        },
+        end: {
+          line: 20,
+          column: 117
+        }
+      },
+      "15": {
+        start: {
+          line: 23,
+          column: 8
+        },
+        end: {
+          line: 23,
+          column: 35
+        }
+      },
+      "16": {
+        start: {
+          line: 26,
+          column: 0
+        },
+        end: {
+          line: 29,
+          column: 61
+        }
+      },
+      "17": {
+        start: {
+          line: 30,
+          column: 0
+        },
+        end: {
+          line: 33,
+          column: 62
+        }
+      },
+      "18": {
+        start: {
+          line: 34,
+          column: 0
+        },
+        end: {
+          line: 39,
+          column: 57
+        }
+      },
+      "19": {
+        start: {
+          line: 40,
+          column: 0
+        },
+        end: {
+          line: 45,
+          column: 27
+        }
+      },
+      "20": {
+        start: {
+          line: 46,
+          column: 0
+        },
+        end: {
+          line: 46,
+          column: 56
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 9,
+            column: 4
+          },
+          end: {
+            line: 9,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 9,
+            column: 18
+          },
+          end: {
+            line: 13,
+            column: 5
+          }
+        },
+        line: 9
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 14,
+            column: 4
+          },
+          end: {
+            line: 14,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 14,
+            column: 22
+          },
+          end: {
+            line: 18,
+            column: 5
+          }
+        },
+        line: 14
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 19,
+            column: 4
+          },
+          end: {
+            line: 19,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 19,
+            column: 15
+          },
+          end: {
+            line: 21,
+            column: 5
+          }
+        },
+        line: 19
+      },
+      "3": {
+        name: "(anonymous_3)",
+        decl: {
+          start: {
+            line: 20,
+            column: 84
+          },
+          end: {
+            line: 20,
+            column: 85
+          }
+        },
+        loc: {
+          start: {
+            line: 20,
+            column: 91
+          },
+          end: {
+            line: 20,
+            column: 117
+          }
+        },
+        line: 20
+      },
+      "4": {
+        name: "(anonymous_4)",
+        decl: {
+          start: {
+            line: 22,
+            column: 4
+          },
+          end: {
+            line: 22,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 22,
+            column: 18
+          },
+          end: {
+            line: 24,
+            column: 5
+          }
+        },
+        line: 22
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/unit-tests/directives/debounce-click.directive.ts",
+      mappings: ";;;;AAAA,wCAAwG;AACxG,+BAAqC;AACrC,8CAA8C;AAK9C,IAAa,sBAAsB,GAAnC,MAAa,sBAAsB;IAOjC;QALA,iBAAY,GAAG,GAAG,CAAC;QAEnB,kBAAa,GAAG,IAAI,mBAAY,EAAE,CAAC;QAC3B,eAAU,GAA2B,IAAI,oBAAa,CAAC,CAAC,CAAC,CAAC;IAEnD,CAAC;IAGhB,UAAU,CAAC,KAAiB;QAC1B,KAAK,CAAC,cAAc,EAAE,CAAC;QACvB,KAAK,CAAC,eAAe,EAAE,CAAC;QACxB,IAAI,CAAC,UAAU,CAAC,IAAI,CAAC,IAAI,CAAC,CAAC;IAC7B,CAAC;IAED,QAAQ;QACN,IAAI,CAAC,UAAU,CAAC,IAAI,CAAC,wBAAY,CAAC,IAAI,CAAC,YAAY,CAAC,CAAC,CAAC,SAAS,CAAC,CAAC,CAAC,EAAE,EAAE,CAAC,IAAI,CAAC,aAAa,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC,CAAC;IACrG,CAAC;IAED,WAAW;QACT,IAAI,CAAC,UAAU,CAAC,QAAQ,EAAE,CAAC;IAC7B,CAAC;CACF,CAAA;AArBC;IADC,YAAK,EAAE;;4DACW;AAEnB;IADC,aAAM,EAAE;;6DAC0B;AAMnC;IADC,mBAAY,CAAC,OAAO,EAAE,CAAC,QAAQ,CAAC,CAAC;;6CAChB,UAAU;;wDAI3B;AAdU,sBAAsB;IAHlC,gBAAS,CAAC;QACT,QAAQ,EAAE,mBAAmB;KAC9B,CAAC;;GACW,sBAAsB,CAuBlC;AAvBY,wDAAsB",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/unit-tests/directives/debounce-click.directive.ts"],
+      sourcesContent: ["import { Directive, EventEmitter, HostListener, Input, OnDestroy, OnInit, Output } from \"@angular/core\";\nimport { ReplaySubject } from \"rxjs\";\nimport { debounceTime } from \"rxjs/operators\";\n\n@Directive({\n  selector: \"[bbDebounceClick]\",\n})\nexport class DebounceClickDirective implements OnInit, OnDestroy {\n  @Input()\n  debounceTime = 500;\n  @Output()\n  debounceClick = new EventEmitter();\n  private destroyed$: ReplaySubject<boolean> = new ReplaySubject(1);\n\n  constructor() {}\n\n  @HostListener(\"click\", [\"$event\"])\n  clickEvent(event: MouseEvent) {\n    event.preventDefault();\n    event.stopPropagation();\n    this.destroyed$.next(true);\n  }\n\n  ngOnInit() {\n    this.destroyed$.pipe(debounceTime(this.debounceTime)).subscribe((e) => this.debounceClick.emit(e));\n  }\n\n  ngOnDestroy() {\n    this.destroyed$.complete();\n  }\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "83f8fdc65f6b64cf788bb9f88489aca660b00882"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1q0xrmekry = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_1q0xrmekry();
+cov_1q0xrmekry().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_1q0xrmekry().s[1]++;
+exports.DebounceClickDirective = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_1q0xrmekry().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_1q0xrmekry().s[3]++, require("@angular/core"));
+const rxjs_1 =
+/* istanbul ignore next */
+(cov_1q0xrmekry().s[4]++, require("rxjs"));
+const operators_1 =
+/* istanbul ignore next */
+(cov_1q0xrmekry().s[5]++, require("rxjs/operators"));
+
+/* istanbul ignore next */
+cov_1q0xrmekry().s[6]++;
+let DebounceClickDirective = class DebounceClickDirective {
+  constructor() {
+    /* istanbul ignore next */
+    cov_1q0xrmekry().f[0]++;
+    cov_1q0xrmekry().s[7]++;
+    this.debounceTime = 500;
+
+    /* istanbul ignore next */
+    cov_1q0xrmekry().s[8]++;
+    this.debounceClick = new core_1.EventEmitter();
+
+    /* istanbul ignore next */
+    cov_1q0xrmekry().s[9]++;
+    this.destroyed$ = new rxjs_1.ReplaySubject(1);
+  }
+
+  clickEvent(event) {
+    /* istanbul ignore next */
+    cov_1q0xrmekry().f[1]++;
+    cov_1q0xrmekry().s[10]++;
+    event.preventDefault();
+
+    /* istanbul ignore next */
+    cov_1q0xrmekry().s[11]++;
+    event.stopPropagation();
+
+    /* istanbul ignore next */
+    cov_1q0xrmekry().s[12]++;
+    this.destroyed$.next(true);
+  }
+
+  ngOnInit() {
+    /* istanbul ignore next */
+    cov_1q0xrmekry().f[2]++;
+    cov_1q0xrmekry().s[13]++;
+    this.destroyed$.pipe(operators_1.debounceTime(this.debounceTime)).subscribe(e => {
+      /* istanbul ignore next */
+      cov_1q0xrmekry().f[3]++;
+      cov_1q0xrmekry().s[14]++;
+      return this.debounceClick.emit(e);
+    });
+  }
+
+  ngOnDestroy() {
+    /* istanbul ignore next */
+    cov_1q0xrmekry().f[4]++;
+    cov_1q0xrmekry().s[15]++;
+    this.destroyed$.complete();
+  }
+
+};
+
+/* istanbul ignore next */
+cov_1q0xrmekry().s[16]++;
+
+tslib_1.__decorate([core_1.Input(), tslib_1.__metadata("design:type", Object)], DebounceClickDirective.prototype, "debounceTime", void 0);
+
+/* istanbul ignore next */
+cov_1q0xrmekry().s[17]++;
+
+tslib_1.__decorate([core_1.Output(), tslib_1.__metadata("design:type", Object)], DebounceClickDirective.prototype, "debounceClick", void 0);
+
+/* istanbul ignore next */
+cov_1q0xrmekry().s[18]++;
+
+tslib_1.__decorate([core_1.HostListener("click", ["$event"]), tslib_1.__metadata("design:type", Function), tslib_1.__metadata("design:paramtypes", [MouseEvent]), tslib_1.__metadata("design:returntype", void 0)], DebounceClickDirective.prototype, "clickEvent", null);
+
+/* istanbul ignore next */
+cov_1q0xrmekry().s[19]++;
+DebounceClickDirective = tslib_1.__decorate([core_1.Directive({
+  selector: "[bbDebounceClick]"
+}), tslib_1.__metadata("design:paramtypes", [])], DebounceClickDirective);
+
+/* istanbul ignore next */
+cov_1q0xrmekry().s[20]++;
+exports.DebounceClickDirective = DebounceClickDirective;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC91bml0LXRlc3RzL2RpcmVjdGl2ZXMvZGVib3VuY2UtY2xpY2suZGlyZWN0aXZlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBbUJJOzs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQW5CSixNQUFBLE1BQUE7QUFBQTtBQUFBLDBCQUFBLE9BQUEsQ0FBQSxlQUFBLENBQUEsQ0FBQTtBQUNBLE1BQUEsTUFBQTtBQUFBO0FBQUEsMEJBQUEsT0FBQSxDQUFBLE1BQUEsQ0FBQSxDQUFBO0FBQ0EsTUFBQSxXQUFBO0FBQUE7QUFBQSwwQkFBQSxPQUFBLENBQUEsZ0JBQUEsQ0FBQSxDQUFBOzs7O0FBS0EsSUFBYSxzQkFBc0IsR0FBbkMsTUFBYSxzQkFBYixDQUFtQztBQU9qQyxFQUFBLFdBQUEsR0FBQTtBQUFBO0FBQUE7QUFBQTtBQUxBLFNBQUEsWUFBQSxHQUFlLEdBQWY7O0FBS0E7QUFBQTtBQUhBLFNBQUEsYUFBQSxHQUFnQixJQUFJLE1BQUEsQ0FBQSxZQUFKLEVBQWhCOztBQUdBO0FBQUE7QUFGUSxTQUFBLFVBQUEsR0FBcUMsSUFBSSxNQUFBLENBQUEsYUFBSixDQUFrQixDQUFsQixDQUFyQztBQUVROztBQUdoQixFQUFBLFVBQVUsQ0FBQyxLQUFELEVBQWtCO0FBQUE7QUFBQTtBQUFBO0FBQzFCLElBQUEsS0FBSyxDQUFDLGNBQU47O0FBRDBCO0FBQUE7QUFFMUIsSUFBQSxLQUFLLENBQUMsZUFBTjs7QUFGMEI7QUFBQTtBQUcxQixTQUFLLFVBQUwsQ0FBZ0IsSUFBaEIsQ0FBcUIsSUFBckI7QUFDRDs7QUFFRCxFQUFBLFFBQVEsR0FBQTtBQUFBO0FBQUE7QUFBQTtBQUNOLFNBQUssVUFBTCxDQUFnQixJQUFoQixDQUFxQixXQUFBLENBQUEsWUFBQSxDQUFhLEtBQUssWUFBbEIsQ0FBckIsRUFBc0QsU0FBdEQsQ0FBaUUsQ0FBRCxJQUFPO0FBQUE7QUFBQTtBQUFBO0FBQUEsa0JBQUssYUFBTCxDQUFtQixJQUFuQixDQUF3QixDQUF4QjtBQUEwQixLQUFqRztBQUNEOztBQUVELEVBQUEsV0FBVyxHQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ1QsU0FBSyxVQUFMLENBQWdCLFFBQWhCO0FBQ0Q7O0FBdEJnQyxDQUFuQzs7Ozs7QUFFRSxPQUFBLENBQUEsVUFBQSxDQUFBLENBREMsTUFBQSxDQUFBLEtBQUEsRUFDRCxFLHlDQUFBLENBQUEsRSxnQ0FBQSxFLGNBQUEsRSxLQUFtQixDQUFuQjs7Ozs7QUFFQSxPQUFBLENBQUEsVUFBQSxDQUFBLENBREMsTUFBQSxDQUFBLE1BQUEsRUFDRCxFLHlDQUFBLENBQUEsRSxnQ0FBQSxFLGVBQUEsRSxLQUFtQyxDQUFuQzs7Ozs7QUFNQSxPQUFBLENBQUEsVUFBQSxDQUFBLENBREMsTUFBQSxDQUFBLFlBQUEsQ0FBYSxPQUFiLEVBQXNCLENBQUMsUUFBRCxDQUF0QixDQUNELEUsMkNBQUEsRSx5Q0FBa0IsVSxFQUFsQixFLCtDQUFBLENBQUEsRSxnQ0FBQSxFLFlBQUEsRUFJQyxJQUpEOzs7O0FBVlcsc0JBQXNCLEdBQUEsT0FBQSxDQUFBLFVBQUEsQ0FBQSxDQUhsQyxNQUFBLENBQUEsU0FBQSxDQUFVO0FBQ1QsRUFBQSxRQUFRLEVBQUU7QUFERCxDQUFWLENBR2tDLEUsMkNBQUEsQ0FBQSxFQUF0QixzQkFBc0IsQ0FBdEI7Ozs7QUFBQSxPQUFBLENBQUEsc0JBQUEsR0FBQSxzQkFBQSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IERpcmVjdGl2ZSwgRXZlbnRFbWl0dGVyLCBIb3N0TGlzdGVuZXIsIElucHV0LCBPbkRlc3Ryb3ksIE9uSW5pdCwgT3V0cHV0IH0gZnJvbSBcIkBhbmd1bGFyL2NvcmVcIjtcbmltcG9ydCB7IFJlcGxheVN1YmplY3QgfSBmcm9tIFwicnhqc1wiO1xuaW1wb3J0IHsgZGVib3VuY2VUaW1lIH0gZnJvbSBcInJ4anMvb3BlcmF0b3JzXCI7XG5cbkBEaXJlY3RpdmUoe1xuICBzZWxlY3RvcjogXCJbYmJEZWJvdW5jZUNsaWNrXVwiLFxufSlcbmV4cG9ydCBjbGFzcyBEZWJvdW5jZUNsaWNrRGlyZWN0aXZlIGltcGxlbWVudHMgT25Jbml0LCBPbkRlc3Ryb3kge1xuICBASW5wdXQoKVxuICBkZWJvdW5jZVRpbWUgPSA1MDA7XG4gIEBPdXRwdXQoKVxuICBkZWJvdW5jZUNsaWNrID0gbmV3IEV2ZW50RW1pdHRlcigpO1xuICBwcml2YXRlIGRlc3Ryb3llZCQ6IFJlcGxheVN1YmplY3Q8Ym9vbGVhbj4gPSBuZXcgUmVwbGF5U3ViamVjdCgxKTtcblxuICBjb25zdHJ1Y3RvcigpIHt9XG5cbiAgQEhvc3RMaXN0ZW5lcihcImNsaWNrXCIsIFtcIiRldmVudFwiXSlcbiAgY2xpY2tFdmVudChldmVudDogTW91c2VFdmVudCkge1xuICAgIGV2ZW50LnByZXZlbnREZWZhdWx0KCk7XG4gICAgZXZlbnQuc3RvcFByb3BhZ2F0aW9uKCk7XG4gICAgdGhpcy5kZXN0cm95ZWQkLm5leHQodHJ1ZSk7XG4gIH1cblxuICBuZ09uSW5pdCgpIHtcbiAgICB0aGlzLmRlc3Ryb3llZCQucGlwZShkZWJvdW5jZVRpbWUodGhpcy5kZWJvdW5jZVRpbWUpKS5zdWJzY3JpYmUoKGUpID0+IHRoaXMuZGVib3VuY2VDbGljay5lbWl0KGUpKTtcbiAgfVxuXG4gIG5nT25EZXN0cm95KCkge1xuICAgIHRoaXMuZGVzdHJveWVkJC5jb21wbGV0ZSgpO1xuICB9XG59XG4iXX0=

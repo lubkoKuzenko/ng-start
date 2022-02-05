@@ -1,0 +1,596 @@
+6a83843d1b88598f2601890b8bc0015a
+"use strict";
+
+/* istanbul ignore next */
+function cov_138910skss() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@core/services/global-error-handler.ts";
+  var hash = "8be450c7685d18d511003695e4ae9208f9c04b36";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@core/services/global-error-handler.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 36
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 15
+        },
+        end: {
+          line: 6,
+          column: 46
+        }
+      },
+      "5": {
+        start: {
+          line: 7,
+          column: 25
+        },
+        end: {
+          line: 7,
+          column: 62
+        }
+      },
+      "6": {
+        start: {
+          line: 8,
+          column: 22
+        },
+        end: {
+          line: 8,
+          column: 49
+        }
+      },
+      "7": {
+        start: {
+          line: 9,
+          column: 12
+        },
+        end: {
+          line: 9,
+          column: 61
+        }
+      },
+      "8": {
+        start: {
+          line: 10,
+          column: 25
+        },
+        end: {
+          line: 40,
+          column: 1
+        }
+      },
+      "9": {
+        start: {
+          line: 12,
+          column: 8
+        },
+        end: {
+          line: 12,
+          column: 33
+        }
+      },
+      "10": {
+        start: {
+          line: 15,
+          column: 8
+        },
+        end: {
+          line: 22,
+          column: 9
+        }
+      },
+      "11": {
+        start: {
+          line: 17,
+          column: 12
+        },
+        end: {
+          line: 17,
+          column: 42
+        }
+      },
+      "12": {
+        start: {
+          line: 21,
+          column: 12
+        },
+        end: {
+          line: 21,
+          column: 42
+        }
+      },
+      "13": {
+        start: {
+          line: 26,
+          column: 8
+        },
+        end: {
+          line: 29,
+          column: 9
+        }
+      },
+      "14": {
+        start: {
+          line: 28,
+          column: 12
+        },
+        end: {
+          line: 28,
+          column: 44
+        }
+      },
+      "15": {
+        start: {
+          line: 30,
+          column: 8
+        },
+        end: {
+          line: 35,
+          column: 9
+        }
+      },
+      "16": {
+        start: {
+          line: 33,
+          column: 12
+        },
+        end: {
+          line: 33,
+          column: 46
+        }
+      },
+      "17": {
+        start: {
+          line: 34,
+          column: 12
+        },
+        end: {
+          line: 34,
+          column: 56
+        }
+      },
+      "18": {
+        start: {
+          line: 38,
+          column: 8
+        },
+        end: {
+          line: 38,
+          column: 25
+        }
+      },
+      "19": {
+        start: {
+          line: 41,
+          column: 0
+        },
+        end: {
+          line: 44,
+          column: 23
+        }
+      },
+      "20": {
+        start: {
+          line: 45,
+          column: 0
+        },
+        end: {
+          line: 45,
+          column: 48
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 11,
+            column: 4
+          },
+          end: {
+            line: 11,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 11,
+            column: 26
+          },
+          end: {
+            line: 13,
+            column: 5
+          }
+        },
+        line: 11
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 14,
+            column: 4
+          },
+          end: {
+            line: 14,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 14,
+            column: 23
+          },
+          end: {
+            line: 23,
+            column: 5
+          }
+        },
+        line: 14
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 25,
+            column: 4
+          },
+          end: {
+            line: 25,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 25,
+            column: 29
+          },
+          end: {
+            line: 36,
+            column: 5
+          }
+        },
+        line: 25
+      },
+      "3": {
+        name: "(anonymous_3)",
+        decl: {
+          start: {
+            line: 37,
+            column: 4
+          },
+          end: {
+            line: 37,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 37,
+            column: 29
+          },
+          end: {
+            line: 39,
+            column: 5
+          }
+        },
+        line: 37
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 15,
+            column: 8
+          },
+          end: {
+            line: 22,
+            column: 9
+          }
+        },
+        type: "if",
+        locations: [{
+          start: {
+            line: 15,
+            column: 8
+          },
+          end: {
+            line: 22,
+            column: 9
+          }
+        }, {
+          start: {
+            line: 19,
+            column: 13
+          },
+          end: {
+            line: 22,
+            column: 9
+          }
+        }],
+        line: 15
+      },
+      "1": {
+        loc: {
+          start: {
+            line: 26,
+            column: 8
+          },
+          end: {
+            line: 29,
+            column: 9
+          }
+        },
+        type: "if",
+        locations: [{
+          start: {
+            line: 26,
+            column: 8
+          },
+          end: {
+            line: 29,
+            column: 9
+          }
+        }, {
+          start: {
+            line: undefined,
+            column: undefined
+          },
+          end: {
+            line: undefined,
+            column: undefined
+          }
+        }],
+        line: 26
+      },
+      "2": {
+        loc: {
+          start: {
+            line: 30,
+            column: 8
+          },
+          end: {
+            line: 35,
+            column: 9
+          }
+        },
+        type: "if",
+        locations: [{
+          start: {
+            line: 30,
+            column: 8
+          },
+          end: {
+            line: 35,
+            column: 9
+          }
+        }, {
+          start: {
+            line: undefined,
+            column: undefined
+          },
+          end: {
+            line: undefined,
+            column: undefined
+          }
+        }],
+        line: 30
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    b: {
+      "0": [0, 0],
+      "1": [0, 0],
+      "2": [0, 0]
+    },
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@core/services/global-error-handler.ts",
+      mappings: ";;;;AAAA,wCAAmE;AACnE,+CAAyD;AACzD,+DAAoD;AACpD,kDAA+C;AAE/C,MAAM,GAAG,GAAG,IAAI,uBAAM,CAAC,oBAAoB,CAAC,CAAC;AAG7C,IAAa,kBAAkB,GAA/B,MAAa,kBAAkB;IAC7B,YAAoB,QAAkB;QAAlB,aAAQ,GAAR,QAAQ,CAAU;IAAG,CAAC;IAE1C,WAAW,CAAC,KAAgC;QAC1C,IAAI,KAAK,YAAY,wBAAiB,EAAE;YACtC,wBAAwB;YACxB,IAAI,CAAC,iBAAiB,CAAC,KAAK,CAAC,CAAC;SAC/B;aAAM;YACL,uBAAuB;YACvB,IAAI,CAAC,iBAAiB,CAAC,KAAK,CAAC,CAAC;SAC/B;IACH,CAAC;IAED,4DAA4D;IACpD,iBAAiB,CAAC,KAAwB;QAChD,IAAI,CAAC,SAAS,CAAC,MAAM,EAAE;YACrB,yBAAyB;YACzB,KAAK,CAAC,wBAAwB,CAAC,CAAC;SACjC;QAED,IAAI,CAAC,yBAAW,CAAC,UAAU,EAAE;YAC3B,aAAa;YACb,gCAAgC;YAChC,GAAG,CAAC,KAAK,CAAC,eAAe,EAAE,KAAK,CAAC,CAAC;YAClC,KAAK,CAAC,GAAG,KAAK,CAAC,MAAM,MAAM,KAAK,CAAC,OAAO,EAAE,CAAC,CAAC;SAC7C;IACH,CAAC;IAEO,iBAAiB,CAAC,KAAY;QACpC,GAAG,CAAC,KAAK,CAAC,KAAK,CAAC,CAAC;IACnB,CAAC;CACF,CAAA;AA/BY,kBAAkB;IAD9B,iBAAU,EAAE;6CAEmB,eAAQ;GAD3B,kBAAkB,CA+B9B;AA/BY,gDAAkB",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/@core/services/global-error-handler.ts"],
+      sourcesContent: ["import { ErrorHandler, Injectable, Injector } from \"@angular/core\";\nimport { HttpErrorResponse } from \"@angular/common/http\";\nimport { Logger } from \"../services/logger.service\";\nimport { environment } from \"@env/environment\";\n\nconst log = new Logger(\"GlobalErrorHandler\");\n\n@Injectable()\nexport class GlobalErrorHandler implements ErrorHandler {\n  constructor(private injector: Injector) {}\n\n  handleError(error: Error | HttpErrorResponse) {\n    if (error instanceof HttpErrorResponse) {\n      // Server error happened\n      this.handleServerError(error);\n    } else {\n      // Client Error Happend\n      this.handleClientError(error);\n    }\n  }\n\n  // Customize the default server error handler here if needed\n  private handleServerError(error: HttpErrorResponse) {\n    if (!navigator.onLine) {\n      // No Internet connection\n      alert(\"No Internet Connection\");\n    }\n\n    if (!environment.production) {\n      // Http Error\n      // Show notification to the user\n      log.error(\"Request error\", error);\n      alert(`${error.status} - ${error.message}`);\n    }\n  }\n\n  private handleClientError(error: Error) {\n    log.error(error);\n  }\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "8be450c7685d18d511003695e4ae9208f9c04b36"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_138910skss = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_138910skss();
+cov_138910skss().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_138910skss().s[1]++;
+exports.GlobalErrorHandler = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_138910skss().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_138910skss().s[3]++, require("@angular/core"));
+const http_1 =
+/* istanbul ignore next */
+(cov_138910skss().s[4]++, require("@angular/common/http"));
+const logger_service_1 =
+/* istanbul ignore next */
+(cov_138910skss().s[5]++, require("../services/logger.service"));
+const environment_1 =
+/* istanbul ignore next */
+(cov_138910skss().s[6]++, require("@env/environment"));
+const log =
+/* istanbul ignore next */
+(cov_138910skss().s[7]++, new logger_service_1.Logger("GlobalErrorHandler"));
+
+/* istanbul ignore next */
+cov_138910skss().s[8]++;
+let GlobalErrorHandler = class GlobalErrorHandler {
+  constructor(injector) {
+    /* istanbul ignore next */
+    cov_138910skss().f[0]++;
+    cov_138910skss().s[9]++;
+    this.injector = injector;
+  }
+
+  handleError(error) {
+    /* istanbul ignore next */
+    cov_138910skss().f[1]++;
+    cov_138910skss().s[10]++;
+
+    if (error instanceof http_1.HttpErrorResponse) {
+      /* istanbul ignore next */
+      cov_138910skss().b[0][0]++;
+      cov_138910skss().s[11]++;
+      // Server error happened
+      this.handleServerError(error);
+    } else {
+      /* istanbul ignore next */
+      cov_138910skss().b[0][1]++;
+      cov_138910skss().s[12]++;
+      // Client Error Happend
+      this.handleClientError(error);
+    }
+  } // Customize the default server error handler here if needed
+
+
+  handleServerError(error) {
+    /* istanbul ignore next */
+    cov_138910skss().f[2]++;
+    cov_138910skss().s[13]++;
+
+    if (!navigator.onLine) {
+      /* istanbul ignore next */
+      cov_138910skss().b[1][0]++;
+      cov_138910skss().s[14]++;
+      // No Internet connection
+      alert("No Internet Connection");
+    } else
+    /* istanbul ignore next */
+    {
+      cov_138910skss().b[1][1]++;
+    }
+
+    cov_138910skss().s[15]++;
+
+    if (!environment_1.environment.production) {
+      /* istanbul ignore next */
+      cov_138910skss().b[2][0]++;
+      cov_138910skss().s[16]++;
+      // Http Error
+      // Show notification to the user
+      log.error("Request error", error);
+
+      /* istanbul ignore next */
+      cov_138910skss().s[17]++;
+      alert(`${error.status} - ${error.message}`);
+    } else
+    /* istanbul ignore next */
+    {
+      cov_138910skss().b[2][1]++;
+    }
+  }
+
+  handleClientError(error) {
+    /* istanbul ignore next */
+    cov_138910skss().f[3]++;
+    cov_138910skss().s[18]++;
+    log.error(error);
+  }
+
+};
+
+/* istanbul ignore next */
+cov_138910skss().s[19]++;
+GlobalErrorHandler = tslib_1.__decorate([core_1.Injectable(), tslib_1.__metadata("design:paramtypes", [core_1.Injector])], GlobalErrorHandler);
+
+/* istanbul ignore next */
+cov_138910skss().s[20]++;
+exports.GlobalErrorHandler = GlobalErrorHandler;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC9AY29yZS9zZXJ2aWNlcy9nbG9iYWwtZXJyb3ItaGFuZGxlci50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFhTTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFiTixNQUFBLE1BQUE7QUFBQTtBQUFBLDBCQUFBLE9BQUEsQ0FBQSxlQUFBLENBQUEsQ0FBQTtBQUNBLE1BQUEsTUFBQTtBQUFBO0FBQUEsMEJBQUEsT0FBQSxDQUFBLHNCQUFBLENBQUEsQ0FBQTtBQUNBLE1BQUEsZ0JBQUE7QUFBQTtBQUFBLDBCQUFBLE9BQUEsQ0FBQSw0QkFBQSxDQUFBLENBQUE7QUFDQSxNQUFBLGFBQUE7QUFBQTtBQUFBLDBCQUFBLE9BQUEsQ0FBQSxrQkFBQSxDQUFBLENBQUE7QUFFQSxNQUFNLEdBQUc7QUFBQTtBQUFBLDBCQUFHLElBQUksZ0JBQUEsQ0FBQSxNQUFKLENBQVcsb0JBQVgsQ0FBSCxDQUFUOzs7O0FBR0EsSUFBYSxrQkFBa0IsR0FBL0IsTUFBYSxrQkFBYixDQUErQjtBQUM3QixFQUFBLFdBQUEsQ0FBb0IsUUFBcEIsRUFBc0M7QUFBQTtBQUFBO0FBQUE7QUFBbEIsU0FBQSxRQUFBLEdBQUEsUUFBQTtBQUFzQjs7QUFFMUMsRUFBQSxXQUFXLENBQUMsS0FBRCxFQUFpQztBQUFBO0FBQUE7QUFBQTs7QUFDMUMsUUFBSSxLQUFLLFlBQVksTUFBQSxDQUFBLGlCQUFyQixFQUF3QztBQUFBO0FBQUE7QUFBQTtBQUN0QztBQUNBLFdBQUssaUJBQUwsQ0FBdUIsS0FBdkI7QUFDRCxLQUhELE1BR087QUFBQTtBQUFBO0FBQUE7QUFDTDtBQUNBLFdBQUssaUJBQUwsQ0FBdUIsS0FBdkI7QUFDRDtBQUNGLEdBWDRCLENBYTdCOzs7QUFDUSxFQUFBLGlCQUFpQixDQUFDLEtBQUQsRUFBeUI7QUFBQTtBQUFBO0FBQUE7O0FBQ2hELFFBQUksQ0FBQyxTQUFTLENBQUMsTUFBZixFQUF1QjtBQUFBO0FBQUE7QUFBQTtBQUNyQjtBQUNBLE1BQUEsS0FBSyxDQUFDLHdCQUFELENBQUw7QUFDRCxLQUhEO0FBQUE7QUFBQTtBQUFBO0FBQUE7O0FBRGdEOztBQU1oRCxRQUFJLENBQUMsYUFBQSxDQUFBLFdBQUEsQ0FBWSxVQUFqQixFQUE2QjtBQUFBO0FBQUE7QUFBQTtBQUMzQjtBQUNBO0FBQ0EsTUFBQSxHQUFHLENBQUMsS0FBSixDQUFVLGVBQVYsRUFBMkIsS0FBM0I7O0FBSDJCO0FBQUE7QUFJM0IsTUFBQSxLQUFLLENBQUMsR0FBRyxLQUFLLENBQUMsTUFBTSxNQUFNLEtBQUssQ0FBQyxPQUFPLEVBQW5DLENBQUw7QUFDRCxLQUxEO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFNRDs7QUFFTyxFQUFBLGlCQUFpQixDQUFDLEtBQUQsRUFBYTtBQUFBO0FBQUE7QUFBQTtBQUNwQyxJQUFBLEdBQUcsQ0FBQyxLQUFKLENBQVUsS0FBVjtBQUNEOztBQTlCNEIsQ0FBL0I7Ozs7QUFBYSxrQkFBa0IsR0FBQSxPQUFBLENBQUEsVUFBQSxDQUFBLENBRDlCLE1BQUEsQ0FBQSxVQUFBLEVBQzhCLEUseUNBQ0MsTUFBQSxDQUFBLFEsRUFERCxDQUFBLEVBQWxCLGtCQUFrQixDQUFsQjs7OztBQUFBLE9BQUEsQ0FBQSxrQkFBQSxHQUFBLGtCQUFBIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgRXJyb3JIYW5kbGVyLCBJbmplY3RhYmxlLCBJbmplY3RvciB9IGZyb20gXCJAYW5ndWxhci9jb3JlXCI7XG5pbXBvcnQgeyBIdHRwRXJyb3JSZXNwb25zZSB9IGZyb20gXCJAYW5ndWxhci9jb21tb24vaHR0cFwiO1xuaW1wb3J0IHsgTG9nZ2VyIH0gZnJvbSBcIi4uL3NlcnZpY2VzL2xvZ2dlci5zZXJ2aWNlXCI7XG5pbXBvcnQgeyBlbnZpcm9ubWVudCB9IGZyb20gXCJAZW52L2Vudmlyb25tZW50XCI7XG5cbmNvbnN0IGxvZyA9IG5ldyBMb2dnZXIoXCJHbG9iYWxFcnJvckhhbmRsZXJcIik7XG5cbkBJbmplY3RhYmxlKClcbmV4cG9ydCBjbGFzcyBHbG9iYWxFcnJvckhhbmRsZXIgaW1wbGVtZW50cyBFcnJvckhhbmRsZXIge1xuICBjb25zdHJ1Y3Rvcihwcml2YXRlIGluamVjdG9yOiBJbmplY3Rvcikge31cblxuICBoYW5kbGVFcnJvcihlcnJvcjogRXJyb3IgfCBIdHRwRXJyb3JSZXNwb25zZSkge1xuICAgIGlmIChlcnJvciBpbnN0YW5jZW9mIEh0dHBFcnJvclJlc3BvbnNlKSB7XG4gICAgICAvLyBTZXJ2ZXIgZXJyb3IgaGFwcGVuZWRcbiAgICAgIHRoaXMuaGFuZGxlU2VydmVyRXJyb3IoZXJyb3IpO1xuICAgIH0gZWxzZSB7XG4gICAgICAvLyBDbGllbnQgRXJyb3IgSGFwcGVuZFxuICAgICAgdGhpcy5oYW5kbGVDbGllbnRFcnJvcihlcnJvcik7XG4gICAgfVxuICB9XG5cbiAgLy8gQ3VzdG9taXplIHRoZSBkZWZhdWx0IHNlcnZlciBlcnJvciBoYW5kbGVyIGhlcmUgaWYgbmVlZGVkXG4gIHByaXZhdGUgaGFuZGxlU2VydmVyRXJyb3IoZXJyb3I6IEh0dHBFcnJvclJlc3BvbnNlKSB7XG4gICAgaWYgKCFuYXZpZ2F0b3Iub25MaW5lKSB7XG4gICAgICAvLyBObyBJbnRlcm5ldCBjb25uZWN0aW9uXG4gICAgICBhbGVydChcIk5vIEludGVybmV0IENvbm5lY3Rpb25cIik7XG4gICAgfVxuXG4gICAgaWYgKCFlbnZpcm9ubWVudC5wcm9kdWN0aW9uKSB7XG4gICAgICAvLyBIdHRwIEVycm9yXG4gICAgICAvLyBTaG93IG5vdGlmaWNhdGlvbiB0byB0aGUgdXNlclxuICAgICAgbG9nLmVycm9yKFwiUmVxdWVzdCBlcnJvclwiLCBlcnJvcik7XG4gICAgICBhbGVydChgJHtlcnJvci5zdGF0dXN9IC0gJHtlcnJvci5tZXNzYWdlfWApO1xuICAgIH1cbiAgfVxuXG4gIHByaXZhdGUgaGFuZGxlQ2xpZW50RXJyb3IoZXJyb3I6IEVycm9yKSB7XG4gICAgbG9nLmVycm9yKGVycm9yKTtcbiAgfVxufVxuIl19

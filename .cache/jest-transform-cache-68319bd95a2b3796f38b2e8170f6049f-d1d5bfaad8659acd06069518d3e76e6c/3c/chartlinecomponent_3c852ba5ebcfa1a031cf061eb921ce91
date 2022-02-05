@@ -1,0 +1,392 @@
+428365d2ac240adb94fde59b80844973
+"use strict";
+
+/* istanbul ignore next */
+function cov_a314j2fxx() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/rxjs/components/chart-line/chart-line.component.ts";
+  var hash = "95270a4647f21d36920ec830d2c4c91754c159c3";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/rxjs/components/chart-line/chart-line.component.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 36
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 34
+        },
+        end: {
+          line: 6,
+          column: 86
+        }
+      },
+      "5": {
+        start: {
+          line: 7,
+          column: 20
+        },
+        end: {
+          line: 7,
+          column: 152
+        }
+      },
+      "6": {
+        start: {
+          line: 7,
+          column: 99
+        },
+        end: {
+          line: 7,
+          column: 150
+        }
+      },
+      "7": {
+        start: {
+          line: 8,
+          column: 25
+        },
+        end: {
+          line: 33,
+          column: 1
+        }
+      },
+      "8": {
+        start: {
+          line: 11,
+          column: 8
+        },
+        end: {
+          line: 31,
+          column: 11
+        }
+      },
+      "9": {
+        start: {
+          line: 12,
+          column: 26
+        },
+        end: {
+          line: 12,
+          column: 43
+        }
+      },
+      "10": {
+        start: {
+          line: 13,
+          column: 12
+        },
+        end: {
+          line: 30,
+          column: 15
+        }
+      },
+      "11": {
+        start: {
+          line: 34,
+          column: 0
+        },
+        end: {
+          line: 37,
+          column: 57
+        }
+      },
+      "12": {
+        start: {
+          line: 38,
+          column: 0
+        },
+        end: {
+          line: 45,
+          column: 23
+        }
+      },
+      "13": {
+        start: {
+          line: 46,
+          column: 0
+        },
+        end: {
+          line: 46,
+          column: 48
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 7,
+            column: 93
+          },
+          end: {
+            line: 7,
+            column: 94
+          }
+        },
+        loc: {
+          start: {
+            line: 7,
+            column: 99
+          },
+          end: {
+            line: 7,
+            column: 150
+          }
+        },
+        line: 7
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 9,
+            column: 4
+          },
+          end: {
+            line: 9,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 9,
+            column: 18
+          },
+          end: {
+            line: 9,
+            column: 21
+          }
+        },
+        line: 9
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 10,
+            column: 4
+          },
+          end: {
+            line: 10,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 10,
+            column: 15
+          },
+          end: {
+            line: 32,
+            column: 5
+          }
+        },
+        line: 10
+      },
+      "3": {
+        name: "(anonymous_3)",
+        decl: {
+          start: {
+            line: 11,
+            column: 55
+          },
+          end: {
+            line: 11,
+            column: 56
+          }
+        },
+        loc: {
+          start: {
+            line: 11,
+            column: 68
+          },
+          end: {
+            line: 31,
+            column: 9
+          }
+        },
+        line: 11
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/rxjs/components/chart-line/chart-line.component.ts",
+      mappings: ";;;;AAAA,wCAAyE;AACzE,uFAAoF;AAEpF,MAAM,WAAW,GAAG,iDAAuB,sCAAQ,+BAA+B,CAAC,UAAU,GAAE,CAAC;AAOhG,IAAa,kBAAkB,GAA/B,MAAa,kBAAkB;IAG7B,gBAAe,CAAC;IAEH,QAAQ;;YACnB,MAAM,KAAK,GAAG,MAAM,WAAW,CAAC;YAEhC,IAAI,KAAK,CAAC,IAAI,CAAC,YAAY,CAAC,aAAa,EAAE;gBACzC,sCAAsC;gBACtC,IAAI,EAAE,MAAM;gBAEZ,2BAA2B;gBAC3B,IAAI,EAAE;oBACJ,MAAM,EAAE,CAAC,SAAS,EAAE,UAAU,EAAE,OAAO,EAAE,OAAO,EAAE,KAAK,EAAE,MAAM,EAAE,MAAM,CAAC;oBACxE,QAAQ,EAAE;wBACR;4BACE,KAAK,EAAE,kBAAkB;4BACzB,eAAe,EAAE,mBAAmB;4BACpC,WAAW,EAAE,mBAAmB;4BAChC,IAAI,EAAE,CAAC,CAAC,EAAE,EAAE,EAAE,CAAC,EAAE,CAAC,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,CAAC;yBAChC;qBACF;iBACF;gBAED,gCAAgC;gBAChC,OAAO,EAAE,EAAE;aACZ,CAAC,CAAC;QACL,CAAC;KAAA;CACF,CAAA;AA5BwC;IAAtC,gBAAS,CAAC,OAAO,EAAE,EAAE,MAAM,EAAE,KAAK,EAAE,CAAC;sCAAe,iBAAU;wDAAoB;AADxE,kBAAkB;IAL9B,gBAAS,CAAC;QACT,QAAQ,EAAE,eAAe;QACzB,kBAAa,6BAA6B,CAAA;QAC1C,SAAS,IAAiC;KAC3C,CAAC;;GACW,kBAAkB,CA6B9B;AA7BY,gDAAkB",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/rxjs/components/chart-line/chart-line.component.ts"],
+      sourcesContent: ["import { Component, OnInit, ViewChild, ElementRef } from \"@angular/core\";\nimport { normalizeCommonJSImport } from \"../../../../utils/normalizeCommonJSImport\";\n\nconst importChart = normalizeCommonJSImport(import(/* webpackChunkName: \"chart\" */ \"chart.js\"));\n\n@Component({\n  selector: \"l9-chart-line\",\n  templateUrl: \"./chart-line.component.html\",\n  styleUrls: [\"./chart-line.component.scss\"],\n})\nexport class ChartLineComponent implements OnInit {\n  @ViewChild(\"chart\", { static: false }) chartElement: ElementRef<HTMLCanvasElement>;\n\n  constructor() {}\n\n  public async ngOnInit() {\n    const Chart = await importChart;\n\n    new Chart(this.chartElement.nativeElement, {\n      // The type of chart we want to create\n      type: \"line\",\n\n      // The data for our dataset\n      data: {\n        labels: [\"January\", \"February\", \"March\", \"April\", \"May\", \"June\", \"July\"],\n        datasets: [\n          {\n            label: \"My First dataset\",\n            backgroundColor: \"rgb(255, 99, 132)\",\n            borderColor: \"rgb(255, 99, 132)\",\n            data: [0, 10, 5, 2, 20, 30, 45],\n          },\n        ],\n      },\n\n      // Configuration options go here\n      options: {},\n    });\n  }\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "95270a4647f21d36920ec830d2c4c91754c159c3"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_a314j2fxx = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_a314j2fxx();
+cov_a314j2fxx().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_a314j2fxx().s[1]++;
+exports.ChartLineComponent = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_a314j2fxx().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_a314j2fxx().s[3]++, require("@angular/core"));
+const normalizeCommonJSImport_1 =
+/* istanbul ignore next */
+(cov_a314j2fxx().s[4]++, require("../../../../utils/normalizeCommonJSImport"));
+const importChart =
+/* istanbul ignore next */
+(cov_a314j2fxx().s[5]++, normalizeCommonJSImport_1.normalizeCommonJSImport(Promise.resolve().then(() => {
+  /* istanbul ignore next */
+  cov_a314j2fxx().f[0]++;
+  cov_a314j2fxx().s[6]++;
+  return require(
+  /* webpackChunkName: "chart" */
+  "chart.js");
+})));
+
+/* istanbul ignore next */
+cov_a314j2fxx().s[7]++;
+let ChartLineComponent = class ChartLineComponent {
+  constructor() {
+    /* istanbul ignore next */
+    cov_a314j2fxx().f[1]++;
+  }
+
+  ngOnInit() {
+    /* istanbul ignore next */
+    cov_a314j2fxx().f[2]++;
+    cov_a314j2fxx().s[8]++;
+    return tslib_1.__awaiter(this, void 0, void 0, function* () {
+      /* istanbul ignore next */
+      cov_a314j2fxx().f[3]++;
+      const Chart =
+      /* istanbul ignore next */
+      (cov_a314j2fxx().s[9]++, yield importChart);
+
+      /* istanbul ignore next */
+      cov_a314j2fxx().s[10]++;
+      new Chart(this.chartElement.nativeElement, {
+        // The type of chart we want to create
+        type: "line",
+        // The data for our dataset
+        data: {
+          labels: ["January", "February", "March", "April", "May", "June", "July"],
+          datasets: [{
+            label: "My First dataset",
+            backgroundColor: "rgb(255, 99, 132)",
+            borderColor: "rgb(255, 99, 132)",
+            data: [0, 10, 5, 2, 20, 30, 45]
+          }]
+        },
+        // Configuration options go here
+        options: {}
+      });
+    });
+  }
+
+};
+
+/* istanbul ignore next */
+cov_a314j2fxx().s[11]++;
+
+tslib_1.__decorate([core_1.ViewChild("chart", {
+  static: false
+}), tslib_1.__metadata("design:type", core_1.ElementRef)], ChartLineComponent.prototype, "chartElement", void 0);
+
+/* istanbul ignore next */
+cov_a314j2fxx().s[12]++;
+ChartLineComponent = tslib_1.__decorate([core_1.Component({
+  selector: "l9-chart-line",
+  template: require("./chart-line.component.html"),
+  styleUrls: []
+}), tslib_1.__metadata("design:paramtypes", [])], ChartLineComponent);
+
+/* istanbul ignore next */
+cov_a314j2fxx().s[13]++;
+exports.ChartLineComponent = ChartLineComponent;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC9yeGpzL2NvbXBvbmVudHMvY2hhcnQtbGluZS9jaGFydC1saW5lLmNvbXBvbmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsTUFBQSxNQUFBO0FBQUE7QUFBQSx5QkFBQSxPQUFBLENBQUEsZUFBQSxDQUFBLENBQUE7QUFDQSxNQUFBLHlCQUFBO0FBQUE7QUFBQSx5QkFBQSxPQUFBLENBQUEsMkNBQUEsQ0FBQSxDQUFBO0FBRUEsTUFBTSxXQUFXO0FBQUE7QUFBQSx5QkFBRyx5QkFBQSxDQUFBLHVCQUFBLENBQXVCLE9BQUEsQ0FBQSxPQUFBLEdBQUEsSUFBQSxDQUFBLE1BQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxTQUFBLE9BQUE7QUFBUTtBQUFnQyxZQUF4QyxDQUFBO0FBQWtELENBQWxELENBQXZCLENBQUgsQ0FBakI7Ozs7QUFPQSxJQUFhLGtCQUFrQixHQUEvQixNQUFhLGtCQUFiLENBQStCO0FBRzdCLEVBQUEsV0FBQSxHQUFBO0FBQUE7QUFBQTtBQUFnQjs7QUFFSCxFQUFBLFFBQVEsR0FBQTtBQUFBO0FBQUE7QUFBQTs7OztBQUNuQixZQUFNLEtBQUs7QUFBQTtBQUFBLCtCQUFHLE1BQU0sV0FBVCxDQUFYOzs7O0FBRUEsVUFBSSxLQUFKLENBQVUsS0FBSyxZQUFMLENBQWtCLGFBQTVCLEVBQTJDO0FBQ3pDO0FBQ0EsUUFBQSxJQUFJLEVBQUUsTUFGbUM7QUFJekM7QUFDQSxRQUFBLElBQUksRUFBRTtBQUNKLFVBQUEsTUFBTSxFQUFFLENBQUMsU0FBRCxFQUFZLFVBQVosRUFBd0IsT0FBeEIsRUFBaUMsT0FBakMsRUFBMEMsS0FBMUMsRUFBaUQsTUFBakQsRUFBeUQsTUFBekQsQ0FESjtBQUVKLFVBQUEsUUFBUSxFQUFFLENBQ1I7QUFDRSxZQUFBLEtBQUssRUFBRSxrQkFEVDtBQUVFLFlBQUEsZUFBZSxFQUFFLG1CQUZuQjtBQUdFLFlBQUEsV0FBVyxFQUFFLG1CQUhmO0FBSUUsWUFBQSxJQUFJLEVBQUUsQ0FBQyxDQUFELEVBQUksRUFBSixFQUFRLENBQVIsRUFBVyxDQUFYLEVBQWMsRUFBZCxFQUFrQixFQUFsQixFQUFzQixFQUF0QjtBQUpSLFdBRFE7QUFGTixTQUxtQztBQWlCekM7QUFDQSxRQUFBLE9BQU8sRUFBRTtBQWxCZ0MsT0FBM0M7QUFvQkQsSztBQUFBOztBQTVCNEIsQ0FBL0I7Ozs7O0FBQ3lDLE9BQUEsQ0FBQSxVQUFBLENBQUEsQ0FBdEMsTUFBQSxDQUFBLFNBQUEsQ0FBVSxPQUFWLEVBQW1CO0FBQUUsRUFBQSxNQUFNLEVBQUU7QUFBVixDQUFuQixDQUFzQyxFLGtDQUFjLE1BQUEsQ0FBQSxVLENBQWQsQ0FBQSxFLDRCQUFBLEUsY0FBQSxFLEtBQTRDLENBQTVDOzs7O0FBRDVCLGtCQUFrQixHQUFBLE9BQUEsQ0FBQSxVQUFBLENBQUEsQ0FMOUIsTUFBQSxDQUFBLFNBQUEsQ0FBVTtBQUNULEVBQUEsUUFBUSxFQUFFLGVBREQ7QUFFVCxFQUFBLFFBQUEsRUFBQSxPQUFBLENBQWEsNkJBQWIsQ0FGUztBQUdULEVBQUEsU0FBUyxFQUFBO0FBSEEsQ0FBVixDQUs4QixFLDJDQUFBLENBQUEsRUFBbEIsa0JBQWtCLENBQWxCOzs7O0FBQUEsT0FBQSxDQUFBLGtCQUFBLEdBQUEsa0JBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb21wb25lbnQsIE9uSW5pdCwgVmlld0NoaWxkLCBFbGVtZW50UmVmIH0gZnJvbSBcIkBhbmd1bGFyL2NvcmVcIjtcbmltcG9ydCB7IG5vcm1hbGl6ZUNvbW1vbkpTSW1wb3J0IH0gZnJvbSBcIi4uLy4uLy4uLy4uL3V0aWxzL25vcm1hbGl6ZUNvbW1vbkpTSW1wb3J0XCI7XG5cbmNvbnN0IGltcG9ydENoYXJ0ID0gbm9ybWFsaXplQ29tbW9uSlNJbXBvcnQoaW1wb3J0KC8qIHdlYnBhY2tDaHVua05hbWU6IFwiY2hhcnRcIiAqLyBcImNoYXJ0LmpzXCIpKTtcblxuQENvbXBvbmVudCh7XG4gIHNlbGVjdG9yOiBcImw5LWNoYXJ0LWxpbmVcIixcbiAgdGVtcGxhdGVVcmw6IFwiLi9jaGFydC1saW5lLmNvbXBvbmVudC5odG1sXCIsXG4gIHN0eWxlVXJsczogW1wiLi9jaGFydC1saW5lLmNvbXBvbmVudC5zY3NzXCJdLFxufSlcbmV4cG9ydCBjbGFzcyBDaGFydExpbmVDb21wb25lbnQgaW1wbGVtZW50cyBPbkluaXQge1xuICBAVmlld0NoaWxkKFwiY2hhcnRcIiwgeyBzdGF0aWM6IGZhbHNlIH0pIGNoYXJ0RWxlbWVudDogRWxlbWVudFJlZjxIVE1MQ2FudmFzRWxlbWVudD47XG5cbiAgY29uc3RydWN0b3IoKSB7fVxuXG4gIHB1YmxpYyBhc3luYyBuZ09uSW5pdCgpIHtcbiAgICBjb25zdCBDaGFydCA9IGF3YWl0IGltcG9ydENoYXJ0O1xuXG4gICAgbmV3IENoYXJ0KHRoaXMuY2hhcnRFbGVtZW50Lm5hdGl2ZUVsZW1lbnQsIHtcbiAgICAgIC8vIFRoZSB0eXBlIG9mIGNoYXJ0IHdlIHdhbnQgdG8gY3JlYXRlXG4gICAgICB0eXBlOiBcImxpbmVcIixcblxuICAgICAgLy8gVGhlIGRhdGEgZm9yIG91ciBkYXRhc2V0XG4gICAgICBkYXRhOiB7XG4gICAgICAgIGxhYmVsczogW1wiSmFudWFyeVwiLCBcIkZlYnJ1YXJ5XCIsIFwiTWFyY2hcIiwgXCJBcHJpbFwiLCBcIk1heVwiLCBcIkp1bmVcIiwgXCJKdWx5XCJdLFxuICAgICAgICBkYXRhc2V0czogW1xuICAgICAgICAgIHtcbiAgICAgICAgICAgIGxhYmVsOiBcIk15IEZpcnN0IGRhdGFzZXRcIixcbiAgICAgICAgICAgIGJhY2tncm91bmRDb2xvcjogXCJyZ2IoMjU1LCA5OSwgMTMyKVwiLFxuICAgICAgICAgICAgYm9yZGVyQ29sb3I6IFwicmdiKDI1NSwgOTksIDEzMilcIixcbiAgICAgICAgICAgIGRhdGE6IFswLCAxMCwgNSwgMiwgMjAsIDMwLCA0NV0sXG4gICAgICAgICAgfSxcbiAgICAgICAgXSxcbiAgICAgIH0sXG5cbiAgICAgIC8vIENvbmZpZ3VyYXRpb24gb3B0aW9ucyBnbyBoZXJlXG4gICAgICBvcHRpb25zOiB7fSxcbiAgICB9KTtcbiAgfVxufVxuIl19

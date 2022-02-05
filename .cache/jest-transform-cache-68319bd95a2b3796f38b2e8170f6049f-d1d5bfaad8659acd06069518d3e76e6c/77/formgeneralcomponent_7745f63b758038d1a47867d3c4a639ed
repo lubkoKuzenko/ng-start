@@ -1,0 +1,350 @@
+22fdb3ccf2c70ac1b453db308c3be8a0
+"use strict";
+
+/* istanbul ignore next */
+function cov_13mfb2b1ld() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/components/nested-form-service/form-general/form-general.component.ts";
+  var hash = "aa44841e4750cda117a60ca852e397576fb9b9cc";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/components/nested-form-service/form-general/form-general.component.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 38
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 16
+        },
+        end: {
+          line: 6,
+          column: 41
+        }
+      },
+      "5": {
+        start: {
+          line: 7,
+          column: 24
+        },
+        end: {
+          line: 7,
+          column: 66
+        }
+      },
+      "6": {
+        start: {
+          line: 8,
+          column: 27
+        },
+        end: {
+          line: 22,
+          column: 1
+        }
+      },
+      "7": {
+        start: {
+          line: 10,
+          column: 8
+        },
+        end: {
+          line: 10,
+          column: 41
+        }
+      },
+      "8": {
+        start: {
+          line: 11,
+          column: 8
+        },
+        end: {
+          line: 14,
+          column: 11
+        }
+      },
+      "9": {
+        start: {
+          line: 17,
+          column: 8
+        },
+        end: {
+          line: 17,
+          column: 34
+        }
+      },
+      "10": {
+        start: {
+          line: 20,
+          column: 8
+        },
+        end: {
+          line: 20,
+          column: 75
+        }
+      },
+      "11": {
+        start: {
+          line: 23,
+          column: 0
+        },
+        end: {
+          line: 26,
+          column: 57
+        }
+      },
+      "12": {
+        start: {
+          line: 27,
+          column: 0
+        },
+        end: {
+          line: 35,
+          column: 25
+        }
+      },
+      "13": {
+        start: {
+          line: 36,
+          column: 0
+        },
+        end: {
+          line: 36,
+          column: 52
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 9,
+            column: 4
+          },
+          end: {
+            line: 9,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 9,
+            column: 30
+          },
+          end: {
+            line: 15,
+            column: 5
+          }
+        },
+        line: 9
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 16,
+            column: 4
+          },
+          end: {
+            line: 16,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 16,
+            column: 19
+          },
+          end: {
+            line: 18,
+            column: 5
+          }
+        },
+        line: 16
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 19,
+            column: 4
+          },
+          end: {
+            line: 19,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 19,
+            column: 15
+          },
+          end: {
+            line: 21,
+            column: 5
+          }
+        },
+        line: 19
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/components/nested-form-service/form-general/form-general.component.ts",
+      mappings: ";;;;AAAA,wCAAkF;AAClF,0CAAoE;AACpE,mEAA+D;AAQ/D,IAAa,oBAAoB,GAAjC,MAAa,oBAAoB;IAY/B,YAAmB,YAA0B;QAA1B,iBAAY,GAAZ,YAAY,CAAc;QATtC,SAAI,GAAG,IAAI,iBAAS,CAAC;YAC1B,IAAI,EAAE,IAAI,mBAAW,CAAC,EAAE,EAAE,CAAC,kBAAU,CAAC,QAAQ,CAAC,CAAC;YAChD,WAAW,EAAE,IAAI,mBAAW,CAAC,EAAE,EAAE,CAAC,kBAAU,CAAC,QAAQ,CAAC,CAAC;SACxD,CAAC,CAAC;IAM6C,CAAC;IAJjD,IAAI,QAAQ;QACV,OAAO,IAAI,CAAC,IAAI,CAAC,QAAQ,CAAC;IAC5B,CAAC;IAIM,QAAQ;QACb,IAAI,CAAC,YAAY,CAAC,oBAAoB,CAAC,IAAI,CAAC,UAAU,EAAE,IAAI,CAAC,IAAI,CAAC,CAAC;IACrE,CAAC;CACF,CAAA;AAhBU;IAAR,YAAK,EAAE;sCAAqB,iBAAS;wDAAC;AAD5B,oBAAoB;IANhC,gBAAS,CAAC;QACT,QAAQ,EAAE,iBAAiB;QAC3B,kBAAa,+BAA+B,CAAA;QAC5C,SAAS,IAAmC;QAC5C,eAAe,EAAE,8BAAuB,CAAC,MAAM;KAChD,CAAC;6CAaiC,4BAAY;GAZlC,oBAAoB,CAiBhC;AAjBY,oDAAoB",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/components/nested-form-service/form-general/form-general.component.ts"],
+      sourcesContent: ["import { Component, OnInit, Input, ChangeDetectionStrategy } from \"@angular/core\";\nimport { FormGroup, FormControl, Validators } from \"@angular/forms\";\nimport { FormsService } from \"../../../services/forms.service\";\n\n@Component({\n  selector: \"bb-form-general\",\n  templateUrl: \"./form-general.component.html\",\n  styleUrls: [\"./form-general.component.scss\"],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class FormGeneralComponent implements OnInit {\n  @Input() public parentForm!: FormGroup;\n\n  public form = new FormGroup({\n    name: new FormControl(\"\", [Validators.required]),\n    description: new FormControl(\"\", [Validators.required]),\n  });\n\n  get controls() {\n    return this.form.controls;\n  }\n\n  constructor(public formsService: FormsService) {}\n\n  public ngOnInit() {\n    this.formsService.addGroupToParentForm(this.parentForm, this.form);\n  }\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "aa44841e4750cda117a60ca852e397576fb9b9cc"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_13mfb2b1ld = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_13mfb2b1ld();
+cov_13mfb2b1ld().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_13mfb2b1ld().s[1]++;
+exports.FormGeneralComponent = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_13mfb2b1ld().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_13mfb2b1ld().s[3]++, require("@angular/core"));
+const forms_1 =
+/* istanbul ignore next */
+(cov_13mfb2b1ld().s[4]++, require("@angular/forms"));
+const forms_service_1 =
+/* istanbul ignore next */
+(cov_13mfb2b1ld().s[5]++, require("../../../services/forms.service"));
+
+/* istanbul ignore next */
+cov_13mfb2b1ld().s[6]++;
+let FormGeneralComponent = class FormGeneralComponent {
+  constructor(formsService) {
+    /* istanbul ignore next */
+    cov_13mfb2b1ld().f[0]++;
+    cov_13mfb2b1ld().s[7]++;
+    this.formsService = formsService;
+
+    /* istanbul ignore next */
+    cov_13mfb2b1ld().s[8]++;
+    this.form = new forms_1.FormGroup({
+      name: new forms_1.FormControl("", [forms_1.Validators.required]),
+      description: new forms_1.FormControl("", [forms_1.Validators.required])
+    });
+  }
+
+  get controls() {
+    /* istanbul ignore next */
+    cov_13mfb2b1ld().f[1]++;
+    cov_13mfb2b1ld().s[9]++;
+    return this.form.controls;
+  }
+
+  ngOnInit() {
+    /* istanbul ignore next */
+    cov_13mfb2b1ld().f[2]++;
+    cov_13mfb2b1ld().s[10]++;
+    this.formsService.addGroupToParentForm(this.parentForm, this.form);
+  }
+
+};
+
+/* istanbul ignore next */
+cov_13mfb2b1ld().s[11]++;
+
+tslib_1.__decorate([core_1.Input(), tslib_1.__metadata("design:type", forms_1.FormGroup)], FormGeneralComponent.prototype, "parentForm", void 0);
+
+/* istanbul ignore next */
+cov_13mfb2b1ld().s[12]++;
+FormGeneralComponent = tslib_1.__decorate([core_1.Component({
+  selector: "bb-form-general",
+  template: require("./form-general.component.html"),
+  styleUrls: [],
+  changeDetection: core_1.ChangeDetectionStrategy.OnPush
+}), tslib_1.__metadata("design:paramtypes", [forms_service_1.FormsService])], FormGeneralComponent);
+
+/* istanbul ignore next */
+cov_13mfb2b1ld().s[13]++;
+exports.FormGeneralComponent = FormGeneralComponent;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC9mb3Jtcy9jb21wb25lbnRzL25lc3RlZC1mb3JtLXNlcnZpY2UvZm9ybS1nZW5lcmFsL2Zvcm0tZ2VuZXJhbC5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQWtCTTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFsQk4sTUFBQSxNQUFBO0FBQUE7QUFBQSwwQkFBQSxPQUFBLENBQUEsZUFBQSxDQUFBLENBQUE7QUFDQSxNQUFBLE9BQUE7QUFBQTtBQUFBLDBCQUFBLE9BQUEsQ0FBQSxnQkFBQSxDQUFBLENBQUE7QUFDQSxNQUFBLGVBQUE7QUFBQTtBQUFBLDBCQUFBLE9BQUEsQ0FBQSxpQ0FBQSxDQUFBLENBQUE7Ozs7QUFRQSxJQUFhLG9CQUFvQixHQUFqQyxNQUFhLG9CQUFiLENBQWlDO0FBWS9CLEVBQUEsV0FBQSxDQUFtQixZQUFuQixFQUE2QztBQUFBO0FBQUE7QUFBQTtBQUExQixTQUFBLFlBQUEsR0FBQSxZQUFBOztBQUEwQjtBQUFBO0FBVHRDLFNBQUEsSUFBQSxHQUFPLElBQUksT0FBQSxDQUFBLFNBQUosQ0FBYztBQUMxQixNQUFBLElBQUksRUFBRSxJQUFJLE9BQUEsQ0FBQSxXQUFKLENBQWdCLEVBQWhCLEVBQW9CLENBQUMsT0FBQSxDQUFBLFVBQUEsQ0FBVyxRQUFaLENBQXBCLENBRG9CO0FBRTFCLE1BQUEsV0FBVyxFQUFFLElBQUksT0FBQSxDQUFBLFdBQUosQ0FBZ0IsRUFBaEIsRUFBb0IsQ0FBQyxPQUFBLENBQUEsVUFBQSxDQUFXLFFBQVosQ0FBcEI7QUFGYSxLQUFkLENBQVA7QUFTMEM7O0FBSmpELE1BQUksUUFBSixHQUFZO0FBQUE7QUFBQTtBQUFBO0FBQ1YsV0FBTyxLQUFLLElBQUwsQ0FBVSxRQUFqQjtBQUNEOztBQUlNLEVBQUEsUUFBUSxHQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ2IsU0FBSyxZQUFMLENBQWtCLG9CQUFsQixDQUF1QyxLQUFLLFVBQTVDLEVBQXdELEtBQUssSUFBN0Q7QUFDRDs7QUFoQjhCLENBQWpDOzs7OztBQUNXLE9BQUEsQ0FBQSxVQUFBLENBQUEsQ0FBUixNQUFBLENBQUEsS0FBQSxFQUFRLEUsa0NBQW9CLE9BQUEsQ0FBQSxTLENBQXBCLENBQUEsRSw4QkFBQSxFLFlBQUEsRSxLQUE4QixDQUE5Qjs7OztBQURFLG9CQUFvQixHQUFBLE9BQUEsQ0FBQSxVQUFBLENBQUEsQ0FOaEMsTUFBQSxDQUFBLFNBQUEsQ0FBVTtBQUNULEVBQUEsUUFBUSxFQUFFLGlCQUREO0FBRVQsRUFBQSxRQUFBLEVBQUEsT0FBQSxDQUFhLCtCQUFiLENBRlM7QUFHVCxFQUFBLFNBQVMsRUFBQSxFQUhBO0FBSVQsRUFBQSxlQUFlLEVBQUUsTUFBQSxDQUFBLHVCQUFBLENBQXdCO0FBSmhDLENBQVYsQ0FNZ0MsRSx5Q0FZRSxlQUFBLENBQUEsWSxFQVpGLENBQUEsRUFBcEIsb0JBQW9CLENBQXBCOzs7O0FBQUEsT0FBQSxDQUFBLG9CQUFBLEdBQUEsb0JBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb21wb25lbnQsIE9uSW5pdCwgSW5wdXQsIENoYW5nZURldGVjdGlvblN0cmF0ZWd5IH0gZnJvbSBcIkBhbmd1bGFyL2NvcmVcIjtcbmltcG9ydCB7IEZvcm1Hcm91cCwgRm9ybUNvbnRyb2wsIFZhbGlkYXRvcnMgfSBmcm9tIFwiQGFuZ3VsYXIvZm9ybXNcIjtcbmltcG9ydCB7IEZvcm1zU2VydmljZSB9IGZyb20gXCIuLi8uLi8uLi9zZXJ2aWNlcy9mb3Jtcy5zZXJ2aWNlXCI7XG5cbkBDb21wb25lbnQoe1xuICBzZWxlY3RvcjogXCJiYi1mb3JtLWdlbmVyYWxcIixcbiAgdGVtcGxhdGVVcmw6IFwiLi9mb3JtLWdlbmVyYWwuY29tcG9uZW50Lmh0bWxcIixcbiAgc3R5bGVVcmxzOiBbXCIuL2Zvcm0tZ2VuZXJhbC5jb21wb25lbnQuc2Nzc1wiXSxcbiAgY2hhbmdlRGV0ZWN0aW9uOiBDaGFuZ2VEZXRlY3Rpb25TdHJhdGVneS5PblB1c2gsXG59KVxuZXhwb3J0IGNsYXNzIEZvcm1HZW5lcmFsQ29tcG9uZW50IGltcGxlbWVudHMgT25Jbml0IHtcbiAgQElucHV0KCkgcHVibGljIHBhcmVudEZvcm0hOiBGb3JtR3JvdXA7XG5cbiAgcHVibGljIGZvcm0gPSBuZXcgRm9ybUdyb3VwKHtcbiAgICBuYW1lOiBuZXcgRm9ybUNvbnRyb2woXCJcIiwgW1ZhbGlkYXRvcnMucmVxdWlyZWRdKSxcbiAgICBkZXNjcmlwdGlvbjogbmV3IEZvcm1Db250cm9sKFwiXCIsIFtWYWxpZGF0b3JzLnJlcXVpcmVkXSksXG4gIH0pO1xuXG4gIGdldCBjb250cm9scygpIHtcbiAgICByZXR1cm4gdGhpcy5mb3JtLmNvbnRyb2xzO1xuICB9XG5cbiAgY29uc3RydWN0b3IocHVibGljIGZvcm1zU2VydmljZTogRm9ybXNTZXJ2aWNlKSB7fVxuXG4gIHB1YmxpYyBuZ09uSW5pdCgpIHtcbiAgICB0aGlzLmZvcm1zU2VydmljZS5hZGRHcm91cFRvUGFyZW50Rm9ybSh0aGlzLnBhcmVudEZvcm0sIHRoaXMuZm9ybSk7XG4gIH1cbn1cbiJdfQ==

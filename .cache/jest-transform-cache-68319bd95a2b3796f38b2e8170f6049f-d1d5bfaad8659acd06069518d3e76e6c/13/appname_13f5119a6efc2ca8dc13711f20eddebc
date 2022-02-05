@@ -1,0 +1,107 @@
+76ccd1ab3d3c1fc90025eefb3de40e61
+"use strict";
+
+/* istanbul ignore next */
+function cov_1rgz4996bu() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@core/tokens/app-name.ts";
+  var hash = "8bd4711b4462c03468a598cddd97656c68f91440";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@core/tokens/app-name.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 26
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 15
+        },
+        end: {
+          line: 4,
+          column: 39
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 57
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@core/tokens/app-name.ts",
+      mappings: ";;;AAAA,wCAA+C;AAElC,QAAA,QAAQ,GAAG,IAAI,qBAAc,CAAS,UAAU,CAAC,CAAC",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/@core/tokens/app-name.ts"],
+      sourcesContent: ["import { InjectionToken } from \"@angular/core\";\n\nexport const APP_NAME = new InjectionToken<string>(\"App Name\");\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "8bd4711b4462c03468a598cddd97656c68f91440"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1rgz4996bu = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_1rgz4996bu();
+cov_1rgz4996bu().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_1rgz4996bu().s[1]++;
+exports.APP_NAME = void 0;
+const core_1 =
+/* istanbul ignore next */
+(cov_1rgz4996bu().s[2]++, require("@angular/core"));
+
+/* istanbul ignore next */
+cov_1rgz4996bu().s[3]++;
+exports.APP_NAME = new core_1.InjectionToken("App Name");
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC9AY29yZS90b2tlbnMvYXBwLW5hbWUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxNQUFBLE1BQUE7QUFBQTtBQUFBLDBCQUFBLE9BQUEsQ0FBQSxlQUFBLENBQUEsQ0FBQTs7OztBQUVhLE9BQUEsQ0FBQSxRQUFBLEdBQVcsSUFBSSxNQUFBLENBQUEsY0FBSixDQUEyQixVQUEzQixDQUFYIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgSW5qZWN0aW9uVG9rZW4gfSBmcm9tIFwiQGFuZ3VsYXIvY29yZVwiO1xuXG5leHBvcnQgY29uc3QgQVBQX05BTUUgPSBuZXcgSW5qZWN0aW9uVG9rZW48c3RyaW5nPihcIkFwcCBOYW1lXCIpO1xuIl19

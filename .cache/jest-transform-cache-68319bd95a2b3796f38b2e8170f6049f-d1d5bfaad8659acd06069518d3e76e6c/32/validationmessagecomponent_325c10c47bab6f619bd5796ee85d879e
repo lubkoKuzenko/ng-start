@@ -1,0 +1,273 @@
+1814a87c8e6b3fde9b140aaa32acf305
+"use strict";
+
+/* istanbul ignore next */
+function cov_ysf70ved3() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/modules/validation-message/validation-message.component.ts";
+  var hash = "67eb7c7367ae604a01bb049a946a50e14b65fefe";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/modules/validation-message/validation-message.component.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 44
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 16
+        },
+        end: {
+          line: 6,
+          column: 41
+        }
+      },
+      "5": {
+        start: {
+          line: 7,
+          column: 33
+        },
+        end: {
+          line: 11,
+          column: 1
+        }
+      },
+      "6": {
+        start: {
+          line: 9,
+          column: 8
+        },
+        end: {
+          line: 9,
+          column: 41
+        }
+      },
+      "7": {
+        start: {
+          line: 12,
+          column: 0
+        },
+        end: {
+          line: 15,
+          column: 60
+        }
+      },
+      "8": {
+        start: {
+          line: 16,
+          column: 0
+        },
+        end: {
+          line: 23,
+          column: 31
+        }
+      },
+      "9": {
+        start: {
+          line: 24,
+          column: 0
+        },
+        end: {
+          line: 24,
+          column: 64
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 8,
+            column: 4
+          },
+          end: {
+            line: 8,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 8,
+            column: 17
+          },
+          end: {
+            line: 10,
+            column: 5
+          }
+        },
+        line: 8
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 9,
+            column: 15
+          },
+          end: {
+            line: 9,
+            column: 40
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 9,
+            column: 15
+          },
+          end: {
+            line: 9,
+            column: 34
+          }
+        }, {
+          start: {
+            line: 9,
+            column: 38
+          },
+          end: {
+            line: 9,
+            column: 40
+          }
+        }],
+        line: 9
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {
+      "0": [0, 0]
+    },
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/modules/validation-message/validation-message.component.ts",
+      mappings: ";;;;AAAA,wCAA0E;AAC1E,0CAA6C;AAQ7C,IAAa,0BAA0B,GAAvC,MAAa,0BAA0B;IAIrC,IAAI,MAAM;QACR,OAAO,IAAI,CAAC,OAAO,CAAC,MAAM,IAAI,EAAE,CAAC;IACnC,CAAC;CACF,CAAA;AALC;IADC,YAAK,EAAE;sCACS,mBAAW;2DAAC;AAFlB,0BAA0B;IANtC,gBAAS,CAAC;QACT,QAAQ,EAAE,uBAAuB;QACjC,SAAS,IAAuC;QAChD,wDAAgD;QAChD,eAAe,EAAE,8BAAuB,CAAC,OAAO;KACjD,CAAC;GACW,0BAA0B,CAOtC;AAPY,gEAA0B",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/modules/validation-message/validation-message.component.ts"],
+      sourcesContent: ["import { ChangeDetectionStrategy, Component, Input } from \"@angular/core\";\nimport { FormControl } from \"@angular/forms\";\n\n@Component({\n  selector: \"bb-validation-message\",\n  styleUrls: [\"validation-message.component.scss\"],\n  templateUrl: \"validation-message.component.html\",\n  changeDetection: ChangeDetectionStrategy.Default,\n})\nexport class ValidationMessageComponent {\n  @Input()\n  public control!: FormControl;\n\n  get errors(): { [key: string]: any } {\n    return this.control.errors || {};\n  }\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "67eb7c7367ae604a01bb049a946a50e14b65fefe"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_ysf70ved3 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_ysf70ved3();
+cov_ysf70ved3().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_ysf70ved3().s[1]++;
+exports.ValidationMessageComponent = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_ysf70ved3().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_ysf70ved3().s[3]++, require("@angular/core"));
+const forms_1 =
+/* istanbul ignore next */
+(cov_ysf70ved3().s[4]++, require("@angular/forms"));
+
+/* istanbul ignore next */
+cov_ysf70ved3().s[5]++;
+let ValidationMessageComponent = class ValidationMessageComponent {
+  get errors() {
+    /* istanbul ignore next */
+    cov_ysf70ved3().f[0]++;
+    cov_ysf70ved3().s[6]++;
+    return (
+      /* istanbul ignore next */
+      (cov_ysf70ved3().b[0][0]++, this.control.errors) ||
+      /* istanbul ignore next */
+      (cov_ysf70ved3().b[0][1]++, {})
+    );
+  }
+
+};
+
+/* istanbul ignore next */
+cov_ysf70ved3().s[7]++;
+
+tslib_1.__decorate([core_1.Input(), tslib_1.__metadata("design:type", forms_1.FormControl)], ValidationMessageComponent.prototype, "control", void 0);
+
+/* istanbul ignore next */
+cov_ysf70ved3().s[8]++;
+ValidationMessageComponent = tslib_1.__decorate([core_1.Component({
+  selector: "bb-validation-message",
+  styleUrls: [],
+  template: require("./validation-message.component.html"),
+  changeDetection: core_1.ChangeDetectionStrategy.Default
+})], ValidationMessageComponent);
+
+/* istanbul ignore next */
+cov_ysf70ved3().s[9]++;
+exports.ValidationMessageComponent = ValidationMessageComponent;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC9Ac2hhcmVkL21vZHVsZXMvdmFsaWRhdGlvbi1tZXNzYWdlL3ZhbGlkYXRpb24tbWVzc2FnZS5jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBU2E7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBVGIsTUFBQSxNQUFBO0FBQUE7QUFBQSx5QkFBQSxPQUFBLENBQUEsZUFBQSxDQUFBLENBQUE7QUFDQSxNQUFBLE9BQUE7QUFBQTtBQUFBLHlCQUFBLE9BQUEsQ0FBQSxnQkFBQSxDQUFBLENBQUE7Ozs7QUFRQSxJQUFhLDBCQUEwQixHQUF2QyxNQUFhLDBCQUFiLENBQXVDO0FBSXJDLE1BQUksTUFBSixHQUFVO0FBQUE7QUFBQTtBQUFBO0FBQ1IsV0FBTztBQUFBO0FBQUEsdUNBQUssT0FBTCxDQUFhLE1BQWI7QUFBQTtBQUFBLGtDQUF1QixFQUF2QjtBQUFQO0FBQ0Q7O0FBTm9DLENBQXZDOzs7OztBQUVFLE9BQUEsQ0FBQSxVQUFBLENBQUEsQ0FEQyxNQUFBLENBQUEsS0FBQSxFQUNELEUsa0NBQWlCLE9BQUEsQ0FBQSxXLENBQWpCLENBQUEsRSxvQ0FBQSxFLFNBQUEsRSxLQUE2QixDQUE3Qjs7OztBQUZXLDBCQUEwQixHQUFBLE9BQUEsQ0FBQSxVQUFBLENBQUEsQ0FOdEMsTUFBQSxDQUFBLFNBQUEsQ0FBVTtBQUNULEVBQUEsUUFBUSxFQUFFLHVCQUREO0FBRVQsRUFBQSxTQUFTLEVBQUEsRUFGQTtBQUdULEVBQUEsUUFBQSxFQUFBLE9BQUEsQ0FBQSxxQ0FBQSxDQUhTO0FBSVQsRUFBQSxlQUFlLEVBQUUsTUFBQSxDQUFBLHVCQUFBLENBQXdCO0FBSmhDLENBQVYsQ0FNc0MsQ0FBQSxFQUExQiwwQkFBMEIsQ0FBMUI7Ozs7QUFBQSxPQUFBLENBQUEsMEJBQUEsR0FBQSwwQkFBQSIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENoYW5nZURldGVjdGlvblN0cmF0ZWd5LCBDb21wb25lbnQsIElucHV0IH0gZnJvbSBcIkBhbmd1bGFyL2NvcmVcIjtcbmltcG9ydCB7IEZvcm1Db250cm9sIH0gZnJvbSBcIkBhbmd1bGFyL2Zvcm1zXCI7XG5cbkBDb21wb25lbnQoe1xuICBzZWxlY3RvcjogXCJiYi12YWxpZGF0aW9uLW1lc3NhZ2VcIixcbiAgc3R5bGVVcmxzOiBbXCJ2YWxpZGF0aW9uLW1lc3NhZ2UuY29tcG9uZW50LnNjc3NcIl0sXG4gIHRlbXBsYXRlVXJsOiBcInZhbGlkYXRpb24tbWVzc2FnZS5jb21wb25lbnQuaHRtbFwiLFxuICBjaGFuZ2VEZXRlY3Rpb246IENoYW5nZURldGVjdGlvblN0cmF0ZWd5LkRlZmF1bHQsXG59KVxuZXhwb3J0IGNsYXNzIFZhbGlkYXRpb25NZXNzYWdlQ29tcG9uZW50IHtcbiAgQElucHV0KClcbiAgcHVibGljIGNvbnRyb2whOiBGb3JtQ29udHJvbDtcblxuICBnZXQgZXJyb3JzKCk6IHsgW2tleTogc3RyaW5nXTogYW55IH0ge1xuICAgIHJldHVybiB0aGlzLmNvbnRyb2wuZXJyb3JzIHx8IHt9O1xuICB9XG59XG4iXX0=

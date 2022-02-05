@@ -1,0 +1,195 @@
+cf27fdd27252d49c2dd7bfb56732d74a
+"use strict";
+
+/* istanbul ignore next */
+function cov_1dfn8lbboc() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@core/guards/module-import-guard.ts";
+  var hash = "8f2005ec9e9e029f143c4e92ab25bd6a560fd066";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@core/guards/module-import-guard.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 38
+        }
+      },
+      "2": {
+        start: {
+          line: 5,
+          column: 4
+        },
+        end: {
+          line: 7,
+          column: 5
+        }
+      },
+      "3": {
+        start: {
+          line: 6,
+          column: 8
+        },
+        end: {
+          line: 6,
+          column: 109
+        }
+      },
+      "4": {
+        start: {
+          line: 9,
+          column: 0
+        },
+        end: {
+          line: 9,
+          column: 52
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "throwIfAlreadyLoaded",
+        decl: {
+          start: {
+            line: 4,
+            column: 9
+          },
+          end: {
+            line: 4,
+            column: 29
+          }
+        },
+        loc: {
+          start: {
+            line: 4,
+            column: 56
+          },
+          end: {
+            line: 8,
+            column: 1
+          }
+        },
+        line: 4
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 5,
+            column: 4
+          },
+          end: {
+            line: 7,
+            column: 5
+          }
+        },
+        type: "if",
+        locations: [{
+          start: {
+            line: 5,
+            column: 4
+          },
+          end: {
+            line: 7,
+            column: 5
+          }
+        }, {
+          start: {
+            line: undefined,
+            column: undefined
+          },
+          end: {
+            line: undefined,
+            column: undefined
+          }
+        }],
+        line: 5
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {
+      "0": [0, 0]
+    },
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@core/guards/module-import-guard.ts",
+      mappings: ";;;AAAA,SAAgB,oBAAoB,CAAC,YAAiB,EAAE,UAAkB;IACxE,IAAI,YAAY,EAAE;QAChB,MAAM,IAAI,KAAK,CAAC,GAAG,UAAU,sEAAsE,CAAC,CAAC;KACtG;AACH,CAAC;AAJD,oDAIC",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/@core/guards/module-import-guard.ts"],
+      sourcesContent: ["export function throwIfAlreadyLoaded(parentModule: any, moduleName: string) {\n  if (parentModule) {\n    throw new Error(`${moduleName} has already been loaded. Import Core modules in the AppModule only.`);\n  }\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "8f2005ec9e9e029f143c4e92ab25bd6a560fd066"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1dfn8lbboc = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_1dfn8lbboc();
+cov_1dfn8lbboc().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_1dfn8lbboc().s[1]++;
+exports.throwIfAlreadyLoaded = void 0;
+
+function throwIfAlreadyLoaded(parentModule, moduleName) {
+  /* istanbul ignore next */
+  cov_1dfn8lbboc().f[0]++;
+  cov_1dfn8lbboc().s[2]++;
+
+  if (parentModule) {
+    /* istanbul ignore next */
+    cov_1dfn8lbboc().b[0][0]++;
+    cov_1dfn8lbboc().s[3]++;
+    throw new Error(`${moduleName} has already been loaded. Import Core modules in the AppModule only.`);
+  } else
+  /* istanbul ignore next */
+  {
+    cov_1dfn8lbboc().b[0][1]++;
+  }
+}
+
+/* istanbul ignore next */
+cov_1dfn8lbboc().s[4]++;
+exports.throwIfAlreadyLoaded = throwIfAlreadyLoaded;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC9AY29yZS9ndWFyZHMvbW9kdWxlLWltcG9ydC1ndWFyZC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLFNBQWdCLG9CQUFoQixDQUFxQyxZQUFyQyxFQUF3RCxVQUF4RCxFQUEwRTtBQUFBO0FBQUE7QUFBQTs7QUFDeEUsTUFBSSxZQUFKLEVBQWtCO0FBQUE7QUFBQTtBQUFBO0FBQ2hCLFVBQU0sSUFBSSxLQUFKLENBQVUsR0FBRyxVQUFVLHNFQUF2QixDQUFOO0FBQ0QsR0FGRDtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBR0Q7Ozs7QUFKRCxPQUFBLENBQUEsb0JBQUEsR0FBQSxvQkFBQSIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBmdW5jdGlvbiB0aHJvd0lmQWxyZWFkeUxvYWRlZChwYXJlbnRNb2R1bGU6IGFueSwgbW9kdWxlTmFtZTogc3RyaW5nKSB7XG4gIGlmIChwYXJlbnRNb2R1bGUpIHtcbiAgICB0aHJvdyBuZXcgRXJyb3IoYCR7bW9kdWxlTmFtZX0gaGFzIGFscmVhZHkgYmVlbiBsb2FkZWQuIEltcG9ydCBDb3JlIG1vZHVsZXMgaW4gdGhlIEFwcE1vZHVsZSBvbmx5LmApO1xuICB9XG59XG4iXX0=

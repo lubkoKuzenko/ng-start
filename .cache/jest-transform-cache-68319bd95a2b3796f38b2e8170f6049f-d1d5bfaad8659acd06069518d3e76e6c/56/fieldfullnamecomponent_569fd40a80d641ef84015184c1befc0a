@@ -1,0 +1,343 @@
+4538762fc864352ec9b38c1235bec90f
+"use strict";
+
+/* istanbul ignore next */
+function cov_1y3sqeeaq6() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/components/nested-form-directive/form-fullname/field-fullname.component.ts";
+  var hash = "9d5b55fd15c4fd11a91490d5377432b26ef64889";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/components/nested-form-directive/form-fullname/field-fullname.component.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 39
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 16
+        },
+        end: {
+          line: 6,
+          column: 41
+        }
+      },
+      "5": {
+        start: {
+          line: 7,
+          column: 28
+        },
+        end: {
+          line: 17,
+          column: 1
+        }
+      },
+      "6": {
+        start: {
+          line: 9,
+          column: 8
+        },
+        end: {
+          line: 9,
+          column: 43
+        }
+      },
+      "7": {
+        start: {
+          line: 12,
+          column: 8
+        },
+        end: {
+          line: 12,
+          column: 47
+        }
+      },
+      "8": {
+        start: {
+          line: 15,
+          column: 8
+        },
+        end: {
+          line: 15,
+          column: 47
+        }
+      },
+      "9": {
+        start: {
+          line: 18,
+          column: 0
+        },
+        end: {
+          line: 26,
+          column: 26
+        }
+      },
+      "10": {
+        start: {
+          line: 27,
+          column: 0
+        },
+        end: {
+          line: 27,
+          column: 54
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 8,
+            column: 4
+          },
+          end: {
+            line: 8,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 8,
+            column: 31
+          },
+          end: {
+            line: 10,
+            column: 5
+          }
+        },
+        line: 8
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 11,
+            column: 4
+          },
+          end: {
+            line: 11,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 11,
+            column: 19
+          },
+          end: {
+            line: 13,
+            column: 5
+          }
+        },
+        line: 11
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 14,
+            column: 4
+          },
+          end: {
+            line: 14,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 14,
+            column: 15
+          },
+          end: {
+            line: 16,
+            column: 5
+          }
+        },
+        line: 14
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 12,
+            column: 15
+          },
+          end: {
+            line: 12,
+            column: 46
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 12,
+            column: 15
+          },
+          end: {
+            line: 12,
+            column: 24
+          }
+        }, {
+          start: {
+            line: 12,
+            column: 28
+          },
+          end: {
+            line: 12,
+            column: 46
+          }
+        }],
+        line: 12
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    b: {
+      "0": [0, 0]
+    },
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/components/nested-form-directive/form-fullname/field-fullname.component.ts",
+      mappings: ";;;;AAAA,wCAA2E;AAC3E,0CAA+D;AAQ/D,IAAa,qBAAqB,GAAlC,MAAa,qBAAqB;IAOhC,YAAoB,aAAiC;QAAjC,kBAAa,GAAb,aAAa,CAAoB;IAAG,CAAC;IAJzD,IAAI,QAAQ;QACV,OAAO,IAAI,CAAC,IAAI,IAAI,IAAI,CAAC,IAAI,CAAC,QAAQ,CAAC;IACzC,CAAC;IAIM,QAAQ;QACb,IAAI,CAAC,IAAI,GAAG,IAAI,CAAC,aAAa,CAAC,OAAO,CAAC;IACzC,CAAC;CACF,CAAA;AAZY,qBAAqB;IANjC,gBAAS,CAAC;QACT,QAAQ,EAAE,kBAAkB;QAC5B,kBAAa,iCAAiC,CAAA;QAC9C,SAAS,IAAqC;QAC9C,eAAe,EAAE,8BAAuB,CAAC,MAAM;KAChD,CAAC;6CAQmC,0BAAkB;GAP1C,qBAAqB,CAYjC;AAZY,sDAAqB",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/components/nested-form-directive/form-fullname/field-fullname.component.ts"],
+      sourcesContent: ["import { Component, OnInit, ChangeDetectionStrategy } from \"@angular/core\";\nimport { FormGroup, FormGroupDirective } from \"@angular/forms\";\n\n@Component({\n  selector: \"bb-form-fullname\",\n  templateUrl: \"./field-fullname.component.html\",\n  styleUrls: [\"./field-fullname.component.scss\"],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class FormFullNameComponent implements OnInit {\n  public form!: FormGroup;\n\n  get controls() {\n    return this.form && this.form.controls;\n  }\n\n  constructor(private rootFormGroup: FormGroupDirective) {}\n\n  public ngOnInit() {\n    this.form = this.rootFormGroup.control;\n  }\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "9d5b55fd15c4fd11a91490d5377432b26ef64889"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1y3sqeeaq6 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_1y3sqeeaq6();
+cov_1y3sqeeaq6().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_1y3sqeeaq6().s[1]++;
+exports.FormFullNameComponent = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_1y3sqeeaq6().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_1y3sqeeaq6().s[3]++, require("@angular/core"));
+const forms_1 =
+/* istanbul ignore next */
+(cov_1y3sqeeaq6().s[4]++, require("@angular/forms"));
+
+/* istanbul ignore next */
+cov_1y3sqeeaq6().s[5]++;
+let FormFullNameComponent = class FormFullNameComponent {
+  constructor(rootFormGroup) {
+    /* istanbul ignore next */
+    cov_1y3sqeeaq6().f[0]++;
+    cov_1y3sqeeaq6().s[6]++;
+    this.rootFormGroup = rootFormGroup;
+  }
+
+  get controls() {
+    /* istanbul ignore next */
+    cov_1y3sqeeaq6().f[1]++;
+    cov_1y3sqeeaq6().s[7]++;
+    return (
+      /* istanbul ignore next */
+      (cov_1y3sqeeaq6().b[0][0]++, this.form) &&
+      /* istanbul ignore next */
+      (cov_1y3sqeeaq6().b[0][1]++, this.form.controls)
+    );
+  }
+
+  ngOnInit() {
+    /* istanbul ignore next */
+    cov_1y3sqeeaq6().f[2]++;
+    cov_1y3sqeeaq6().s[8]++;
+    this.form = this.rootFormGroup.control;
+  }
+
+};
+
+/* istanbul ignore next */
+cov_1y3sqeeaq6().s[9]++;
+FormFullNameComponent = tslib_1.__decorate([core_1.Component({
+  selector: "bb-form-fullname",
+  template: require("./field-fullname.component.html"),
+  styleUrls: [],
+  changeDetection: core_1.ChangeDetectionStrategy.OnPush
+}), tslib_1.__metadata("design:paramtypes", [forms_1.FormGroupDirective])], FormFullNameComponent);
+
+/* istanbul ignore next */
+cov_1y3sqeeaq6().s[10]++;
+exports.FormFullNameComponent = FormFullNameComponent;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC9mb3Jtcy9jb21wb25lbnRzL25lc3RlZC1mb3JtLWRpcmVjdGl2ZS9mb3JtLWZ1bGxuYW1lL2ZpZWxkLWZ1bGxuYW1lLmNvbXBvbmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBb0JHOzs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQXBCSCxNQUFBLE1BQUE7QUFBQTtBQUFBLDBCQUFBLE9BQUEsQ0FBQSxlQUFBLENBQUEsQ0FBQTtBQUNBLE1BQUEsT0FBQTtBQUFBO0FBQUEsMEJBQUEsT0FBQSxDQUFBLGdCQUFBLENBQUEsQ0FBQTs7OztBQVFBLElBQWEscUJBQXFCLEdBQWxDLE1BQWEscUJBQWIsQ0FBa0M7QUFPaEMsRUFBQSxXQUFBLENBQW9CLGFBQXBCLEVBQXFEO0FBQUE7QUFBQTtBQUFBO0FBQWpDLFNBQUEsYUFBQSxHQUFBLGFBQUE7QUFBcUM7O0FBSnpELE1BQUksUUFBSixHQUFZO0FBQUE7QUFBQTtBQUFBO0FBQ1YsV0FBTztBQUFBO0FBQUEsd0NBQUssSUFBTDtBQUFBO0FBQUEsbUNBQWEsS0FBSyxJQUFMLENBQVUsUUFBdkI7QUFBUDtBQUNEOztBQUlNLEVBQUEsUUFBUSxHQUFBO0FBQUE7QUFBQTtBQUFBO0FBQ2IsU0FBSyxJQUFMLEdBQVksS0FBSyxhQUFMLENBQW1CLE9BQS9CO0FBQ0Q7O0FBWCtCLENBQWxDOzs7O0FBQWEscUJBQXFCLEdBQUEsT0FBQSxDQUFBLFVBQUEsQ0FBQSxDQU5qQyxNQUFBLENBQUEsU0FBQSxDQUFVO0FBQ1QsRUFBQSxRQUFRLEVBQUUsa0JBREQ7QUFFVCxFQUFBLFFBQUEsRUFBQSxPQUFBLENBQWEsaUNBQWIsQ0FGUztBQUdULEVBQUEsU0FBUyxFQUFBLEVBSEE7QUFJVCxFQUFBLGVBQWUsRUFBRSxNQUFBLENBQUEsdUJBQUEsQ0FBd0I7QUFKaEMsQ0FBVixDQU1pQyxFLHlDQU9HLE9BQUEsQ0FBQSxrQixFQVBILENBQUEsRUFBckIscUJBQXFCLENBQXJCOzs7O0FBQUEsT0FBQSxDQUFBLHFCQUFBLEdBQUEscUJBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb21wb25lbnQsIE9uSW5pdCwgQ2hhbmdlRGV0ZWN0aW9uU3RyYXRlZ3kgfSBmcm9tIFwiQGFuZ3VsYXIvY29yZVwiO1xuaW1wb3J0IHsgRm9ybUdyb3VwLCBGb3JtR3JvdXBEaXJlY3RpdmUgfSBmcm9tIFwiQGFuZ3VsYXIvZm9ybXNcIjtcblxuQENvbXBvbmVudCh7XG4gIHNlbGVjdG9yOiBcImJiLWZvcm0tZnVsbG5hbWVcIixcbiAgdGVtcGxhdGVVcmw6IFwiLi9maWVsZC1mdWxsbmFtZS5jb21wb25lbnQuaHRtbFwiLFxuICBzdHlsZVVybHM6IFtcIi4vZmllbGQtZnVsbG5hbWUuY29tcG9uZW50LnNjc3NcIl0sXG4gIGNoYW5nZURldGVjdGlvbjogQ2hhbmdlRGV0ZWN0aW9uU3RyYXRlZ3kuT25QdXNoLFxufSlcbmV4cG9ydCBjbGFzcyBGb3JtRnVsbE5hbWVDb21wb25lbnQgaW1wbGVtZW50cyBPbkluaXQge1xuICBwdWJsaWMgZm9ybSE6IEZvcm1Hcm91cDtcblxuICBnZXQgY29udHJvbHMoKSB7XG4gICAgcmV0dXJuIHRoaXMuZm9ybSAmJiB0aGlzLmZvcm0uY29udHJvbHM7XG4gIH1cblxuICBjb25zdHJ1Y3Rvcihwcml2YXRlIHJvb3RGb3JtR3JvdXA6IEZvcm1Hcm91cERpcmVjdGl2ZSkge31cblxuICBwdWJsaWMgbmdPbkluaXQoKSB7XG4gICAgdGhpcy5mb3JtID0gdGhpcy5yb290Rm9ybUdyb3VwLmNvbnRyb2w7XG4gIH1cbn1cbiJdfQ==

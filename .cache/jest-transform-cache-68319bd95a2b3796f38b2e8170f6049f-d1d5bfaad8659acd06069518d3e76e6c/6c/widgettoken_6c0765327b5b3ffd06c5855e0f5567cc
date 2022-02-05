@@ -1,0 +1,107 @@
+ae4ed38a45ae0179c2259f7ba8cc7936
+"use strict";
+
+/* istanbul ignore next */
+function cov_1qidegou7v() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/patterns/bridge/widget.token.ts";
+  var hash = "0403f0fbafe2894612c1cd9fe52b314709ef55d7";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/patterns/bridge/widget.token.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 30
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 15
+        },
+        end: {
+          line: 4,
+          column: 39
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 59
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/patterns/bridge/widget.token.ts",
+      mappings: ";;;AAAA,wCAA+C;AAGlC,QAAA,YAAY,GAAG,IAAI,qBAAc,CAAU,QAAQ,CAAC,CAAC",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/patterns/bridge/widget.token.ts"],
+      sourcesContent: ["import { InjectionToken } from \"@angular/core\";\nimport { iWidget } from \"./interfaces/widget-interface\";\n\nexport const WIDGET_TOKEN = new InjectionToken<iWidget>(\"Widget\");\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "0403f0fbafe2894612c1cd9fe52b314709ef55d7"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1qidegou7v = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_1qidegou7v();
+cov_1qidegou7v().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_1qidegou7v().s[1]++;
+exports.WIDGET_TOKEN = void 0;
+const core_1 =
+/* istanbul ignore next */
+(cov_1qidegou7v().s[2]++, require("@angular/core"));
+
+/* istanbul ignore next */
+cov_1qidegou7v().s[3]++;
+exports.WIDGET_TOKEN = new core_1.InjectionToken("Widget");
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC9wYXR0ZXJucy9icmlkZ2Uvd2lkZ2V0LnRva2VuLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsTUFBQSxNQUFBO0FBQUE7QUFBQSwwQkFBQSxPQUFBLENBQUEsZUFBQSxDQUFBLENBQUE7Ozs7QUFHYSxPQUFBLENBQUEsWUFBQSxHQUFlLElBQUksTUFBQSxDQUFBLGNBQUosQ0FBNEIsUUFBNUIsQ0FBZiIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEluamVjdGlvblRva2VuIH0gZnJvbSBcIkBhbmd1bGFyL2NvcmVcIjtcbmltcG9ydCB7IGlXaWRnZXQgfSBmcm9tIFwiLi9pbnRlcmZhY2VzL3dpZGdldC1pbnRlcmZhY2VcIjtcblxuZXhwb3J0IGNvbnN0IFdJREdFVF9UT0tFTiA9IG5ldyBJbmplY3Rpb25Ub2tlbjxpV2lkZ2V0PihcIldpZGdldFwiKTtcbiJdfQ==

@@ -1,0 +1,270 @@
+4b452010a36ce11c9d204bbbe57750ca
+"use strict";
+
+/* istanbul ignore next */
+function cov_wq0bx3g89() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/pipes/remove-white-space.pipe.ts";
+  var hash = "95df680697d65c1a98dd08b47cc4e265828000f2";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/pipes/remove-white-space.pipe.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 38
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 27
+        },
+        end: {
+          line: 12,
+          column: 1
+        }
+      },
+      "5": {
+        start: {
+          line: 8,
+          column: 8
+        },
+        end: {
+          line: 9,
+          column: 31
+        }
+      },
+      "6": {
+        start: {
+          line: 9,
+          column: 12
+        },
+        end: {
+          line: 9,
+          column: 31
+        }
+      },
+      "7": {
+        start: {
+          line: 10,
+          column: 8
+        },
+        end: {
+          line: 10,
+          column: 40
+        }
+      },
+      "8": {
+        start: {
+          line: 13,
+          column: 0
+        },
+        end: {
+          line: 17,
+          column: 25
+        }
+      },
+      "9": {
+        start: {
+          line: 18,
+          column: 0
+        },
+        end: {
+          line: 18,
+          column: 52
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 7,
+            column: 4
+          },
+          end: {
+            line: 7,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 7,
+            column: 21
+          },
+          end: {
+            line: 11,
+            column: 5
+          }
+        },
+        line: 7
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 8,
+            column: 8
+          },
+          end: {
+            line: 9,
+            column: 31
+          }
+        },
+        type: "if",
+        locations: [{
+          start: {
+            line: 8,
+            column: 8
+          },
+          end: {
+            line: 9,
+            column: 31
+          }
+        }, {
+          start: {
+            line: undefined,
+            column: undefined
+          },
+          end: {
+            line: undefined,
+            column: undefined
+          }
+        }],
+        line: 8
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {
+      "0": [0, 0]
+    },
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/pipes/remove-white-space.pipe.ts",
+      mappings: ";;;;AAAA,wCAAoD;AAKpD,IAAa,oBAAoB,GAAjC,MAAa,oBAAoB;IAC/B,SAAS,CAAC,KAAa;QACrB,IAAI,KAAK,KAAK,SAAS;YAAE,OAAO,WAAW,CAAC;QAE5C,OAAO,KAAK,CAAC,OAAO,CAAC,KAAK,EAAE,EAAE,CAAC,CAAC;IAClC,CAAC;CACF,CAAA;AANY,oBAAoB;IAHhC,WAAI,CAAC;QACJ,IAAI,EAAE,kBAAkB;KACzB,CAAC;GACW,oBAAoB,CAMhC;AANY,oDAAoB",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/pipes/remove-white-space.pipe.ts"],
+      sourcesContent: ["import { Pipe, PipeTransform } from \"@angular/core\";\n\n@Pipe({\n  name: \"removeWhiteSpace\",\n})\nexport class RemoveWhiteSpacePipe implements PipeTransform {\n  transform(value: string): string {\n    if (value === undefined) return \"undefined\";\n\n    return value.replace(/\\s/g, \"\");\n  }\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "95df680697d65c1a98dd08b47cc4e265828000f2"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_wq0bx3g89 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_wq0bx3g89();
+cov_wq0bx3g89().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_wq0bx3g89().s[1]++;
+exports.RemoveWhiteSpacePipe = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_wq0bx3g89().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_wq0bx3g89().s[3]++, require("@angular/core"));
+
+/* istanbul ignore next */
+cov_wq0bx3g89().s[4]++;
+let RemoveWhiteSpacePipe = class RemoveWhiteSpacePipe {
+  transform(value) {
+    /* istanbul ignore next */
+    cov_wq0bx3g89().f[0]++;
+    cov_wq0bx3g89().s[5]++;
+
+    if (value === undefined) {
+      /* istanbul ignore next */
+      cov_wq0bx3g89().b[0][0]++;
+      cov_wq0bx3g89().s[6]++;
+      return "undefined";
+    } else
+    /* istanbul ignore next */
+    {
+      cov_wq0bx3g89().b[0][1]++;
+    }
+
+    cov_wq0bx3g89().s[7]++;
+    return value.replace(/\s/g, "");
+  }
+
+};
+
+/* istanbul ignore next */
+cov_wq0bx3g89().s[8]++;
+RemoveWhiteSpacePipe = tslib_1.__decorate([core_1.Pipe({
+  name: "removeWhiteSpace"
+})], RemoveWhiteSpacePipe);
+
+/* istanbul ignore next */
+cov_wq0bx3g89().s[9]++;
+exports.RemoveWhiteSpacePipe = RemoveWhiteSpacePipe;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC9Ac2hhcmVkL3BpcGVzL3JlbW92ZS13aGl0ZS1zcGFjZS5waXBlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUlFOzs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUpGLE1BQUEsTUFBQTtBQUFBO0FBQUEseUJBQUEsT0FBQSxDQUFBLGVBQUEsQ0FBQSxDQUFBOzs7O0FBS0EsSUFBYSxvQkFBb0IsR0FBakMsTUFBYSxvQkFBYixDQUFpQztBQUMvQixFQUFBLFNBQVMsQ0FBQyxLQUFELEVBQWM7QUFBQTtBQUFBO0FBQUE7O0FBQ3JCLFFBQUksS0FBSyxLQUFLLFNBQWQsRUFBeUI7QUFBQTtBQUFBO0FBQUE7QUFBQSxhQUFPLFdBQVA7QUFBbUIsS0FBNUM7QUFBQTtBQUFBO0FBQUE7QUFBQTs7QUFEcUI7QUFHckIsV0FBTyxLQUFLLENBQUMsT0FBTixDQUFjLEtBQWQsRUFBcUIsRUFBckIsQ0FBUDtBQUNEOztBQUw4QixDQUFqQzs7OztBQUFhLG9CQUFvQixHQUFBLE9BQUEsQ0FBQSxVQUFBLENBQUEsQ0FIaEMsTUFBQSxDQUFBLElBQUEsQ0FBSztBQUNKLEVBQUEsSUFBSSxFQUFFO0FBREYsQ0FBTCxDQUdnQyxDQUFBLEVBQXBCLG9CQUFvQixDQUFwQjs7OztBQUFBLE9BQUEsQ0FBQSxvQkFBQSxHQUFBLG9CQUFBIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgUGlwZSwgUGlwZVRyYW5zZm9ybSB9IGZyb20gXCJAYW5ndWxhci9jb3JlXCI7XG5cbkBQaXBlKHtcbiAgbmFtZTogXCJyZW1vdmVXaGl0ZVNwYWNlXCIsXG59KVxuZXhwb3J0IGNsYXNzIFJlbW92ZVdoaXRlU3BhY2VQaXBlIGltcGxlbWVudHMgUGlwZVRyYW5zZm9ybSB7XG4gIHRyYW5zZm9ybSh2YWx1ZTogc3RyaW5nKTogc3RyaW5nIHtcbiAgICBpZiAodmFsdWUgPT09IHVuZGVmaW5lZCkgcmV0dXJuIFwidW5kZWZpbmVkXCI7XG5cbiAgICByZXR1cm4gdmFsdWUucmVwbGFjZSgvXFxzL2csIFwiXCIpO1xuICB9XG59XG4iXX0=

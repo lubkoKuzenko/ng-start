@@ -1,0 +1,397 @@
+7875dab87d6dedc302e853c007491f9c
+"use strict";
+
+/* istanbul ignore next */
+function cov_2b8yyicuiy() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/components/custom-field-form/custom-field-form.component.ts";
+  var hash = "5b1b7e274e47c3160963c636fbfc6dd3407028ce";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/components/custom-field-form/custom-field-form.component.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 42
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 16
+        },
+        end: {
+          line: 6,
+          column: 41
+        }
+      },
+      "5": {
+        start: {
+          line: 7,
+          column: 31
+        },
+        end: {
+          line: 22,
+          column: 1
+        }
+      },
+      "6": {
+        start: {
+          line: 9,
+          column: 8
+        },
+        end: {
+          line: 9,
+          column: 35
+        }
+      },
+      "7": {
+        start: {
+          line: 10,
+          column: 8
+        },
+        end: {
+          line: 10,
+          column: 26
+        }
+      },
+      "8": {
+        start: {
+          line: 11,
+          column: 8
+        },
+        end: {
+          line: 11,
+          column: 27
+        }
+      },
+      "9": {
+        start: {
+          line: 12,
+          column: 8
+        },
+        end: {
+          line: 14,
+          column: 11
+        }
+      },
+      "10": {
+        start: {
+          line: 17,
+          column: 8
+        },
+        end: {
+          line: 20,
+          column: 9
+        }
+      },
+      "11": {
+        start: {
+          line: 18,
+          column: 30
+        },
+        end: {
+          line: 18,
+          column: 53
+        }
+      },
+      "12": {
+        start: {
+          line: 19,
+          column: 12
+        },
+        end: {
+          line: 19,
+          column: 35
+        }
+      },
+      "13": {
+        start: {
+          line: 23,
+          column: 0
+        },
+        end: {
+          line: 26,
+          column: 55
+        }
+      },
+      "14": {
+        start: {
+          line: 27,
+          column: 0
+        },
+        end: {
+          line: 34,
+          column: 29
+        }
+      },
+      "15": {
+        start: {
+          line: 35,
+          column: 0
+        },
+        end: {
+          line: 35,
+          column: 60
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 8,
+            column: 4
+          },
+          end: {
+            line: 8,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 8,
+            column: 18
+          },
+          end: {
+            line: 15,
+            column: 5
+          }
+        },
+        line: 8
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 16,
+            column: 4
+          },
+          end: {
+            line: 16,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 16,
+            column: 15
+          },
+          end: {
+            line: 21,
+            column: 5
+          }
+        },
+        line: 16
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 17,
+            column: 8
+          },
+          end: {
+            line: 20,
+            column: 9
+          }
+        },
+        type: "if",
+        locations: [{
+          start: {
+            line: 17,
+            column: 8
+          },
+          end: {
+            line: 20,
+            column: 9
+          }
+        }, {
+          start: {
+            line: undefined,
+            column: undefined
+          },
+          end: {
+            line: undefined,
+            column: undefined
+          }
+        }],
+        line: 17
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0
+    },
+    b: {
+      "0": [0, 0]
+    },
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/components/custom-field-form/custom-field-form.component.ts",
+      mappings: ";;;;AAAA,wCAA0E;AAC1E,0CAAwD;AAQxD,IAAa,wBAAwB,GAArC,MAAa,wBAAwB;IAArC;QACkB,SAAI,GAAwB,EAAE,OAAO,EAAE,CAAC,EAAE,CAAC;QAEpD,aAAQ,GAAG,CAAC,CAAC;QACb,aAAQ,GAAG,EAAE,CAAC;QAEd,SAAI,GAAc,IAAI,iBAAS,CAAC;YACrC,OAAO,EAAE,IAAI,mBAAW,CAAC,IAAI,CAAC,IAAI,CAAC,OAAO,EAAE,EAAE,CAAC;SAChD,CAAC,CAAC;IAQL,CAAC;IANQ,QAAQ;QACb,IAAI,IAAI,CAAC,IAAI,CAAC,KAAK,EAAE;YACnB,MAAM,SAAS,GAAG,IAAI,CAAC,IAAI,CAAC,WAAW,EAAE,CAAC;YAC1C,OAAO,CAAC,GAAG,CAAC,SAAS,CAAC,CAAC;SACxB;IACH,CAAC;CACF,CAAA;AAfU;IAAR,YAAK,EAAE;;sDAAmD;AADhD,wBAAwB;IANpC,gBAAS,CAAC;QACT,QAAQ,EAAE,sBAAsB;QAChC,kBAAa,oCAAoC,CAAA;QACjD,SAAS,IAAwC;QACjD,eAAe,EAAE,8BAAuB,CAAC,MAAM;KAChD,CAAC;GACW,wBAAwB,CAgBpC;AAhBY,4DAAwB",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/forms/components/custom-field-form/custom-field-form.component.ts"],
+      sourcesContent: ["import { Component, Input, ChangeDetectionStrategy } from \"@angular/core\";\nimport { FormGroup, FormControl } from \"@angular/forms\";\n\n@Component({\n  selector: \"bb-custom-field-form\",\n  templateUrl: \"./custom-field-form.component.html\",\n  styleUrls: [\"./custom-field-form.component.scss\"],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class CustomFieldFormComponent {\n  @Input() public data: { counter: number } = { counter: 7 };\n\n  public minValue = 0;\n  public maxValue = 12;\n\n  public form: FormGroup = new FormGroup({\n    counter: new FormControl(this.data.counter, []),\n  });\n\n  public onSubmit() {\n    if (this.form.valid) {\n      const formValue = this.form.getRawValue();\n      console.log(formValue);\n    }\n  }\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "5b1b7e274e47c3160963c636fbfc6dd3407028ce"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2b8yyicuiy = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_2b8yyicuiy();
+cov_2b8yyicuiy().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_2b8yyicuiy().s[1]++;
+exports.CustomFieldFormComponent = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_2b8yyicuiy().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_2b8yyicuiy().s[3]++, require("@angular/core"));
+const forms_1 =
+/* istanbul ignore next */
+(cov_2b8yyicuiy().s[4]++, require("@angular/forms"));
+
+/* istanbul ignore next */
+cov_2b8yyicuiy().s[5]++;
+let CustomFieldFormComponent = class CustomFieldFormComponent {
+  constructor() {
+    /* istanbul ignore next */
+    cov_2b8yyicuiy().f[0]++;
+    cov_2b8yyicuiy().s[6]++;
+    this.data = {
+      counter: 7
+    };
+
+    /* istanbul ignore next */
+    cov_2b8yyicuiy().s[7]++;
+    this.minValue = 0;
+
+    /* istanbul ignore next */
+    cov_2b8yyicuiy().s[8]++;
+    this.maxValue = 12;
+
+    /* istanbul ignore next */
+    cov_2b8yyicuiy().s[9]++;
+    this.form = new forms_1.FormGroup({
+      counter: new forms_1.FormControl(this.data.counter, [])
+    });
+  }
+
+  onSubmit() {
+    /* istanbul ignore next */
+    cov_2b8yyicuiy().f[1]++;
+    cov_2b8yyicuiy().s[10]++;
+
+    if (this.form.valid) {
+      /* istanbul ignore next */
+      cov_2b8yyicuiy().b[0][0]++;
+      const formValue =
+      /* istanbul ignore next */
+      (cov_2b8yyicuiy().s[11]++, this.form.getRawValue());
+
+      /* istanbul ignore next */
+      cov_2b8yyicuiy().s[12]++;
+      console.log(formValue);
+    } else
+    /* istanbul ignore next */
+    {
+      cov_2b8yyicuiy().b[0][1]++;
+    }
+  }
+
+};
+
+/* istanbul ignore next */
+cov_2b8yyicuiy().s[13]++;
+
+tslib_1.__decorate([core_1.Input(), tslib_1.__metadata("design:type", Object)], CustomFieldFormComponent.prototype, "data", void 0);
+
+/* istanbul ignore next */
+cov_2b8yyicuiy().s[14]++;
+CustomFieldFormComponent = tslib_1.__decorate([core_1.Component({
+  selector: "bb-custom-field-form",
+  template: require("./custom-field-form.component.html"),
+  styleUrls: [],
+  changeDetection: core_1.ChangeDetectionStrategy.OnPush
+})], CustomFieldFormComponent);
+
+/* istanbul ignore next */
+cov_2b8yyicuiy().s[15]++;
+exports.CustomFieldFormComponent = CustomFieldFormComponent;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC9mb3Jtcy9jb21wb25lbnRzL2N1c3RvbS1maWVsZC1mb3JtL2N1c3RvbS1maWVsZC1mb3JtLmNvbXBvbmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBbUJpQjs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFuQmpCLE1BQUEsTUFBQTtBQUFBO0FBQUEsMEJBQUEsT0FBQSxDQUFBLGVBQUEsQ0FBQSxDQUFBO0FBQ0EsTUFBQSxPQUFBO0FBQUE7QUFBQSwwQkFBQSxPQUFBLENBQUEsZ0JBQUEsQ0FBQSxDQUFBOzs7O0FBUUEsSUFBYSx3QkFBd0IsR0FBckMsTUFBYSx3QkFBYixDQUFxQztBQUFyQyxFQUFBLFdBQUEsR0FBQTtBQUFBO0FBQUE7QUFBQTtBQUNrQixTQUFBLElBQUEsR0FBNEI7QUFBRSxNQUFBLE9BQU8sRUFBRTtBQUFYLEtBQTVCOztBQURsQjtBQUFBO0FBR1MsU0FBQSxRQUFBLEdBQVcsQ0FBWDs7QUFIVDtBQUFBO0FBSVMsU0FBQSxRQUFBLEdBQVcsRUFBWDs7QUFKVDtBQUFBO0FBTVMsU0FBQSxJQUFBLEdBQWtCLElBQUksT0FBQSxDQUFBLFNBQUosQ0FBYztBQUNyQyxNQUFBLE9BQU8sRUFBRSxJQUFJLE9BQUEsQ0FBQSxXQUFKLENBQWdCLEtBQUssSUFBTCxDQUFVLE9BQTFCLEVBQW1DLEVBQW5DO0FBRDRCLEtBQWQsQ0FBbEI7QUFVUjs7QUFOUSxFQUFBLFFBQVEsR0FBQTtBQUFBO0FBQUE7QUFBQTs7QUFDYixRQUFJLEtBQUssSUFBTCxDQUFVLEtBQWQsRUFBcUI7QUFBQTtBQUFBO0FBQ25CLFlBQU0sU0FBUztBQUFBO0FBQUEsaUNBQUcsS0FBSyxJQUFMLENBQVUsV0FBVixFQUFILENBQWY7O0FBRG1CO0FBQUE7QUFFbkIsTUFBQSxPQUFPLENBQUMsR0FBUixDQUFZLFNBQVo7QUFDRCxLQUhEO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFJRDs7QUFma0MsQ0FBckM7Ozs7O0FBQ1csT0FBQSxDQUFBLFVBQUEsQ0FBQSxDQUFSLE1BQUEsQ0FBQSxLQUFBLEVBQVEsRSx5Q0FBQSxDQUFBLEUsa0NBQUEsRSxNQUFBLEUsS0FBa0QsQ0FBbEQ7Ozs7QUFERSx3QkFBd0IsR0FBQSxPQUFBLENBQUEsVUFBQSxDQUFBLENBTnBDLE1BQUEsQ0FBQSxTQUFBLENBQVU7QUFDVCxFQUFBLFFBQVEsRUFBRSxzQkFERDtBQUVULEVBQUEsUUFBQSxFQUFBLE9BQUEsQ0FBYSxvQ0FBYixDQUZTO0FBR1QsRUFBQSxTQUFTLEVBQUEsRUFIQTtBQUlULEVBQUEsZUFBZSxFQUFFLE1BQUEsQ0FBQSx1QkFBQSxDQUF3QjtBQUpoQyxDQUFWLENBTW9DLENBQUEsRUFBeEIsd0JBQXdCLENBQXhCOzs7O0FBQUEsT0FBQSxDQUFBLHdCQUFBLEdBQUEsd0JBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb21wb25lbnQsIElucHV0LCBDaGFuZ2VEZXRlY3Rpb25TdHJhdGVneSB9IGZyb20gXCJAYW5ndWxhci9jb3JlXCI7XG5pbXBvcnQgeyBGb3JtR3JvdXAsIEZvcm1Db250cm9sIH0gZnJvbSBcIkBhbmd1bGFyL2Zvcm1zXCI7XG5cbkBDb21wb25lbnQoe1xuICBzZWxlY3RvcjogXCJiYi1jdXN0b20tZmllbGQtZm9ybVwiLFxuICB0ZW1wbGF0ZVVybDogXCIuL2N1c3RvbS1maWVsZC1mb3JtLmNvbXBvbmVudC5odG1sXCIsXG4gIHN0eWxlVXJsczogW1wiLi9jdXN0b20tZmllbGQtZm9ybS5jb21wb25lbnQuc2Nzc1wiXSxcbiAgY2hhbmdlRGV0ZWN0aW9uOiBDaGFuZ2VEZXRlY3Rpb25TdHJhdGVneS5PblB1c2gsXG59KVxuZXhwb3J0IGNsYXNzIEN1c3RvbUZpZWxkRm9ybUNvbXBvbmVudCB7XG4gIEBJbnB1dCgpIHB1YmxpYyBkYXRhOiB7IGNvdW50ZXI6IG51bWJlciB9ID0geyBjb3VudGVyOiA3IH07XG5cbiAgcHVibGljIG1pblZhbHVlID0gMDtcbiAgcHVibGljIG1heFZhbHVlID0gMTI7XG5cbiAgcHVibGljIGZvcm06IEZvcm1Hcm91cCA9IG5ldyBGb3JtR3JvdXAoe1xuICAgIGNvdW50ZXI6IG5ldyBGb3JtQ29udHJvbCh0aGlzLmRhdGEuY291bnRlciwgW10pLFxuICB9KTtcblxuICBwdWJsaWMgb25TdWJtaXQoKSB7XG4gICAgaWYgKHRoaXMuZm9ybS52YWxpZCkge1xuICAgICAgY29uc3QgZm9ybVZhbHVlID0gdGhpcy5mb3JtLmdldFJhd1ZhbHVlKCk7XG4gICAgICBjb25zb2xlLmxvZyhmb3JtVmFsdWUpO1xuICAgIH1cbiAgfVxufVxuIl19

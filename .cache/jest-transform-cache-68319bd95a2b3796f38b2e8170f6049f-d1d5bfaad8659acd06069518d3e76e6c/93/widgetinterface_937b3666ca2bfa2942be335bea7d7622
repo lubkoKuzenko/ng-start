@@ -1,0 +1,63 @@
+705d48bfaa753e58d9ec70cc3fbdab6d
+"use strict";
+
+/* istanbul ignore next */
+function cov_d1ft49j5v() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/patterns/bridge/interfaces/widget-interface.ts";
+  var hash = "f8d8bdd3cf50f4a94be1ea0678d67f319221cd18";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/patterns/bridge/interfaces/widget-interface.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/patterns/bridge/interfaces/widget-interface.ts",
+      mappings: "",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/patterns/bridge/interfaces/widget-interface.ts"],
+      sourcesContent: ["export interface iWidget {\n  load: () => void;\n  refresh: () => void;\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "f8d8bdd3cf50f4a94be1ea0678d67f319221cd18"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_d1ft49j5v = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_d1ft49j5v();
+cov_d1ft49j5v().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiJ9

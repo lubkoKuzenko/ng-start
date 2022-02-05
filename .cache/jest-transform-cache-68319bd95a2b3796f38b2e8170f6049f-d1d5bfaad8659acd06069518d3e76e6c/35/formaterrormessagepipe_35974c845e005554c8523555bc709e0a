@@ -1,0 +1,297 @@
+ba3bad35c99026960f903915a5c3f4dd
+"use strict";
+
+/* istanbul ignore next */
+function cov_1oi7dzhz1p() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/modules/validation-message/format-error-message.pipe.ts";
+  var hash = "10853bdc2e5505feac7cfeb82a273bc8d8d3e413";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/modules/validation-message/format-error-message.pipe.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 40
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 6,
+          column: 29
+        },
+        end: {
+          line: 24,
+          column: 1
+        }
+      },
+      "5": {
+        start: {
+          line: 9,
+          column: 8
+        },
+        end: {
+          line: 9,
+          column: 89
+        }
+      },
+      "6": {
+        start: {
+          line: 12,
+          column: 23
+        },
+        end: {
+          line: 21,
+          column: 9
+        }
+      },
+      "7": {
+        start: {
+          line: 22,
+          column: 8
+        },
+        end: {
+          line: 22,
+          column: 37
+        }
+      },
+      "8": {
+        start: {
+          line: 25,
+          column: 0
+        },
+        end: {
+          line: 30,
+          column: 27
+        }
+      },
+      "9": {
+        start: {
+          line: 31,
+          column: 0
+        },
+        end: {
+          line: 31,
+          column: 56
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 7,
+            column: 4
+          },
+          end: {
+            line: 7,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 7,
+            column: 18
+          },
+          end: {
+            line: 7,
+            column: 21
+          }
+        },
+        line: 7
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 8,
+            column: 4
+          },
+          end: {
+            line: 8,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 8,
+            column: 31
+          },
+          end: {
+            line: 10,
+            column: 5
+          }
+        },
+        line: 8
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 11,
+            column: 4
+          },
+          end: {
+            line: 11,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 11,
+            column: 60
+          },
+          end: {
+            line: 23,
+            column: 5
+          }
+        },
+        line: 11
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/modules/validation-message/format-error-message.pipe.ts",
+      mappings: ";;;;AAAA,wCAAoD;AAKpD,IAAa,sBAAsB,GAAnC,MAAa,sBAAsB;IACjC,gBAAe,CAAC;IACT,SAAS,CAAC,eAA4C;QAC3D,OAAO,IAAI,CAAC,wBAAwB,CAAC,eAAe,CAAC,GAAG,EAAE,eAAe,CAAC,KAAK,CAAC,CAAC;IACnF,CAAC;IAEO,wBAAwB,CAAC,aAAqB,EAAE,cAAoB;QAC1E,MAAM,MAAM,GAAQ;YAClB,QAAQ,EAAE,iCAAiC;YAC3C,SAAS,EAAE,kBAAkB,cAAc,CAAC,cAAc,EAAE;YAC5D,SAAS,EAAE,kBAAkB,cAAc,CAAC,cAAc,EAAE;YAC5D,GAAG,EAAE,oBAAoB,cAAc,CAAC,GAAG,EAAE;YAC7C,GAAG,EAAE,qCAAqC,cAAc,CAAC,GAAG,EAAE;YAC9D,OAAO,EAAE,gCAAgC;YACzC,SAAS,EAAE,yBAAyB;YACpC,mBAAmB,EAAE,uBAAuB;SAC7C,CAAC;QAEF,OAAO,MAAM,CAAC,aAAa,CAAC,CAAC;IAC/B,CAAC;CACF,CAAA;AApBY,sBAAsB;IAHlC,WAAI,CAAC;QACJ,IAAI,EAAE,oBAAoB;KAC3B,CAAC;;GACW,sBAAsB,CAoBlC;AApBY,wDAAsB",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/modules/validation-message/format-error-message.pipe.ts"],
+      sourcesContent: ["import { Pipe, PipeTransform } from \"@angular/core\";\n\n@Pipe({\n  name: \"formatErrorMessage\",\n})\nexport class FormatErrorMessagePipe implements PipeTransform {\n  constructor() {}\n  public transform(validationError: { key: string; value: any }): any {\n    return this.getFormattedErrorMessage(validationError.key, validationError.value);\n  }\n\n  private getFormattedErrorMessage(validatorName: string, validatorValue?: any) {\n    const config: any = {\n      required: \"This field cannot be left blank\",\n      minlength: `Minimum length ${validatorValue.requiredLength}`,\n      maxlength: `Maximum length ${validatorValue.requiredLength}`,\n      min: `Minimum value is ${validatorValue.min}`,\n      max: `Maximum value should be less then ${validatorValue.max}`,\n      pattern: \"Control has leading whitespace\",\n      rangeDate: \"Date range is not valid\",\n      wrongPasswordFormat: \"Password is not valid\",\n    };\n\n    return config[validatorName];\n  }\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "10853bdc2e5505feac7cfeb82a273bc8d8d3e413"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1oi7dzhz1p = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_1oi7dzhz1p();
+cov_1oi7dzhz1p().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_1oi7dzhz1p().s[1]++;
+exports.FormatErrorMessagePipe = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_1oi7dzhz1p().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_1oi7dzhz1p().s[3]++, require("@angular/core"));
+
+/* istanbul ignore next */
+cov_1oi7dzhz1p().s[4]++;
+let FormatErrorMessagePipe = class FormatErrorMessagePipe {
+  constructor() {
+    /* istanbul ignore next */
+    cov_1oi7dzhz1p().f[0]++;
+  }
+
+  transform(validationError) {
+    /* istanbul ignore next */
+    cov_1oi7dzhz1p().f[1]++;
+    cov_1oi7dzhz1p().s[5]++;
+    return this.getFormattedErrorMessage(validationError.key, validationError.value);
+  }
+
+  getFormattedErrorMessage(validatorName, validatorValue) {
+    /* istanbul ignore next */
+    cov_1oi7dzhz1p().f[2]++;
+    const config =
+    /* istanbul ignore next */
+    (cov_1oi7dzhz1p().s[6]++, {
+      required: "This field cannot be left blank",
+      minlength: `Minimum length ${validatorValue.requiredLength}`,
+      maxlength: `Maximum length ${validatorValue.requiredLength}`,
+      min: `Minimum value is ${validatorValue.min}`,
+      max: `Maximum value should be less then ${validatorValue.max}`,
+      pattern: "Control has leading whitespace",
+      rangeDate: "Date range is not valid",
+      wrongPasswordFormat: "Password is not valid"
+    });
+
+    /* istanbul ignore next */
+    cov_1oi7dzhz1p().s[7]++;
+    return config[validatorName];
+  }
+
+};
+
+/* istanbul ignore next */
+cov_1oi7dzhz1p().s[8]++;
+FormatErrorMessagePipe = tslib_1.__decorate([core_1.Pipe({
+  name: "formatErrorMessage"
+}), tslib_1.__metadata("design:paramtypes", [])], FormatErrorMessagePipe);
+
+/* istanbul ignore next */
+cov_1oi7dzhz1p().s[9]++;
+exports.FormatErrorMessagePipe = FormatErrorMessagePipe;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC9Ac2hhcmVkL21vZHVsZXMvdmFsaWRhdGlvbi1tZXNzYWdlL2Zvcm1hdC1lcnJvci1tZXNzYWdlLnBpcGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFnQk07Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBaEJOLE1BQUEsTUFBQTtBQUFBO0FBQUEsMEJBQUEsT0FBQSxDQUFBLGVBQUEsQ0FBQSxDQUFBOzs7O0FBS0EsSUFBYSxzQkFBc0IsR0FBbkMsTUFBYSxzQkFBYixDQUFtQztBQUNqQyxFQUFBLFdBQUEsR0FBQTtBQUFBO0FBQUE7QUFBZ0I7O0FBQ1QsRUFBQSxTQUFTLENBQUMsZUFBRCxFQUE2QztBQUFBO0FBQUE7QUFBQTtBQUMzRCxXQUFPLEtBQUssd0JBQUwsQ0FBOEIsZUFBZSxDQUFDLEdBQTlDLEVBQW1ELGVBQWUsQ0FBQyxLQUFuRSxDQUFQO0FBQ0Q7O0FBRU8sRUFBQSx3QkFBd0IsQ0FBQyxhQUFELEVBQXdCLGNBQXhCLEVBQTRDO0FBQUE7QUFBQTtBQUMxRSxVQUFNLE1BQU07QUFBQTtBQUFBLDhCQUFRO0FBQ2xCLE1BQUEsUUFBUSxFQUFFLGlDQURRO0FBRWxCLE1BQUEsU0FBUyxFQUFFLGtCQUFrQixjQUFjLENBQUMsY0FBYyxFQUZ4QztBQUdsQixNQUFBLFNBQVMsRUFBRSxrQkFBa0IsY0FBYyxDQUFDLGNBQWMsRUFIeEM7QUFJbEIsTUFBQSxHQUFHLEVBQUUsb0JBQW9CLGNBQWMsQ0FBQyxHQUFHLEVBSnpCO0FBS2xCLE1BQUEsR0FBRyxFQUFFLHFDQUFxQyxjQUFjLENBQUMsR0FBRyxFQUwxQztBQU1sQixNQUFBLE9BQU8sRUFBRSxnQ0FOUztBQU9sQixNQUFBLFNBQVMsRUFBRSx5QkFQTztBQVFsQixNQUFBLG1CQUFtQixFQUFFO0FBUkgsS0FBUixDQUFaOztBQUQwRTtBQUFBO0FBWTFFLFdBQU8sTUFBTSxDQUFDLGFBQUQsQ0FBYjtBQUNEOztBQW5CZ0MsQ0FBbkM7Ozs7QUFBYSxzQkFBc0IsR0FBQSxPQUFBLENBQUEsVUFBQSxDQUFBLENBSGxDLE1BQUEsQ0FBQSxJQUFBLENBQUs7QUFDSixFQUFBLElBQUksRUFBRTtBQURGLENBQUwsQ0FHa0MsRSwyQ0FBQSxDQUFBLEVBQXRCLHNCQUFzQixDQUF0Qjs7OztBQUFBLE9BQUEsQ0FBQSxzQkFBQSxHQUFBLHNCQUFBIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgUGlwZSwgUGlwZVRyYW5zZm9ybSB9IGZyb20gXCJAYW5ndWxhci9jb3JlXCI7XG5cbkBQaXBlKHtcbiAgbmFtZTogXCJmb3JtYXRFcnJvck1lc3NhZ2VcIixcbn0pXG5leHBvcnQgY2xhc3MgRm9ybWF0RXJyb3JNZXNzYWdlUGlwZSBpbXBsZW1lbnRzIFBpcGVUcmFuc2Zvcm0ge1xuICBjb25zdHJ1Y3RvcigpIHt9XG4gIHB1YmxpYyB0cmFuc2Zvcm0odmFsaWRhdGlvbkVycm9yOiB7IGtleTogc3RyaW5nOyB2YWx1ZTogYW55IH0pOiBhbnkge1xuICAgIHJldHVybiB0aGlzLmdldEZvcm1hdHRlZEVycm9yTWVzc2FnZSh2YWxpZGF0aW9uRXJyb3Iua2V5LCB2YWxpZGF0aW9uRXJyb3IudmFsdWUpO1xuICB9XG5cbiAgcHJpdmF0ZSBnZXRGb3JtYXR0ZWRFcnJvck1lc3NhZ2UodmFsaWRhdG9yTmFtZTogc3RyaW5nLCB2YWxpZGF0b3JWYWx1ZT86IGFueSkge1xuICAgIGNvbnN0IGNvbmZpZzogYW55ID0ge1xuICAgICAgcmVxdWlyZWQ6IFwiVGhpcyBmaWVsZCBjYW5ub3QgYmUgbGVmdCBibGFua1wiLFxuICAgICAgbWlubGVuZ3RoOiBgTWluaW11bSBsZW5ndGggJHt2YWxpZGF0b3JWYWx1ZS5yZXF1aXJlZExlbmd0aH1gLFxuICAgICAgbWF4bGVuZ3RoOiBgTWF4aW11bSBsZW5ndGggJHt2YWxpZGF0b3JWYWx1ZS5yZXF1aXJlZExlbmd0aH1gLFxuICAgICAgbWluOiBgTWluaW11bSB2YWx1ZSBpcyAke3ZhbGlkYXRvclZhbHVlLm1pbn1gLFxuICAgICAgbWF4OiBgTWF4aW11bSB2YWx1ZSBzaG91bGQgYmUgbGVzcyB0aGVuICR7dmFsaWRhdG9yVmFsdWUubWF4fWAsXG4gICAgICBwYXR0ZXJuOiBcIkNvbnRyb2wgaGFzIGxlYWRpbmcgd2hpdGVzcGFjZVwiLFxuICAgICAgcmFuZ2VEYXRlOiBcIkRhdGUgcmFuZ2UgaXMgbm90IHZhbGlkXCIsXG4gICAgICB3cm9uZ1Bhc3N3b3JkRm9ybWF0OiBcIlBhc3N3b3JkIGlzIG5vdCB2YWxpZFwiLFxuICAgIH07XG5cbiAgICByZXR1cm4gY29uZmlnW3ZhbGlkYXRvck5hbWVdO1xuICB9XG59XG4iXX0=

@@ -1,0 +1,328 @@
+24f7448c2c73263ed11701b21b0fe157
+"use strict";
+
+/* istanbul ignore next */
+function cov_10hplw8uvs() {
+  var path = "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/directives/ng-let.directive.ts";
+  var hash = "5aa87d0dbbd633e7ce71991426aad1212a1747d2";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/directives/ng-let.directive.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 51
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 16
+        },
+        end: {
+          line: 4,
+          column: 32
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 15
+        },
+        end: {
+          line: 5,
+          column: 39
+        }
+      },
+      "4": {
+        start: {
+          line: 8,
+          column: 8
+        },
+        end: {
+          line: 8,
+          column: 23
+        }
+      },
+      "5": {
+        start: {
+          line: 11,
+          column: 8
+        },
+        end: {
+          line: 11,
+          column: 30
+        }
+      },
+      "6": {
+        start: {
+          line: 14,
+          column: 0
+        },
+        end: {
+          line: 14,
+          column: 32
+        }
+      },
+      "7": {
+        start: {
+          line: 24,
+          column: 19
+        },
+        end: {
+          line: 28,
+          column: 1
+        }
+      },
+      "8": {
+        start: {
+          line: 26,
+          column: 8
+        },
+        end: {
+          line: 26,
+          column: 76
+        }
+      },
+      "9": {
+        start: {
+          line: 29,
+          column: 0
+        },
+        end: {
+          line: 32,
+          column: 44
+        }
+      },
+      "10": {
+        start: {
+          line: 33,
+          column: 0
+        },
+        end: {
+          line: 41,
+          column: 17
+        }
+      },
+      "11": {
+        start: {
+          line: 42,
+          column: 0
+        },
+        end: {
+          line: 42,
+          column: 36
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 7,
+            column: 4
+          },
+          end: {
+            line: 7,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 7,
+            column: 21
+          },
+          end: {
+            line: 9,
+            column: 5
+          }
+        },
+        line: 7
+      },
+      "1": {
+        name: "(anonymous_1)",
+        decl: {
+          start: {
+            line: 10,
+            column: 4
+          },
+          end: {
+            line: 10,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 10,
+            column: 16
+          },
+          end: {
+            line: 12,
+            column: 5
+          }
+        },
+        line: 10
+      },
+      "2": {
+        name: "(anonymous_2)",
+        decl: {
+          start: {
+            line: 25,
+            column: 4
+          },
+          end: {
+            line: 25,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 25,
+            column: 44
+          },
+          end: {
+            line: 27,
+            column: 5
+          }
+        },
+        line: 25
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0
+    },
+    f: {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/directives/ng-let.directive.ts",
+      mappings: ";;;;AAAA,wCAAwF;AAExF,MAAa,UAAU;IACrB,YAA6B,GAAoB;QAApB,QAAG,GAAH,GAAG,CAAiB;IAAG,CAAC;IAErD,IAAI,KAAK;QACP,OAAO,IAAI,CAAC,GAAG,CAAC,KAAK,CAAC;IACxB,CAAC;CACF;AAND,gCAMC;AAED;;;;;;;;GAQG;AAIH,IAAa,YAAY,GAAzB,MAAa,YAAY;IAIvB,YAC4B,aAA+B,EACpC,WAAuC;QAE5D,aAAa,CAAC,kBAAkB,CAAC,WAAW,EAAE,IAAI,UAAU,CAAI,IAAI,CAAC,CAAC,CAAC;IACzE,CAAC;CACF,CAAA;AARC;IADC,YAAK,EAAE;;2CACC;AAFE,YAAY;IAHxB,gBAAS,CAAC;QACT,QAAQ,EAAE,WAAW;KACtB,CAAC;IAMG,mBAAA,aAAM,CAAC,uBAAgB,CAAC,CAAA;IACxB,mBAAA,aAAM,CAAC,kBAAW,CAAC,CAAA;6CADqB,uBAAgB;QACvB,kBAAW;GANpC,YAAY,CAUxB;AAVY,oCAAY",
+      names: [],
+      sources: ["/Users/l.kuzenko/PERSONAL/ng-start/src/app/@shared/directives/ng-let.directive.ts"],
+      sourcesContent: ["import { Directive, Inject, Input, TemplateRef, ViewContainerRef } from \"@angular/core\";\n\nexport class LetContext<T> {\n  constructor(private readonly dir: LetDirective<T>) {}\n\n  get ngLet(): T {\n    return this.dir.ngLet;\n  }\n}\n\n/**\n * Works like *ngIf but does not have a condition\n * Use it to declare the result of pipes calculation\n * (i.e. async pipe)\n *\n * <ng-container *ngLet=\"stream$ | async as value\">\n *   {{ value }}\n * </ng-container>\n */\n@Directive({\n  selector: \"[bbNgLet]\",\n})\nexport class LetDirective<T> {\n  @Input()\n  ngLet: T;\n\n  constructor(\n    @Inject(ViewContainerRef) viewContainer: ViewContainerRef,\n    @Inject(TemplateRef) templateRef: TemplateRef<LetContext<T>>,\n  ) {\n    viewContainer.createEmbeddedView(templateRef, new LetContext<T>(this));\n  }\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "5aa87d0dbbd633e7ce71991426aad1212a1747d2"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_10hplw8uvs = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_10hplw8uvs();
+cov_10hplw8uvs().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_10hplw8uvs().s[1]++;
+exports.LetDirective = exports.LetContext = void 0;
+const tslib_1 =
+/* istanbul ignore next */
+(cov_10hplw8uvs().s[2]++, require("tslib"));
+const core_1 =
+/* istanbul ignore next */
+(cov_10hplw8uvs().s[3]++, require("@angular/core"));
+
+class LetContext {
+  constructor(dir) {
+    /* istanbul ignore next */
+    cov_10hplw8uvs().f[0]++;
+    cov_10hplw8uvs().s[4]++;
+    this.dir = dir;
+  }
+
+  get ngLet() {
+    /* istanbul ignore next */
+    cov_10hplw8uvs().f[1]++;
+    cov_10hplw8uvs().s[5]++;
+    return this.dir.ngLet;
+  }
+
+}
+
+/* istanbul ignore next */
+cov_10hplw8uvs().s[6]++;
+exports.LetContext = LetContext;
+/**
+ * Works like *ngIf but does not have a condition
+ * Use it to declare the result of pipes calculation
+ * (i.e. async pipe)
+ *
+ * <ng-container *ngLet="stream$ | async as value">
+ *   {{ value }}
+ * </ng-container>
+ */
+
+/* istanbul ignore next */
+cov_10hplw8uvs().s[7]++;
+let LetDirective = class LetDirective {
+  constructor(viewContainer, templateRef) {
+    /* istanbul ignore next */
+    cov_10hplw8uvs().f[2]++;
+    cov_10hplw8uvs().s[8]++;
+    viewContainer.createEmbeddedView(templateRef, new LetContext(this));
+  }
+
+};
+
+/* istanbul ignore next */
+cov_10hplw8uvs().s[9]++;
+
+tslib_1.__decorate([core_1.Input(), tslib_1.__metadata("design:type", Object)], LetDirective.prototype, "ngLet", void 0);
+
+/* istanbul ignore next */
+cov_10hplw8uvs().s[10]++;
+LetDirective = tslib_1.__decorate([core_1.Directive({
+  selector: "[bbNgLet]"
+}), tslib_1.__param(0, core_1.Inject(core_1.ViewContainerRef)), tslib_1.__param(1, core_1.Inject(core_1.TemplateRef)), tslib_1.__metadata("design:paramtypes", [core_1.ViewContainerRef, core_1.TemplateRef])], LetDirective);
+
+/* istanbul ignore next */
+cov_10hplw8uvs().s[11]++;
+exports.LetDirective = LetDirective;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9sLmt1emVua28vUEVSU09OQUwvbmctc3RhcnQvc3JjL2FwcC9Ac2hhcmVkL2RpcmVjdGl2ZXMvbmctbGV0LmRpcmVjdGl2ZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLE1BQUEsTUFBQTtBQUFBO0FBQUEsMEJBQUEsT0FBQSxDQUFBLGVBQUEsQ0FBQSxDQUFBOztBQUVBLE1BQWEsVUFBYixDQUF1QjtBQUNyQixFQUFBLFdBQUEsQ0FBNkIsR0FBN0IsRUFBaUQ7QUFBQTtBQUFBO0FBQUE7QUFBcEIsU0FBQSxHQUFBLEdBQUEsR0FBQTtBQUF3Qjs7QUFFckQsTUFBSSxLQUFKLEdBQVM7QUFBQTtBQUFBO0FBQUE7QUFDUCxXQUFPLEtBQUssR0FBTCxDQUFTLEtBQWhCO0FBQ0Q7O0FBTG9COzs7O0FBQXZCLE9BQUEsQ0FBQSxVQUFBLEdBQUEsVUFBQTtBQVFBOzs7Ozs7OztBQVFHOzs7O0FBSUgsSUFBYSxZQUFZLEdBQXpCLE1BQWEsWUFBYixDQUF5QjtBQUl2QixFQUFBLFdBQUEsQ0FDNEIsYUFENUIsRUFFdUIsV0FGdkIsRUFFOEQ7QUFBQTtBQUFBO0FBQUE7QUFFNUQsSUFBQSxhQUFhLENBQUMsa0JBQWQsQ0FBaUMsV0FBakMsRUFBOEMsSUFBSSxVQUFKLENBQWtCLElBQWxCLENBQTlDO0FBQ0Q7O0FBVHNCLENBQXpCOzs7OztBQUVFLE9BQUEsQ0FBQSxVQUFBLENBQUEsQ0FEQyxNQUFBLENBQUEsS0FBQSxFQUNELEUseUNBQUEsQ0FBQSxFLHNCQUFBLEUsT0FBQSxFLEtBQVMsQ0FBVDs7OztBQUZXLFlBQVksR0FBQSxPQUFBLENBQUEsVUFBQSxDQUFBLENBSHhCLE1BQUEsQ0FBQSxTQUFBLENBQVU7QUFDVCxFQUFBLFFBQVEsRUFBRTtBQURELENBQVYsQ0FHd0IsRUFLcEIsT0FBQSxDQUFBLE9BQUEsQ0FBQSxDQUFBLEVBQUEsTUFBQSxDQUFBLE1BQUEsQ0FBTyxNQUFBLENBQUEsZ0JBQVAsQ0FBQSxDQUxvQixFQU1wQixPQUFBLENBQUEsT0FBQSxDQUFBLENBQUEsRUFBQSxNQUFBLENBQUEsTUFBQSxDQUFPLE1BQUEsQ0FBQSxXQUFQLENBQUEsQ0FOb0IsRSx5Q0FLb0IsTUFBQSxDQUFBLGdCLEVBQ1AsTUFBQSxDQUFBLFcsRUFOYixDQUFBLEVBQVosWUFBWSxDQUFaOzs7O0FBQUEsT0FBQSxDQUFBLFlBQUEsR0FBQSxZQUFBIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgRGlyZWN0aXZlLCBJbmplY3QsIElucHV0LCBUZW1wbGF0ZVJlZiwgVmlld0NvbnRhaW5lclJlZiB9IGZyb20gXCJAYW5ndWxhci9jb3JlXCI7XG5cbmV4cG9ydCBjbGFzcyBMZXRDb250ZXh0PFQ+IHtcbiAgY29uc3RydWN0b3IocHJpdmF0ZSByZWFkb25seSBkaXI6IExldERpcmVjdGl2ZTxUPikge31cblxuICBnZXQgbmdMZXQoKTogVCB7XG4gICAgcmV0dXJuIHRoaXMuZGlyLm5nTGV0O1xuICB9XG59XG5cbi8qKlxuICogV29ya3MgbGlrZSAqbmdJZiBidXQgZG9lcyBub3QgaGF2ZSBhIGNvbmRpdGlvblxuICogVXNlIGl0IHRvIGRlY2xhcmUgdGhlIHJlc3VsdCBvZiBwaXBlcyBjYWxjdWxhdGlvblxuICogKGkuZS4gYXN5bmMgcGlwZSlcbiAqXG4gKiA8bmctY29udGFpbmVyICpuZ0xldD1cInN0cmVhbSQgfCBhc3luYyBhcyB2YWx1ZVwiPlxuICogICB7eyB2YWx1ZSB9fVxuICogPC9uZy1jb250YWluZXI+XG4gKi9cbkBEaXJlY3RpdmUoe1xuICBzZWxlY3RvcjogXCJbYmJOZ0xldF1cIixcbn0pXG5leHBvcnQgY2xhc3MgTGV0RGlyZWN0aXZlPFQ+IHtcbiAgQElucHV0KClcbiAgbmdMZXQ6IFQ7XG5cbiAgY29uc3RydWN0b3IoXG4gICAgQEluamVjdChWaWV3Q29udGFpbmVyUmVmKSB2aWV3Q29udGFpbmVyOiBWaWV3Q29udGFpbmVyUmVmLFxuICAgIEBJbmplY3QoVGVtcGxhdGVSZWYpIHRlbXBsYXRlUmVmOiBUZW1wbGF0ZVJlZjxMZXRDb250ZXh0PFQ+PixcbiAgKSB7XG4gICAgdmlld0NvbnRhaW5lci5jcmVhdGVFbWJlZGRlZFZpZXcodGVtcGxhdGVSZWYsIG5ldyBMZXRDb250ZXh0PFQ+KHRoaXMpKTtcbiAgfVxufVxuIl19
