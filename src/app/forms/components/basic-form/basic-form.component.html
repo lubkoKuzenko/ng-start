@@ -4,7 +4,7 @@
   </mat-card-header>
 
   <mat-card-content>
-    <form [formGroup]="form">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
       <div class="row">
         <div class="col-12">
           <mat-form-field>
@@ -22,6 +22,8 @@
           </mat-form-field>
         </div>
       </div>
+
+      <button class="button" type="submit">Submit</button>
     </form>
   </mat-card-content>
 
