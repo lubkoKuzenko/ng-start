@@ -20,6 +20,12 @@
     </button>
   </mat-toolbar>
 
+  <div class="row" *ngFor="let user of users2$ | async">
+    <div class="col-12">
+      {{ user | json }}
+    </div>
+  </div>
+
   <ng-template let-users #cardTemplate>
     <div class="col-4 mt-3" *ngFor="let user of users">
       <mat-card>

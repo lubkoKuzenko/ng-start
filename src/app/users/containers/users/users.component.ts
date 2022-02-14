@@ -1,6 +1,7 @@
 import { Component, ViewChild, TemplateRef } from "@angular/core";
 import { EViewType } from "@shared/enums";
 import { UsersFacadeService } from "../../services/users-facade.service";
+import { UsersService } from "../../services/users.service";
 
 @Component({
   selector: "bb-users",
@@ -14,8 +15,9 @@ export class UsersComponent {
   public eViewType = EViewType;
   public mode: EViewType = EViewType.GRID;
   public users$ = this.usersFacadeService.getUsers();
+  public users2$ = this.usersService.getUsers();
 
-  constructor(public usersFacadeService: UsersFacadeService) {}
+  constructor(public usersFacadeService: UsersFacadeService, public usersService: UsersService) {}
 
   public onViewChage(type: EViewType) {
     this.mode = type;
