@@ -7,6 +7,8 @@ import { GreenDeviceComponent } from "./green-device/green-device.component";
 import { TreeViewComponent } from "./tree-view/tree-view.component";
 import { ExtendableComponentComponent } from "./extendable-component/extendable-component.component";
 import { ItemComponent } from "./extendable-component/item/item.component";
+import { VirtualScrollComponent } from "./virtual-scroll/virtual-scroll.component";
+import { ScrollingModule } from "@angular/cdk/scrolling";
 
 const dcComponents: Type<any>[] = [
   RedDeviceComponent,
@@ -15,10 +17,11 @@ const dcComponents: Type<any>[] = [
   TreeViewComponent,
   ExtendableComponentComponent,
   ItemComponent,
+  VirtualScrollComponent,
 ];
 
 @NgModule({
-  imports: [SharedModule],
+  imports: [SharedModule, ScrollingModule],
   declarations: [...dcComponents],
   exports: [...dcComponents],
 })

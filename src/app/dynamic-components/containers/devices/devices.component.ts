@@ -13,6 +13,7 @@ import { BlueDeviceComponent } from "../../components/blue-device/blue-device.co
 import { RedDeviceComponent } from "../../components/red-device/red-device.component";
 import { GreenDeviceComponent } from "../../components/green-device/green-device.component";
 import { TreeViewComponent } from "../../components/tree-view/tree-view.component";
+import { VirtualScrollComponent } from "../../components/virtual-scroll/virtual-scroll.component";
 
 @Component({
   selector: "bb-devices",
@@ -35,7 +36,10 @@ export class DevicesComponent implements OnInit, OnDestroy {
     this.componentRef = this.entry.createComponent(factory);
 
     if (type === "extComponents") {
-      this.componentRef.instance.data = ["1", "2", "3", "4", "5"];
+      this.componentRef.instance.data = Array.from({ length: 10 }).map((_, i) => `${i}`);
+    }
+    if (type === "virtual") {
+      this.componentRef.instance.data = Array.from({ length: 1000 }).map((_, i) => `Item #${i}`);
     }
   }
 
@@ -46,6 +50,7 @@ export class DevicesComponent implements OnInit, OnDestroy {
       blue: BlueDeviceComponent,
       tree: TreeViewComponent,
       extComponents: ExtendableComponentComponent,
+      virtual: VirtualScrollComponent,
     }[type];
   }
 
