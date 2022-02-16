@@ -1,3 +1,4 @@
+import { ExtendableComponentComponent } from "./../../components/extendable-component/extendable-component.component";
 import {
   Component,
   OnInit,
@@ -32,6 +33,10 @@ export class DevicesComponent implements OnInit, OnDestroy {
     this.entry.clear();
     const factory = this.resolver.resolveComponentFactory(this.defineComponent(type));
     this.componentRef = this.entry.createComponent(factory);
+
+    if (type === "extComponents") {
+      this.componentRef.instance.data = ["1", "2", "3", "4", "5"];
+    }
   }
 
   public defineComponent(type: string) {
@@ -40,6 +45,7 @@ export class DevicesComponent implements OnInit, OnDestroy {
       green: GreenDeviceComponent,
       blue: BlueDeviceComponent,
       tree: TreeViewComponent,
+      extComponents: ExtendableComponentComponent,
     }[type];
   }
 

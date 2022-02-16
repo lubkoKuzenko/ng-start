@@ -1,0 +1,17 @@
+<h3>List with $</h3>
+<l9-item [template]="dollar"></l9-item>
+
+<h3>List with :)</h3>
+<l9-item [template]="smile"></l9-item>
+
+<ng-template let-users #dollar>
+  <ul>
+    <li *ngFor="let item of data">$ {{ item }}</li>
+  </ul>
+</ng-template>
+
+<ng-template let-users #smile>
+  <ul>
+    <li *ngFor="let item of data">{{ item }} :)</li>
+  </ul>
+</ng-template>

@@ -5,8 +5,17 @@ import { RedDeviceComponent } from "./red-device/red-device.component";
 import { BlueDeviceComponent } from "./blue-device/blue-device.component";
 import { GreenDeviceComponent } from "./green-device/green-device.component";
 import { TreeViewComponent } from "./tree-view/tree-view.component";
+import { ExtendableComponentComponent } from "./extendable-component/extendable-component.component";
+import { ItemComponent } from "./extendable-component/item/item.component";
 
-const dcComponents: Type<any>[] = [RedDeviceComponent, GreenDeviceComponent, BlueDeviceComponent, TreeViewComponent];
+const dcComponents: Type<any>[] = [
+  RedDeviceComponent,
+  GreenDeviceComponent,
+  BlueDeviceComponent,
+  TreeViewComponent,
+  ExtendableComponentComponent,
+  ItemComponent,
+];
 
 @NgModule({
   imports: [SharedModule],
