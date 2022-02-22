@@ -1,25 +1,4 @@
-@import "../styles/variables";
-@import "../styles/breakpoints";
-@import "../styles/mixins";
-
 mat-toolbar {
   margin-left: 11;
   justify-content: space-between;
-  span {
-    color: palette(black, base);
-    @include font-smoothing;
-
-    @include mq(xs) {
-      color: palette(red, base);
-    }
-    @include mq(sm) {
-      color: palette(blue, base);
-    }
-    @include mq(md) {
-      color: palette(green, base);
-    }
-    @include mq(lg) {
-      color: palette(white, base);
-    }
-  }
 }
