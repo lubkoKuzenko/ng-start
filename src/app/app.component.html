@@ -1,35 +1,66 @@
 <div class="app header-fixed sidebar-lg-show sidebar-fixed aside-menu-fixed">
   <div class="dashboard">
     <!-- HEADER -->
-    <header class="app-header navbar py-0">
-      <ul class="nav navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link px-3" routerLinkActive="active" routerLink="/" [routerLinkActiveOptions]="{ exact: true }">
-            HOME
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-3" routerLinkActive="active" routerLink="/forms">Forms</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-3" routerLinkActive="active" routerLink="/dc">Dynamic Components</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-3" routerLinkActive="active" routerLink="/users">Users</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-3" routerLinkActive="active" routerLink="/cards">Cards</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-3" routerLinkActive="active" routerLink="/rx">RxJS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-3" routerLinkActive="active" routerLink="/patterns">Angular Patterns</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-3" routerLinkActive="active" routerLink="/unit-tests">Angular Unit Tests</a>
-        </li>
-      </ul>
+    <header class="py-2 bg-black">
+      <nav class="flex sm:justify-center space-x-4">
+        <a
+          routerLinkActive="active"
+          routerLink="/"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900"
+        >
+          HOME
+        </a>
+        <a
+          routerLinkActive="active"
+          routerLink="/forms"
+          class="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900"
+        >
+          Forms
+        </a>
+        <a
+          routerLinkActive="active"
+          routerLink="/dc"
+          class="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900"
+        >
+          Dynamic Components
+        </a>
+        <a
+          routerLinkActive="active"
+          routerLink="/users"
+          class="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900"
+        >
+          Users
+        </a>
+        <a
+          routerLinkActive="active"
+          routerLink="/cards"
+          class="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900"
+        >
+          Cards
+        </a>
+        <a
+          routerLinkActive="active"
+          routerLink="/rx"
+          class="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900"
+        >
+          RxJS
+        </a>
+        <a
+          routerLinkActive="active"
+          routerLink="/patterns"
+          class="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900"
+        >
+          Angular Patterns
+        </a>
+        <a
+          routerLinkActive="active"
+          routerLink="/unit-tests"
+          class="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900"
+        >
+          Angular Unit Tests
+        </a>
+      </nav>
     </header>
 
     <!-- MAIN -->

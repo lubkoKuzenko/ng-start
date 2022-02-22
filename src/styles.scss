@@ -1,3 +1,7 @@
 //The available themes are: indigo-pink, deeppurple-amber, purple-green and pink-bluegrey.
 
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 @import "@angular/material/prebuilt-themes/indigo-pink.css";
