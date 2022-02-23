@@ -5,13 +5,13 @@
 <l9-item [template]="smile"></l9-item>
 
 <ng-template let-users #dollar>
-  <ul>
+  <ul class="list-disc list-inside">
     <li *ngFor="let item of data">$ {{ item }}</li>
   </ul>
 </ng-template>
 
 <ng-template let-users #smile>
-  <ul>
+  <ul class="list-disc list-inside">
     <li *ngFor="let item of data">{{ item }} :)</li>
   </ul>
 </ng-template>
