@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-levi9": {
+    "ng-start": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -34,7 +34,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngx-levi9",
+            "outputPath": "dist/ng-start",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -80,18 +80,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngx-levi9:build"
+            "browserTarget": "ng-start:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngx-levi9:build:production"
+              "browserTarget": "ng-start:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-levi9:build"
+            "browserTarget": "ng-start:build"
           }
         },
         "test": {
@@ -113,7 +113,7 @@
         }
       }
     },
-    "ngx-levi9-e2e": {
+    "ng-start-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -122,11 +122,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ngx-levi9:serve"
+            "devServerTarget": "ng-start:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ngx-levi9:serve:production"
+              "devServerTarget": "ng-start:serve:production"
             }
           }
         },
@@ -140,7 +140,7 @@
       }
     }
   },
-  "defaultProject": "ngx-levi9",
+  "defaultProject": "ng-start",
   "cli": {
     "defaultCollection": "@ngrx/schematics"
   }

@@ -39,7 +39,7 @@ export class CoreModule {
         },
         {
           provide: APP_NAME,
-          useValue: options.appName || environment.appName || "NGX-Levi9",
+          useValue: options.appName || environment.appName || "NG-Start",
         },
         {
           provide: ErrorHandler,

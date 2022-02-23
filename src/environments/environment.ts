@@ -3,7 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  appName: "NGX-Levi9",
+  appName: "NG-Start",
   production: false,
   serverUrl: "",
   defaultLanguage: "en-US",

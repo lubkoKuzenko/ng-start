@@ -1,5 +1,5 @@
 export const environment = {
-  appName: "NGX-Levi9",
+  appName: "NG-Start",
   production: true,
   serverUrl: "",
   defaultLanguage: "en-US",

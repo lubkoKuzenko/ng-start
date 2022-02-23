@@ -12,7 +12,7 @@ import { AppComponent } from "./app.component";
 
 const APP_CORE_CONFIG = {
   defaultLanguage: "en-US",
-  appName: "NGX-Levi9",
+  appName: "NG-Start",
 };
 
 @NgModule({
