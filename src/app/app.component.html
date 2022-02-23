@@ -1,76 +1,70 @@
-<div class="app header-fixed sidebar-lg-show sidebar-fixed aside-menu-fixed">
-  <div class="dashboard">
-    <!-- HEADER -->
-    <header class="py-2 bg-black">
-      <nav class="flex sm:justify-center space-x-4">
-        <a
-          routerLinkActive="active"
-          routerLink="/"
-          [routerLinkActiveOptions]="{ exact: true }"
-          class="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900"
-        >
-          HOME
-        </a>
-        <a
-          routerLinkActive="active"
-          routerLink="/forms"
-          class="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900"
-        >
-          Forms
-        </a>
-        <a
-          routerLinkActive="active"
-          routerLink="/dc"
-          class="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900"
-        >
-          Dynamic Components
-        </a>
-        <a
-          routerLinkActive="active"
-          routerLink="/users"
-          class="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900"
-        >
-          Users
-        </a>
-        <a
-          routerLinkActive="active"
-          routerLink="/cards"
-          class="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900"
-        >
-          Cards
-        </a>
-        <a
-          routerLinkActive="active"
-          routerLink="/rx"
-          class="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900"
-        >
-          RxJS
-        </a>
-        <a
-          routerLinkActive="active"
-          routerLink="/patterns"
-          class="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900"
-        >
-          Angular Patterns
-        </a>
-        <a
-          routerLinkActive="active"
-          routerLink="/unit-tests"
-          class="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900"
-        >
-          Angular Unit Tests
-        </a>
-      </nav>
-    </header>
+<!-- HEADER -->
+<header class="py-2 bg-gray-600 fixed top-0 left-0 right-0">
+  <nav class="flex sm:justify-center space-x-4">
+    <a
+      routerLinkActive="active"
+      routerLink="/"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="rounded-lg px-3 py-2 text-white font-medium hover:bg-slate-100 hover:text-slate-900"
+    >
+      HOME
+    </a>
+    <a
+      routerLinkActive="active"
+      routerLink="/forms"
+      class="rounded-lg px-3 py-2 text-white font-medium hover:bg-slate-100 hover:text-slate-900"
+    >
+      Forms
+    </a>
+    <a
+      routerLinkActive="active"
+      routerLink="/dc"
+      class="rounded-lg px-3 py-2 text-white font-medium hover:bg-slate-100 hover:text-slate-900"
+    >
+      Dynamic Components
+    </a>
+    <a
+      routerLinkActive="active"
+      routerLink="/users"
+      class="rounded-lg px-3 py-2 text-white font-medium hover:bg-slate-100 hover:text-slate-900"
+    >
+      Users
+    </a>
+    <a
+      routerLinkActive="active"
+      routerLink="/cards"
+      class="rounded-lg px-3 py-2 text-white font-medium hover:bg-slate-100 hover:text-slate-900"
+    >
+      Cards
+    </a>
+    <a
+      routerLinkActive="active"
+      routerLink="/rx"
+      class="rounded-lg px-3 py-2 text-white font-medium hover:bg-slate-100 hover:text-slate-900"
+    >
+      RxJS
+    </a>
+    <a
+      routerLinkActive="active"
+      routerLink="/patterns"
+      class="rounded-lg px-3 py-2 text-white font-medium hover:bg-slate-100 hover:text-slate-900"
+    >
+      Angular Patterns
+    </a>
+    <a
+      routerLinkActive="active"
+      routerLink="/unit-tests"
+      class="rounded-lg px-3 py-2 text-white font-medium hover:bg-slate-100 hover:text-slate-900"
+    >
+      Angular Unit Tests
+    </a>
+  </nav>
+</header>
 
-    <!-- MAIN -->
-    <section class="app-body">
-      <main class="main">
-        <div class="fluid-container px-3">
-          <!-- <button (click)="onClick()">loader</button> -->
-          <router-outlet></router-outlet>
-        </div>
-      </main>
-    </section>
-  </div>
-</div>
+<!-- MAIN -->
+<section class="mt-14">
+  <main class="container px-4">
+    <!-- <button (click)="onClick()">loader</button> -->
+    <router-outlet></router-outlet>
+  </main>
+</section>
