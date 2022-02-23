@@ -1,14 +1,14 @@
-<div class="row">
-  <div class="col-12">
-    <div class="p-2">
-      <button (click)="createComponent('red')">Create red</button>
-      <button (click)="createComponent('green')">Create green</button>
-      <button (click)="createComponent('blue')">Create blue</button>
-      <button (click)="createComponent('tree')">Tree view</button>
-      <button (click)="createComponent('extComponents')">Extendable components</button>
-      <button (click)="createComponent('virtual')">virtual scroll</button>
-    </div>
-
-    <template #dynamicLoadDevicesComponent></template>
+<div class="flex flex-col">
+  <div class="flex flex-row">
+    <button class="flex-auto py-2 px-4 bg-slate-200" (click)="createComponent('red')">Create red</button>
+    <button class="flex-auto py-2 px-4 bg-slate-200" (click)="createComponent('green')">Create green</button>
+    <button class="flex-auto py-2 px-4 bg-slate-200" (click)="createComponent('blue')">Create blue</button>
+    <button class="flex-auto py-2 px-4 bg-slate-200" (click)="createComponent('tree')">Tree view</button>
+    <button class="flex-auto py-2 px-4 bg-slate-200" (click)="createComponent('extComponents')">
+      Extendable components
+    </button>
+    <button class="flex-auto py-2 px-4 bg-slate-200" (click)="createComponent('virtual')">virtual scroll</button>
   </div>
+
+  <template #dynamicLoadDevicesComponent></template>
 </div>
