@@ -53,6 +53,7 @@ module.exports = {
    * A preset that is used as a base for Jest's configuration.
    */
   preset: "jest-preset-angular",
+
   setupFiles: ["jest-localstorage-mock"],
 
   /**

@@ -1,7 +1,5 @@
-// import 'document-register-element';
 import "jest-preset-angular/setup-jest"; // commented out due to issue in latest jest-preset-angular
 
-// require('dotenv').config();
 Error.stackTraceLimit = 2;
 const CI = process.env["CI"] === "true";
 
