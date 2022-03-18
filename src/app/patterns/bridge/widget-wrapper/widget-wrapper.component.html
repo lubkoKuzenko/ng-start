@@ -1,10 +1,10 @@
-<mat-card>
-  <mat-card-header>
-    <mat-card-title><ng-content select="[slot=header]"></ng-content></mat-card-title>
+<mat-card class="rounded overflow-hidden shadow-lg">
+  <mat-card-header class="bg-gray-100 rounded-t-lg font-bold text-2xl py-5 px-8 text-left">
+    <ng-content select="[slot=header]"></ng-content>
     <button mat-stroked-button (click)="onRefresh()">Refresh</button>
   </mat-card-header>
   <mat-divider></mat-divider>
-  <mat-card-content>
+  <mat-card-content class="p-3">
     <ng-content select="[slot=content]"></ng-content>
   </mat-card-content>
 </mat-card>

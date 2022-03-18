@@ -1,25 +1,12 @@
-<div class="row">
-  <!-- Bridge -->
-  <mat-toolbar color="primary" class="col-12">
-    <span>Bridge</span>
-  </mat-toolbar>
-
-  <div class="col-12">
-    <div class="row">
-      <l9-widget-wrapper class="col-4">
-        <span slot="header">Widget 1</span>
-        <l9-widget-one slot="content"></l9-widget-one>
-      </l9-widget-wrapper>
-
-      <l9-widget-wrapper class="col-4">
-        <span slot="header">Widget 2</span>
-        <l9-widget-two slot="content"></l9-widget-two>
-      </l9-widget-wrapper>
-    </div>
+<div class="grid grid-cols-1">
+  <div class="flex flex-row">
+    <button class="flex-auto py-2 px-4 bg-slate-200" routerLinkActive="active" routerLink="/patterns/bridge">
+      Bridge
+    </button>
+    <button class="flex-auto py-2 px-4 bg-slate-200" routerLinkActive="active" routerLink="/patterns/strategy">
+      Strategy
+    </button>
   </div>
 
-  <!-- Others -->
-  <mat-toolbar color="primary" class="col-12">
-    <span>...</span>
-  </mat-toolbar>
+  <router-outlet></router-outlet>
 </div>
