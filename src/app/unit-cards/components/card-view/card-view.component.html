@@ -1,10 +1,26 @@
-<ng-content></ng-content>
-<div class="col-4" *ngFor="let card of cards">
-  <img matListAvatar src="https://randomuser.me/api/portraits/med/men/66.jpg" />
+<div class="grid grid-cols-4 gap-3">
+  <div class="bg-slate-100 p-3 h-64"><ng-content></ng-content></div>
+  <div *ngFor="let card of cards" class="bg-slate-100 p-3 h-64">
+    <img matListAvatar src="https://randomuser.me/api/portraits/med/men/66.jpg" />
 
-  <h3 matLine>{{ card.title }}</h3>
-  <div>{{ card.description }}</div>
+    <h3 matLine>{{ card.title }}</h3>
+    <div>{{ card.description }}</div>
 
-  <button mat-button color="primary" (click)="onDelete(card.id)">Delete</button>
-  <button mat-button color="primary" (click)="onEdit(card)">Edit</button>
+    <button
+      mat-button
+      color="primary"
+      class="rounded-lg flex items-center justify-center bg-slate-200 shadow-lg"
+      (click)="onDelete(card.id)"
+    >
+      Delete
+    </button>
+    <button
+      mat-button
+      class="rounded-lg flex items-center justify-center bg-red-400 shadow-lg"
+      color="primary"
+      (click)="onEdit(card)"
+    >
+      Edit
+    </button>
+  </div>
 </div>

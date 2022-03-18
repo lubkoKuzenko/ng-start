@@ -1,17 +1,20 @@
-<div class="row">
-  <mat-toolbar color="primary" class="col-12">
+<div class="grid grid-cols-1">
+  <mat-toolbar color="primary">
     <span>Cards</span>
     <span class="example-spacer"></span>
   </mat-toolbar>
 
   <ng-container *ngIf="cards$ | async as cards; else loading">
-    <div class="col-12">
-      <l9-card-view class="row" [cards]="cards" (delete)="onCardDelete($event)" (edit)="onEditCard($event)">
-        <summary class="col-4 border border-info d-flex justify-content-center align-items-center" (click)="onAdd()">
-          +
-        </summary>
-      </l9-card-view>
-    </div>
+    <l9-card-view [cards]="cards" (delete)="onCardDelete($event)" (edit)="onEditCard($event)">
+      <button
+        mat-button
+        class="rounded-lg flex items-center justify-center bg-green-300 shadow-lg"
+        color="primary"
+        (click)="onAdd()"
+      >
+        +
+      </button>
+    </l9-card-view>
   </ng-container>
 
   <ng-template #loading>
