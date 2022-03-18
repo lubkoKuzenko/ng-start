@@ -6,9 +6,10 @@ import { PatternsComponent } from "./patterns.component";
 
 import { BridgeModule } from "./bridge/bridge.module";
 import { StrategyModule } from "./strategy/strategy.module";
+import { AdapterModule } from "./adapter/adapter.module";
 
 @NgModule({
-  imports: [CommonModule, SharedModule, BridgeModule, StrategyModule, PatternsRoutingModule],
+  imports: [CommonModule, SharedModule, BridgeModule, StrategyModule, AdapterModule, PatternsRoutingModule],
   declarations: [PatternsComponent],
 })
 export class PatternsModule {}

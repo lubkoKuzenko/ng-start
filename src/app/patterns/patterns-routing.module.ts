@@ -12,6 +12,7 @@ const routes: Routes = [
     children: [
       { path: "bridge", component: BridgeComponent },
       { path: "strategy", component: StrategyComponent },
+      { path: "adapter", component: StrategyComponent },
     ],
   },
 ];
