@@ -1,4 +1,3 @@
-import { ExtendableComponentComponent } from "./../../components/extendable-component/extendable-component.component";
 import {
   Component,
   OnInit,
@@ -35,9 +34,6 @@ export class DevicesComponent implements OnInit, OnDestroy {
     const factory = this.resolver.resolveComponentFactory(this.defineComponent(type));
     this.componentRef = this.entry.createComponent(factory);
 
-    if (type === "extComponents") {
-      this.componentRef.instance.data = Array.from({ length: 10 }).map((_, i) => `${i}`);
-    }
     if (type === "virtual") {
       this.componentRef.instance.data = Array.from({ length: 1000 }).map((_, i) => `Item #${i}`);
     }
@@ -49,7 +45,6 @@ export class DevicesComponent implements OnInit, OnDestroy {
       green: GreenDeviceComponent,
       blue: BlueDeviceComponent,
       tree: TreeViewComponent,
-      extComponents: ExtendableComponentComponent,
       virtual: VirtualScrollComponent,
     }[type];
   }

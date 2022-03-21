@@ -5,6 +5,7 @@ import { PatternsComponent } from "./patterns.component";
 import { BridgeComponent } from "./bridge/bridge.component";
 import { StrategyComponent } from "./strategy/strategy.component";
 import { AdapterComponent } from "./adapter/adapter.component";
+import { NgtemplateoutletComponent } from "./ngtemplateoutlet/ngtemplateoutlet.component";
 
 const routes: Routes = [
   {
@@ -14,6 +15,7 @@ const routes: Routes = [
       { path: "bridge", component: BridgeComponent },
       { path: "strategy", component: StrategyComponent },
       { path: "adapter", component: AdapterComponent },
+      { path: "ngtemplateoutlet", component: NgtemplateoutletComponent },
     ],
   },
 ];
