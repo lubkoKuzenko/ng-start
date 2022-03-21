@@ -1,0 +1,11 @@
+<ng-template #default let-option>
+  <li>{{ option }}</li>
+</ng-template>
+
+<ul class="list-disc list-inside">
+  <ng-container
+    *ngFor="let item of data"
+    [ngTemplateOutlet]="templateRef || default"
+    [ngTemplateOutletContext]="{ $implicit: item }"
+  ></ng-container>
+</ul>

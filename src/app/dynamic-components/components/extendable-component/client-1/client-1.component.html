@@ -1,0 +1,7 @@
+<h4>Client 1 - $</h4>
+
+<l9-list [data]="data" [template]="optionTemplate"></l9-list>
+
+<ng-template let-item #optionTemplate>
+  <li>$ {{ item }}</li>
+</ng-template>

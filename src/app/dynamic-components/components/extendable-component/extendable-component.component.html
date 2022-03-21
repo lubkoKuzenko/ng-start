@@ -1,10 +1,12 @@
-<h3>List with $</h3>
-<l9-item [template]="dollar"></l9-item>
+<!-- <l9-item [template]="dollar"></l9-item> -->
 
-<h3>List with :)</h3>
-<l9-item [template]="smile"></l9-item>
+<l9-client-1 [data]="data"></l9-client-1>
+<l9-client-2 [data]="data"></l9-client-2>
+<l9-client-3 [data]="data"></l9-client-3>
+<!-- <l9-item [template]="smile"></l9-item> -->
 
-<ng-template let-users #dollar>
+<!-- <ng-template let-users #dollar>
+  {{ users | json }}
   <ul class="list-disc list-inside">
     <li *ngFor="let item of data">$ {{ item }}</li>
   </ul>
@@ -14,4 +16,4 @@
   <ul class="list-disc list-inside">
     <li *ngFor="let item of data">{{ item }} :)</li>
   </ul>
-</ng-template>
+</ng-template> -->
