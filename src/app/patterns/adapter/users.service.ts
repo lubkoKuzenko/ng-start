@@ -1,7 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
-import { map } from "rxjs/operators";
+import { map, shareReplay, take } from "rxjs/operators";
 import { User } from "./user.interface";
 import { UserAdapter, UserModel } from "./user.model";
 
@@ -16,8 +16,10 @@ export class DataService {
   }
 
   getUsersAndAdopt(): Observable<UserModel[]> {
-    return this.http
-      .get<User[]>("https://jsonplaceholder.typicode.com/users")
-      .pipe(map((data: any[]) => data.map((item) => this.adapter.adapt(item))));
+    return this.http.get<User[]>("https://jsonplaceholder.typicode.com/users").pipe(
+      take(1),
+      shareReplay(1),
+      map((data: any[]) => data.map((item) => this.adapter.adapt(item))),
+    );
   }
 }
