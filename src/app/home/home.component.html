@@ -1,1 +1,12 @@
 <h1 class="text-2xl">Home</h1>
+
+<div class="grid grid-cols-2 gap-4">
+  <div class="py-3">
+    <h3 class="text-lg">Tree View</h3>
+    <l9-tree-view></l9-tree-view>
+  </div>
+  <div class="py-3">
+    <h3 class="text-lg">Virtual Scroll</h3>
+    <l9-virtual-scroll [data]="vsData$ | async"></l9-virtual-scroll>
+  </div>
+</div>
