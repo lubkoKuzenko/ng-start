@@ -20,9 +20,16 @@
     </button>
   </mat-toolbar>
 
-  <div class="grid grid-rows-1" *ngFor="let user of users2$ | async">
+  <!-- <div class="grid grid-rows-1" *ngFor="let user of users2$ | async">
     {{ user | json }}
-  </div>
+  </div> -->
+
+  <input
+    class="p-3 rounded-md bg-gray-100 border-2"
+    type="text"
+    (keyup)="search($event.target.value)"
+    placeholder="Search..."
+  />
 </div>
 
 <ng-template let-users #cardTemplate>
@@ -59,7 +66,11 @@
   </mat-list>
 </ng-template>
 
-<ng-container *ngIf="users$ | async as users; else loading">
+<!-- <ng-container *ngIf="users$ | async as users; else loading">
+  <bb-users-view class="flex flex-wrap gap-4 justify-around" [users]="users" [userTemplate]="template"></bb-users-view>
+</ng-container> -->
+
+<ng-container *ngIf="usersFilter$ | async as users; else loading">
   <bb-users-view class="flex flex-wrap gap-4 justify-around" [users]="users" [userTemplate]="template"></bb-users-view>
 </ng-container>
 
