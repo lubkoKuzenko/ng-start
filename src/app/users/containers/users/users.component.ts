@@ -17,7 +17,7 @@ export class UsersComponent {
   public mode: EViewType = EViewType.GRID;
   public users$ = this.usersFacadeService.getUsers();
   public usersFilter$ = this.users$;
-  public users2$ = this.usersService.getUsers();
+  // public users2$ = this.usersService.getUsers();
 
   constructor(public usersFacadeService: UsersFacadeService, public usersService: UsersService) {}
 
