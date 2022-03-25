@@ -21,7 +21,7 @@
       routerLink="/"
       [routerLinkActiveOptions]="{ exact: true }"
     >
-      <l9-home-icon [fullSidebar]="fullSidebar"></l9-home-icon>
+      <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
       <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Dashboard</h1>
     </div>
 
@@ -32,7 +32,7 @@
       routerLink="/forms"
       [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
     >
-      <l9-branch-icon [fullSidebar]="fullSidebar"></l9-branch-icon>
+      <mat-icon aria-hidden="false" aria-label="Example home icon">checklist</mat-icon>
       <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Forms</h1>
     </div>
 
@@ -43,7 +43,7 @@
       routerLink="/dc"
       [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
     >
-      <l9-branch-icon [fullSidebar]="fullSidebar"></l9-branch-icon>
+      <mat-icon aria-hidden="false" aria-label="Example home icon">source</mat-icon>
       <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Dynamic Components</h1>
     </div>
 
@@ -54,7 +54,7 @@
       routerLink="/users"
       [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
     >
-      <l9-branch-icon [fullSidebar]="fullSidebar"></l9-branch-icon>
+      <mat-icon aria-hidden="false" aria-label="Example home icon">people_outline</mat-icon>
       <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Users</h1>
     </div>
 
@@ -65,7 +65,7 @@
       routerLink="/cards"
       [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
     >
-      <l9-branch-icon [fullSidebar]="fullSidebar"></l9-branch-icon>
+      <mat-icon aria-hidden="false" aria-label="Example home icon">sd_card</mat-icon>
       <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Cards</h1>
     </div>
 
@@ -76,7 +76,7 @@
       routerLink="/rx"
       [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
     >
-      <l9-branch-icon [fullSidebar]="fullSidebar"></l9-branch-icon>
+      <mat-icon aria-hidden="false" aria-label="Example home icon">egg</mat-icon>
       <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">RxJS</h1>
     </div>
 
@@ -90,7 +90,7 @@
         (click)="toggle('patterns')"
       >
         <div class="flex items-center space-x-2">
-          <l9-branch-icon [fullSidebar]="fullSidebar"></l9-branch-icon>
+          <mat-icon aria-hidden="false" aria-label="Example home icon">texture</mat-icon>
           <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Angular Patterns</h1>
         </div>
         <div class="flex items-center space-x-2" *ngIf="fullSidebar">
@@ -135,7 +135,7 @@
       routerLink="/unit-tests"
       [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
     >
-      <l9-branch-icon [fullSidebar]="fullSidebar"></l9-branch-icon>
+      <mat-icon aria-hidden="false" aria-label="Example home icon">ac_unit</mat-icon>
       <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Angular Unit Tests</h1>
     </div>
   </div>
