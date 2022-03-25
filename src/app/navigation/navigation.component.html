@@ -7,10 +7,12 @@
   <div class="px-4 space-y-2">
     <!-- SideBar Toggle -->
     <button
-      class="hidden sm:block focus:outline-none absolute p-1 -right-3 top-10 bg-gray-900 rounded-full shadow-md"
+      class="hidden sm:block focus:outline-none absolute -right-2.5 top-10 bg-gray-900 rounded-full shadow-md"
       (click)="fullSidebar = !fullSidebar"
     >
-      <l9-sibar-toggle-icon [fullSidebar]="fullSidebar"></l9-sibar-toggle-icon>
+      <mat-icon aria-hidden="false" class="text-base text-gray-200" aria-label="Example home icon">
+        {{ fullSidebar ? "chevron_left" : "chevron_right" }}
+      </mat-icon>
     </button>
 
     <!-- Home -->
@@ -100,7 +102,7 @@
           >
             4
           </div>
-          <l9-dropdown-icon></l9-dropdown-icon>
+          <mat-icon aria-hidden="false" aria-label="Example home icon">arrow_drop_down</mat-icon>
         </div>
       </div>
 
