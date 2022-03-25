@@ -81,14 +81,51 @@
     </div>
 
     <!-- Angular Patterns -->
-    <div
-      class="nav-item"
-      routerLinkActive="active"
-      routerLink="/patterns/bridge"
-      [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
-    >
-      <l9-branch-icon [fullSidebar]="fullSidebar"></l9-branch-icon>
-      <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Angular Patterns</h1>
+    <div class="relative">
+      <div
+        class="justify-between nav-item"
+        routerLinkActive="active"
+        routerLink="/patterns/bridge"
+        [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
+        (click)="toggle('patterns')"
+      >
+        <div class="flex items-center space-x-2">
+          <l9-branch-icon [fullSidebar]="fullSidebar"></l9-branch-icon>
+          <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Angular Patterns</h1>
+        </div>
+        <div class="flex items-center space-x-2" *ngIf="fullSidebar">
+          <div
+            [ngClass]="{ 'sm:hidden': !fullSidebar }"
+            class="w-5 h-5 p-1 bg-green-400 rounded-sm text-sm leading-3 text-center text-gray-900"
+          >
+            4
+          </div>
+          <l9-dropdown-icon></l9-dropdown-icon>
+        </div>
+      </div>
+
+      <!-- Dropdown content -->
+      <div
+        class="text-gray-400 space-y-3 border-l border-gray-400 ml-4 pl-6"
+        *ngIf="fullSidebar && menuState.get('patterns')"
+      >
+        <h1 class="hover:text-gray-200 cursor-pointer p-2" routerLinkActive="active" routerLink="/patterns/bridge">
+          Bridge
+        </h1>
+        <h1 class="hover:text-gray-200 cursor-pointer p-2" routerLinkActive="active" routerLink="/patterns/strategy">
+          Strategy
+        </h1>
+        <h1 class="hover:text-gray-200 cursor-pointer p-2" routerLinkActive="active" routerLink="/patterns/adapter">
+          Model-Adapter
+        </h1>
+        <h1
+          class="hover:text-gray-200 cursor-pointer p-2"
+          routerLinkActive="active"
+          routerLink="/patterns/ngtemplateoutlet"
+        >
+          ngTemplateOutlet
+        </h1>
+      </div>
     </div>
 
     <!-- Angular Unit Tests -->

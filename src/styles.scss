@@ -8,7 +8,7 @@
   @apply text-gray-200 bg-gray-800;
 }
 .nav-item {
-  @apply relative flex items-center hover:text-gray-200 hover:bg-gray-800 space-x-2 rounded-md p-2 cursor-pointer justify-start text-gray-400;
+  @apply flex relative items-center hover:text-gray-200 hover:bg-gray-800 space-x-2 rounded-md p-2 cursor-pointer text-gray-400;
 }
 
 @import "@angular/material/prebuilt-themes/indigo-pink.css";
