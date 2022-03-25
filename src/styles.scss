@@ -11,4 +11,12 @@
   @apply flex relative items-center hover:text-gray-200 hover:bg-gray-800 space-x-2 rounded-md p-2 cursor-pointer text-gray-400;
 }
 
+.expandedClass {
+  @apply border-l border-gray-400 ml-4 pl-4 sm:ml-4;
+}
+
+.shrinkedClass {
+  @apply sm:absolute top-0 left-20 sm:shadow-md sm:z-10 sm:bg-gray-900 sm:rounded-md sm:p-4;
+}
+
 @import "@angular/material/prebuilt-themes/indigo-pink.css";

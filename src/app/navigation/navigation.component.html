@@ -108,25 +108,26 @@
 
       <!-- Dropdown content -->
       <div
-        class="text-gray-400 space-y-3 border-l border-gray-400 ml-4 pl-6"
-        *ngIf="fullSidebar && menuState.get('patterns')"
+        [ngClass]="{ expandedClass: fullSidebar, shrinkedClass: !fullSidebar }"
+        class="text-gray-400 space-y-3 border-l border-gray-400 ml-4 pl-6 w-auto"
+        *ngIf="menuState.get('patterns')"
       >
-        <h1 class="hover:text-gray-200 cursor-pointer p-2" routerLinkActive="active" routerLink="/patterns/bridge">
+        <div class="hover:text-gray-200 cursor-pointer p-2" routerLinkActive="active" routerLink="/patterns/bridge">
           Bridge
-        </h1>
-        <h1 class="hover:text-gray-200 cursor-pointer p-2" routerLinkActive="active" routerLink="/patterns/strategy">
+        </div>
+        <div class="hover:text-gray-200 cursor-pointer p-2" routerLinkActive="active" routerLink="/patterns/strategy">
           Strategy
-        </h1>
-        <h1 class="hover:text-gray-200 cursor-pointer p-2" routerLinkActive="active" routerLink="/patterns/adapter">
+        </div>
+        <div class="hover:text-gray-200 cursor-pointer p-2" routerLinkActive="active" routerLink="/patterns/adapter">
           Model-Adapter
-        </h1>
-        <h1
+        </div>
+        <div
           class="hover:text-gray-200 cursor-pointer p-2"
           routerLinkActive="active"
           routerLink="/patterns/ngtemplateoutlet"
         >
           ngTemplateOutlet
-        </h1>
+        </div>
       </div>
     </div>
 
