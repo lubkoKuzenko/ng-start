@@ -1,70 +1,10 @@
-<!-- HEADER -->
-<header class="py-2 bg-gray-600 fixed top-0 left-0 right-0">
-  <nav class="flex sm:justify-center space-x-4">
-    <a
-      routerLinkActive="active"
-      routerLink="/"
-      [routerLinkActiveOptions]="{ exact: true }"
-      class="rounded-lg px-3 py-2 text-white font-medium hover:bg-slate-100 hover:text-slate-900"
-    >
-      HOME
-    </a>
-    <a
-      routerLinkActive="active"
-      routerLink="/forms"
-      class="rounded-lg px-3 py-2 text-white font-medium hover:bg-slate-100 hover:text-slate-900"
-    >
-      Forms
-    </a>
-    <a
-      routerLinkActive="active"
-      routerLink="/dc"
-      class="rounded-lg px-3 py-2 text-white font-medium hover:bg-slate-100 hover:text-slate-900"
-    >
-      Dynamic Components
-    </a>
-    <a
-      routerLinkActive="active"
-      routerLink="/users"
-      class="rounded-lg px-3 py-2 text-white font-medium hover:bg-slate-100 hover:text-slate-900"
-    >
-      Users
-    </a>
-    <a
-      routerLinkActive="active"
-      routerLink="/cards"
-      class="rounded-lg px-3 py-2 text-white font-medium hover:bg-slate-100 hover:text-slate-900"
-    >
-      Cards
-    </a>
-    <a
-      routerLinkActive="active"
-      routerLink="/rx"
-      class="rounded-lg px-3 py-2 text-white font-medium hover:bg-slate-100 hover:text-slate-900"
-    >
-      RxJS
-    </a>
-    <a
-      routerLinkActive="active"
-      routerLink="/patterns/bridge"
-      class="rounded-lg px-3 py-2 text-white font-medium hover:bg-slate-100 hover:text-slate-900"
-    >
-      Angular Patterns
-    </a>
-    <a
-      routerLinkActive="active"
-      routerLink="/unit-tests"
-      class="rounded-lg px-3 py-2 text-white font-medium hover:bg-slate-100 hover:text-slate-900"
-    >
-      Angular Unit Tests
-    </a>
-  </nav>
-</header>
+<!-- NAVIGATION -->
+<l9-navigation></l9-navigation>
 
 <!-- MAIN -->
-<section class="mt-14">
-  <main class="container mx-auto px-4">
+<div class="flex-auto h-screen top-0 overflow-y-auto w-auto">
+  <main class="py-3 mx-5">
     <!-- <button (click)="onClick()">loader</button> -->
     <router-outlet></router-outlet>
   </main>
-</section>
+</div>

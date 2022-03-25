@@ -6,6 +6,7 @@ import { SharedModule } from "@shared/shared.module";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HomeModule } from "./home/home.module";
+import { NavigationModule } from "./navigation/navigation.module";
 
 // import mockServer from "./_be-mocks";
 
@@ -26,6 +27,7 @@ const APP_CORE_CONFIG = {
     SharedModule,
 
     // app
+    NavigationModule,
     HomeModule,
     AppRoutingModule,
   ],

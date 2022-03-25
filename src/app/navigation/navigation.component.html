@@ -1,0 +1,105 @@
+<div
+  class="h-screen bg-gray-900 transition-all duration-300 space-y-2 sm:relative top-0 left-0"
+  [ngClass]="{ 'w-24': !fullSidebar, 'w-64': fullSidebar }"
+>
+  <h1 class="text-white font-black py-4 text-2xl px-4 uppercase" routerLink="/">Logo</h1>
+
+  <div class="px-4 space-y-2">
+    <!-- SideBar Toggle -->
+    <button
+      class="hidden sm:block focus:outline-none absolute p-1 -right-3 top-10 bg-gray-900 rounded-full shadow-md"
+      (click)="fullSidebar = !fullSidebar"
+    >
+      <l9-sibar-toggle-icon [fullSidebar]="fullSidebar"></l9-sibar-toggle-icon>
+    </button>
+
+    <!-- Home -->
+    <div
+      class="nav-item"
+      [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
+      routerLinkActive="active"
+      routerLink="/"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <l9-home-icon [fullSidebar]="fullSidebar"></l9-home-icon>
+      <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Dashboard</h1>
+    </div>
+
+    <!-- Forms -->
+    <div
+      class="nav-item"
+      routerLinkActive="active"
+      routerLink="/forms"
+      [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
+    >
+      <l9-branch-icon [fullSidebar]="fullSidebar"></l9-branch-icon>
+      <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Forms</h1>
+    </div>
+
+    <!-- Dynamic Components -->
+    <div
+      class="nav-item"
+      routerLinkActive="active"
+      routerLink="/dc"
+      [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
+    >
+      <l9-branch-icon [fullSidebar]="fullSidebar"></l9-branch-icon>
+      <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Dynamic Components</h1>
+    </div>
+
+    <!-- Users -->
+    <div
+      class="nav-item"
+      routerLinkActive="active"
+      routerLink="/users"
+      [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
+    >
+      <l9-branch-icon [fullSidebar]="fullSidebar"></l9-branch-icon>
+      <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Users</h1>
+    </div>
+
+    <!-- Cards -->
+    <div
+      class="nav-item"
+      routerLinkActive="active"
+      routerLink="/cards"
+      [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
+    >
+      <l9-branch-icon [fullSidebar]="fullSidebar"></l9-branch-icon>
+      <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Cards</h1>
+    </div>
+
+    <!-- RxJS -->
+    <div
+      class="nav-item"
+      routerLinkActive="active"
+      routerLink="/rx"
+      [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
+    >
+      <l9-branch-icon [fullSidebar]="fullSidebar"></l9-branch-icon>
+      <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">RxJS</h1>
+    </div>
+
+    <!-- Angular Patterns -->
+    <div
+      class="nav-item"
+      routerLinkActive="active"
+      routerLink="/patterns/bridge"
+      [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
+    >
+      <l9-branch-icon [fullSidebar]="fullSidebar"></l9-branch-icon>
+      <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Angular Patterns</h1>
+    </div>
+
+    <!-- Angular Unit Tests -->
+    <div
+      class="nav-item"
+      routerLinkActive="active"
+      routerLink="/unit-tests"
+      [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
+    >
+      <l9-branch-icon [fullSidebar]="fullSidebar"></l9-branch-icon>
+      <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Angular Unit Tests</h1>
+    </div>
+  </div>
+</div>
