@@ -1,17 +1,21 @@
-<mat-tab-group>
-  <mat-tab label="Basic form">
-    <bb-basic-form [data]="basicForm$ | async"></bb-basic-form>
-  </mat-tab>
-  <mat-tab label="Nested form Directive">
-    <bb-nested-form-directive></bb-nested-form-directive>
-  </mat-tab>
-  <mat-tab label="Nested form">
-    <bb-nested-form></bb-nested-form>
-  </mat-tab>
-  <mat-tab label="Dynamic form">
-    <bb-dynamic-form></bb-dynamic-form>
-  </mat-tab>
-  <mat-tab label="ControlValueAccessor">
-    <bb-custom-field-form [data]="customFieldForm$ | async"></bb-custom-field-form>
-  </mat-tab>
-</mat-tab-group>
+<div class="grid grid-cols-1">
+  <div class="flex flex-row">
+    <button class="flex-auto py-2 px-4 bg-slate-200" routerLinkActive="active" routerLink="/forms/basic">
+      Basic form
+    </button>
+    <button class="flex-auto py-2 px-4 bg-slate-200" routerLinkActive="active" routerLink="/forms/nested">
+      Nested form
+    </button>
+    <button class="flex-auto py-2 px-4 bg-slate-200" routerLinkActive="active" routerLink="/forms/formgroupdirective">
+      Nested form (FormGroupDirective)
+    </button>
+    <button class="flex-auto py-2 px-4 bg-slate-200" routerLinkActive="active" routerLink="/forms/dynamic">
+      Dynamic form
+    </button>
+    <button class="flex-auto py-2 px-4 bg-slate-200" routerLinkActive="active" routerLink="/forms/controlValueAccessor">
+      ControlValueAccessor
+    </button>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

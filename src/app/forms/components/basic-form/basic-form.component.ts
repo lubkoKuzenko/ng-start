@@ -1,5 +1,7 @@
 import { Component, OnInit, Input, ChangeDetectionStrategy } from "@angular/core";
 import { FormGroup, FormControl, Validators } from "@angular/forms";
+import { ActivatedRoute } from "@angular/router";
+import { take } from "rxjs/operators";
 import { getDirtyValues } from "../../../../utils/getDirtyValuesFromForm";
 import { BasicFormValidators } from "../validators";
 
@@ -10,7 +12,7 @@ import { BasicFormValidators } from "../validators";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BasicFormComponent implements OnInit {
-  @Input() public data;
+  constructor(private activatedRoute: ActivatedRoute) {}
 
   public form = new FormGroup(
     {
@@ -24,10 +26,10 @@ export class BasicFormComponent implements OnInit {
     return this.form.controls;
   }
 
-  constructor() {}
-
   public ngOnInit() {
-    this.initializeFormValues(this.data);
+    this.activatedRoute.data.pipe(take(1)).subscribe((data) => {
+      this.initializeFormValues(data);
+    });
   }
 
   // reset form
