@@ -1,30 +1,37 @@
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>Nested form</mat-card-title>
-  </mat-card-header>
+<div class="container py-4">
+  <h3 class="text-xl">Basic form</h3>
 
-  <mat-card-content>
-    <form [formGroup]="form">
-      <bb-form-fullname></bb-form-fullname>
+  <div class="shadow sm:rounded-md sm:overflow-hidden">
+    <div class="px-4 py-5 bg-white space-y-6 sm:p-6">
+      <form [formGroup]="form">
+        <bb-form-fullname></bb-form-fullname>
 
-      <div class="row">
-        <mat-form-field class="example-full-width col-12" appearance="fill">
-          <mat-label>BirthDate</mat-label>
-          <input matInput type="text" formControlName="birthDate" />
-          <bb-validation-message [control]="controls.birthDate"></bb-validation-message>
-        </mat-form-field>
-      </div>
-    </form>
-  </mat-card-content>
+        <div class="grid grid-cols-3 py-3 gap-6">
+          <div class="col-span-3 sm:col-span-2">
+            <label for="company_website" class="block text-sm font-medium text-gray-700">BirthDate</label>
+            <div class="mt-1 rounded-md shadow-sm">
+              <input
+                type="text"
+                formControlName="birthDate"
+                class="
+                  focus:ring-indigo-500 focus:border-indigo-500
+                  flex-1
+                  block
+                  w-full
+                  rounded-none rounded-r-md
+                  sm:text-sm
+                  border-gray-300
+                "
+              />
+              <bb-validation-message [control]="controls.birthDate"></bb-validation-message>
+            </div>
+          </div>
+        </div>
 
-  <mat-card-actions>
-    <button mat-raised-button color="primary" (click)="onSubmit()">Submit</button>
-  </mat-card-actions>
-</mat-card>
+        <button mat-raised-button color="primary" (click)="onSubmit()">Submit</button>
+      </form>
 
-<hr />
-<mat-card>
-  <mat-card-content>
-    <ngx-json-viewer [json]="form.value"></ngx-json-viewer>
-  </mat-card-content>
-</mat-card>
+      <ngx-json-viewer [json]="form.value"></ngx-json-viewer>
+    </div>
+  </div>
+</div>

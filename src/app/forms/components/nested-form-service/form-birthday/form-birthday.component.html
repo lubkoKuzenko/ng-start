@@ -1,11 +1,23 @@
 <form [formGroup]="form">
-  <div class="row">
-    <div class="col-12">
-      <mat-form-field>
-        <mat-label>BirthDate</mat-label>
-        <input matInput type="date" formControlName="birthDate" />
+  <div class="grid grid-cols-3 py-3 gap-6">
+    <div class="col-span-3 sm:col-span-2">
+      <label for="company_website" class="block text-sm font-medium text-gray-700">BirthDate</label>
+      <div class="mt-1 rounded-md shadow-sm">
+        <input
+          type="date"
+          formControlName="birthDate"
+          class="
+            focus:ring-indigo-500 focus:border-indigo-500
+            flex-1
+            block
+            w-full
+            rounded-none rounded-r-md
+            sm:text-sm
+            border-gray-300
+          "
+        />
         <bb-validation-message [control]="controls.birthDate"></bb-validation-message>
-      </mat-form-field>
+      </div>
     </div>
   </div>
 </form>
