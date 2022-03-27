@@ -1,10 +1,21 @@
 <div
-  class="h-screen bg-gray-900 transition-all duration-300 space-y-2 sm:relative top-0 left-0"
+  class="
+    h-screen
+    dark:bg-gray-900
+    bg-gray-300
+    transition-all
+    duration-300
+    space-y-2
+    sm:relative
+    top-0
+    left-0
+    flex flex-col
+    justify-between
+  "
   [ngClass]="{ 'w-24': !fullSidebar, 'w-64': fullSidebar }"
 >
-  <h1 class="text-white font-black py-4 text-2xl px-4 uppercase" routerLink="/">Logo</h1>
-
   <div class="px-4 space-y-2">
+    <h1 class="text-white font-black py-4 text-2xl px-4 uppercase" routerLink="/">Logo</h1>
     <!-- SideBar Toggle -->
     <button
       class="hidden sm:block focus:outline-none absolute -right-2.5 top-10 bg-gray-900 rounded-full shadow-md"
@@ -140,6 +151,31 @@
     >
       <mat-icon aria-hidden="false" aria-label="Example home icon">ac_unit</mat-icon>
       <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Angular Unit Tests</h1>
+    </div>
+  </div>
+
+  <div class="px-4 pb-6 space-y-2">
+    <!-- Logout -->
+    <div class="nav-item" [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }">
+      <mat-icon aria-hidden="false" aria-label="Example home icon">logout</mat-icon>
+      <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Logout</h1>
+    </div>
+
+    <!-- Theme Switch -->
+    <div
+      class="nav-item justify-between"
+      [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
+      (click)="onThemeToggle()"
+    >
+      <div class="flex">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">
+          {{ mode === "dark" ? "dark_mode" : "light_mode" }}
+        </mat-icon>
+
+        <h1 class="pl-2" [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">
+          {{ mode === "dark" ? "Light" : "Dark" }} mode
+        </h1>
+      </div>
     </div>
   </div>
 </div>
