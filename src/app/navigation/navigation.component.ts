@@ -1,5 +1,7 @@
 import { DOCUMENT } from "@angular/common";
 import { Component, Inject, Renderer2 } from "@angular/core";
+import { menuTop } from "./menu-json.config";
+import { MenuItem } from "./menu.interface";
 
 @Component({
   selector: "l9-navigation",
@@ -13,6 +15,7 @@ export class NavigationComponent {
     (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
       ? "dark"
       : "light";
+  public menuTop: Array<MenuItem> = menuTop;
 
   constructor(@Inject(DOCUMENT) private document: Document, public renderer: Renderer2) {
     this.renderer.addClass(this.document.body, this.mode);

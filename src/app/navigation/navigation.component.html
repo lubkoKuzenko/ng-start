@@ -26,131 +26,48 @@
       </mat-icon>
     </button>
 
-    <!-- Home -->
-    <div
-      class="nav-item"
-      [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
-      routerLinkActive="active"
-      routerLink="/"
-      [routerLinkActiveOptions]="{ exact: true }"
-    >
-      <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
-      <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Dashboard</h1>
-    </div>
-
-    <!-- Forms -->
-    <div
-      class="nav-item"
-      routerLinkActive="active"
-      routerLink="/forms/basic"
-      [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
-    >
-      <mat-icon aria-hidden="false" aria-label="Example home icon">checklist</mat-icon>
-      <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Forms</h1>
-    </div>
-
-    <!-- Dynamic Components -->
-    <div
-      class="nav-item"
-      routerLinkActive="active"
-      routerLink="/dc"
-      [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
-    >
-      <mat-icon aria-hidden="false" aria-label="Example home icon">source</mat-icon>
-      <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Dynamic Components</h1>
-    </div>
-
-    <!-- Users -->
-    <div
-      class="nav-item"
-      routerLinkActive="active"
-      routerLink="/users"
-      [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
-    >
-      <mat-icon aria-hidden="false" aria-label="Example home icon">people_outline</mat-icon>
-      <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Users</h1>
-    </div>
-
-    <!-- Cards -->
-    <div
-      class="nav-item"
-      routerLinkActive="active"
-      routerLink="/cards"
-      [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
-    >
-      <mat-icon aria-hidden="false" aria-label="Example home icon">sd_card</mat-icon>
-      <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Cards</h1>
-    </div>
-
-    <!-- RxJS -->
-    <div
-      class="nav-item"
-      routerLinkActive="active"
-      routerLink="/rx"
-      [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
-    >
-      <mat-icon aria-hidden="false" aria-label="Example home icon">egg</mat-icon>
-      <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">RxJS</h1>
-    </div>
-
-    <!-- Angular Patterns -->
-    <div class="relative">
+    <div class="relative" *ngFor="let item of menuTop">
       <div
-        class="justify-between nav-item"
-        routerLinkActive="active"
-        routerLink="/patterns/bridge"
+        class="nav-item"
         [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
-        (click)="toggle('patterns')"
+        [ngClass]="{ 'justify-between': item.counter || item.children }"
+        routerLinkActive="active"
+        [routerLink]="item.url"
+        (click)="item.children ? toggle(item.name) : null"
       >
         <div class="flex items-center space-x-2">
-          <mat-icon aria-hidden="false" aria-label="Example home icon">texture</mat-icon>
-          <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Angular Patterns</h1>
+          <mat-icon aria-hidden="false" aria-label="Example home icon">{{ item.iconDark }}</mat-icon>
+          <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">{{ item.name }}</h1>
         </div>
+
         <div class="flex items-center space-x-2" *ngIf="fullSidebar">
           <div
+            *ngIf="item.counter"
             [ngClass]="{ 'sm:hidden': !fullSidebar }"
             class="w-5 h-5 p-1 bg-green-400 rounded-sm text-sm leading-3 text-center text-gray-900"
           >
-            4
+            {{ item.counter }}
           </div>
-          <mat-icon aria-hidden="false" aria-label="Example home icon">arrow_drop_down</mat-icon>
+          <mat-icon *ngIf="item.children" aria-hidden="false" aria-label="Example home icon">arrow_drop_down</mat-icon>
         </div>
       </div>
 
-      <!-- Dropdown content -->
-      <div
-        [ngClass]="{ expandedClass: fullSidebar, shrinkedClass: !fullSidebar }"
-        class="text-gray-400 space-y-3 border-l border-gray-400 ml-4 pl-6 w-auto"
-        *ngIf="menuState.get('patterns')"
-      >
-        <div class="hover:text-gray-200 cursor-pointer p-2" routerLinkActive="active" routerLink="/patterns/bridge">
-          Bridge
-        </div>
-        <div class="hover:text-gray-200 cursor-pointer p-2" routerLinkActive="active" routerLink="/patterns/strategy">
-          Strategy
-        </div>
-        <div class="hover:text-gray-200 cursor-pointer p-2" routerLinkActive="active" routerLink="/patterns/adapter">
-          Model-Adapter
-        </div>
+      <ng-container *ngIf="item.children">
         <div
-          class="hover:text-gray-200 cursor-pointer p-2"
-          routerLinkActive="active"
-          routerLink="/patterns/ngtemplateoutlet"
+          [ngClass]="{ expandedClass: fullSidebar, shrinkedClass: !fullSidebar }"
+          class="text-gray-400 space-y-3 border-l border-gray-400 ml-4 pl-6 w-auto"
+          *ngIf="menuState.get(item.name)"
         >
-          ngTemplateOutlet
+          <div
+            *ngFor="let children of item.children"
+            class="hover:text-gray-200 cursor-pointer p-2"
+            routerLinkActive="active"
+            [routerLink]="children.url"
+          >
+            {{ children.name }}
+          </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Angular Unit Tests -->
-    <div
-      class="nav-item"
-      routerLinkActive="active"
-      routerLink="/unit-tests"
-      [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
-    >
-      <mat-icon aria-hidden="false" aria-label="Example home icon">ac_unit</mat-icon>
-      <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Angular Unit Tests</h1>
+      </ng-container>
     </div>
   </div>
 
