@@ -92,7 +92,7 @@
           <span
             class="px-3 cursor-pointer border-2 m-1"
             *ngFor="let lang of translate.getLangs()"
-            (click)="translate.use(lang)"
+            (click)="onLanguageChange(lang)"
           >
             {{ lang }}
           </span>

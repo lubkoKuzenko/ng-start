@@ -26,9 +26,7 @@ export class NavigationComponent {
     this.renderer.addClass(this.document.body, this.mode);
 
     translate.addLangs(["en", "de"]);
-
-    const browserLang = translate.getBrowserLang();
-    translate.use(browserLang.match(/en|de/) ? browserLang : "en");
+    translate.use(localStorage.getItem("language") || "en");
   }
 
   public toggle(menuItem: string) {
@@ -40,5 +38,10 @@ export class NavigationComponent {
     this.mode = this.mode === "dark" ? "light" : "dark";
     this.renderer.addClass(this.document.body, this.mode);
     localStorage.setItem("theme", this.mode);
+  }
+
+  public onLanguageChange(lang: "en" | "de") {
+    this.translate.use(lang);
+    localStorage.setItem("language", lang);
   }
 }
