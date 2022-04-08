@@ -39,6 +39,8 @@
     "@angular/platform-browser-dynamic": "^13.2.3",
     "@angular/router": "^13.2.3",
     "@ngrx/component-store": "^13.0.2",
+    "@ngx-translate/core": "^14.0.0",
+    "@ngx-translate/http-loader": "^7.0.0",
     "chart.js": "^2.9.4",
     "core-js": "^2.6.12",
     "moment": "^2.29.1",

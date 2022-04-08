@@ -8,12 +8,14 @@ import { SharedDirectivesModule } from "./directives/directives.module";
 import { SharedPipesModule } from "./pipes/pipes.module";
 import { SharedComponentsModule } from "./components/components.module";
 import { ValidationMessageModule } from "./modules/validation-message/validation-message.module";
+import { TranslateModule } from "@ngx-translate/core";
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
+    TranslateModule,
     MaterialModule,
     NgxJsonViewerModule,
 
@@ -29,6 +31,7 @@ import { ValidationMessageModule } from "./modules/validation-message/validation
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
+    TranslateModule,
     MaterialModule,
     NgxJsonViewerModule,
 

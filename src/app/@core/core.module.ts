@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 import { APP_INITIALIZER, ErrorHandler, ModuleWithProviders, NgModule, Optional, SkipSelf } from "@angular/core";
 import { RouteReuseStrategy } from "@angular/router";
 import { GlobalErrorHandler } from "@core/services/global-error-handler";
@@ -12,14 +12,32 @@ import { RouteReusableStrategy } from "./route-reusable-strategy";
 import { AppInitService } from "./services/app-init.service";
 import { APP_LANG, APP_NAME } from "./tokens";
 
+import { TranslateLoader, TranslateModule } from "@ngx-translate/core";
+import { TranslateHttpLoader } from "@ngx-translate/http-loader";
+
 export function initializerFactory(appConfig: AppInitService) {
   return (): Promise<any> => appConfig.load();
 }
 
+export function httpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, `${environment.i18nPrefix}/assets/i18n/`, ".json");
+}
+
 @NgModule({
-  imports: [CommonModule, HttpClientModule],
-  exports: [HttpClientModule],
-  providers: [],
+  imports: [
+    CommonModule,
+    HttpClientModule,
+    // 3rd party
+    TranslateModule.forRoot({
+      defaultLanguage: environment.defaultLanguage || "en",
+      loader: {
+        provide: TranslateLoader,
+        useFactory: httpLoaderFactory,
+        deps: [HttpClient],
+      },
+    }),
+  ],
+  exports: [HttpClientModule, TranslateModule],
 })
 export class CoreModule {
   constructor(
@@ -35,7 +53,7 @@ export class CoreModule {
       providers: [
         {
           provide: APP_LANG,
-          useValue: options.defaultLanguage || environment.defaultLanguage || "en-US",
+          useValue: options.defaultLanguage || environment.defaultLanguage || "en",
         },
         {
           provide: APP_NAME,

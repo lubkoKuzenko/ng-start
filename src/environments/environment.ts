@@ -6,8 +6,9 @@ export const environment = {
   appName: "NG-Start",
   production: false,
   serverUrl: "",
-  defaultLanguage: "en-US",
-  supportedLanguages: ["en-US", "fr-FR"],
+  i18nPrefix: "",
+  defaultLanguage: "en",
+  supportedLanguages: ["en", "de"],
 };
 
 /*

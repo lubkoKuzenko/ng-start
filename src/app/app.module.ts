@@ -13,7 +13,7 @@ import { NavigationModule } from "./navigation/navigation.module";
 // mockServer();
 
 const APP_CORE_CONFIG = {
-  defaultLanguage: "en-US",
+  defaultLanguage: "en",
   appName: "NG-Start",
 };
 

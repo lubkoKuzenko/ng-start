@@ -78,6 +78,28 @@
       <h1 [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">Logout</h1>
     </div>
 
+    <!-- Language Switch -->
+    <div
+      class="nav-item justify-between"
+      [ngClass]="{ 'sm:justify-center': !fullSidebar, 'justify-start': fullSidebar }"
+    >
+      <div class="flex">
+        <mat-icon aria-hidden="false" aria-label="Example home icon">flag</mat-icon>
+
+        <h1 class="pl-2" [ngClass]="{ 'sm:hidden': !fullSidebar, show: fullSidebar }">
+          {{ translate.currentLang }}
+
+          <span
+            class="px-3 cursor-pointer border-2 m-1"
+            *ngFor="let lang of translate.getLangs()"
+            (click)="translate.use(lang)"
+          >
+            {{ lang }}
+          </span>
+        </h1>
+      </div>
+    </div>
+
     <!-- Theme Switch -->
     <div
       class="nav-item justify-between"
