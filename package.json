@@ -44,6 +44,7 @@
     "chart.js": "^2.9.4",
     "core-js": "^2.6.12",
     "moment": "^2.29.1",
+    "ng-for-track-by-property": "^13.0.7",
     "ngx-json-viewer": "^3.0.2",
     "rxjs": "^6.6.7",
     "tslib": "^2.2.0",

@@ -1,6 +1,7 @@
 import { Component, ViewChild, TemplateRef } from "@angular/core";
 import { EViewType } from "@shared/enums";
-import { filter, first, map, shareReplay } from "rxjs/operators";
+import { map } from "rxjs/operators";
+import { User } from "../../interfaces";
 import { UsersFacadeService } from "../../services/users-facade.service";
 import { UsersService } from "../../services/users.service";
 
@@ -35,5 +36,32 @@ export class UsersComponent {
         !term ? users : users.filter((x) => x.name.trim().toLowerCase().includes(term.trim().toLowerCase())),
       ),
     );
+  }
+
+  public onLike(user: User) {
+    console.log(user);
+  }
+
+  public onRefresh() {
+    console.log("refresh");
+  }
+
+  ///////////////////////////////
+  array = [
+    { id: 1, name: "bill" },
+    { id: 2, name: "bob" },
+    { id: 3, name: "billy" },
+  ];
+
+  foo() {
+    this.array = [
+      { id: 1, name: "foo" },
+      { id: 2, name: "bob" },
+      { id: 3, name: "billy" },
+    ];
+  }
+
+  identify(index, item) {
+    return item.id;
   }
 }

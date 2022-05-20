@@ -1,5 +1,11 @@
 <div class="grid grid-cols-1">
   <mat-toolbar color="primary">
+    <span>trackBy</span>
+  </mat-toolbar>
+  <div *ngFor="let e of array; trackByProperty: 'id'">{{ e.id }} - {{ e.name }}</div>
+  <button (click)="foo()">foo</button>
+
+  <mat-toolbar color="primary">
     <span>Users</span>
     <span class="example-spacer"></span>
     <button
@@ -47,8 +53,8 @@
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button>LIKE</button>
-      <button mat-button>SHARE</button>
+      <button mat-button (click)="onLike(user)">LIKE</button>
+      <button mat-button (click)="onRefresh()">Refresh</button>
     </mat-card-actions>
   </mat-card>
 </ng-template>
