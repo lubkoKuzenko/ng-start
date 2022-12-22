@@ -8,6 +8,7 @@ import { BridgeModule } from "./bridge/bridge.module";
 import { StrategyModule } from "./strategy/strategy.module";
 import { AdapterModule } from "./adapter/adapter.module";
 import { NgtemplateoutletModule } from "./ngtemplateoutlet/ngtemplateoutlet.module";
+import { BuilderModule } from "./builder/builder.module";
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { NgtemplateoutletModule } from "./ngtemplateoutlet/ngtemplateoutlet.modu
     BridgeModule,
     StrategyModule,
     AdapterModule,
+    BuilderModule,
     NgtemplateoutletModule,
     PatternsRoutingModule,
   ],

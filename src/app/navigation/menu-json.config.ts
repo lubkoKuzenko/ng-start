@@ -49,6 +49,7 @@ export const menuTop: MenuItem[] = [
       { name: "Strategy", url: "/patterns/strategy" },
       { name: "Model-Adapter", url: "/patterns/adapter" },
       { name: "ngTemplateOutlet", url: "/patterns/ngtemplateoutlet" },
+      { name: "Builder", url: "/patterns/builder" },
     ],
   },
   {
