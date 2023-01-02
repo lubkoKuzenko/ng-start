@@ -31,7 +31,7 @@
 
 "@angular-devkit/build-angular@^13.2.4":
   version "13.2.4"
-  resolved "https://registry.npmjs.org/@angular-devkit/build-angular/-/build-angular-13.2.4.tgz"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/build-angular/-/build-angular-13.2.4.tgz#b2553b8afe18c50033dcac3452f77db13d97e160"
   dependencies:
     "@ampproject/remapping" "1.1.1"
     "@angular-devkit/architect" "0.1302.4"
@@ -325,7 +325,7 @@
     semver "^6.3.0"
     source-map "^0.5.0"
 
-"@babel/generator@7.16.8", "@babel/generator@^7.16.8", "@babel/generator@^7.4.0":
+"@babel/generator@7.16.8":
   version "7.16.8"
   resolved "https://registry.npmjs.org/@babel/generator/-/generator-7.16.8.tgz"
   dependencies:
@@ -333,7 +333,7 @@
     jsesc "^2.5.1"
     source-map "^0.5.0"
 
-"@babel/generator@^7.17.3":
+"@babel/generator@^7.16.8", "@babel/generator@^7.17.3", "@babel/generator@^7.4.0":
   version "7.17.3"
   resolved "https://registry.npmjs.org/@babel/generator/-/generator-7.17.3.tgz"
   dependencies:
