@@ -42,6 +42,7 @@ testem.log
 /output
 /src/translations/template.*
 /src/environments/.env.*
+/.angular/cache 
 
 # System Files
 .DS_Store
