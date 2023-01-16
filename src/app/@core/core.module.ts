@@ -3,7 +3,6 @@ import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common
 import { APP_INITIALIZER, ErrorHandler, ModuleWithProviders, NgModule, Optional, SkipSelf } from "@angular/core";
 import { RouteReuseStrategy } from "@angular/router";
 import { GlobalErrorHandler } from "@core/services/global-error-handler";
-import { environment } from "src/environments/environment";
 import { throwIfAlreadyLoaded } from "./guards/module-import-guard";
 import { ApiPrefixInterceptor } from "./interceptor/api-prefix.interceptor";
 import { HttpErrorInterceptor } from "./interceptor/http-error.interceptor";
@@ -11,6 +10,7 @@ import { TokenInterceptor } from "./interceptor/jwt-interceptor";
 import { RouteReusableStrategy } from "./route-reusable-strategy";
 import { AppInitService } from "./services/app-init.service";
 import { APP_LANG, APP_NAME } from "./tokens";
+import { environment } from "@env/environment";
 
 import { TranslateLoader, TranslateModule } from "@ngx-translate/core";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";

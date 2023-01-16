@@ -42,7 +42,7 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
             "scripts": ["node_modules/chart.js/dist/Chart.js"],
-            "allowedCommonJsDependencies": ["chart.js"],
+            "allowedCommonJsDependencies": ["chart.js", "moment"],
             "vendorChunk": true,
             "extractLicenses": false,
             "buildOptimizer": false,

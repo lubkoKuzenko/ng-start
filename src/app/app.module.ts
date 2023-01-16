@@ -15,6 +15,7 @@ import { NavigationModule } from "./navigation/navigation.module";
 const APP_CORE_CONFIG = {
   defaultLanguage: "en",
   appName: "NG-Start",
+  i18nPrefix: "",
 };
 
 @NgModule({
