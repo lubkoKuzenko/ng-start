@@ -1,5 +1,8 @@
 import { Component } from "@angular/core";
-import { MatDialog, MatDialogConfig } from "@angular/material/dialog";
+import {
+  MatLegacyDialog as MatDialog,
+  MatLegacyDialogConfig as MatDialogConfig,
+} from "@angular/material/legacy-dialog";
 import { Card } from "../../interfaces";
 import { CardsStore } from "../../store/cards.store";
 import { CardFormComponent } from "../../components/card-form/card-form.component";
