@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { FormGroup, FormArray, FormControl, Validators } from "@angular/forms";
+import { UntypedFormGroup, UntypedFormArray, UntypedFormControl, Validators } from "@angular/forms";
 
 @Component({
   selector: "bb-dynamic-form",
@@ -7,9 +7,9 @@ import { FormGroup, FormArray, FormControl, Validators } from "@angular/forms";
   styleUrls: ["./dynamic-form.component.scss"],
 })
 export class DynamicFormComponent {
-  public form: FormGroup = new FormGroup({
-    userName: new FormControl("Lyubomyr", [Validators.required]),
-    timeRanges: new FormArray([]),
+  public form: UntypedFormGroup = new UntypedFormGroup({
+    userName: new UntypedFormControl("Lyubomyr", [Validators.required]),
+    timeRanges: new UntypedFormArray([]),
   });
 
   get controls() {
@@ -17,7 +17,7 @@ export class DynamicFormComponent {
   }
 
   get timeRangeControls() {
-    return this.form.get("timeRanges") as FormArray;
+    return this.form.get("timeRanges") as UntypedFormArray;
   }
 
   public addNewTimeRange() {
@@ -33,9 +33,9 @@ export class DynamicFormComponent {
   }
 
   private singleRange() {
-    return new FormGroup({
-      startDate: new FormControl("", []),
-      endDate: new FormControl("", []),
+    return new UntypedFormGroup({
+      startDate: new UntypedFormControl("", []),
+      endDate: new UntypedFormControl("", []),
     });
   }
 }

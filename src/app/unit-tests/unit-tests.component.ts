@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { FormControl, FormGroup, Validators } from "@angular/forms";
+import { UntypedFormControl, UntypedFormGroup, Validators } from "@angular/forms";
 import { PasswordValidators } from "./form-validators";
 import { PostsService } from "./services/post.service";
 
@@ -49,9 +49,9 @@ import { PostsService } from "./services/post.service";
   providers: [PostsService],
 })
 export class UnitTestsComponent implements OnInit {
-  public form = new FormGroup({
-    name: new FormControl("test", [Validators.required]),
-    password: new FormControl("123", PasswordValidators.isValueSatisfyFormatValidator()),
+  public form = new UntypedFormGroup({
+    name: new UntypedFormControl("test", [Validators.required]),
+    password: new UntypedFormControl("123", PasswordValidators.isValueSatisfyFormatValidator()),
   });
 
   constructor(public postService: PostsService) {}

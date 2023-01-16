@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { ComponentFixture, TestBed, waitForAsync } from "@angular/core/testing";
-import { FormControl } from "@angular/forms";
+import { UntypedFormControl } from "@angular/forms";
 
 import { ValidationMessageComponent } from "./validation-message.component";
 import { FormatErrorMessagePipe } from "./format-error-message.pipe";
@@ -21,7 +21,7 @@ describe("[VALIDATION] ValidationMessageComponent", () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ValidationMessageComponent);
     component = fixture.componentInstance;
-    component.control = new FormControl(null);
+    component.control = new UntypedFormControl(null);
     fixture.detectChanges();
   });
 

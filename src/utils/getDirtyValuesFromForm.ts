@@ -1,6 +1,6 @@
-import { FormGroup } from "@angular/forms";
+import { UntypedFormGroup } from "@angular/forms";
 
-export function getDirtyValues(cg: FormGroup) {
+export function getDirtyValues(cg: UntypedFormGroup) {
   const dirtyValues = {};
   Object.keys(cg.controls).forEach((c) => {
     const currentControl = cg.get(c);

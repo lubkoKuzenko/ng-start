@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, ChangeDetectionStrategy } from "@angular/core";
 
-import { FormGroup, FormControl, Validators } from "@angular/forms";
+import { UntypedFormGroup, UntypedFormControl, Validators } from "@angular/forms";
 import { FormsService } from "../../../services/forms.service";
 
 @Component({
@@ -10,10 +10,10 @@ import { FormsService } from "../../../services/forms.service";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FormBirthdayComponent implements OnInit {
-  @Input() public parentForm!: FormGroup;
+  @Input() public parentForm!: UntypedFormGroup;
 
-  public form = new FormGroup({
-    birthDate: new FormControl(new Date(), [Validators.required]),
+  public form = new UntypedFormGroup({
+    birthDate: new UntypedFormControl(new Date(), [Validators.required]),
   });
 
   get controls() {

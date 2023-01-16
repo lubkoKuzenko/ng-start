@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, ChangeDetectionStrategy } from "@angular/core";
-import { FormGroup, FormControl, Validators } from "@angular/forms";
+import { UntypedFormGroup, UntypedFormControl, Validators } from "@angular/forms";
 import { FormsService } from "../../../services/forms.service";
 
 @Component({
@@ -9,11 +9,11 @@ import { FormsService } from "../../../services/forms.service";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FormGeneralComponent implements OnInit {
-  @Input() public parentForm!: FormGroup;
+  @Input() public parentForm!: UntypedFormGroup;
 
-  public form = new FormGroup({
-    name: new FormControl("", [Validators.required]),
-    description: new FormControl("", [Validators.required]),
+  public form = new UntypedFormGroup({
+    name: new UntypedFormControl("", [Validators.required]),
+    description: new UntypedFormControl("", [Validators.required]),
   });
 
   get controls() {

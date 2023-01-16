@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { FormControl, FormGroup, Validators } from "@angular/forms";
+import { UntypedFormControl, UntypedFormGroup, Validators } from "@angular/forms";
 
 @Component({
   selector: "bb-nested-form-directive",
@@ -7,9 +7,9 @@ import { FormControl, FormGroup, Validators } from "@angular/forms";
   styleUrls: ["./nested-form-directive.component.scss"],
 })
 export class NestedFormDirectiveComponent {
-  public form = new FormGroup({
-    fullname: new FormControl("", [Validators.required]),
-    birthDate: new FormControl("", []),
+  public form = new UntypedFormGroup({
+    fullname: new UntypedFormControl("", [Validators.required]),
+    birthDate: new UntypedFormControl("", []),
   });
 
   get controls() {

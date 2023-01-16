@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy } from "@angular/core";
-import { FormGroup } from "@angular/forms";
+import { UntypedFormGroup } from "@angular/forms";
 
 @Component({
   selector: "bb-nested-form",
@@ -8,9 +8,9 @@ import { FormGroup } from "@angular/forms";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NestedFormComponent {
-  public form = new FormGroup({
-    general: new FormGroup({}),
-    birthDate: new FormGroup({}),
+  public form = new UntypedFormGroup({
+    general: new UntypedFormGroup({}),
+    birthDate: new UntypedFormGroup({}),
   });
 
   get controls() {

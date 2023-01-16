@@ -1,4 +1,4 @@
-import { FormControl } from "@angular/forms";
+import { UntypedFormControl } from "@angular/forms";
 import { PasswordValidators } from "./password-control.validator";
 
 /*
@@ -18,7 +18,7 @@ const TEST_CASES = [
 
 describe("PasswordValidators", () => {
   const isPasswordInCorrectFormatValidator = PasswordValidators.isValueSatisfyFormatValidator();
-  const control = new FormControl("input");
+  const control = new UntypedFormControl("input");
 
   TEST_CASES.forEach(({ test_case, value, result }) => {
     it(`should return ${result} if input ${test_case}`, () => {

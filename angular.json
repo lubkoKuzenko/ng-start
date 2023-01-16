@@ -114,11 +114,10 @@
       }
     }
   },
-  "defaultProject": "ng-start",
   "cli": {
-    "defaultCollection": "@ngrx/schematics",
     "cache": {
       "enabled": false
-    }
+    },
+    "schematicCollections": ["@ngrx/schematics"]
   }
 }

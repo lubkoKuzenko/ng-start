@@ -1,5 +1,5 @@
 import { Component, Input, ChangeDetectionStrategy } from "@angular/core";
-import { FormGroup, FormControl } from "@angular/forms";
+import { UntypedFormGroup, UntypedFormControl } from "@angular/forms";
 import { ActivatedRoute } from "@angular/router";
 import { take } from "rxjs/operators";
 
@@ -13,8 +13,8 @@ export class CustomFieldFormComponent {
   public data: { counter: number } = { counter: 7 };
   public minValue = 0;
   public maxValue = 12;
-  public form: FormGroup = new FormGroup({
-    counter: new FormControl(this.data.counter, []),
+  public form: UntypedFormGroup = new UntypedFormGroup({
+    counter: new UntypedFormControl(this.data.counter, []),
   });
 
   constructor(private activatedRoute: ActivatedRoute) {}

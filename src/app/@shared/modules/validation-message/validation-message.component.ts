@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from "@angular/core";
-import { FormControl } from "@angular/forms";
+import { UntypedFormControl } from "@angular/forms";
 
 @Component({
   selector: "bb-validation-message",
@@ -9,7 +9,7 @@ import { FormControl } from "@angular/forms";
 })
 export class ValidationMessageComponent {
   @Input()
-  public control!: FormControl;
+  public control!: UntypedFormControl;
 
   get errors(): { [key: string]: any } {
     return this.control.errors || {};

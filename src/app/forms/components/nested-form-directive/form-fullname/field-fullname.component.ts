@@ -1,5 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from "@angular/core";
-import { FormGroup, FormGroupDirective } from "@angular/forms";
+import { UntypedFormGroup, FormGroupDirective } from "@angular/forms";
 
 @Component({
   selector: "bb-form-fullname",
@@ -8,7 +8,7 @@ import { FormGroup, FormGroupDirective } from "@angular/forms";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FormFullNameComponent implements OnInit {
-  public form!: FormGroup;
+  public form!: UntypedFormGroup;
 
   get controls() {
     return this.form && this.form.controls;

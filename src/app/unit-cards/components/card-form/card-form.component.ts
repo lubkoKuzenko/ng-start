@@ -1,5 +1,5 @@
 import { Component, Inject } from "@angular/core";
-import { FormControl, FormGroup, Validators } from "@angular/forms";
+import { UntypedFormControl, UntypedFormGroup, Validators } from "@angular/forms";
 import { MatDialogRef, MAT_DIALOG_DATA } from "@angular/material/dialog";
 import * as moment from "moment";
 import { Card } from "../../interfaces";
@@ -10,11 +10,11 @@ import { Card } from "../../interfaces";
   styleUrls: ["./card-form.component.scss"],
 })
 export class CardFormComponent {
-  public form = new FormGroup({
-    id: new FormControl(null, []),
-    createdAt: new FormControl("", [Validators.required]),
-    title: new FormControl("", [Validators.required]),
-    description: new FormControl("", [Validators.required]),
+  public form = new UntypedFormGroup({
+    id: new UntypedFormControl(null, []),
+    createdAt: new UntypedFormControl("", [Validators.required]),
+    title: new UntypedFormControl("", [Validators.required]),
+    description: new UntypedFormControl("", [Validators.required]),
   });
 
   get controls() {
