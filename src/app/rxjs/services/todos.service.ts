@@ -10,6 +10,14 @@ export class TodosService {
     return this.http.get("https://jsonplaceholder.typicode.com/todos");
   }
 
+  getUsers() {
+    return this.http.get("https://jsonplaceholder.typicode.com/users");
+  }
+
+  getAlbums() {
+    return this.http.get("https://jsonplaceholder.typicode.com/albums");
+  }
+
   getPhotoById(id: number) {
     return this.http.get(`https://jsonplaceholder.typicode.com/photos/${id}`);
   }

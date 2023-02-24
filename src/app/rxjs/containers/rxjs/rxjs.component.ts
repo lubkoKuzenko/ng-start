@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from "@angular/core";
-import { timer, Observable, of, concat, fromEvent, BehaviorSubject } from "rxjs";
+import { timer, Observable, of, concat, fromEvent, BehaviorSubject, forkJoin } from "rxjs";
 import { TodosService } from "../../services/todos.service";
 import { ITodo } from "../../interfaces";
 import { map, tap, switchMap, scan } from "rxjs/operators";
@@ -38,6 +38,7 @@ export class RxjsComponent implements OnInit, AfterViewInit {
     // this.createTwoStreamsFromOne();
     // this.contactTwoIntoOne();
     this.calculateFromStream();
+    this.nestedSubscriptions();
   }
 
   ngAfterViewInit(): void {
@@ -52,6 +53,25 @@ export class RxjsComponent implements OnInit, AfterViewInit {
       .subscribe();
 
     this.onImageChange();
+  }
+
+  private nestedSubscriptions() {
+    this.todosService.getTodos().subscribe((todos: any) => {
+      this.todosService.getAlbums().subscribe((albums: any) => {
+        this.todosService.getUsers().subscribe((users: any) => {
+          console.log(todos, albums, users);
+        });
+      });
+    });
+
+    this.todosService.getTodos().subscribe((todos: any) => {
+      const albums$ = this.todosService.getAlbums();
+      const users$ = this.todosService.getUsers();
+
+      forkJoin([albums$, users$]).subscribe((results: any) => {
+        console.log(todos, results);
+      });
+    });
   }
 
   private calculateFromStream() {
