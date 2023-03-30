@@ -12,6 +12,7 @@ import { BlueDeviceComponent } from "../../components/blue-device/blue-device.co
 import { RedDeviceComponent } from "../../components/red-device/red-device.component";
 import { GreenDeviceComponent } from "../../components/green-device/green-device.component";
 import { Type } from "@angular/core";
+import { BaseItemComponent } from "../../components/base-item.component";
 
 export enum ItemEnum {
   Red,
@@ -46,18 +47,11 @@ export class DevicesComponent implements OnInit, OnDestroy {
     const component = COMPONENT_MAP.get(type) as Type<unknown>;
     const factory = this.resolver.resolveComponentFactory(component);
     this.componentRef = this.entry.createComponent(factory);
-
+    const createdComponentInstance = this.componentRef.instance as BaseItemComponent;
+    createdComponentInstance.data = "test";
     // if (type === "virtual") {
     //   this.componentRef.instance.data = Array.from({ length: 1000 }).map((_, i) => `Item #${i}`);
     // }
-  }
-
-  public defineComponent(type: string) {
-    return {
-      red: RedDeviceComponent,
-      green: GreenDeviceComponent,
-      blue: BlueDeviceComponent,
-    }[type];
   }
 
   public ngOnDestroy() {

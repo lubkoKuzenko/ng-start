@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { trigger, transition, style, animate } from "@angular/animations";
+import { BaseItemComponent } from "../base-item.component";
 
 @Component({
   selector: "bb-blue-device",
@@ -12,4 +13,4 @@ import { trigger, transition, style, animate } from "@angular/animations";
     ]),
   ],
 })
-export class BlueDeviceComponent {}
+export class BlueDeviceComponent extends BaseItemComponent<any> {}
