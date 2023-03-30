@@ -1,12 +1,4 @@
-import {
-  Component,
-  OnInit,
-  ViewChild,
-  ViewContainerRef,
-  ComponentFactoryResolver,
-  ComponentRef,
-  OnDestroy,
-} from "@angular/core";
+import { Component, OnInit, ViewChild, ViewContainerRef, ComponentRef, OnDestroy } from "@angular/core";
 
 import { BlueDeviceComponent } from "../../components/blue-device/blue-device.component";
 import { RedDeviceComponent } from "../../components/red-device/red-device.component";
@@ -36,7 +28,6 @@ export class DevicesComponent implements OnInit, OnDestroy {
   componentRef: ComponentRef<any>;
 
   public itemEnum = ItemEnum;
-  constructor(private resolver: ComponentFactoryResolver) {}
 
   public ngOnInit() {
     this.createComponent(ItemEnum.Green);
@@ -45,8 +36,7 @@ export class DevicesComponent implements OnInit, OnDestroy {
   public createComponent(type: ItemEnum) {
     this.entry.clear();
     const component = COMPONENT_MAP.get(type) as Type<unknown>;
-    const factory = this.resolver.resolveComponentFactory(component);
-    this.componentRef = this.entry.createComponent(factory);
+    this.componentRef = this.entry.createComponent(component);
     const createdComponentInstance = this.componentRef.instance as BaseItemComponent;
     createdComponentInstance.data = "test";
     // if (type === "virtual") {
