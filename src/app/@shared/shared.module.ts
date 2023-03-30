@@ -7,8 +7,9 @@ import { NgxJsonViewerModule } from "ngx-json-viewer";
 import { SharedDirectivesModule } from "./directives/directives.module";
 import { SharedPipesModule } from "./pipes/pipes.module";
 import { SharedComponentsModule } from "./components/components.module";
-import { ValidationMessageModule } from "./modules/validation-message/validation-message.module";
+import { ValidationMessageModule } from "./modules/validation-message";
 import { TranslateModule } from "@ngx-translate/core";
+import { AlphabeticalListModule } from "./modules/alphabetical-list";
 
 @NgModule({
   imports: [
@@ -24,6 +25,7 @@ import { TranslateModule } from "@ngx-translate/core";
     SharedPipesModule,
 
     ValidationMessageModule,
+    AlphabeticalListModule,
   ],
   declarations: [],
   providers: [],
@@ -40,6 +42,7 @@ import { TranslateModule } from "@ngx-translate/core";
     SharedPipesModule,
 
     ValidationMessageModule,
+    AlphabeticalListModule,
   ],
 })
 export class SharedModule {}

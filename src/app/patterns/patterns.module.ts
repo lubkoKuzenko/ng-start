@@ -9,6 +9,7 @@ import { StrategyModule } from "./strategy/strategy.module";
 import { AdapterModule } from "./adapter/adapter.module";
 import { NgtemplateoutletModule } from "./ngtemplateoutlet/ngtemplateoutlet.module";
 import { BuilderModule } from "./builder/builder.module";
+import { DataAgnosticModule } from "./data-agnostic/data-agnostic.module";
 
 @NgModule({
   imports: [
@@ -20,6 +21,7 @@ import { BuilderModule } from "./builder/builder.module";
     BuilderModule,
     NgtemplateoutletModule,
     PatternsRoutingModule,
+    DataAgnosticModule,
   ],
   declarations: [PatternsComponent],
 })

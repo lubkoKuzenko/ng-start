@@ -1,0 +1,8 @@
+<alphabetical-list [data]="data" [labelHandler]="labelHandler">
+  <!-- Default view will be empty  -->
+
+  <!-- Custom template for items -->
+  <ng-template alphabeticalListItemContent let-item>
+    <b>{{ item.name }} (#{{ item.id }})</b>
+  </ng-template>
+</alphabetical-list>

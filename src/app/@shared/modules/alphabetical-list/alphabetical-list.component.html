@@ -1,0 +1,17 @@
+<ng-container *ngFor="let letter of letters">
+  <div class="section-header">
+    {{ letter }}
+  </div>
+
+  <mat-selection-list>
+    <mat-list-option *ngFor="let sectionItem of sectionMap.get(letter)">
+      <ng-container *ngIf="!listItemContentTemplate">
+        {{ labelHandler(sectionItem) }}
+      </ng-container>
+
+      <ng-container *ngIf="listItemContentTemplate">
+        <ng-container *ngTemplateOutlet="listItemContentTemplate; context: { $implicit: sectionItem }"></ng-container>
+      </ng-container>
+    </mat-list-option>
+  </mat-selection-list>
+</ng-container>
