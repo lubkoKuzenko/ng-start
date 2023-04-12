@@ -1,0 +1,71 @@
+<form [formGroup]="addressForm" class="address-form">
+  <div class="grid grid-cols-3 py-3 gap-6">
+    <div class="col-span-3 sm:col-span-2">
+      <label for="company_website" class="block text-sm font-medium text-gray-700">City</label>
+      <div class="mt-1 rounded-md shadow-sm">
+        <input
+          type="text"
+          formControlName="city"
+          class="
+            focus:ring-indigo-500 focus:border-indigo-500
+            flex-1
+            block
+            w-full
+            rounded-none rounded-r-md
+            sm:text-sm
+            border-gray-300
+          "
+        />
+        <bb-validation-message [control]="controls.city"></bb-validation-message>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-3 py-3 gap-6">
+    <div class="col-span-3 sm:col-span-2">
+      <label for="company_website" class="block text-sm font-medium text-gray-700">Street</label>
+      <div class="mt-1 rounded-md shadow-sm">
+        <input
+          type="text"
+          formControlName="street"
+          class="
+            focus:ring-indigo-500 focus:border-indigo-500
+            flex-1
+            block
+            w-full
+            rounded-none rounded-r-md
+            sm:text-sm
+            border-gray-300
+          "
+        />
+        <bb-validation-message [control]="controls.street"></bb-validation-message>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-3 py-3 gap-6">
+    <div class="col-span-3 sm:col-span-2">
+      <label for="company_website" class="block text-sm font-medium text-gray-700">House number</label>
+      <div class="mt-1 rounded-md shadow-sm">
+        <input
+          type="number"
+          formControlName="house"
+          class="
+            focus:ring-indigo-500 focus:border-indigo-500
+            flex-1
+            block
+            w-full
+            rounded-none rounded-r-md
+            sm:text-sm
+            border-gray-300
+          "
+        />
+        <bb-validation-message [control]="controls.house"></bb-validation-message>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <ngx-json-viewer [json]="addressForm.value"></ngx-json-viewer>
+</form>

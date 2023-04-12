@@ -10,6 +10,7 @@ import { CounterInputComponent } from "./custom-field-form/counter-input/counter
 import { DynamicFormComponent } from "./dynamic-form/dynamic-form.component";
 import { NestedFormDirectiveComponent } from "./nested-form-directive/nested-form-directive.component";
 import { FormFullNameComponent } from "./nested-form-directive/form-fullname/field-fullname.component";
+import { AddressFormComponent } from "./reusable-form-group/reusable-form-group.component";
 
 const formsComponents: Array<Type<any>> = [
   BasicFormComponent,
@@ -21,6 +22,7 @@ const formsComponents: Array<Type<any>> = [
   FormFullNameComponent,
   CustomFieldFormComponent,
   CounterInputComponent,
+  AddressFormComponent,
 ];
 
 @NgModule({

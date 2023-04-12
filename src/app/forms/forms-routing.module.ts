@@ -6,6 +6,7 @@ import { CustomFieldFormComponent } from "./components/custom-field-form/custom-
 import { DynamicFormComponent } from "./components/dynamic-form/dynamic-form.component";
 import { NestedFormDirectiveComponent } from "./components/nested-form-directive/nested-form-directive.component";
 import { NestedFormComponent } from "./components/nested-form-service/nested-form.component";
+import { AddressFormComponent } from "./components/reusable-form-group/reusable-form-group.component";
 import { FormsComponent } from "./containers/forms/forms.component";
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
       { path: "formgroupdirective", component: NestedFormDirectiveComponent },
       { path: "dynamic", component: DynamicFormComponent },
       { path: "controlValueAccessor", component: CustomFieldFormComponent, data: { counter: 2 } },
+      { path: "reusableFormGroup", component: AddressFormComponent },
     ],
   },
 ];
