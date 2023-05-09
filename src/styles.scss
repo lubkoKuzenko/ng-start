@@ -4,6 +4,11 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@font-face {
+  font-family: "Outfit"; /*a name to be used later*/
+  src: url("assets/fonts/Outfit/Outfit-VariableFont_wght.ttf"); /*URL to font*/
+}
+
 .active {
   @apply text-gray-200 bg-gray-800;
 }
