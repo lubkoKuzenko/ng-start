@@ -1,4 +1,4 @@
-# Angular 11 Project
+# Angular 17 Project
 
 ## Development server
 
