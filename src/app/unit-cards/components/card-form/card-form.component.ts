@@ -1,11 +1,9 @@
 import { Component, Inject } from "@angular/core";
 import { UntypedFormControl, UntypedFormGroup, Validators } from "@angular/forms";
-import {
-  MatLegacyDialogRef as MatDialogRef,
-  MAT_LEGACY_DIALOG_DATA as MAT_DIALOG_DATA,
-} from "@angular/material/legacy-dialog";
+
 import * as moment from "moment";
 import { Card } from "../../interfaces";
+import { MAT_DIALOG_DATA, MatDialogRef } from "@angular/material/dialog";
 
 @Component({
   selector: "l9-card-form",
